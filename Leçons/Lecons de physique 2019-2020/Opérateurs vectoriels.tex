@@ -1,0 +1,80 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Rémi Metzdorff}
+
+\newcommand{\ex}{\overrightarrow{e_x}}
+\newcommand{\ey}{\overrightarrow{e_y}}
+\newcommand{\ez}{\overrightarrow{e_z}}
+\newcommand{\er}{\overrightarrow{e_r}}
+\newcommand{\et}{\overrightarrow{e_\theta}}
+\newcommand{\ep}{\overrightarrow{e_\phi}}
+\renewcommand{\d}{\mathrm{d}}
+\newcommand{\grad}{\overrightarrow{\mathrm{grad}}}
+\newcommand{\rot}{\overrightarrow{\mathrm{rot}}}
+\newcommand{\lap}{\Delta}
+\renewcommand{\div}{\mathrm{div}}
+
+\begin{document}
+
+\begin{center}
+\Large
+\bf
+Opérateurs vectoriels
+\end{center}
+
+\subsection*{Systèmes de coordonnées}
+
+\begin{itemize}
+\item cartésiennes : ($\ex$, $\ey$, $\ez$)
+\item cylindriques : ($\er$, $\et$, $\ez$)
+\item sphériques : ($\er$, $\et$, $\ep$)
+\end{itemize}
+
+\subsection*{Champ scalaire}
+
+\begin{itemize}
+\item $U(x,y,z)$
+\item $U(r,\theta,z)$
+\item $U(r, \theta,\phi)$
+\end{itemize}
+
+\subsection*{Champ vectoriel}
+
+\begin{equation*}
+\overrightarrow{A}(x,y,z) = A_x(x,y,z)\ex + A_y(x,y,z)\ey + A_z(x,y,z)\ez
+\end{equation*}
+\begin{equation*}
+\overrightarrow{A}(r,\theta,z) = A_r(r,\theta,z)\er + A_\theta(r,\theta,z)\et + A_z(r,\theta,z)\ez
+\end{equation*}
+\begin{equation*}
+\overrightarrow{A}(r,\theta,\phi) = A_r(r,\theta,\phi)\er + A_\theta(r,\theta,\phi)\et + A_z(r,\theta,\phi)\ep
+\end{equation*}
+
+\section*{Gradient $\grad$}
+
+Il s'applique à un champ scalaire et est défini par
+\begin{equation*}
+\d U = \grad U.\overrightarrow{\d l}.
+\end{equation*}
+En coordonnées cartésiennes :
+\begin{equation*}
+\grad U = \overrightarrow{\nabla} U = \frac{\partial U}{\partial x}\ex + \frac{\partial U}{\partial y}\ey + \frac{\partial U}{\partial z}\ez
+\end{equation*}
+En coordonnées cylindriques :
+\begin{equation*}
+\grad U = \frac{\partial U}{\partial r}\er + \frac{1}{r}\frac{\partial U}{\partial \theta}\et + \frac{\partial U}{\partial z}\ez
+\end{equation*}
+En coordonnées sphériques :
+\begin{equation*}
+\grad U = \frac{\partial U}{\partial r}\er + \frac{1}{r}\frac{\partial U}{\partial \theta}\et + \frac{1}{r\sin\theta}\frac{\partial U}{\partial \phi}\ep
+\end{equation*}
+
+\paragraph*{Remarque :} Si $\overrightarrow{A} = -\grad U$, le vecteur $\overrightarrow{A}$ dérive du potentiel $U$ et est à circulation conservative.
+\end{document}
