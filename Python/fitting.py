@@ -172,7 +172,7 @@ class Fit():
                 self.report()
         elif verbosemode:
             self.report()
-        return fit_params
+        return fit_params, self.fit_uparams
 
     def chi2(self):
         """computed after fit"""
