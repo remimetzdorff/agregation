@@ -2,8 +2,9 @@
 
 \paragraph{Bibliographie :}
 \begin{itemize}
-\item \cite{BFROptique} p174 : calcul simple du terme d'interférence
-\item \cite{BFROptique} p74 : lien entre le modèle scalaire de la lumière et le champ électromagnétique avec Maxwell et l'expérience de Wiener;
+\item \cite{Faroux1999}
+\item \cite{Perez2017}
+\item \cite{BFROptique}
 \end{itemize}
 
 \paragraph{Niveau :} CPGE
@@ -15,21 +16,21 @@
 
 \subsection{Introduction}
 
-\begin{itemize}
-\item Phénomène d'interférence associé aux ondes.
-\item Interférences facilement observées dans d'autres domaines (ex : acoustique pour différencier deux notes proches, accordage d'une guitare).
-\item \emph{EXP : battement entre deux diapasons légèrement désaccordés.}
-\item Pourtant, rarement observé en optique.
-\item \emph{EXP : superposition de deux spots lumineux venant de deux lampes de poche.}
-\end{itemize}
+Le phénomène d'interférence est fondamentalement associé aux ondes.
+Elles sont facilement observées dans d'autres domaines de la physique (ex : acoustique pour différencier deux notes proches, accordage d'une guitare).
 
-\paragraph{Objectif de la leçon :}
+\emph{EXP : battement entre deux diapasons légèrement désaccordés.}
+
+Pourtant, on observe rarement des interférence en optique.
+Il suffit de regarder la façon dont éclairée la salle pour s'en convaincre (plusieurs panneau lumineux sans battement).
+
+\paragraph{Objectifs de la leçon :}
 \begin{itemize}
 \item Comprendre pourquoi il est difficile d'observer des interférence en optique.
 \item Quelles sont les applications ?
 \end{itemize}
 
-\subsection{Cas général}
+\subsection{Superposition de deux ondes}
 
 \subsubsection{Éclairement}
 
@@ -43,73 +44,63 @@ I(M,t) = \left< \overrightarrow{\Pi}(M,t)\right>_t = \frac{\epsilon_0 c}{2}E_0^2
 \end{equation}
 Pour la suite on oublie le terme $\epsilon_0 c$ et on définit l'éclairement
 \begin{equation}
-I(M,t) = \left< \overrightarrow{E}(M,t) \overrightarrow{E^*}(M,t)\right>_t
+I(M,t) = \left< \overrightarrow{E}(M,t).\overrightarrow{E^*}(M,t)\right>_t
 \end{equation}
-
-\subsubsection{Superposition de deux ondes}
 
 Les equations de Maxwell sont linéaires, on peut sommer les champs $\overrightarrow{E_1}(M,t)$ et $\overrightarrow{E_2}(M,t)$ et calculer l'éclairement total
 \begin{equation}
-I(M,t) = \left< (\overrightarrow{E_1} + \overrightarrow{E_2})(\overrightarrow{E_1^*} + \overrightarrow{E_2^*}) \right>_t = I_1 + I_2 + 2\Re\left< \overrightarrow{E_1} \overrightarrow{E_2^*} \right>_t 
+I(M,t) = \left< (\overrightarrow{E_1} + \overrightarrow{E_2})(\overrightarrow{E_1^*} + \overrightarrow{E_2^*}) \right>_t = I_1 + I_2 + 2\Re\left< \overrightarrow{E_1}.\overrightarrow{E_2^*} \right>_t 
 \end{equation}
 L'éclairement total peut être différent de la simple somme des éclairement dûs à chacune des sources.
 
 \subsubsection{Conditions d'interférence}
 
-Première condition pour observer des interférences : polarisations non orthogonales.
-On suppose que les deux ondes ont la même polarisation.
+On développe le terme d'interférence :
 \begin{equation}
-I(M,t)= I_1 + I_2 + 2\sqrt{I_1I_2}\left< \cos(\Delta\omega t + \Delta\varphi(M,t)) \right>_t
+2\Re \left< \overrightarrow{E_1} \overrightarrow{E_2^*} \right>_t =
+\left<
+\overrightarrow{E_{01}}.\overrightarrow{E_{02}}
+\cos\left[ \Delta \omega t + \Delta \varphi_0(t) + \Delta\varphi_k(M)\right]
+\right>_t.
 \end{equation}
-En pratique seul les composantes de la lumière de même polarisation interfèrent.
-
-Deuxième condition : $\Delta\omega = 0$
-\begin{equation}
-I(M,t)= I_1 + I_2 + 2\sqrt{I_1I_2}\left< \cos(\Delta\varphi(M,t)) \right>_t
-\end{equation}
+Ce terme est non nul si :
+\begin{itemize}
+\item les polarisations des deux ondes ne sont pas orthogonales.
+Pour la suite, on suppose que les deux ondes ont la même polarisation.
+\item  $\Delta\omega = 0$.
 Si $\Delta\omega \neq 0$, on s'attend à observer un battement temporel : à comparer aux détecteurs usuels ($\omega_\mathrm{oeil} < 2\pi\times\unit{50}{\hertz}$, $\omega_\mathrm{phd} < 2\pi\times\unit{10}{\giga\hertz}$).
 Le doublet jaune du sodium donne $\Delta\omega_\mathrm{Na} < 2\pi\times\unit{2}{\tera\hertz}$.
-On observe pas d'interférences sauf dans des cas très particuliers (ex : battement entre deux lasers pour les asservir, détection hétérodyne).
-
-Troisième condition :
-\begin{equation}
-\Delta\varphi(M,t) = \Delta\varphi(M)
-\end{equation}
+On observe pas d'interférences sauf dans des cas très particuliers (ex : battement entre deux lasers pour les asservir, détection hétérodyne, spectroscopie).
+\item $\Delta\varphi_0(t)$ stationnaire (indépendant du temps.
 Le déphasage ne doit dépendre que du chemin parcouru par chacune des deux ondes.
-On dit que les sources doivent être cohérentes.
-Le calcul du déphasage se ramène à un calcul de différence de marche
-\begin{equation}
-\Delta\varphi(M) = \frac{2\pi}{\lambda} \delta
-\end{equation}
+Ceci impose une cohérence entre les deux ondes, notion sur laquelle on reviendra.
+\end{itemize}
 
-Pour simplifier, on supposera les deux ondes de même amplitude et obtient finalement l'éclairement
-\begin{equation}
-I(M) = 2I_0\left[1+\cos\left(\frac{2\pi}{\lambda}\delta\right)\right]
-\end{equation}
+\paragraph{Transition :}
+Une solution simple pour obtenir deux sources cohérentes est de créer des sources secondaires à partir d'une même source ponctuelle pour les faire interférer. 
+Il existe des dispositifs à division du front d'onde (trous d'Young, bimiroir de Fresnel) et dispositifs à division d'amplitude (Michelson, Mach-Zender).
 
-On voit que l'éclairement change rapidement avec la différence de marche : applications à la mesure de petits déplacements, à l'échelle de la longueur d'onde et bien en dessous (optomécanique, ondes gravitationnelles, mesures de forces faibles).
-
-\paragraph{Transition :} créer des sources secondaires à partir d'une même source ponctuelle pour les faire interférer. Dispositifs à division du front d'onde (les trous d'Young) et dispositif à division d'amplitude (Michelson).
-
-\subsection{Les fentes d'Young}
+\subsection{Une dispositif à division du front d'onde : les fentes d'Young}
 
 \subsubsection{Dispositif expérimental}
 
-\emph{Schéma}
-\begin{itemize}
-\item Source : laser assimilé à une source ponctuelle
-\item Sources secondaires : fentes fines $S_1$ et $S_2$
-\end{itemize}
+\emph{Schéma des fentes d'Young}
 
-On calcule la différence de marche $\delta = (S_2M)-(S_1M)$.
-On obtient des surfaces d'égal éclairement telle que $(S_2M)-(S_1M) = 0$, soit des hyperboloïdes de révolution.
+\emph{EXP : fentes d'Young éclairées par un laser He-Ne vert, (fente simple pour la diffraction puis fente double pour les interférences).}
 
-\emph{EXP : observation des franges d'interférence sur l'écran.}
+L'observation de cette figure d'interférence (1801) a permis de confirmer le caractère ondulatoire de la lumière.
+
+\emph{Slide : interférences constructives et destructives.}
 
 \subsubsection{Calcul de la différence de marche}
 
-La source est sur l'axe optique : avant les fentes, $\delta=0$.
+La différence de phase à l'origine est nulle car les ondes sont issues de la même source.
+Le calcul du déphasage se ramène à un calcul de différence de marche
+\begin{equation}
+\delta = (SS_2M)-(SS_1M).
+\end{equation}
 
+La source est sur l'axe optique, on a donc $(SS_1) = (SS_2)$.
 Après les fentes on a 
 \begin{equation}
 (S_1M) = \sqrt{D^2 + \left(\frac{a}{2} - x\right)^2}.
@@ -131,30 +122,44 @@ Ainsi,
 
 On obtient donc sur l'écran un éclairement modulé spatialement de la forme
 \begin{equation}
-I(x) = I_0 \left[1+\cos\left(2\pi\frac{ax}{\lambda D}\right) \right].
+I(x) = 2I_0 \left[1+\cos\left(2\pi\frac{ax}{\lambda D}\right) \right].
 \end{equation}
+L'éclairement varie rapidement avec la différence de marche, ce qui permet d'utiliser des dispositifs interférentiels pour des mesures très précises de petits déplacements (mesures de forces faibles par déviations de nano-miroirs, optomécanique, interférométrie gravitationnelle) ou encore de variation d'indices optiques (mesure de l'indice de l'air).
+
 On appelle interfrange $i$ la période spatiale de la figure :
 \begin{equation}
-i = \frac{\lambda D}{a}
+i = \frac{\lambda D}{a}.
 \end{equation}
-et on définit le contraste ${\cal{C}}$ tel que
+
+\emph{EXP : mesure de l'interfrange pour remonter à l'écartement entre les fentes, à comparer à la valeur du fabricant.}
+
+\emph{Slide : autres mesures réalisées en préparation pour différents écartements des fentes.}
+
+Le contraste ${\cal{C}}$ est définit tel que
 \begin{equation}
 {\cal{C}} = \frac{I_\mathrm{max}-I_\mathrm{min}}{I_\mathrm{max}+I_\mathrm{min}}.
 \end{equation}
+Ici le contraste vaut 1.
 
-L'observation de cette figure d'interférence (1801) a permis de confirmer le caractère ondulatoire de la lumière.
-
-\emph{EXP : mesure de l'interfrange.}
-
-\paragraph{Transition : } On a étudié le cas d'une source ponctuelle. En translatant la source, on observe un décalage de la figure d'interférence. Que se passe-t-il avec une source étendue ?
+\paragraph{Transition : } On a étudié le cas d'une source ponctuelle monochromatique, qu'il est plutôt rare de rencontrer.
+Que se passe-t-il pour une source réelle ?
 
 \subsection{Cohérence de la source}
 
+\subsubsection{Évolution du contraste}
+
+\emph{Modification du schéma précédent avec une deuxième source de largeur.}
+
+Les sources sont incohérentes, on somme les éclairements.
+On observe un brouillage si les figures sont décalées d'un demi interfrange.
+
+\emph{Slide : Évolution du contraste dans le cas de deux sources ponctuelles.}
+
+Applications : mesure de l'écart angulaire entre deux étoiles lointaines.
+
+\emph{EXP : passage en source étendue avec une lampe Quartz-Iode et une fente réglable. On observe une variation du contraste suivant la largeur de la fente source.}
+
 \subsubsection{Source étendue}
-
-\emph{Modification du schéma précédent avec une source de largeur $b$, composée d'une multitude de sources ponctuelles incohérentes entre elles.}
-
-\emph{EXP : passage en source étendue avec une lampe spectrale et une fente réglable. On observe une variation du contraste suivant la largeur de la fente source.}
 
 On suppose que chaque point de la fente source émet la même intensité lumineuse $I_l$ avec
 \begin{equation}
@@ -163,31 +168,65 @@ I_0 = \int_{-b/2}^{b/2} I_l \mathrm{d}X.
 \emph{Schéma.}
 L'éclairement dû à un élément de longueur $\mathrm{dX}$ de la source est donné par
 \begin{equation}
-\mathrm{dI} = I_l\left[1+\cos\left(k\frac{ax}{D}+k\frac{aX}{d}\right)\right]\mathrm{d}X.
+\mathrm{dI} = 2I_l\left[1+\cos\left(k\frac{ax}{D}+k\frac{aX}{d}\right)\right]\mathrm{d}X.
 \end{equation}
 Les sources étant incohérentes, on peut sommer les éclairements et on obtient après calcul en utilisant la relation $\sin p - \sin q = 2\cos\frac{p+q}{2}\sin\frac{p-q}{2}$
 \begin{equation}
-I(x) = I_0\left[1+\cos\left(k\frac{ax}{D}\right)\sin\left(k\frac{ab}{2d}\right)\right].
+I(x) = 2I_0\left[1+\cos\left(k\frac{ax}{D}\right)\sin\left(k\frac{ab}{2d}\right)\right].
 \end{equation}
+
+\emph{Slide : mesures réalisée en préparation avec l'évolution du contraste en fonction de la largeur de la fente source.}
 
 Plus généralement, le théorème de van Cittert-Zernike fait le lien entre l'allure spatiale de la source et le contraste de la figure d'interférence en faisant intervenir la transformée de Fourier spatiale de la source.
 
-\subsubsection{Évolution du contraste}
-
-\emph{EXP : Mesure d'une valeur et ajustement par le sinus cardinal.}
-
-Applications : mesure du diamètre d'une étoile, distance entre deux étoiles voisines.
+Application : mesure du diamètre angulaire d'une étoile.
 
 \subsubsection{Cohérence temporelle}
 
-Modèle des trains d'ondes
+On passe à une source non monochromatique avec une étendue spectrale $\Delta\nu$ finie.
+De la même façon qu'avec la cohérence spatiale, il existe une relation entre la transformée de Fourier du profil spectral de la source et l'évolution du contraste en fonction de la différence de marche (théorème de Wiener-Kintchine).
 
-Largeur spectrale de la source.
+\emph{Schéma : modèle des trains d'onde avec petite et grande différence de marche.}
 
-De façon analogue, on retrouve une évolution du contraste dépendant de a transformée de Fourier fréquentielle de la source.
+Pour quantifier la cohérence temporelle de la source, on parle de temps de cohérence $\tau_c$
+\begin{equation}
+\tau_c \approx \frac{1}{\Delta\nu}
+\end{equation}
+et de longueur de cohérence $l_c$
+\begin{equation}
+l_c = c\tau_c.
+\end{equation}
 
 \subsection{Conclusion}
 
 On a vu les conditions pour observer des interférences en optique, avec des limites importantes, liées à la cohérence limité des sources communes.
-Ces limites se traduisent par une évolution du contraste de la figure d'interférence avec les propriétés de la source, qui peut être utilisé pour étudier les propriétés de la ou des source(s).
+Ces limites se traduisent par une évolution du contraste de la figure d'interférence avec les propriétés de la source, ce qui peut être utilisé pour étudier les propriétés de la ou des source(s).
 Le laser permet de palier à ces limitations avec des cohérences spatiale et temporelle importantes, ce qui en fait un outils de choix pour des mesures extrêmement précises.
+
+\subsection*{Liste du matériel}
+
+\paragraph{Interférence avec un laser :}
+\begin{itemize}
+\item laser He-Ne vert ;
+\item banc optique (pour le confort d'utilisation) ;
+\item deux montures ;
+\item fente simple réglable ;
+\item fentes doubles (200, 300 et \unit{500}{\micro\meter}) ;
+\item écran ;
+\item mètre règle ou autre ;
+\item barrette CCD.
+\end{itemize}
+
+\paragraph{Variation du contraste avec une source étendue :}
+\begin{itemize}
+\item lampe quartz-iode (ou led) ;
+\item condenseur \unit{8}{\centi\meter} ;
+\item calles en bois ;
+\item filtre anti-thermique ;
+\item banc optique ;
+\item six montures ;
+\item diaphragme ;
+\item deux fentes réglables ;
+\item fentes doubles ;
+\item écran.
+\end{itemize}
