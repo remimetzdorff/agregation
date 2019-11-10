@@ -31,6 +31,16 @@ Opérateurs vectoriels
 
 \subsection*{Systèmes de coordonnées}
 
+\begin{figure}[!h]
+\center
+\hfill
+\includegraphics[height=150pt]{coordonnees_cyl.png}
+\hfill
+\includegraphics[height=150pt]{coordonnees_sph.png}
+\hfill
+\hfill
+\end{figure}
+
 \begin{itemize}
 \item cartésiennes : ($\ex$, $\ey$, $\ez$)
 \item cylindriques : ($\er$, $\et$, $\ez$)
@@ -77,4 +87,27 @@ En coordonnées sphériques :
 \end{equation*}
 
 \paragraph*{Remarque :} Si $\overrightarrow{A} = -\grad U$, le vecteur $\overrightarrow{A}$ dérive du potentiel $U$ et est à circulation conservative.
+
+\section*{Divergence $\div$}
+
+L'opérateur divergence opère sur des champs scalaires.
+
+En coordonnées cartésiennes :
+\begin{equation*}
+\div\overrightarrow{A} = \overrightarrow{\nabla}.\overrightarrow{A} = \frac{\partial A_x}{\partial x} + \frac{\partial A_y}{\partial y} + \frac{\partial A_z}{\partial z}
+\end{equation*}
+En coordonnées cylindriques :
+\begin{equation*}
+\div\overrightarrow{A} = \frac{1}{r}\frac{\partial (rA_r)}{\partial r} + \frac{1}{r}\frac{\partial A_\theta}{\partial \theta} + \frac{\partial A_z}{\partial z}
+\end{equation*}
+En coordonnées sphériques :
+\begin{equation*}
+\div\overrightarrow{A} = \frac{1}{r^2}\frac{\partial (r^2A_r)}{\partial r} + \frac{1}{r\sin\theta}\frac{\partial \sin\theta A_\theta}{\partial \theta} + \frac{1}{r\sin\theta}\frac{\partial A_\phi}{\partial \phi}
+\end{equation*}
+
+Si $\div \overrightarrow{A} = 0$, le champ $\overrightarrow{A}$ est à flux conservatif et peut s'écrire comme un rotationnel $\overrightarrow{A} = \rot\overrightarrow{F}$ car $\div(\rot) = 0$.
+
+\section*{Rotationnel $\rot$}
+
+
 \end{document}

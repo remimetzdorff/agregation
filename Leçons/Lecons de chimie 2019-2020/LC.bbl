@@ -1,0 +1,135 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{CDDHSF96}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem[BFR79]{Bertin1979}
+Bertin, M., Faroux, J.-P., and Renault, J.
+\newblock \emph{{Electromagn{\'{e}}tisme 2}}.
+\newblock Dunod edition (1979).
+
+\bibitem[BFR84a]{Bertin1984}
+Bertin, M., Faroux, J.-P., and Renault, J.
+\newblock \emph{{Electromagn{\'{e}}tisme 1}}.
+\newblock Dunod edition (1984).
+
+\bibitem[BFR84b]{Bertin1984a}
+Bertin, M., Faroux, J.-P., and Renault, J.
+\newblock \emph{{Thermodynamique}}.
+\newblock Dunod univ edition (1984).
+
+\bibitem[BFR86a]{Bertin1986}
+Bertin, M., Faroux, J.-P., and Renault, J.
+\newblock \emph{{Electromagn{\'{e}}tisme 3}}.
+\newblock Dunod edition (1986).
+
+\bibitem[BFR86b]{BFROptique}
+Bertin, M., Faroux, J.-P., and Renault, J.
+\newblock \emph{{Optique et physique ondulatoire}}.
+\newblock Dunod edition (1986).
+
+\bibitem[Buc17]{Buchere2017}
+Buch{\`{e}}re, P.-D.
+\newblock \emph{{Epreuve orale de chimie}}.
+\newblock Dunod edition (2017).
+
+\bibitem[CDDHSF96]{Crouzet-Deprost1996}
+Crouzet-Deprost, D., \emph{et~al.}
+\newblock \emph{{Chimie dans la maison}}.
+\newblock Formation, edition (1996).
+
+\bibitem[CH11]{Cachau-Hereillat2011}
+Cachau-Hereillat, D.
+\newblock \emph{{Des exp{\'{e}}riences de la famille R{\'{e}}d-Ox}}.
+\newblock De boeck edition (2011).
+
+\bibitem[Che99]{Chenevez1999}
+Chenevez, O.
+\newblock \emph{{Electromagn{\'{e}}tisme, Physique des ondes}}.
+\newblock Prepamath edition (1999).
+
+\bibitem[DL19]{Dunac2019}
+Dunac, F. and {Le Mar{\'{e}}chal}, J.-F.
+\newblock \emph{{Exp{\'{e}}riences de chimie, Aspects p{\'{e}}dagogiques et
+  s{\'{e}}quences d'enseignement}}.
+\newblock Dunod edition (2019).
+
+\bibitem[FAT15]{Fabre2015}
+Fabre, C., Antoine, C., and Treps, N.
+\newblock \emph{{Introduction {\`{a}} la physique moderne : relativit{\'{e}} et
+  physique quantique}}.
+\newblock Dunod edition (2015).
+
+\bibitem[FBL14]{Fosset2014}
+Fosset, B., Baudin, J.-B., and Lahit{\`{e}}te, F.
+\newblock \emph{{Tout en Un Chimie PC-PC*}}.
+\newblock Dunod edition (2014).
+
+\bibitem[FBL16]{Fosset2016}
+Fosset, B., Baudin, J.-B., and Lahit{\`{e}}te, F.
+\newblock \emph{{Tout en Un Chimie PCSI}}.
+\newblock Dunod edition (2016).
+
+\bibitem[FLT{\etalchar{+}}16]{Fruchart2016}
+Fruchart, M., \emph{et~al.}
+\newblock \emph{{Physique exp{\'{e}}rimentale}}.
+\newblock Deboeck edition (2016).
+
+\bibitem[FR96a]{Faroux1996}
+Faroux, J.-P. and Renault, J.
+\newblock \emph{{Electromagn{\'{e}}tisme 1}}.
+\newblock Dunod edition (1996).
+
+\bibitem[FR96b]{Faroux1996a}
+Faroux, J.-P. and Renault, J.
+\newblock \emph{{M{\'{e}}canique 1}}.
+\newblock Dunod edition (1996).
+
+\bibitem[FR97]{Faroux1997}
+Faroux, J.-P. and Renault, J.
+\newblock \emph{{M{\'{e}}canique 2}}.
+\newblock Dunod edition (1997).
+
+\bibitem[FR98]{Faroux1998}
+Faroux, J.-P. and Renault, J.
+\newblock \emph{{Electromagn{\'{e}}tisme 2}}.
+\newblock Dunod edition (1998).
+
+\bibitem[FR99]{Faroux1999}
+Faroux, J.-P. and Renault, J.
+\newblock \emph{{Optique et physique ondulatoire}}.
+\newblock Dunod edition (1999).
+
+\bibitem[GG15]{Girard2015}
+Girard, F. and Girard, J.
+\newblock \emph{{Chimie inorganique et g{\'{e}}n{\'{e}}rale : des
+  exp{\'{e}}riences pour mieux comprendre}}.
+\newblock De boeck edition (2015).
+
+\bibitem[Lum96]{Lumbroso1996}
+Lumbroso, H.
+\newblock \emph{{Optique g{\'{e}}om{\'{e}}trique et ondulatoire}}.
+\newblock Dunod edition (1996).
+
+\bibitem[PCF09]{Perez2009}
+P{\'{e}}rez, J.-P., Carles, R., and Fleckinger, R.
+\newblock \emph{{Electromagn{\'{e}}tisme, Fondements et applications}}.
+\newblock Dunod edition (2009).
+
+\bibitem[P{\'{e}}r17]{Perez2017}
+P{\'{e}}rez, J.-P.
+\newblock \emph{{Optique, Fondements et applications}}.
+\newblock Dunod edition (2017).
+
+\bibitem[SCJS16]{Salamito2016}
+Salamito, B., \emph{et~al.}
+\newblock \emph{{Tout en Un Physique PCSI}}.
+\newblock Dunod edition (2016).
+
+\bibitem[SVSC16]{Sanz2016}
+Sanz, M.-N., \emph{et~al.}
+\newblock \emph{{Tout en Un Physique PC-PC*}}.
+\newblock Dunod edition (2016).
+
+\end{thebibliography}

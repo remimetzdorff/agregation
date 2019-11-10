@@ -1,0 +1,35 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}LP04 Synth\IeC {\`e}se inorganique}{2}{section.1}
+\contentsline {paragraph}{Bibliographie :}{2}{section*.2}
+\contentsline {paragraph}{Niveau :}{2}{section*.3}
+\contentsline {paragraph}{Pr\IeC {\'e}-requis :}{2}{section*.4}
+\contentsline {paragraph}{Objectifs de la le\IeC {\c c}on :}{2}{section*.5}
+\contentsline {paragraph}{Exp\IeC {\'e}riences :}{2}{section*.6}
+\contentsline {subsection}{\numberline {1.1}Introduction}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Synth\IeC {\`e}se de compos\IeC {\'e}s simples}{2}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Synth\IeC {\`e}se de l'eau de Javel en laboratoire}{2}{subsubsection.1.2.1}
+\contentsline {paragraph}{Diapo : }{3}{section*.7}
+\contentsline {paragraph}{Exp\IeC {\'e}rience : }{3}{section*.8}
+\contentsline {paragraph}{Transition : }{3}{section*.9}
+\contentsline {subsubsection}{\numberline {1.2.2}Synth\IeC {\`e}se industrielle}{3}{subsubsection.1.2.2}
+\contentsline {paragraph}{Diapo :}{3}{section*.10}
+\contentsline {paragraph}{Transition : }{3}{section*.11}
+\contentsline {subsubsection}{\numberline {1.2.3}Vers des synth\IeC {\`e}ses plus vertes}{3}{subsubsection.1.2.3}
+\contentsline {paragraph}{Transition : }{4}{section*.12}
+\contentsline {subsection}{\numberline {1.3}Complexes}{4}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1}D\IeC {\'e}finitions}{4}{subsubsection.1.3.1}
+\contentsline {paragraph}{Complexe : }{4}{section*.13}
+\contentsline {paragraph}{Diapo :}{4}{section*.14}
+\contentsline {paragraph}{Exp\IeC {\'e}rience :}{4}{section*.15}
+\contentsline {paragraph}{Diapo :}{4}{section*.16}
+\contentsline {paragraph}{Indice de coordination : }{4}{section*.17}
+\contentsline {paragraph}{Diapo :}{4}{section*.18}
+\contentsline {paragraph}{Monodentate :}{4}{section*.19}
+\contentsline {paragraph}{Polydentate :}{4}{section*.20}
+\contentsline {subsubsection}{\numberline {1.3.2}Synth\IeC {\`e}se d'un complexe}{4}{subsubsection.1.3.2}
+\contentsline {paragraph}{Exp\IeC {\'e}rience :}{4}{section*.21}
+\contentsline {subsection}{\numberline {1.4}Complexes bioinorganiques}{5}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Transport de l'oxyg\IeC {\`e}ne}{5}{subsubsection.1.4.1}
+\contentsline {paragraph}{Diapo : }{5}{section*.22}
+\contentsline {subsubsection}{\numberline {1.4.2}Un complexe en chimioth\IeC {\'e}rapie}{5}{subsubsection.1.4.2}
+\contentsline {subsection}{\numberline {1.5}Conclusion}{5}{subsection.1.5}
