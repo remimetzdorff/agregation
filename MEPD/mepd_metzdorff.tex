@@ -13,9 +13,13 @@
 \author{Rémi Metzdorff}
 \date{\today}
 
+\renewcommand{\d}{\mathrm{d}}
+
 \begin{document}
 
 \maketitle
+
+\tableofcontents
 
 \section{Parcours universitaire et scientifique}
 
@@ -63,7 +67,7 @@ Parcours Physique-Chimie de l'UPMC (Paris).
 Les propriétés de la lumière en font un outil de choix pour de nombreuses mesures de déplacements, à commencer par la définition actuelle du mètre qui se base directement sur la célérité de la lumière.
 La mesure de la distance absolue Terre-Lune repose par exemple sur la détermination du temps de vol d'impulsions lumineuses permettant des incertitudes relative de l'ordre de $10^{-9}$.
 Le développement de techniques interferométriques autorise par ailleurs les mesures relatives les plus sensibles réalisées actuellement (ces techniques ne se cantonnent pas à l'utilisation de lumière mais exploitent également le comportement ondulatoire d'ensembles d'atomes pour fabriquer par exemple les horloges les plus stables jamais créées : incertitudes relatives de l'ordre de $10^{-15}$ pour les horloges au césium et jusqu'à $10^{-18}$ pour celles à l'ytterbium).
-Une des applications majeures de l'interférométrie optique est la détection des ondes gravitationnelles au moyen d'interféromètres géants comme celui du projet Virgo (situé à Cascina, près de Pise) ou LIGO (États-Unis).
+Une des applications majeures de l'interférométrie optique est la détection des ondes gravitationnelles au moyen d'interféromètres géants comme celui du projet Virgo (situé à Cascina, près de Pise) ou LIGO (Hanford et Livingston, États-Unis).
 Les développements considérables des dernières décennies ont permis pour la première fois, 100 ans après leur prédiction par A. Einstein, l'observation directe d'ondes gravitationnelles issues de la coalescence de deux trous noirs de quelques dizaines de masses solaires et situés à plus de $10^6$ années lumières de nous.
 L'amplitude maximale du signal mesuré sur Terre était alors proche de $\unit{10^{-21}}{\meter\per\sqrt{\hertz}}$ (soit un déplacement relatif de $10^{-18}$) ce qui en faisait le signal le plus faible jamais détecté associé à l'évènement le plus violent jamais observé.
 
@@ -82,14 +86,59 @@ Si l'effet de la pression de radiation peut s'avérer néfaste pour la sensibili
 C'est ainsi qu'au cours des vingt dernières années, de nombreux systèmes optomécaniques ont été développés avec des applications très variées (capteurs de force, de masse, de température, transducteurs optique-microonde, ponderomotive squeezing, etc.).
 Une des applications fondamentales de ces systèmes est l'observation d'effets quantiques sur des objets de plus en plus massifs, avec notamment l'observation du premier refroidissement vers l'état quantique fondamental d'un oscillateur mécanique (de masse effective $m_\mathrm{eff} = \unit{50}{pg}$) couplé à une cavité microonde en 2011.
 A travers l'utilisation d'oscillateurs mécaniques de masses effectives intermédiaires ($m_\mathrm{eff} \approx \unit{100}{\micro\gram}$), l'objectif de ma thèse était donc double :
+\begin{enumerate}
+\item \textbf{Refroidir un oscillateur mécanique macroscopique dans son état quantique fondamental}, avec trois ordres de grandeur de plus que les précédentes expériences, et en particulier proche de la masse de Planck ($m_\mathrm{P}=\unit{22}{\micro\gram}$) où des effets de décohérence liés à la gravité sont attendus ;
+\item Préparer un système modèle qui permette d'\textbf{étudier les limites de sensibilité de la mesure de petits déplacements liés au bruit de pression de radiation}, tout en restant beaucoup plus compact que les interféromètres gravitationnels et leur miroirs ($m_\mathrm{eff}\approx\unit{50}{\kilo\gram}$).
+\end{enumerate}
+Le premier point est un pré-requis du deuxième puisque le système étudié est limité par le bruit thermique : afin d'observer le bruit de pression de radiation, il est nécessaire de réduire le mouvement Brownien de près de 6 ordres de grandeurs, ce qui revient à le refroidir proche de son état quantique fondamental.
+
+\subsection{L'oscillateur mécanique, caractérisation et thermométrie}
+
+Bien que les géométries des oscillateurs mécaniques soient très variées, son comportement est très bien décrit par un système \{masse, ressort\} amorti ($m_\mathrm{eff}$, $\Omega_m$, $\Gamma_m$) soumis à des forces extérieures de résultante $F_\mathrm{ext}$
+\begin{equation}
+m_\mathrm{eff} \frac{d^2 x(t)}{\d t^2} + m_\mathrm{eff}\Gamma_m \frac{d x(t)}{\d t} + m_\mathrm{eff} \Omega^2 x(t) = F_\mathrm{ext}(t).
+\end{equation}
+Son comportement fréquentiel se déduit dans l'espace de Fourier de la susceptibilité mécanique $\chi[\Omega]$ de l'oscillateur 
+\begin{equation}
+\chi[\Omega] = \frac{1}{m_\mathrm{eff}[(\Omega_m^2-\Omega^2)-i\Gamma_m\Omega]},
+\end{equation}
+où $i^2=-1$. 
+Dans la théorie de Langevin, le terme de dissipation $\Gamma_m$ se traduit par un couplage de l'oscillateur à son environnement assimilé à un bain thermique à la température $T$.
+Il en résulte une force $F_T$, dont le spectre est lié à la partie imaginaire de la susceptibilité mécanique par le théorème de fluctuations-dissipations, à l'origine du mouvement Brownien de l'oscillateur.
+On peut ainsi montrer que le spectre de déplacement du résonateur à l'équilibre thermodynamique avec un tel bain thermique est directement lié au rapport $T/m_\mathrm{eff}$ : la connaissance de l'un permet donc de déterminer l'autre à travers la mesure du spectre du mouvement Brownien du résonateur.
+Le spectre est aussi d'autant plus piqué autour de la fréquence propre $\Omega_m$ que la dissipation est faible, ce qui conduit à utiliser des oscillateur avec des facteurs de qualité mécaniques $Q=\Omega/\Gamma_m$ très élevés.
+\emph{En accord avec le programme de première année de CPGE, cette approche classique peut illustrer un exercice de mécanique, avec l'étude de l'oscillateur harmonique amorti, en régime libre ou forcé.
+La description fréquentielle pourrait aussi être rapprochée de l'étude de filtres électroniques pour comprendre par exemple le fonctionnement des systèmes ressort/pendules des suspensions de Virgo.}
+
+Cette description classique ne permet cependant pas d'expliquer le comportement de l'oscillateur aux très basses températures.
+Il est alors nécessaire d'utiliser un modèle quantique, où l'Hamiltonien du système est simplement celui d'une masse $m_\mathrm{eff}$ dans un puits de potentiel à une dimension de pulsation $\Omega_m$.
+La résolution de l'équation de Schrödinger conduit à une quantification des niveaux d'énergie du système sous forme de demi-entiers de $\hbar\Omega_m$.
+L'état du système peut alors être décrit en terme de niveau d'occupation exprimé en nombre de phonons $n_\mathrm{T}$
+\begin{equation}
+n_\mathrm{T} = \left[ e^\frac{T_Q}{T} -1\right]^{-1} \underset{T\gg T_Q}{\approx} \frac{T}{T_Q},
+\end{equation}
+où la température quantique $T_Q$ est définie comme $T_Q = \hbar\Omega_m/k_B$.
+En particulier, l'énergie minimale du système dans son état fondamental n'est pas nulle et conduit à un bruit de position appelé fluctuations de point zéro d'amplitude $x_\mathrm{ZPF}$ donnée par
+\begin{equation}
+x_\mathrm{ZPF}=\sqrt{\frac{\hbar}{2m_\mathrm{eff}\Omega_m}}.
+\end{equation}
+L'objectif de ma thèse peut alors être précisé puisqu'il s'agit de refroidir un résonateur mécanique à une température inférieur à $T_Q$ pour laquelle le niveau d'occupation est inférieur à un phonon.
+\emph{Cette description quantique rentre complètement dans le cadre du programme de la deuxième année de CPGE.}
+
+Au cours de ma thèse, j'ai utilisé deux types d'échantillons :
 \begin{itemize}
-\item refroidir un oscillateur mécanique macroscopique dans son état quantique fondamental, avec trois ordres de grandeur de plus que les précédentes expériences, et en particulier proche de la masse de Planck ($m_\mathrm{P}=\unit{22}{\micro\gram}$) où des effets de décohérence liés à la gravité sont attendus ;
-\item préparer un système modèle qui permette d'étudier les limites de sensibilité de la mesure de petits déplacements liés au bruit de pression de radiation, tout en restant beaucoup plus compact que les interféromètres gravitationnels et leur miroirs ($m_\mathrm{eff}\approx\unit{50}{\kilo\gram}$).
+\item \textbf{micro-pilier} : un oscillateur en quartz (micro-fabriqué en collaboration avec l'ONERA, Paris) sous la forme d'un pilier de section triangulaire (\unit{240}{\micro\meter} de côté, \unit{1}{\milli\meter} de long), suspendu en son centre par une membrane d'environ \unit{10}{\micro\meter} d'épaisseur, au sommet duquel est déposé un micro-miroir de très haute réflectivité (en collaboration avec le LMA, Lyon), $m_\mathrm{eff}=\unit{33,5}{\micro\gram}$, $\Omega_m=2\pi\times\unit{3,6}{\mega\hertz}$ et $Q=10^7$ ;
+\item \textbf{micro-disque} : un disque en silicium (en collaboration avec l'UniFI, Italie) d'environ $\unit{200}{\micro\meter}$ de diamètre sur lequel est déposé un miroir de très haute réflectivité, $m_\mathrm{eff}=\unit{112}{\micro\gram}$, $\Omega_m=2\pi\times\unit{280}{\kilo\hertz}$ et $Q=10^6$.
 \end{itemize}
+Avant d'être utilisés pour les expériences de refroidissement, les échantillons doivent être caractérisés soigneusement, notamment pour la thermométrie à basse température.
+Il est donc nécessaire de calibrer proprement leur réponse fréquentielle à une excitation mécanique réalisée à l'aide d'une cale piézoélectrique par exemple (observation des différents modes mécaniques, mesure de $\Omega_m$, $Q$) et leur masse effective $m_\mathrm{eff}$ en mesurant le mouvement Brownien de l'oscillateur à température ambiante où la température est facilement mesurable.
+On peut pour cela utiliser l'échantillon comme l'un des miroirs d'un interféromètre de Michelson, où d'une cavité Fabry Perot pour mesurer ses déplacements.
+Les paramètres $\Omega_m$ et $Q$ dépendent fortement du régime de température et de pression  : l'échantillon est donc placé dans un cryostat à circulation d'hélium permettant d'atteindre rapidement des températures de l'ordre du kelvin et des pressions inférieures à $\unit{10^{-5}}{\milli bar}$.
+\emph{Tout en fournissant une illustration pratique à l'approche théorique précédente, les principes des techniques employées pour la caractérisation de nos échantillons peuvent sans difficulté être utilisés pour, par exemple, la caractérisation mécanique d'un diapason en TP.
+On peut ainsi s'intéresser à la méthode du ringdown (évolution libre de l'oscillateur après arrêt soudain d'une excitation) pour la mesure du facteur de qualité, où encore à des mesure de fonction de transfert mécanique, en s'appuyant éventuellement sur l'utilisation de RedPitaya comme analyseur de réseau à bas coût comme on le verra plus tard.
+L'évolution des grandeurs caractéristiques du système peut alors être discutée en fonction de paramètres comme la température, la masse, effective, l'amortissement, etc.}
 
-\subsection{Principe de l'expérience}
-
-\subsection{Les échantillons}
+\subsection{Les miroirs}
 
 \subsection{La cavité}
 
@@ -101,7 +150,7 @@ Arduino, RedPitaya, PyRPL (Python RedPitaya Lockbox)
 
 \section{Enseignement, diffusion et vulgarisation}
 
-\subsubsection{Vulgarisation autour des ondes gravitationnelles}
+\subsection{Vulgarisation autour des ondes gravitationnelles}
 
 \emph{Ce sujet, complètement d'actualité, pourrait faire l'objet d'une séquence pédagogique :
 \begin{itemize}
