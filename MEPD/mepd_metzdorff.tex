@@ -58,15 +58,57 @@ Parcours Physique-Chimie de l'UPMC (Paris).
 
 \section{Travaux de recherche}
 
-\subsection{Contexte}
+\subsection{Contexte : mesures de déplacements et optomécanique}
 
-De l'obtention de références de temps ultra stables (horloges atomiques) à la détection d'ondes gravitationnelles (Virgo, LIGO), les mesures les plus précises réalisées actuellement reposent sur des méthodes interférométriques.
-En astronomie gravitationnelle, 
-Les propriétés de la lumière en font un outil de choix pour de nombreuses mesures de déplacements.
-Le principe est de comparer la phase de deux faisceaux, l'un agissant comme une référence  d'un faisceau
+Les propriétés de la lumière en font un outil de choix pour de nombreuses mesures de déplacements, à commencer par la définition actuelle du mètre qui se base directement sur la célérité de la lumière.
+La mesure de la distance absolue Terre-Lune repose par exemple sur la détermination du temps de vol d'impulsions lumineuses permettant des incertitudes relative de l'ordre de $10^{-9}$.
+Le développement de techniques interferométriques autorise par ailleurs les mesures relatives les plus sensibles réalisées actuellement (ces techniques ne se cantonnent pas à l'utilisation de lumière mais exploitent également le comportement ondulatoire d'ensembles d'atomes pour fabriquer par exemple les horloges les plus stables jamais créées : incertitudes relatives de l'ordre de $10^{-15}$ pour les horloges au césium et jusqu'à $10^{-18}$ pour celles à l'ytterbium).
+Une des applications majeures de l'interférométrie optique est la détection des ondes gravitationnelles au moyen d'interféromètres géants comme celui du projet Virgo (situé à Cascina, près de Pise) ou LIGO (États-Unis).
+Les développements considérables des dernières décennies ont permis pour la première fois, 100 ans après leur prédiction par A. Einstein, l'observation directe d'ondes gravitationnelles issues de la coalescence de deux trous noirs de quelques dizaines de masses solaires et situés à plus de $10^6$ années lumières de nous.
+L'amplitude maximale du signal mesuré sur Terre était alors proche de $\unit{10^{-21}}{\meter\per\sqrt{\hertz}}$ (soit un déplacement relatif de $10^{-18}$) ce qui en faisait le signal le plus faible jamais détecté associé à l'évènement le plus violent jamais observé.
 
+Ces détecteurs sont des interféromètres de Michelson géants dont les bras sont replacés par des cavités Fabry Perot pour augmenter l'effet d'un petit déphasage (la longueur des bras de Virgo est de \unit{3}{\kilo\meter}, avec des cavités de finesse 50).
+Le passage d'une onde gravitationnelle introduit un déphasage qui peut être mesuré à la sortie de l'appareil comme des variations de l'intensité lumineuse transmise par le Michelson.
+Toute perturbation du détecteur se traduit donc comme un bruit qui, inévitablement, dégrade la sensibilité de la mesure : par exemple, le bruit sismique agite directement les miroirs qui doivent donc être isolés grâce à un système complexe d'atténuateurs permettant une réduction du bruit d'un facteur $10^{14}$, pour se rapprocher du cas idéal de masses libres.
+Le bruit thermique au niveau des miroirs se traduit directement sous la forme d'un mouvement Brownien qui conduit à utiliser des matériaux (silice) et des géométries permettant de concentrer les fluctuations de position autour des fréquences propres du système.
+La réduction de ces sources de bruit classique est maintenant telle que des bruits quantiques liés au laser lui même deviennent limitant.
+Le bruit quantique de phase se traduit directement sur la mesure puisque ses fluctuations sont décorrélées entre les deux bras de l'interféromètre.
+Il peut être réduit en augmentant l'intensité du laser ce qui explique l'utilisation de puissances optiques importantes ($\sim \unit{100}{\kilo\watt}$ dans les cavités).
+D'autre part, le bruit quantique d'intensité a deux conséquences sur la sensibilité de la mesure : un bruit direct sur l'intensité mesurée à la sortie du détecteur et des fluctuations de la force de pression de radiation qui s'exerce sur les miroirs de l'interféromètre et qui se traduit en bruit de position, dont l'intensité augmente avec la puissance lumineuse incidente.
+C'est l'action en retour de la mesure, prédite depuis les années 80, qui a contribué à lancer les recherches autour de l'optomécanique.
+Le bruit de pression de radiation étant modulé par la réponse mécanique du système, il en résulte un compromis à l'origine de la limite quantique standard : à chaque fréquence correspond une puissance laser optimale qui égalise le bruit de pression de radiation et le bruit de phase.
 
+Si l'effet de la pression de radiation peut s'avérer néfaste pour la sensibilité des mesures de grande précision, on peut également l'exploiter pour contrôler les degrés de liberté mécanique d'un miroir mobile.
+C'est ainsi qu'au cours des vingt dernières années, de nombreux systèmes optomécaniques ont été développés avec des applications très variées (capteurs de force, de masse, de température, transducteurs optique-microonde, ponderomotive squeezing, etc.).
+Une des applications fondamentales de ces systèmes est l'observation d'effets quantiques sur des objets de plus en plus massifs, avec notamment l'observation du premier refroidissement vers l'état quantique fondamental d'un oscillateur mécanique (de masse effective $m_\mathrm{eff} = \unit{50}{pg}$) couplé à une cavité microonde en 2011.
+A travers l'utilisation d'oscillateurs mécaniques de masses effectives intermédiaires ($m_\mathrm{eff} \approx \unit{100}{\micro\gram}$), l'objectif de ma thèse était donc double :
+\begin{itemize}
+\item refroidir un oscillateur mécanique macroscopique dans son état quantique fondamental, avec trois ordres de grandeur de plus que les précédentes expériences, et en particulier proche de la masse de Planck ($m_\mathrm{P}=\unit{22}{\micro\gram}$) où des effets de décohérence liés à la gravité sont attendus ;
+\item préparer un système modèle qui permette d'étudier les limites de sensibilité de la mesure de petits déplacements liés au bruit de pression de radiation, tout en restant beaucoup plus compact que les interféromètres gravitationnels et leur miroirs ($m_\mathrm{eff}\approx\unit{50}{\kilo\gram}$).
+\end{itemize}
 
-\section{Enseignement}
+\subsection{Principe de l'expérience}
+
+\subsection{Les échantillons}
+
+\subsection{La cavité}
+
+\subsection{Le refroidissement}
+
+\subsection{Contrôle de l'expérience}
+
+Arduino, RedPitaya, PyRPL (Python RedPitaya Lockbox)
+
+\section{Enseignement, diffusion et vulgarisation}
+
+\subsubsection{Vulgarisation autour des ondes gravitationnelles}
+
+\emph{Ce sujet, complètement d'actualité, pourrait faire l'objet d'une séquence pédagogique :
+\begin{itemize}
+\item sur le binaire d'Hulse et Taylor, rapprochement entre l'électrostatique et la gravitation, modèle de l'électron élastiquement lié pour modéliser le rayonnement gravitationnel et obtenir quelques ordres de grandeur ;
+\item étude des barres résonantes de Weber, avec un modèle masse ressort (oscillateur harmonique faiblement amorti), pour en dégager les limitations (bande passante, sensibilité, etc.)
+\item étude des interféromètres actuels (Michelson, Fabry Perot), des systèmes d'isolation (pendules, vide), boucle d'asservissement, traitement du signal.
+\end{itemize}
+}
 
 \end{document}
