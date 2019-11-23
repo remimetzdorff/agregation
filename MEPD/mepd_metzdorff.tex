@@ -14,7 +14,7 @@
 \date{\today}
 
 \renewcommand{\d}{\mathrm{d}}
-
+\newcommand{\uroc}{\micro RoC}
 \begin{document}
 
 \maketitle
@@ -60,25 +60,25 @@ Parcours Physique-Chimie de l'UPMC (Paris).
 \item \textbf{Olympiades de physique :} Conférence sur la découverte des ondes gravitationnelles.
 \end{itemize}
 
-\section{Travaux de recherche}
+\section{Vers l'état quantique fondamental d'oscillateurs mécaniques macroscopiques}
 
 \subsection{Contexte : mesures de déplacements et optomécanique}
 
 Les propriétés de la lumière en font un outil de choix pour de nombreuses mesures de déplacements, à commencer par la définition actuelle du mètre qui se base directement sur la célérité de la lumière.
-La mesure de la distance absolue Terre-Lune repose par exemple sur la détermination du temps de vol d'impulsions lumineuses permettant des incertitudes relative de l'ordre de $10^{-9}$.
-Le développement de techniques interferométriques autorise par ailleurs les mesures relatives les plus sensibles réalisées actuellement (ces techniques ne se cantonnent pas à l'utilisation de lumière mais exploitent également le comportement ondulatoire d'ensembles d'atomes pour fabriquer par exemple les horloges les plus stables jamais créées : incertitudes relatives de l'ordre de $10^{-15}$ pour les horloges au césium et jusqu'à $10^{-18}$ pour celles à l'ytterbium).
+La mesure de la \textbf{distance absolue} Terre-Lune repose par exemple sur la détermination du temps de vol d'impulsions lumineuses permettant des incertitudes relative de l'ordre de $10^{-9}$.
+Le développement de techniques interferométriques autorise par ailleurs les \textbf{mesures relatives} les plus sensibles réalisées actuellement (ces techniques ne se cantonnent pas à l'utilisation de lumière mais exploitent également le comportement ondulatoire d'ensembles d'atomes pour fabriquer par exemple les horloges les plus stables jamais créées, avec des incertitudes relatives de l'ordre de $10^{-15}$ pour les horloges au césium et jusqu'à $10^{-18}$ pour celles à l'ytterbium).
 Une des applications majeures de l'interférométrie optique est la détection des ondes gravitationnelles au moyen d'interféromètres géants comme celui du projet Virgo (situé à Cascina, près de Pise) ou LIGO (Hanford et Livingston, États-Unis).
-Les développements considérables des dernières décennies ont permis pour la première fois, 100 ans après leur prédiction par A. Einstein, l'observation directe d'ondes gravitationnelles issues de la coalescence de deux trous noirs de quelques dizaines de masses solaires et situés à plus de $10^6$ années lumières de nous.
-L'amplitude maximale du signal mesuré sur Terre était alors proche de $\unit{10^{-21}}{\meter\per\sqrt{\hertz}}$ (soit un déplacement relatif de $10^{-18}$) ce qui en faisait le signal le plus faible jamais détecté associé à l'évènement le plus violent jamais observé.
+Les développements considérables des dernières décennies ont permis pour la première fois, 100 ans après leur prédiction par A. Einstein, l'observation directe d'ondes gravitationnelles issues de la coalescence de deux trous noirs de quelques dizaines de masses solaires et situés à plus de $10^6$ années lumières.
+L'amplitude maximale du signal mesuré sur Terre était alors proche de $\unit{10^{-21}}{\meter\per\sqrt{\hertz}}$ (soit un déplacement de $\unit{10^{-18}}{\meter}$) ce qui en faisait le signal le plus faible jamais détecté associé à l'évènement le plus violent jamais observé.
 
 Ces détecteurs sont des interféromètres de Michelson géants dont les bras sont replacés par des cavités Fabry Perot pour augmenter l'effet d'un petit déphasage (la longueur des bras de Virgo est de \unit{3}{\kilo\meter}, avec des cavités de finesse 50).
 Le passage d'une onde gravitationnelle introduit un déphasage qui peut être mesuré à la sortie de l'appareil comme des variations de l'intensité lumineuse transmise par le Michelson.
 Toute perturbation du détecteur se traduit donc comme un bruit qui, inévitablement, dégrade la sensibilité de la mesure : par exemple, le bruit sismique agite directement les miroirs qui doivent donc être isolés grâce à un système complexe d'atténuateurs permettant une réduction du bruit d'un facteur $10^{14}$, pour se rapprocher du cas idéal de masses libres.
 Le bruit thermique au niveau des miroirs se traduit directement sous la forme d'un mouvement Brownien qui conduit à utiliser des matériaux (silice) et des géométries permettant de concentrer les fluctuations de position autour des fréquences propres du système.
 La réduction de ces sources de bruit classique est maintenant telle que des bruits quantiques liés au laser lui même deviennent limitant.
-Le bruit quantique de phase se traduit directement sur la mesure puisque ses fluctuations sont décorrélées entre les deux bras de l'interféromètre.
+Le \textbf{bruit quantique de phase} se traduit directement sur la mesure puisque ses fluctuations sont décorrélées entre les deux bras de l'interféromètre.
 Il peut être réduit en augmentant l'intensité du laser ce qui explique l'utilisation de puissances optiques importantes ($\sim \unit{100}{\kilo\watt}$ dans les cavités).
-D'autre part, le bruit quantique d'intensité a deux conséquences sur la sensibilité de la mesure : un bruit direct sur l'intensité mesurée à la sortie du détecteur et des fluctuations de la force de pression de radiation qui s'exerce sur les miroirs de l'interféromètre et qui se traduit en bruit de position, dont l'intensité augmente avec la puissance lumineuse incidente.
+D'autre part, le \textbf{bruit quantique d'intensité} a deux conséquences sur la sensibilité de la mesure : un bruit direct sur l'intensité mesurée à la sortie du détecteur et des fluctuations de la force de \textbf{pression de radiation} qui s'exerce sur les miroirs de l'interféromètre et qui se traduit en bruit de position, dont l'intensité augmente avec la puissance lumineuse incidente.
 C'est l'action en retour de la mesure, prédite depuis les années 80, qui a contribué à lancer les recherches autour de l'optomécanique.
 Le bruit de pression de radiation étant modulé par la réponse mécanique du système, il en résulte un compromis à l'origine de la limite quantique standard : à chaque fréquence correspond une puissance laser optimale qui égalise le bruit de pression de radiation et le bruit de phase.
 
@@ -90,13 +90,13 @@ A travers l'utilisation d'oscillateurs mécaniques de masses effectives intermé
 \item \textbf{Refroidir un oscillateur mécanique macroscopique dans son état quantique fondamental}, avec trois ordres de grandeur de plus que les précédentes expériences, et en particulier proche de la masse de Planck ($m_\mathrm{P}=\unit{22}{\micro\gram}$) où des effets de décohérence liés à la gravité sont attendus ;
 \item Préparer un système modèle qui permette d'\textbf{étudier les limites de sensibilité de la mesure de petits déplacements liés au bruit de pression de radiation}, tout en restant beaucoup plus compact que les interféromètres gravitationnels et leur miroirs ($m_\mathrm{eff}\approx\unit{50}{\kilo\gram}$).
 \end{enumerate}
-Le premier point est un pré-requis du deuxième puisque le système étudié est limité par le bruit thermique : afin d'observer le bruit de pression de radiation, il est nécessaire de réduire le mouvement Brownien de près de 6 ordres de grandeurs, ce qui revient à le refroidir proche de son état quantique fondamental.
+Le premier point est un pré-requis du deuxième puisque le système étudié est limité par le bruit thermique : afin d'observer le bruit de pression de radiation, il est nécessaire de réduire le mouvement Brownien de près de 6 ordres de grandeurs, ce qui revient à refroidir l'oscillateur mécanique proche de son état quantique fondamental.
 
 \subsection{L'oscillateur mécanique, caractérisation et thermométrie}
 
 Bien que les géométries des oscillateurs mécaniques soient très variées, son comportement est très bien décrit par un système \{masse, ressort\} amorti ($m_\mathrm{eff}$, $\Omega_m$, $\Gamma_m$) soumis à des forces extérieures de résultante $F_\mathrm{ext}$
 \begin{equation}
-m_\mathrm{eff} \frac{d^2 x(t)}{\d t^2} + m_\mathrm{eff}\Gamma_m \frac{d x(t)}{\d t} + m_\mathrm{eff} \Omega^2 x(t) = F_\mathrm{ext}(t).
+m_\mathrm{eff} \frac{d^2 x(t)}{\d t^2} + m_\mathrm{eff}\Gamma_m \frac{d x(t)}{\d t} + m_\mathrm{eff} \Omega_m^2 x(t) = F_\mathrm{ext}(t).
 \end{equation}
 Son comportement fréquentiel se déduit dans l'espace de Fourier de la susceptibilité mécanique $\chi[\Omega]$ de l'oscillateur 
 \begin{equation}
@@ -108,7 +108,9 @@ Il en résulte une force $F_T$, dont le spectre est lié à la partie imaginaire
 On peut ainsi montrer que le spectre de déplacement du résonateur à l'équilibre thermodynamique avec un tel bain thermique est directement lié au rapport $T/m_\mathrm{eff}$ : la connaissance de l'un permet donc de déterminer l'autre à travers la mesure du spectre du mouvement Brownien du résonateur.
 Le spectre est aussi d'autant plus piqué autour de la fréquence propre $\Omega_m$ que la dissipation est faible, ce qui conduit à utiliser des oscillateur avec des facteurs de qualité mécaniques $Q=\Omega/\Gamma_m$ très élevés.
 \emph{En accord avec le programme de première année de CPGE, cette approche classique peut illustrer un exercice de mécanique, avec l'étude de l'oscillateur harmonique amorti, en régime libre ou forcé.
-La description fréquentielle pourrait aussi être rapprochée de l'étude de filtres électroniques pour comprendre par exemple le fonctionnement des systèmes ressort/pendules des suspensions de Virgo.}
+La mesure des différents paramètres de l'oscillateur permet également d'en faire un capteur de grande précision.
+L'évolution de l'amortissement peut être reliée à la viscosité d'un fluide dans lequel est plongé l'oscillateur, celle de la fréquence relié à la masse effective pour obtenir une balance, etc. ce qui offre autant d'exemples qui pourraient illustrer un problème.
+La description fréquentielle de la réponse mécanique pourrait aussi être rapprochée de l'étude de filtres électroniques pour comprendre par exemple le fonctionnement des systèmes ressort/pendules des suspensions de Virgo.}
 
 Cette description classique ne permet cependant pas d'expliquer le comportement de l'oscillateur aux très basses températures.
 Il est alors nécessaire d'utiliser un modèle quantique, où l'Hamiltonien du système est simplement celui d'une masse $m_\mathrm{eff}$ dans un puits de potentiel à une dimension de pulsation $\Omega_m$.
@@ -125,10 +127,22 @@ x_\mathrm{ZPF}=\sqrt{\frac{\hbar}{2m_\mathrm{eff}\Omega_m}}.
 L'objectif de ma thèse peut alors être précisé puisqu'il s'agit de refroidir un résonateur mécanique à une température inférieur à $T_Q$ pour laquelle le niveau d'occupation est inférieur à un phonon.
 \emph{Cette description quantique rentre complètement dans le cadre du programme de la deuxième année de CPGE.}
 
-Au cours de ma thèse, j'ai utilisé deux types d'échantillons :
+\begin{figure}
+\center
+\includegraphics[height=90pt]{figures/micropillar.png}
+\includegraphics[height=90pt]{figures/micropillar_disp.png}
+\includegraphics[height=90pt]{figures/microwheel.png}
+\includegraphics[height=90pt]{figures/microwheel_disp.png}
+\caption{A gauche : image obtenue par microscopie électronique d'un micro-pillier en quartz et simulation du mode propre fondamental de compression utilisé.
+A droite : image obtenue par microscopie optique d'un micro-disque en silicium et simulation du mode propre utilisé.
+Les simulations sont réalisées avec COMSOL (simulation par élément fini) et le code couleur correspond au déplacement de la structure.}
+\label{fig:resonators}
+\end{figure}
+
+Au cours de ma thèse, j'ai utilisé deux types d'échantillons visibles sur la figure~\ref{fig:resonators} :
 \begin{itemize}
-\item \textbf{micro-pilier} : un oscillateur en quartz (micro-fabriqué en collaboration avec l'ONERA, Paris) sous la forme d'un pilier de section triangulaire (\unit{240}{\micro\meter} de côté, \unit{1}{\milli\meter} de long), suspendu en son centre par une membrane d'environ \unit{10}{\micro\meter} d'épaisseur, au sommet duquel est déposé un micro-miroir de très haute réflectivité (en collaboration avec le LMA, Lyon), $m_\mathrm{eff}=\unit{33,5}{\micro\gram}$, $\Omega_m=2\pi\times\unit{3,6}{\mega\hertz}$ et $Q=10^7$ ;
-\item \textbf{micro-disque} : un disque en silicium (en collaboration avec l'UniFI, Italie) d'environ $\unit{200}{\micro\meter}$ de diamètre sur lequel est déposé un miroir de très haute réflectivité, $m_\mathrm{eff}=\unit{112}{\micro\gram}$, $\Omega_m=2\pi\times\unit{280}{\kilo\hertz}$ et $Q=10^6$.
+\item \textbf{micro-pilier} : un oscillateur en quartz (micro-fabriqué en collaboration avec l'ONERA, Paris) sous la forme d'un pilier de section triangulaire (\unit{240}{\micro\meter} de côté, \unit{1}{\milli\meter} de long), suspendu en son centre par une membrane d'environ \unit{10}{\micro\meter} d'épaisseur, au sommet duquel est déposé un micro-miroir de très haute réflectivité (en collaboration avec le LMA, Lyon), $m_\mathrm{eff}=\unit{33,5}{\micro\gram}$, $\Omega_m=2\pi\times\unit{3,6}{\mega\hertz}$ et $Q=10^7$ : $T_{Q,\mathrm{pilier}} = \unit{200}{\micro\kelvin}$ ;
+\item \textbf{micro-disque} : un disque en silicium (en collaboration avec l'UniFI, Italie) d'environ $\unit{200}{\micro\meter}$ de diamètre sur lequel est déposé un miroir de très haute réflectivité, $m_\mathrm{eff}=\unit{112}{\micro\gram}$, $\Omega_m=2\pi\times\unit{280}{\kilo\hertz}$ et $Q=10^6$ : $T_{Q,\mathrm{disque}} = \unit{10}{\micro\kelvin}$.
 \end{itemize}
 Avant d'être utilisés pour les expériences de refroidissement, les échantillons doivent être caractérisés soigneusement, notamment pour la thermométrie à basse température.
 Il est donc nécessaire de calibrer proprement leur réponse fréquentielle à une excitation mécanique réalisée à l'aide d'une cale piézoélectrique par exemple (observation des différents modes mécaniques, mesure de $\Omega_m$, $Q$) et leur masse effective $m_\mathrm{eff}$ en mesurant le mouvement Brownien de l'oscillateur à température ambiante où la température est facilement mesurable.
@@ -138,11 +152,39 @@ Les paramètres $\Omega_m$ et $Q$ dépendent fortement du régime de températur
 On peut ainsi s'intéresser à la méthode du ringdown (évolution libre de l'oscillateur après arrêt soudain d'une excitation) pour la mesure du facteur de qualité, où encore à des mesure de fonction de transfert mécanique, en s'appuyant éventuellement sur l'utilisation de RedPitaya comme analyseur de réseau à bas coût comme on le verra plus tard.
 L'évolution des grandeurs caractéristiques du système peut alors être discutée en fonction de paramètres comme la température, la masse, effective, l'amortissement, etc.}
 
-\subsection{Les miroirs}
+\subsection{Cavité optique : sensibilité et couplage optomécanique}
 
+Comme on l'a vu, la mesure des déplacements de l'oscillateur est réalisée par interférométrie optique.
+L'utilisation d'une cavité de grande finesse $\cal{F}$ permet d'amplifier de déphasage $\delta\varphi$ associé à un déplacement $\delta x$ d'un facteur $2\cal{F}$ par rapport à un simple interféromètre de Michelson :
+\begin{equation}
+\delta \varphi = 8\pi{\cal{F}}\frac{\delta x}{\lambda}.
+\end{equation}
+Ces modulations de phase se font principalement à la pulsation propre $\Omega_m$ de l'oscillateur mécanique et sont ainsi responsable de la création de bandes latérales de part et d'autre de la pulsation $\omega_\mathrm{L}$ du laser, aux fréquences $\omega_\mathrm{L} \pm \Omega_m$.
+Plusieurs méthodes permettent ensuite de traduire ce déphasage en un signal mesurable à l'aide d'un analyseur de spectre par exemple :
+\begin{itemize}
+\item \textbf{détection directe} : si la cavité est désaccordée par rapport au laser, une variation de sa longueur est directement responsable de variations de l'intensité intracavité.
+Le déplacement de l'oscillateur est ainsi relié à l'intensité réfléchie par la cavité ;
+\item \textbf{détection homodyne} : si la cavité est résonante avec le laser, aucune variation d'intensité n'est mesurable directement mais la variation $\delta \varphi$ est alors maximale.
+En faisant interférer le faisceau réfléchi par la cavité avec un faisceau de référence dans un interféromètre de Michelson, on observe alors les variations de l'intensité transmise par l'interféromètre ;
+\item \textbf{Pound-Drever-Hall (PDH)} : une modulation de phase de fréquence supérieure à la bande passante de la cavité est appliquée au faisceau laser incident à l'aide d'un modulateur électro-optique, créant ainsi des bandes latérales de part et d'autre de la fréquence du laser, la cavité étant maintenue résonante avec la porteuse.
+Les bandes latérales sont réfléchies par le miroir d'entrée de la cavité et servent ainsi de référence de phase.
+Après démodulation du signal réfléchi par la cavité on obtient une fois de plus un signal lié aux fluctuations de longueur de la cavité ;
+\item \textbf{détection hétérodyne} : les précédents schémas de détection présentent l'inconvénient de replier le spectre sur les fréquences positives.
+En utilisant un faisceau de référence à une fréquence $\omega_\mathrm{L}'$ différente de celle du faisceau interagissant avec la cavité, on obtient un battement autour duquel les bandes latérales mécaniques $\pm \Omega_m$ sont individuellement détectables. 
+\end{itemize}
+\textit{Les détections PDH et hétérodynes peuvent êtres rapprochées des méthodes de traitement du signal employées dans les télécommunications et faire l'objet d'une approche documentaire.
+Les spectres obtenus peuvent faire l'objet d'une analyse qualitative afin d'illustrer les protocoles de modulation et démodulation de l'information.}
 
+Compte tenu de la faible dimension des miroirs plans déposés sur les oscillateurs mécaniques, il est nécessaire d'utiliser comme miroir d'entrée de la cavité un miroir avec un rayon de courbure de l'ordre du millimètre (\uroc).
+J'ai ainsi fabriqué par photoablation multiple à l'aide d'un laser $\mathrm{CO_2}$ des structures concaves, d'environ $\unit{200}{\micro\meter}$ de diamètre, avec des rayons de courbures et des ellipticités variés.
+Un dépôt diélectrique de couches de silice $\mathrm{SiO_2}$ et oxyde de tantale $\mathrm{Ta_2O_5}$ réalisé au Laboratoire des Matériaux Avancés (Lyon) permet ensuite d'obtenir des miroirs ayant une transmission bien contrôlée entre 0 et $\unit{120}{ppm}$ typiquement.
+J'ai ensuite développé un ensemble de pièces mécaniques en cuivre de haute pureté permettant un assemblage et un alignement rapide d'une cavité de $\unit{100}{\micro\meter}$ de longueur, constituée d'un échantillon (micro-pilier ou micro-disque) et d'un \uroc\ comme miroir d'entrée, qui permet un asservissement de la longueur de cavité sur le laser et compatible avec une utilisation dans un cryostat à dilution.
+\textit{Avant de faire réaliser les pièces à notre atelier de fabrication mécanique, des prototypes imprimés en 3D ont été réalisés pour s'assurer de la cohérence du dessin.
+L'impression 3D nous a aussi permis de fabriquer rapidement des pièces }
 
-\subsection{La cavité}
+\textit{Dans notre expérience, d'autres cavités optiques sont utilisées : cavité laser Nd:YAG source de tous les faisceaux utilisés, cavité de filtrage permettant de diminuer les bruits classiques du laser et cavité de mesure.
+Toutes ces application permettraient de mettre en évidence différents aspects du comportement d'une cavité Fabry Perot.
+}
 
 \subsection{Le refroidissement}
 
@@ -163,5 +205,10 @@ Arduino, RedPitaya, PyRPL (Python RedPitaya Lockbox)
 \item étude des interféromètres actuels (Michelson, Fabry Perot), des systèmes d'isolation (pendules, vide), boucle d'asservissement, traitement du signal.
 \end{itemize}
 }
+
+%\bibliographystyle{custom-bib/thesis}
+\bibliographystyle{abbrv}
+\nocite{*}
+\bibliography{biblio}
 
 \end{document}
