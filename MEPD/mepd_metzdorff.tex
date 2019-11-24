@@ -94,6 +94,14 @@ Le premier point est un pré-requis du deuxième puisque le système étudié es
 
 \subsection{L'oscillateur mécanique, caractérisation et thermométrie}
 
+\begin{figure}
+\center
+\includegraphics[scale=0.75]{figures/thermal_peak_def_filled.png}
+\caption{Spectres du bruit de position d'un micro-pilier en cavité dû au mouvement Brownien de l'oscillateur.
+La figure de gauche est obtenue à température ambiante alors que celle de droite est obtenue en cryogénie à \unit{30}{\milli\kelvin}.
+Le refroidissement de l'échantillon s'accompagne d'un déplacement de sa fréquence de résonance, d'une augmentation de son facteur de qualité et d'une diminution de l'aire sous le pic, proportionnelle à la température.}
+\end{figure}
+
 Bien que les géométries des oscillateurs mécaniques soient très variées, son comportement est très bien décrit par un système \{masse, ressort\} amorti ($m_\mathrm{eff}$, $\Omega_m$, $\Gamma_m$) soumis à des forces extérieures de résultante $F_\mathrm{ext}$
 \begin{equation}
 m_\mathrm{eff} \frac{d^2 x(t)}{\d t^2} + m_\mathrm{eff}\Gamma_m \frac{d x(t)}{\d t} + m_\mathrm{eff} \Omega_m^2 x(t) = F_\mathrm{ext}(t).
@@ -180,21 +188,46 @@ J'ai ainsi fabriqué par photoablation multiple à l'aide d'un laser $\mathrm{CO
 Un dépôt diélectrique de couches de silice $\mathrm{SiO_2}$ et oxyde de tantale $\mathrm{Ta_2O_5}$ réalisé au Laboratoire des Matériaux Avancés (Lyon) permet ensuite d'obtenir des miroirs ayant une transmission bien contrôlée entre 0 et $\unit{120}{ppm}$ typiquement.
 J'ai ensuite développé un ensemble de pièces mécaniques en cuivre de haute pureté permettant un assemblage et un alignement rapide d'une cavité de $\unit{100}{\micro\meter}$ de longueur, constituée d'un échantillon (micro-pilier ou micro-disque) et d'un \uroc\ comme miroir d'entrée, qui permet un asservissement de la longueur de cavité sur le laser et compatible avec une utilisation dans un cryostat à dilution.
 \textit{Avant de faire réaliser les pièces à notre atelier de fabrication mécanique, des prototypes imprimés en 3D ont été réalisés pour s'assurer de la cohérence du dessin.
-L'impression 3D nous a aussi permis de fabriquer rapidement des pièces }
+L'impression 3D nous a aussi permis de fabriquer rapidement des pièces plus ou moins permanentes.
+L'utilisation de ces ressources (DAO et impression 3D) permettent de mettre en place des activités à bas coût avec un matériel restreint.}
 
-\textit{Dans notre expérience, d'autres cavités optiques sont utilisées : cavité laser Nd:YAG source de tous les faisceaux utilisés, cavité de filtrage permettant de diminuer les bruits classiques du laser et cavité de mesure.
-Toutes ces application permettraient de mettre en évidence différents aspects du comportement d'une cavité Fabry Perot.
-}
+\textit{Dans notre expérience, d'autres cavités optiques sont utilisées : cavité du laser Nd\string:YAG source de tous les faisceaux utilisés, cavité de filtrage permettant de diminuer les bruits classiques du laser et cavité de mesure.
+Toutes ces application permettraient de mettre en évidence différents aspects du comportement d'une cavité Fabry Perot.}
 
-\subsection{Le refroidissement}
+L'intensité intracavité dépend fortement du désaccord entre le laser et la cavité.
+De cette manière une petite variation de la longueur de la cavité se traduit non seulement par une variation du phase du faisceau réfléchi mais aussi par une modification de la puissance incidente sur les miroirs.
+Il en résulte une modulation de la pression de radiation exercée sur les miroirs qui peut en retour modifier la longueur de la cavité : c'est le couplage optomécanique qui peut être exploiter pour le refroidissement d'un mode mécanique de l'oscillateur mécanique.
+
+\subsection{Le refroidissement par pression de radiation}
+
+\begin{figure}
+\center
+\includegraphics[scale=0.05]{figures/IMG_1766.JPG}
+\caption{Photographie de la cavité de mesure montée sur le dernier étage du cryostat à dilution.
+Une lentille de courte focale permet de coupler le faisceau incident au mode fondamental $\mathrm{TEM_{00}}$ de la cavité.}
+\end{figure}
+
+Pour préparer les oscillateurs mécaniques dans leur état quantique fondamental, il est nécessaire d'atteindre des températures inférieures au mK.
+L'utilisation d'un cryostat à circulation d'hélium permet de refroidir les échantillons à une température de quelques Kelvin suffisante pour une caractérisation préliminaire de leurs caractéristiques mécaniques, mais trop élevée pour espérer atteindre le régime quantique.
+C'est donc à l'aide d'un cryostat à dilution fonctionnant avec un mélange $\mathrm{^4He/^3He}$ que la cavité de mesure est tout d'abord refroidie jusqu'à \unit{30}{\milli\kelvin}.
+\textit{Le fonctionnement de ces machines thermiques peut être abordé dans le cadre d'une approche thermodynamique simplifiée.
+Les problématiques liées à la conception du cryostat dans les phases préliminaires de l'expérience (enceinte sous vide, utilisation de matériaux de conductivités thermiques adaptées, accès optiques limitant le chauffage par rayonnement du corps noir) peuvent servir à illustrer les différents transferts thermiques qu'il est nécessaire de maitriser pour obtenir ces températures cryogéniques.}
+
+Pour refroidir d'avantage l'oscillateur mécanique, il est possible d'exploiter la pression de radiation.
+
+\subsubsection{Self-cooling}
+
+\subsubsection{Feedback-cooling (refroidissement par rétroaction)}
 
 \subsection{Contrôle de l'expérience}
 
 Arduino, RedPitaya, PyRPL (Python RedPitaya Lockbox)
 
+\subsection{Principaux résultats obtenus}
+
 \section{Enseignement, diffusion et vulgarisation}
 
-
+approche expérimentale
 
 \subsection{Vulgarisation autour des ondes gravitationnelles}
 
