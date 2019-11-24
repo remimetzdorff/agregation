@@ -196,7 +196,7 @@ Toutes ces application permettraient de mettre en évidence différents aspects 
 
 L'intensité intracavité dépend fortement du désaccord entre le laser et la cavité.
 De cette manière une petite variation de la longueur de la cavité se traduit non seulement par une variation du phase du faisceau réfléchi mais aussi par une modification de la puissance incidente sur les miroirs.
-Il en résulte une modulation de la pression de radiation exercée sur les miroirs qui peut en retour modifier la longueur de la cavité : c'est le couplage optomécanique qui peut être exploiter pour le refroidissement d'un mode mécanique de l'oscillateur mécanique.
+Il en résulte une modulation de la pression de radiation exercée sur les miroirs qui peut en retour modifier la longueur de la cavité : c'est le \textbf{couplage optomécanique} qui peut être exploité pour le refroidissement d'un mode mécanique de l'oscillateur mécanique.
 
 \subsection{Le refroidissement par pression de radiation}
 
@@ -217,9 +217,36 @@ Pour refroidir d'avantage l'oscillateur mécanique, il est possible d'exploiter 
 
 \subsubsection{Self-cooling}
 
+Dans une cavité optique désaccordée, le couplage optomécanique est responsable de deux effets qui affectent le comportement mécanique de l'oscillateur : 
+\begin{itemize}
+\item \textbf{optical spring effect}, ou ressort optique ;
+\item \textbf{cold damping}, ou friction froide.
+\end{itemize}
+Le premier se traduit par une modification de la constante de raideur effective de l'oscillateur qui déplace sa fréquence de résonance suivant le signe du désaccord.
+Le deuxième, lié au retard de la réponse de la cavité à une modification de sa longueur, se traduit par un changement de la force de pression de radiation en quadrature de phase avec les déplacements du miroir qui donne un terme de frottement visqueux modifiant le taux d'amortissement mécanique de l'oscillateur $\Gamma_\mathrm{eff} = \Gamma_m + \Gamma_\mathrm{opt}$.
+Ce terme de dissipation apparait sans ajout de bruit car le niveau d'occupation thermique du mode optique est très proche de zéro ($T_Q^\mathrm{opt}=\unit{10^4}{\kelvin}$), ce qui permet de refroidir le mode mécanique.
+La température effective dépend alors du rapport entre le taux d'amortissement intrinsèque de l'échantillon $\Gamma_m$ et $\Gamma_\mathrm{eff}$ :
+\begin{equation}
+T_\mathrm{eff} = \frac{\Gamma_m}{\Gamma_\mathrm{eff}} T_\mathrm{env}.
+\end{equation}
+
+L'approche quantique de cet effet correspond au refroidissement par bande latérale (sideband cooling) : de part et d'autre de la fréquence du laser, les bandes latérales mécaniques dues aux échanges de phonons entre le laser et l'oscillateur mécanique sont associées au processus Stokes (émission par l'oscillateur) et anti-Stokes (absorption).
+En choisissant un désaccord entre le laser et la cavité égal à la fréquence mécanique, il est possible de favoriser l'un des deux processus et ainsi de refroidir (ou exciter) l'oscillateur mécanique. 
+
+La friction froide dépend de l'intensité du faisceau incident et les précédentes expériences utilisant le micro-pilier étaient essentiellement limitées par la puissance optique injectable dans la cavité sans déclencher d'instabilité (en raison d'effets photothermiques notamment).
+
 \subsubsection{Feedback-cooling (refroidissement par rétroaction)}
 
+En mesurant les fluctuations de longueur de la cavité, il est aussi possible de rétroagir sur la position de l'oscillateur.
+On peut ainsi appliquer une force, proportionnelle à la vitesse de l'oscillateur, qui comme la friction froide pourra refroidir le mode mécanique de l'échantillon.
+Il est alors possible de choisir les paramètres de la boucle de rétroaction pour amplifier et filtrer le bruit de position de manière à refroidir l'échantillon.
+
+Dans l'expérience, la mesure des déplacements de l'oscillateur est réalisée grâce à une détection homodyne 
+
+
 \subsection{Contrôle de l'expérience}
+
+Le fonctionnement de l'expérience repose sur plusieurs asservissements
 
 Arduino, RedPitaya, PyRPL (Python RedPitaya Lockbox)
 

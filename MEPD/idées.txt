@@ -6,3 +6,5 @@ optique : michelson, fabry-perot, optique gaussienne
 
 
 deux aspects de la lumière : perturbation et controle via pression de radiation
+
+formation par l'expérience : des galères et encore des galères
