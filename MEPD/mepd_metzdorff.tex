@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \usepackage[thinspace,thinqspace,amssymb]{SIunits}
+\usepackage{eurosym}
 
 \title{Mise en perspective didactique d'un dossier de recherche}
 \author{Rémi Metzdorff}
@@ -15,50 +16,60 @@
 
 \renewcommand{\d}{\mathrm{d}}
 \newcommand{\uroc}{\micro RoC}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  For CV  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{xcolor}
+\definecolor{theme}{RGB}{56,115,179}
+
 \begin{document}
 
 \maketitle
 
-\tableofcontents
+%\tableofcontents
 
 \section{Parcours universitaire et scientifique}
 
-\subsection{Formation et doctorat}
+\noindent
+\begin{tabular*}{\textwidth}{p{0.12\textwidth}<{\raggedleft}p{0.83\textwidth}}
+\textcolor{theme}{\rule{0.12\textwidth}{2.5mm}} &
+\large\textcolor{theme}{Formation et doctorat} \vspace{3pt} \\
+2015--2019 &
+\textbf{Doctorat :} Thèse en optomécanique réalisée au sein de l'équipe Optomécanique et Mesures Quantiques du laboratoire Kastler Brossel (LKB, Paris) sous la direction de Pierre-François Cohadon intitulée \textbf{Refroidissement de résonateurs macroscopiques proche de leur état quantique fondamental}, soutenue le 23 Juillet 2019. \vspace{3pt} \\
+2014--2015 &
+\textbf{Master 2 :} Parcours LuMI (Lumière, Matière, Interactions) du master OMP (Optique, Matière, Plasma) de l'UPMC (Paris).
+Stage de recherche au LKB (6 mois) sur l'étude de l'évolution des pertes dans des cavités Fabry Perot de grande finesses en fonction de leur longueur. \vspace{3pt} \\
+2013--2014 &
+\textbf{Master 1 :} Parcours Physique Générale du master Physique et Applications de l'UPMC (Paris).
+Stage au LKB (4 mois) sur le développement de collimateurs compacts pour les faisceaux d'un piège magnéto-optique à trois dimensions (3D-MOT) sur une expérience de métrologie. \vspace{3pt} \\
+2012--2013 &
+\textbf{Licence 3 :} Parcours Physique-Chimie de l'UPMC (Paris). \vspace{3pt} \\
+2010--2012 &
+\textbf{CPGE :} PCSI et PC$^*$ au Lycée Louis-le-Grand (Paris). \vspace{10pt} \\
 
-\paragraph{2015--2019 Doctorat :}
-Thèse en optomécanique réalisée au sein de l'équipe Optomécanique et Mesures Quantiques du laboratoire Kastler Brossel (LKB, Paris) sous la direction de Pierre-François Cohadon intitulée \textbf{Refroidissement de résonateurs macroscopiques proche de leur état quantique fondamental}, soutenue le 23 Juillet 2019.
-
-\paragraph{2014--2015 Master 2 :}
-Parcours LuMI (Lumière, Matière, Interactions) du master OMP (Optique, Matière, Plasma) de l'UPMC (Paris).
-Stage de recherche au LKB (6 mois) sur l'étude de l'évolution des pertes dans des cavités Fabry Perot de grande finesses en fonction de leur longueur.
-
-\paragraph{2013--2014 Master 1 :}
-Parcours Physique Générale du master Physique et Applications de l'UPMC (Paris).
-Stage au LKB (4 mois) sur le développement de collimateurs compacts pour les faisceaux d'un piège magnéto-optique à trois dimensions (3D-MOT) sur une expérience de métrologie.
-
-\paragraph{2012--2013 Licence 3 :}
-Parcours Physique-Chimie de l'UPMC (Paris).
-
-\paragraph{2010--2012 CPGE :} PCSI et PC$^*$ au Lycée Louis-le-Grand (Paris).
-
-\subsection{Enseignements, diffusion et vulgarisation}
-
-\paragraph{2015--2018 Monitorats :}
+\textcolor{theme}{\rule{0.12\textwidth}{2.5mm}} &
+\large\textcolor{theme}{Enseignements, diffusion et vulgarisation} \vspace{3pt} \\
+2015--2018 & \textbf{Monitorats :}
 \begin{itemize}
 \item travaux pratiques d'électromagnétisme (L1) ;
 \item travaux dirigés et travaux pratiques de physique expérimentale (L2-L3) : programmation, électronique, Arduino ;
 \item travaux pratiques d'optique (M1) : laser, diode laser.
-\end{itemize}
-
-\paragraph{2015--2019 Conférences :} COLOQ, CLEO, ... 
-
-\paragraph{Vulgarisation :}
+\end{itemize}\\
+2015--2019 &
+\textbf{Conférences :} COLOQ, CLEO, ... \vspace{3pt} \\
+& \textbf{Vulgarisation :}
 \begin{itemize}
 \item \textbf{Un chercheur, Une manip (2019) :} Présentations au Palais de la Découverte autour de la découverte des ondes gravitationnelles ;
 \item \textbf{Fêtes de la science :} Présentation du LKB au grand public, conférence sur la détection d'ondes gravitationnelles, animations grand public ;
 \item \textbf{E=M6 :} Casser un verre avec la voix ;
 \item \textbf{Olympiades de physique :} Conférence sur la découverte des ondes gravitationnelles.
 \end{itemize}
+\end{tabular*}
 
 \section{Vers l'état quantique fondamental d'oscillateurs mécaniques macroscopiques}
 
@@ -111,9 +122,9 @@ Son comportement fréquentiel se déduit dans l'espace de Fourier de la suscepti
 \chi[\Omega] = \frac{1}{m_\mathrm{eff}[(\Omega_m^2-\Omega^2)-i\Gamma_m\Omega]},
 \end{equation}
 où $i^2=-1$. 
-Dans la théorie de Langevin, le terme de dissipation $\Gamma_m$ se traduit par un couplage de l'oscillateur à son environnement assimilé à un bain thermique à la température $T$.
+Dans la théorie de Langevin, le terme de dissipation $\Gamma_m$ se traduit par un couplage de l'oscillateur à son environnement assimilé à un bain thermique à la température $T_\mathrm{env}$.
 Il en résulte une force $F_T$, dont le spectre est lié à la partie imaginaire de la susceptibilité mécanique par le théorème de fluctuations-dissipations, à l'origine du mouvement Brownien de l'oscillateur.
-On peut ainsi montrer que le spectre de déplacement du résonateur à l'équilibre thermodynamique avec un tel bain thermique est directement lié au rapport $T/m_\mathrm{eff}$ : la connaissance de l'un permet donc de déterminer l'autre à travers la mesure du spectre du mouvement Brownien du résonateur.
+On peut ainsi montrer que le spectre de déplacement du résonateur à l'équilibre thermodynamique avec un tel bain thermique est directement lié au rapport $T_\mathrm{env}/m_\mathrm{eff}$ : la connaissance de l'un permet donc de déterminer l'autre à travers la mesure du spectre du mouvement Brownien du résonateur.
 Le spectre est aussi d'autant plus piqué autour de la fréquence propre $\Omega_m$ que la dissipation est faible, ce qui conduit à utiliser des oscillateur avec des facteurs de qualité mécaniques $Q=\Omega/\Gamma_m$ très élevés.
 \emph{En accord avec le programme de première année de CPGE, cette approche classique peut illustrer un exercice de mécanique, avec l'étude de l'oscillateur harmonique amorti, en régime libre ou forcé.
 La mesure des différents paramètres de l'oscillateur permet également d'en faire un capteur de grande précision.
@@ -173,7 +184,8 @@ Plusieurs méthodes permettent ensuite de traduire ce déphasage en un signal me
 \item \textbf{détection directe} : si la cavité est désaccordée par rapport au laser, une variation de sa longueur est directement responsable de variations de l'intensité intracavité.
 Le déplacement de l'oscillateur est ainsi relié à l'intensité réfléchie par la cavité ;
 \item \textbf{détection homodyne} : si la cavité est résonante avec le laser, aucune variation d'intensité n'est mesurable directement mais la variation $\delta \varphi$ est alors maximale.
-En faisant interférer le faisceau réfléchi par la cavité avec un faisceau de référence dans un interféromètre de Michelson, on observe alors les variations de l'intensité transmise par l'interféromètre ;
+En faisant interférer le faisceau réfléchi par la cavité avec un faisceau de référence dans un interféromètre de Michelson, on observe alors les variations de l'intensité transmise par l'interféromètre.
+L'utilisation d'une détection balancée permet d'atténuer fortement le bruit classique autorisant des mesures limitées par les bruits quantiques ;
 \item \textbf{Pound-Drever-Hall (PDH)} : une modulation de phase de fréquence supérieure à la bande passante de la cavité est appliquée au faisceau laser incident à l'aide d'un modulateur électro-optique, créant ainsi des bandes latérales de part et d'autre de la fréquence du laser, la cavité étant maintenue résonante avec la porteuse.
 Les bandes latérales sont réfléchies par le miroir d'entrée de la cavité et servent ainsi de référence de phase.
 Après démodulation du signal réfléchi par la cavité on obtient une fois de plus un signal lié aux fluctuations de longueur de la cavité ;
@@ -202,9 +214,14 @@ Il en résulte une modulation de la pression de radiation exercée sur les miroi
 
 \begin{figure}
 \center
-\includegraphics[scale=0.05]{figures/IMG_1766.JPG}
-\caption{Photographie de la cavité de mesure montée sur le dernier étage du cryostat à dilution.
-Une lentille de courte focale permet de coupler le faisceau incident au mode fondamental $\mathrm{TEM_{00}}$ de la cavité.}
+\includegraphics[height=130pt]{figures/cavity_microwheel.jpg}
+\includegraphics[height=130pt]{figures/cavity_uroc.jpg}
+\includegraphics[height=130pt]{figures/IMG_1766.JPG}
+\caption{A gauche : un échantillon micro-disque dans la première moitié de la cavité.
+Au centre : le miroir de couplage (\uroc) monté dans la deuxième partie de la cavité.
+Les fils permettent de contrôler les cales piézoélectriques qui permettent l'asservissement en longueur de la cavité.
+A droite : photographie de la cavité de mesure assemblée et montée sur le dernier étage du cryostat à dilution.
+La lentille de courte focale permet de coupler le faisceau incident au mode fondamental $\mathrm{TEM_{00}}$ de la micro-cavité.}
 \end{figure}
 
 Pour préparer les oscillateurs mécaniques dans leur état quantique fondamental, il est nécessaire d'atteindre des températures inférieures au mK.
@@ -230,12 +247,21 @@ La température effective dépend alors du rapport entre le taux d'amortissement
 T_\mathrm{eff} = \frac{\Gamma_m}{\Gamma_\mathrm{eff}} T_\mathrm{env}.
 \end{equation}
 
-L'approche quantique de cet effet correspond au refroidissement par bande latérale (sideband cooling) : de part et d'autre de la fréquence du laser, les bandes latérales mécaniques dues aux échanges de phonons entre le laser et l'oscillateur mécanique sont associées au processus Stokes (émission par l'oscillateur) et anti-Stokes (absorption).
+L'approche quantique de cet effet correspond au refroidissement par bande latérale (sideband cooling) : de part et d'autre de la fréquence du laser, les bandes latérales mécaniques dues aux échanges de phonons $\hbar\Omega_m$ entre le laser et l'oscillateur mécanique sont associées au processus Stokes (émission d'un phonon par l'oscillateur) et anti-Stokes (absorption).
 En choisissant un désaccord entre le laser et la cavité égal à la fréquence mécanique, il est possible de favoriser l'un des deux processus et ainsi de refroidir (ou exciter) l'oscillateur mécanique. 
 
 La friction froide dépend de l'intensité du faisceau incident et les précédentes expériences utilisant le micro-pilier étaient essentiellement limitées par la puissance optique injectable dans la cavité sans déclencher d'instabilité (en raison d'effets photothermiques notamment).
 
 \subsubsection{Feedback-cooling (refroidissement par rétroaction)}
+
+\begin{figure}
+\center
+\includegraphics[scale=0.5]{figures/feedback_cooling.png}
+\caption{Schéma de principe du refroidissement par rétroaction.
+Le couplage à un bain thermique $T_\mathrm{env}$ en raison de la dissipation mécanique $\Gamma_m$ de l'oscillateur se traduit par un mouvement brownien du micro-pilier, qui peut être détecté optiquement en exploitant la réponse de la cavité résonante (ici grâce à une détection homodyne).
+Le signal obtenu est amplifié, filtré, et alimente un actuateur (ici un modulateur d'amplitude) qui agit sur le pilier (par l'intermédiaire de la pression de radiation).
+Une mesure indépendante de la boucle de rétroaction est obtenue grâce à la détection PDH.}
+\end{figure}
 
 En mesurant les fluctuations de longueur de la cavité, il est aussi possible de rétroagir sur la position de l'oscillateur.
 On peut ainsi appliquer une force, proportionnelle à la vitesse de l'oscillateur, qui comme la friction froide pourra refroidir le mode mécanique de l'échantillon.
@@ -244,20 +270,58 @@ Il est alors possible de choisir les paramètres de la boucle de rétroaction po
 Dans l'expérience, la mesure des déplacements de l'oscillateur est réalisée grâce à une détection homodyne 
 
 
-\subsection{Contrôle de l'expérience}
+\subsection{Contrôle de l'expérience : Arduino, RedPitaya et Python}
 
-Le fonctionnement de l'expérience repose sur plusieurs asservissements
+Le fonctionnement de l'expérience repose sur plusieurs asservissements :
+\begin{itemize}
+\item \textbf{noise-eater} pour la réduction du bruit classique d'intensité du laser ;
+\item \textbf{cavité de filtrage}, asservie en longueur sur la fréquence du laser et stabilisation de température ;
+\item \textbf{oscillateur local} : asservissement à mi-frange des Michelson de la détection homodyne et hétérodyne ;
+\item \textbf{intensité} des faisceaux utilisés pour les mesures ;
+\item \textbf{température} des cryostats ;
+\item \textbf{cavité de mesure}, asservie en longueur sur le laser ;
+\item \textbf{boucle de rétroaction pour le refroidissement}.
+\end{itemize}
+La plupart de ces asservissements sont réalisés avec des micro contrôleurs RedPitaya et la bibliothèque PyRPL (Python RedPitaya Lockbox), développée au sein de l'équipe.
+Il est ainsi possible de piloter une grande partie de l'expérience depuis un PC, ce qui autorise grâce à un répertoire de scripts Python l'automatisation des séquences de mesures.
+\textit{L'utilisation, l'amélioration et le développement de ces systèmes bouclés m'a permis de développer une compréhension par l'expérience de ces systèmes asservis, renforcée par la suite par une approche plus théorique.
+L'utilisation quotidienne du langage Python me donne également une certaine aisance avec cet outil.
+L'utilisation de PyRPL et RedPitaya offre de nombreuses possibilités : grâce à une carte RedPitaya ($\sim\unit{200}{\text{\euro}}$) et du programme PyRPL (open source), on peut disposer d'un oscilloscope, d'un GBF, d'un analyseur de spectre, d'un analyseur de réseau et d'une lockbox (pour ne citer que les fonctionnalités déjà existantes). L'utilisation de cette ressource me semble complètement pertinente dans le cadre de travaux pratiques, à plusieurs niveaux.}
 
-Arduino, RedPitaya, PyRPL (Python RedPitaya Lockbox)
+Un expérience préliminaire à la réalisation des micro-cavités de mesure nécessitait de réaliser une cavité de longueur variable sur l'ensemble de sa zone de stabilité afin d'étudier les mécanismes de pertes optique dans une cavité de grande finesse.
+On a donc choisit de monter un des deux miroirs sur une translation micrométrique motorisée par un moteur pas à pas.
+En vue d'automatiser les mesures, j'ai développé un contrôleur basé sur une carte Arduino (programme Arduino, interface Python et électronique) permettant le positionnement de la translation.
+
+Filtre actifs et passifs, AOP etc
 
 \subsection{Principaux résultats obtenus}
+
+
+
+\begin{figure}
+\center
+\includegraphics[scale=0.75]{figures/feedback_cooling_6phonons_defense_with_gain_all.png}
+\caption{Refroidissement d'un micro-pilier proche de son état quantique fondamental.
+En haut à gauche : spectres du bruit de position obtenus avec la détection homodyne donnant le signal d'erreur pour la boucle de rétroaction.
+A droite, spectres obtenus avec la détection PDH indépendante de la boucle.
+Les deux mesures sont réalisées simultanément.
+Les données expérimentales sont tracées en transparence, l'ajustement par le modèle théorique correspond aux courbes pleines avec en rouge le gain le plus faible (correspondant à la température sans refroidissement par rétroaction) et en bleu la courbe obtenue pour le gain optimal correspondant à la température effective la plus faible.
+En bas à gauche : gain extrait de l'ajustement des spectres homodyne en fonction du gain analogique.
+A droite, températures effectives déduites des valeurs du gain en rouge (cas idéal) et des spectres PDH (en bleu).
+La courbe rouge correspond au modèle qui tient compte des paramètres de l'expérience.
+}
+\label{fig:feedback_cooling_pillar}
+\end{figure}
 
 \section{Enseignement, diffusion et vulgarisation}
 
 approche expérimentale
 
+\subsection{Enseignements}
+
 \subsection{Vulgarisation autour des ondes gravitationnelles}
 
+Au cours de mes quatre années de thèse, j'ai eu l'occasion à plusieurs reprises de
 \emph{Ce sujet, complètement d'actualité, pourrait faire l'objet d'une séquence pédagogique :
 \begin{itemize}
 \item sur le binaire d'Hulse et Taylor, rapprochement entre l'électrostatique et la gravitation, modèle de l'électron élastiquement lié pour modéliser le rayonnement gravitationnel et obtenir quelques ordres de grandeur ;
@@ -265,6 +329,8 @@ approche expérimentale
 \item étude des interféromètres actuels (Michelson, Fabry Perot), des systèmes d'isolation (pendules, vide), boucle d'asservissement, traitement du signal.
 \end{itemize}
 }
+
+\subsection{Aïkido}
 
 %\bibliographystyle{custom-bib/thesis}
 \bibliographystyle{abbrv}
