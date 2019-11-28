@@ -71,7 +71,7 @@ Stage au LKB (4 mois) sur le développement de collimateurs compacts pour les fa
 \end{itemize}
 \end{tabular*}
 
-\section{Vers l'état quantique fondamental d'oscillateurs mécaniques macroscopiques}
+\section{Refroidissement de résonateurs mécaniques macroscopiques proche de leur état quantique fondamental}
 
 \subsection{Contexte : mesures de déplacements et optomécanique}
 
@@ -107,10 +107,14 @@ Le premier point est un pré-requis du deuxième puisque le système étudié es
 
 \begin{figure}
 \center
-\includegraphics[scale=0.75]{figures/thermal_peak_def_filled.png}
-\caption{Spectres du bruit de position d'un micro-pilier en cavité dû au mouvement Brownien de l'oscillateur.
-La figure de gauche est obtenue à température ambiante alors que celle de droite est obtenue en cryogénie à \unit{30}{\milli\kelvin}.
-Le refroidissement de l'échantillon s'accompagne d'un déplacement de sa fréquence de résonance, d'une augmentation de son facteur de qualité et d'une diminution de l'aire sous le pic, proportionnelle à la température.}
+\includegraphics[height=90pt]{figures/micropillar.png}
+\includegraphics[height=90pt]{figures/micropillar_disp.png}
+\includegraphics[height=90pt]{figures/microwheel.png}
+\includegraphics[height=90pt]{figures/microwheel_disp.png}
+\caption{A gauche : image obtenue par microscopie électronique d'un micro-pillier en quartz et simulation du mode propre fondamental de compression utilisé.
+A droite : image obtenue par microscopie optique d'un micro-disque en silicium et simulation du mode propre utilisé.
+Les simulations sont réalisées avec COMSOL (simulation par élément fini) et le code couleur correspond au déplacement de la structure.}
+\label{fig:resonators}
 \end{figure}
 
 Bien que les géométries des oscillateurs mécaniques soient très variées, son comportement est très bien décrit par un système \{masse, ressort\} amorti ($m_\mathrm{eff}$, $\Omega_m$, $\Gamma_m$) soumis à des forces extérieures de résultante $F_\mathrm{ext}$
@@ -148,14 +152,10 @@ L'objectif de ma thèse peut alors être précisé puisqu'il s'agit de refroidir
 
 \begin{figure}
 \center
-\includegraphics[height=90pt]{figures/micropillar.png}
-\includegraphics[height=90pt]{figures/micropillar_disp.png}
-\includegraphics[height=90pt]{figures/microwheel.png}
-\includegraphics[height=90pt]{figures/microwheel_disp.png}
-\caption{A gauche : image obtenue par microscopie électronique d'un micro-pillier en quartz et simulation du mode propre fondamental de compression utilisé.
-A droite : image obtenue par microscopie optique d'un micro-disque en silicium et simulation du mode propre utilisé.
-Les simulations sont réalisées avec COMSOL (simulation par élément fini) et le code couleur correspond au déplacement de la structure.}
-\label{fig:resonators}
+\includegraphics[scale=0.75]{figures/thermal_peak_def_filled.png}
+\caption{Spectres du bruit de position d'un micro-pilier en cavité dû au mouvement Brownien de l'oscillateur.
+La figure de gauche est obtenue à température ambiante alors que celle de droite est obtenue en cryogénie à \unit{30}{\milli\kelvin}.
+Le refroidissement de l'échantillon s'accompagne d'un déplacement de sa fréquence de résonance, d'une augmentation de son facteur de qualité et d'une diminution de l'aire sous le pic, proportionnelle à la température.}
 \end{figure}
 
 Au cours de ma thèse, j'ai utilisé deux types d'échantillons visibles sur la figure~\ref{fig:resonators} :
@@ -250,7 +250,7 @@ T_\mathrm{eff} = \frac{\Gamma_m}{\Gamma_\mathrm{eff}} T_\mathrm{env}.
 L'approche quantique de cet effet correspond au refroidissement par bande latérale (sideband cooling) : de part et d'autre de la fréquence du laser, les bandes latérales mécaniques dues aux échanges de phonons $\hbar\Omega_m$ entre le laser et l'oscillateur mécanique sont associées au processus Stokes (émission d'un phonon par l'oscillateur) et anti-Stokes (absorption).
 En choisissant un désaccord entre le laser et la cavité égal à la fréquence mécanique, il est possible de favoriser l'un des deux processus et ainsi de refroidir (ou exciter) l'oscillateur mécanique. 
 
-La friction froide dépend de l'intensité du faisceau incident et les précédentes expériences utilisant le micro-pilier étaient essentiellement limitées par la puissance optique injectable dans la cavité sans déclencher d'instabilité (en raison d'effets photothermiques notamment).
+La friction froide dépend de l'intensité du faisceau incident et les précédentes expériences utilisant le micro-pilier étaient essentiellement limitées par la puissance optique injectable dans la cavité sans déclencher d'instabilité (en raison d'effets photothermiques notamment), conduisant à un refroidissement jusqu'à 20 phonons.
 
 \subsubsection{Feedback-cooling (refroidissement par rétroaction)}
 
@@ -261,27 +261,26 @@ La friction froide dépend de l'intensité du faisceau incident et les précéde
 Le couplage à un bain thermique $T_\mathrm{env}$ en raison de la dissipation mécanique $\Gamma_m$ de l'oscillateur se traduit par un mouvement brownien du micro-pilier, qui peut être détecté optiquement en exploitant la réponse de la cavité résonante (ici grâce à une détection homodyne).
 Le signal obtenu est amplifié, filtré, et alimente un actuateur (ici un modulateur d'amplitude) qui agit sur le pilier (par l'intermédiaire de la pression de radiation).
 Une mesure indépendante de la boucle de rétroaction est obtenue grâce à la détection PDH.}
+\label{fig:feedback_scheme}
 \end{figure}
 
-En mesurant les fluctuations de longueur de la cavité, il est aussi possible de rétroagir sur la position de l'oscillateur.
-On peut ainsi appliquer une force, proportionnelle à la vitesse de l'oscillateur, qui comme la friction froide pourra refroidir le mode mécanique de l'échantillon.
-Il est alors possible de choisir les paramètres de la boucle de rétroaction pour amplifier et filtrer le bruit de position de manière à refroidir l'échantillon.
+Le self-cooling est une méthode passive qui nécessite \og simplement \fg de contrôler le désaccord entre la fréquence de résonance de la cavité et celle du laser.
+Le refroidissement par rétroaction, dont un schéma de principe est représenté sur la figure~\ref{fig:feedback_scheme}, est une méthode active qui consiste à mesurer les déplacements de l'oscillateur et à appliquer une force proportionnelle à sa vitesse, de manière à obtenir comme précédemment un frottement visqueux.
+La mesure de position est réalisée optiquement, à l'aide de la détection homodyne en raison de sa grande sensibilité.
+La rétroaction peut être appliquée grâce à de nombreux actuateurs (cales piézoélectriques, antenne) mais c'est une fois de plus en exploitant la pression de radiation à l'aide d'un faisceau modulé en amplitude qu'on agit sur l'oscillateur.
+Le modulateur d'amplitude (fibré, fonctionnant grâce à un Mach-Zender dont les bras contiennent des cristaux électroptiques) présente en effet une fonction de transfert plate dans une large gamme de fréquence, et évite d'ajouter des connexions électriques à la cavité de mesure ce qui serait source de bruit et de chauffage.
+Il est alors possible d'augmenter le refroidissement en augmentant le gain de la boucle de rétroaction, soit en travaillant avec une puissance optique plus importante, soit en augmentant la profondeur de la modulation d'amplitude.
 
-Dans l'expérience, la mesure des déplacements de l'oscillateur est réalisée grâce à une détection homodyne 
-
+Dans le cas d'une mesure parfaite, c'est à dire sans bruit, avec une sensibilité infinie, une augmentation du gain se traduit toujours par un refroidissement du mode mécanique car seul le signal correspondant à ses déplacements est mesuré puis réinjecté dans la boucle.
+En réalité, la sensibilité de la mesure est limitée (fluctuation de position du miroir d'entrée, bruit électronique et ultimement, bruit quantique de phase) et il existe un gain optimal pour lequel le bruit thermique de l'oscillateur est équivalent au bruit de la mesure.
+Au delà de ce gain optimal, on réinjecte le bruit de la mesure dans la boucle qui est transcrit en bruit de position de l'oscillateur.
+On observe alors dans le spectre de la détection homodyne une diminution du bruit autour de la fréquence de résonance de l'oscillateur en dessous du bruit de mesure (squashing) car le bruit de mesure et les déplacements de l'oscillateur sont alors corrélés.
+Même s'il est possible de tenir compte de cet effet pour extraire la température effective du mode mécanique, on souhaite avoir une mesure indépendante de la boucle de rétroaction qui donne directement accès à la température de l'oscillateur.
+C'est le rôle de la détection PDH.
 
 \subsection{Contrôle de l'expérience : Arduino, RedPitaya et Python}
 
-Le fonctionnement de l'expérience repose sur plusieurs asservissements :
-\begin{itemize}
-\item \textbf{noise-eater} pour la réduction du bruit classique d'intensité du laser ;
-\item \textbf{cavité de filtrage}, asservie en longueur sur la fréquence du laser et stabilisation de température ;
-\item \textbf{oscillateur local} : asservissement à mi-frange des Michelson de la détection homodyne et hétérodyne ;
-\item \textbf{intensité} des faisceaux utilisés pour les mesures ;
-\item \textbf{température} des cryostats ;
-\item \textbf{cavité de mesure}, asservie en longueur sur le laser ;
-\item \textbf{boucle de rétroaction pour le refroidissement}.
-\end{itemize}
+Le fonctionnement de l'expérience repose sur plusieurs asservissements : \textbf{noise-eater} pour la réduction du bruit classique d'intensité du laser ; \textbf{cavité de filtrage}, asservie en longueur sur la fréquence du laser et stabilisation de température ; \textbf{oscillateur local} : asservissement à mi-frange des Michelson de la détection homodyne et hétérodyne ; \textbf{intensité} des faisceaux utilisés pour les mesures ; \textbf{température} des cryostats ; \textbf{cavité de mesure}, asservie en longueur sur le laser ; \textbf{boucle de rétroaction pour le refroidissement}.
 La plupart de ces asservissements sont réalisés avec des micro contrôleurs RedPitaya et la bibliothèque PyRPL (Python RedPitaya Lockbox), développée au sein de l'équipe.
 Il est ainsi possible de piloter une grande partie de l'expérience depuis un PC, ce qui autorise grâce à un répertoire de scripts Python l'automatisation des séquences de mesures.
 \textit{L'utilisation, l'amélioration et le développement de ces systèmes bouclés m'a permis de développer une compréhension par l'expérience de ces systèmes asservis, renforcée par la suite par une approche plus théorique.
@@ -296,6 +295,16 @@ Filtre actifs et passifs, AOP etc
 
 \subsection{Principaux résultats obtenus}
 
+Après avoir caractérisé les échantillons (micro-piliers et micro-disques), réalisé les micro-miroirs de couplage, développé un assemblage mécanique permettant d'obtenir une micro-cavité asservie et à basse température, amélioré la sensibilité des différentes détections et réduit les parasites les plus gênants, optimisé les différents asservissements, la cavité optomécanique est placée dans le cryostat à dilution puis refroidie vers \unit{30}{\milli\kelvin}.
+Les faisceaux des détections homodyne et PDH sont injectés simultanément dans la cavité avec des polarisations orthogonales pour obtenir une isolation maximale entre les deux et la cavité est asservie en longueur sur le laser.
+Le refroidissement est obtenu grâce à un modulateur d'amplitude placé sur le faisceau de la détection homodyne (la détection homodyne est ici seulement sensible aux fluctuations de phase).
+On acquiert le spectre du bruit de position de l'oscillateur obtenu grâce aux deux détections, simultanément et en faisant varier le gain de la boucle de rétroaction au moyen d'atténuateurs analogiques.
+Les résultats obtenus lors d'une telle mesure avec un micro-pilier sont visibles sur la figure~\ref{fig:feedback_cooling_pillar}.
+
+Il a ainsi été possible de refroidir le \textbf{micro-pilier} jusqu'à une température de $\unit{1,0\pm 0,1}{\milli\kelvin}$, ce qui correspond à un taux d'occupation de $\mathbf{5,3 \pm 0,5}$ \textbf{phonons}.
+Des limitations importantes principalement attribuées à la dégradation progressive de l'échantillon, conduisant à une mauvaise thermalisation et à des instabilités photothermiques nous ont conduit à utiliser un nouveau type d'oscillateur : les \textbf{micro-disques}.
+Avec ces échantillons et en seulement quelques mois, il a été possible d'atteindre une température de \unit{0,7\pm 0,1}{\milli\kelvin} correspondant à un niveau d'occupation de $\mathbf{55\pm5}$ \textbf{phonons}, cette fois limité par le bruit de position du miroir d'entrée de la cavité.
+A température comparable, le niveau d'occupation est dix fois plus élevée qu'avec le micro-pilier car la fréquence du mode propre des micro-disques est dix fois plus faible. 
 
 
 \begin{figure}
@@ -307,9 +316,8 @@ A droite, spectres obtenus avec la détection PDH indépendante de la boucle.
 Les deux mesures sont réalisées simultanément.
 Les données expérimentales sont tracées en transparence, l'ajustement par le modèle théorique correspond aux courbes pleines avec en rouge le gain le plus faible (correspondant à la température sans refroidissement par rétroaction) et en bleu la courbe obtenue pour le gain optimal correspondant à la température effective la plus faible.
 En bas à gauche : gain extrait de l'ajustement des spectres homodyne en fonction du gain analogique.
-A droite, températures effectives déduites des valeurs du gain en rouge (cas idéal) et des spectres PDH (en bleu).
-La courbe rouge correspond au modèle qui tient compte des paramètres de l'expérience.
-}
+A droite, températures effectives déduites des valeurs du gain en rouge (cas idéal d'une mesure parfaite des déplacements de l'oscillateur, sans bruit) et des spectres PDH (en bleu).
+La courbe rouge correspond au modèle qui tient compte des paramètres de l'expérience.}
 \label{fig:feedback_cooling_pillar}
 \end{figure}
 
