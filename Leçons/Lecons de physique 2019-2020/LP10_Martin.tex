@@ -1,0 +1,172 @@
+\section{LP10 Induction électromagnétique (Martin)}
+
+\paragraph{Bibliographie :}
+\begin{itemize}
+\item Perez
+\item Dunod
+\item Cours Jérémy
+\item BFR
+\end{itemize}
+
+\paragraph{Niveau : L3} 
+
+\paragraph{Pré-requis :}
+\begin{itemize}
+\item Electrocinétique ;
+\item Magnétostatique ;
+\item Forces de Laplace ;
+\item Equations de Maxwell ;
+\item Potentiels ;
+\end{itemize}
+
+\subsection{Introduction}
+
+Qu'est ce que l'induction ?
+\paragraph{EXP : } aimant vers une bobine : apparition d'un courant.
+C'est l'induction à partir d'un champ B on obtient des courant
+
+\paragraph{Diapo :} exp de Faraday. Il penssait que le courant été créé par un champ mag. mais c'est en allumant la bobine : variation du champ B
+Manip : apparition de courant quand l'aimant se déplace dans la bobine.
+Pas de i quand B est statique
+
+\subsection{Les lois de l'induction}
+
+\subsubsection{La loi de Faraday 2'30}
+
+On se place dans l'ARQS, contour ABCD, chamb $B$ et on donne une vitesse $v$ au circuit.
+On calcule la force de Lorentz (équation), on en déduit la force électromatrice en multipliant par dl (énergie pot) et en divisant par la charge.
+On intègre sur tout le circuit.
+On utilise les potentiels scalaire et vecteur pour réécrire $E$.
+Le terme en $grad$ est nul car contour fermé.
+Avec le thm de Stokes Ampère, on transforme $dA/dt$...
+\begin{equation}
+e = \iint \frac{\partial B}{\partial t} dS + \int (v\times B) dl
+\end{equation}
+On obtient :
+\begin{itemize}
+\item Neumann (temporel)
+\item Lorentz (vitesse)
+\end{itemize}
+
+On écrit la loi de Faraday dans le cas d'un circuit indéformable.
+On obtient la formule avec la dérivée totale du flux :
+\begin{equation}
+e = \frac{D\Phi}{Dt}
+\end{equation}
+Le signe moins traduit la loi de Lenz
+
+\subsubsection{Loi de Lenz 10'}
+
+Les effets de l'induction s'opposent à la cause qui les a produit.
+On peut intuiter les effets de l'induction à partir de cette loi.
+
+\paragraph{Exp : } chute d'un aimant dans un tube plexiglas puis cuivre.
+Explication avec la loi de Lenz
+
+\subsection{Induction de Neumann (B variable) 12'}
+
+\subsubsection{Auto-induction}
+
+Schéma d'une bobine parcourue par un champ i.
+Importance de l'agébrisation : l'orientation du courant défini l'orientation des surfaces.
+Calcul du flux propre si on suppose le champs B créé par la bobine est celui d'un solénoide infini.
+Calcul du flux à travers une spire, puis $N$ spires.
+\begin{equation}
+\Phi_B = \mu_0 N^2 S i /l
+\end{equation}
+On fait apparaitre l'inductance de la bobine.
+Convention générateur/récepteur pour faire le lien entre $e$ et $U_L$.
+Puissance stockée dans la bobine.
+
+\paragraph{Diapo, EXP 19'30: } Vérification de la dépendance en $N^2$ de l'inductance de plusieurs bobines en mesurant l'inductance d'après la fonction de transfert d'un circuit RL.
+Comparaison entre les valeurs mesurées et les valeurs déduites de la géométrie des bobines.
+Fin de l'expérience et des analyses : 25'
+
+\subsubsection{Inductance mutuelle}
+
+Dans le schéma de l'expérience de Faraday.
+Coefficients d'auto inductance pour chaque bobine.
+Inductance mutuelle qui traduit le couplage entre les deux circuits.
+\begin{equation}
+e_2 = -L\frac{di_2}{dt} - M\frac{Di_1}{dt}
+\end{equation}
+
+On peut transferrer de l'énergie d'un circuit à l'autre : le transformateur.
+Application transport de l'énergie à haute tension pour diminuer les pertes dues au transfert puis transfromateur pour abaisser la tension aux maison.
+
+\subsection{Induction de Lorentz (circuit mobile) 28'30}
+
+\subsubsection{Rail de Laplace}
+
+Deux termes : 
+\begin{itemize}
+\item force électromotrice
+\item force de Laplace
+\end{itemize}
+Schéma du dispositif, mécanique et électrique.
+
+Mise en équation :
+\begin{itemize}
+\item équation électrique
+\item équation mécanique : principe fondamental de la dynamique projeté selon x
+\end{itemize}
+Discussion qualitative avec la loi de Lenz
+
+33' : on résout les équation pour avoir l'équation du mouvement dans le cas de la tige.
+Il faut ajouter un frottement solide pour arrêter la tige.
+
+Conversion électromécanique :
+Schéma des échanges ($P_laplace$ et $P_induction$) pour faire le lien entre les pertes par effet Joule et la variation d'énergie cinétique.
+On a $P_laplace + P_induit = 0$
+
+\paragraph{Diapo :} Freinage par induction. courant de Foucault, freinage des trains, des poids lourd, Roue de Barlow comme générateur de courant. L'induction est ainsi à la base des méthodes de production d'électricité actuels.
+
+
+\subsection{Conclusion 39'}
+
+Rappel et applications : générateurs, chauffage par induction, micro, chargement à distance..
+
+\paragraph{Vidéo :} Railgun de l'espace
+
+\subsection{Question}
+
+\begin{enumerate}
+\item Approche historique avec l'exp de Faraday : c'est quoi un galvanomètre ?
+\item Lois de l'induction : trois ingrédients : force de Lorentz, E = -gradV - dA/dT, $v\times B$. Commenter les termes. On repart de Maxwell pour exprimer E en fonction des potentiels vecteur et scalaire.
+\item Que représentent V et A ? Cas du solénoide avec une spire autour, Ahramov Bohm. On mesure pas V on mesure des ddp. Pour A ?
+\item Comment pourrait-on préciser l'introduction de $e$ ? Lien entre le travail et la ddp (le travail de la force de lorentz permet d'introduire la ddp)
+\item dans la force de lorentz, Que représente v ? C'est la vitesse des porteurs.
+\item quel est le référentiel dans lequel est défini v ?
+\item vitesse du circuit = vitesse des charges ? composition des vitesses $v_e = v_circuit+v_electron$. Il n'apparait que la vitesse du circuit car les électrons se déplacent le long du circuit
+\item Comment évolue la vitesse de chute de l'aimant en fonction du matériau du tube ?
+\item Justifier l'approximation du solénoide infini pour les bobines ?
+\item Pourquoi sommer les champs B ? Linéarité des eq de Maxwell
+\item Pourquoi se placer en convention générateur ?
+\item Puissance stockée dans la bobine. Pourquoi iUL et pas ei : convention récepteur/géné
+\item manip : Quelle est la valeur de la résistance de la bobine ? justifier le choix de la résistance.
+\item Incertitudes ? viennent des fits. Comment sont calculées les erreurs ?
+\item Possible de les rajouter à la main ? elles sont petites venant de l'oscilloscope
+\item Pourquoi avoir choisi de mesurer L d'après le diagramme de Bode ? Autres méthodes : umax/2, temps de montée, etc. Justifiée par une approche pédagogique.
+\item Valeur d'inductance comparée à quoi ?
+\item d'où vient l'incertitude sur l'inductance théorique ? inhomogénéité du champ B dans toutes les spires
+\item Inductance mutuelle ? pourquoi mettre des dérivée ronde ? (erreur)
+\item Une seule équation : couplage de 1 vers 2. Qu'est ce qui se passe dans l'autre sens ?
+\item L'inductance mutuelle est elle la même de 12 ou 21 ? Oui
+\item Equivalensce des puissance de laplace et induit ? Oui car sinon fuck la physique.
+\item Roue de Barlow pour générer du courant ?
+
+\subsection{Commentaires}
+
+Débit de parole important. Faire quelques pauses.
+Bien expliqué
+Point noir de la leçon : comment amener les lois de l'induction ?
+On peut écrire que la vitesse des électrons est la composition des électrons dans le circuit + la vitesse du circuit.
+Une autre possibilité serait de faire l'approche historique entière et introduire le dphi directement.
+Bonne utilisation des couleurs, mais défaut de diction : pas dire mon/ma tout le temps (mesurer mon inductance...)
+Bq d'applications : bien
+Faire des pauses, poser des questions ouvertes, pendant l'écriture du titre tu te tais.
+A n'est pas mesurable car il y a une jauge près mais ddp mesurable et la circulation de A aussi.
+
+
+
+\end{enumerate}

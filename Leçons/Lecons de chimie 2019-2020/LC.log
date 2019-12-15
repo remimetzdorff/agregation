@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.16)  28 NOV 2019 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.16)  12 DEC 2019 15:43
 entering extended mode
 **./LC.tex
 (LC.tex
@@ -400,7 +400,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip52
 ) (LC.aux
-(LC10_Lea.aux))
+(LC23_Thimothe.aux))
 \openout1 = `LC.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
@@ -508,11 +508,11 @@ LaTeX Info: Redefining \nameref on input line 22.
 \@outlinefile=\write3
 \openout3 = `LC.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 24.
+LaTeX Font Info:    Try loading font information for U+msa on input line 25.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 24.
+LaTeX Font Info:    Try loading font information for U+msb on input line 25.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -527,44 +527,37 @@ LaTeX Warning: No \author given.
  [1
 
 {C:/Users/remi/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-\openout2 = `LC10_Lea.aux'.
+\openout2 = `LC23_Thimothe.aux'.
 
 
-(LC10_Lea.tex) [2
+(LC23_Thimothe.tex) [2
 
 ]
-No file LC.bbl.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
-(LC.aux (LC10_Lea.aux))
+ (LC.aux (LC23_Thimothe.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
 Package rerunfilecheck Info: File `LC.out' has not changed.
-(rerunfilecheck)             Checksum: C46E471E1656A04E827E934635C0DA7D;482.
+(rerunfilecheck)             Checksum: 789489F672279A4F208C1C8C7573F7DD;86.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
  ) 
 Here is how much of TeX's memory you used:
- 8345 strings out of 492976
- 118274 string characters out of 3135994
- 223411 words of memory out of 3000000
- 12077 multiletter control sequences out of 15000+200000
- 17982 words of font info for 56 fonts, out of 3000000 for 9000
+ 8300 strings out of 492976
+ 117756 string characters out of 3135994
+ 220411 words of memory out of 3000000
+ 12051 multiletter control sequences out of 15000+200000
+ 12011 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,6n,31p,241b,423s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\remi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-cbx1440.pk> <C:\Users\remi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
-\dpi600\ecrm1200.pk> <C:\Users\remi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
-nappen\ec\dpi600\ecbx1200.pk> <C:\Users\remi\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\remi\AppData\Local\MiKTeX\2.9\
-fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
->
-Output written on LC.pdf (2 pages, 106965 bytes).
+crm1200.pk> <C:\Users\remi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
+\dpi600\ecbx1200.pk> <C:\Users\remi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
+nappen\ec\dpi600\ecbx1728.pk> <C:\Users\remi\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ecrm2074.pk>
+Output written on LC.pdf (2 pages, 38248 bytes).
 PDF statistics:
- 251 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 133 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 500000)
+ 9 words of extra memory for PDF output out of 10000 (max. 10000000)
 
