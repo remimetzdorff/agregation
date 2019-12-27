@@ -4,7 +4,6 @@ thermodynamique : cryostats (He4, He3, N2), cryostat à dilution
 rétroaction : asservissement, feedback-cooling
 optique : michelson, fabry-perot, optique gaussienne
 
-
 deux aspects de la lumière : perturbation et controle via pression de radiation
 
 formation par l'expérience : des galères et encore des galères

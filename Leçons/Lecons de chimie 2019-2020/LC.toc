@@ -1,7 +1,0 @@
-\babel@toc {french}{}
-\contentsline {section}{\numberline {1}LP20 D\IeC {\'e}termination de constantes d'\IeC {\'e}quilibre}{2}{section.1}
-\contentsline {paragraph}{Bibliographie :}{2}{section*.2}
-\contentsline {paragraph}{Niveau :}{2}{section*.3}
-\contentsline {paragraph}{Pr\IeC {\'e}-requis :}{2}{section*.4}
-\contentsline {paragraph}{Objectifs de la le\IeC {\c c}on :}{2}{section*.5}
-\contentsline {paragraph}{Exp\IeC {\'e}riences :}{2}{section*.6}
