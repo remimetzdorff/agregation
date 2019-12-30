@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.16)  20 DEC 2019 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.16)  30 DEC 2019 16:24
 entering extended mode
 **./LP.tex
 (LP.tex
@@ -289,31 +289,31 @@ Option `thinspace' provided!
 LaTeX Info: Redefining \@qsk on input line 576.
 Option `thinqspace' provided!
 Option `amssymb' provided!
-) (LP.aux (LP03_Lois.aux))
+) (LP.aux (LP10_Martin.aux))
 \openout1 = `LP.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 21.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Info: Redefining \degres on input line 19.
-LaTeX Info: Redefining \dots on input line 19.
-LaTeX Info: Redefining \up on input line 19.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Info: Redefining \degres on input line 21.
+LaTeX Info: Redefining \dots on input line 21.
+LaTeX Info: Redefining \up on input line 21.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -413,9 +413,9 @@ G,.JBIG2,.JB2,.eps]
 Option `amssymb' provided! 
  Command \square redefined by SIunits package!
 
-\openout2 = `LP03_Lois.aux'.
+\openout2 = `LP10_Martin.aux'.
 
-(LP03_Lois.tex
+(LP10_Martin.tex
 LaTeX Font Info:    Try loading font information for U+msa on input line 27.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -427,31 +427,50 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-{C:/Users/remi/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]) [2]
-No file LP.bbl.
-(LP.aux (LP03_Lois.aux)) ) 
+{C:/Users/remi/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<bobine.png, id=13, 419.31656pt x 155.83218pt>
+File: bobine.png Graphic file (type png)
+<use bobine.png>
+Package pdftex.def Info: bobine.png  used on input line 92.
+(pdftex.def)             Requested size: 419.31552pt x 155.8318pt.
+ [2 <./bobine.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 106.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 106.
+ [3] [4] [5]) [6]
+(LP.bbl) [7
+
+] (LP.aux (LP10_Martin.aux)) ) 
 Here is how much of TeX's memory you used:
- 4882 strings out of 492976
- 65369 string characters out of 3135994
- 150590 words of memory out of 3000000
- 8655 multiletter control sequences out of 15000+200000
- 13762 words of font info for 41 fonts, out of 3000000 for 9000
+ 4931 strings out of 492976
+ 66104 string characters out of 3135994
+ 151710 words of memory out of 3000000
+ 8696 multiletter control sequences out of 15000+200000
+ 14446 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,14n,31p,271b,423s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\remi\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
-our\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\remi\AppData\Local\MiKTeX\2.9\fon
-ts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\remi\AppData\Local\MiKTe
-X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\remi\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-msy8.pfb>
-Output written on LP.pdf (2 pages, 113691 bytes).
+ 41i,14n,31p,456b,423s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\remi\AppData\Local\MiKTeX\2.9\fonts\pk
+\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\remi\AppData\Local\MiKTeX\2.9
+\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\remi\AppData\Local\M
+iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\remi\AppDat
+a\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\re
+mi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on LP.pdf (7 pages, 326007 bytes).
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
+ 322 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
