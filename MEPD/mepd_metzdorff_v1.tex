@@ -129,7 +129,7 @@ C'est ainsi qu'au cours des vingt dernières années, de nombreux systèmes opto
 Une des applications fondamentales de ces systèmes est l'observation d'effets quantiques sur des objets de plus en plus massifs, avec notamment l'observation en 2011 du premier refroidissement vers l'état quantique fondamental d'un oscillateur mécanique (de masse effective $m_\mathrm{eff} = \unit{50}{pg}$) couplé à une cavité microonde.
 À travers l'utilisation d'oscillateurs mécaniques de masses effectives intermédiaires ($m_\mathrm{eff} \approx \unit{100}{\micro\gram}$, grande devant celle des systèmes utilisés pour le refroidissement mais petite devant celle des miroirs des interféromètres gravitationnels), l'objectif de ma thèse était donc double :
 \begin{enumerate}
-\item \textbf{Refroidir un oscillateur mécanique macroscopique dans son état quantique fondamental}, avec une masse trois ordres de grandeur plus importante que les précédentes expériences, et en particulier proche de la masse de Planck ($m_\mathrm{P}=\unit{22}{\micro\gram}$) où des effets de décohérence liés à la gravité sont attendus ;
+\item \textbf{Refroidir un oscillateur mécanique macroscopique dans son état quantique fondamental}, avec une masse trois ordres de grandeur plus importante que les précédentes expériences, et en particulier proche de la masse de Planck ($m_\mathrm{P}=\unit{22}{\micro\gram}$) au delà de laquelle les effets de décohérence liés à la gravité deviennent significatifs ;
 \item Préparer un système modèle qui permette d'\textbf{étudier les limites de sensibilité de la mesure de petits déplacements liés au bruit de pression de radiation}, tout en restant beaucoup plus compact que les interféromètres gravitationnels et leur miroirs ($m_\mathrm{eff}\approx\unit{50}{\kilo\gram}$).
 \end{enumerate}
 Le premier point est un pré-requis du deuxième puisque le système étudié est limité par le bruit thermique : afin d'observer le bruit de pression de radiation, il est nécessaire de réduire le mouvement brownien de plus de six ordres de grandeurs, ce qui revient à refroidir l'oscillateur mécanique proche de son état quantique fondamental.
@@ -153,7 +153,8 @@ Son comportement fréquentiel se déduit dans l'espace de Fourier de la suscepti
 \end{equation}
 Dans la théorie de Langevin, le terme de dissipation $\Gamma_m$ se traduit par un couplage de l'oscillateur à son environnement, assimilé à un bain thermique à la température $T_\mathrm{env}$.
 Il en résulte une force $F_\mathrm{T}$, dont le spectre est lié à la partie imaginaire de la susceptibilité mécanique par le théorème de fluctuations-dissipations, à l'origine du mouvement brownien de l'oscillateur.
-On peut ainsi montrer que le spectre de déplacement du résonateur à l'équilibre thermodynamique avec un tel bain thermique est directement lié au rapport $T_\mathrm{env}/m_\mathrm{eff}$ : la connaissance de l'un permet donc de déterminer l'autre à travers la mesure du spectre du mouvement brownien de l'oscillateur.
+On peut ainsi montrer que le spectre de déplacement de l'oscillateur à l'équilibre thermodynamique avec un tel bain thermique a une allure lorentzienne centrée sur la fréquence propre mécanique, dont l'intégration (l'aire sous la courbe) est directement liée au rapport $T_\mathrm{env}/m_\mathrm{eff}$.
+La connaissance de l'un permet donc de déterminer l'autre à travers la mesure du spectre du mouvement brownien de l'oscillateur.
 Le spectre est aussi d'autant plus piqué autour de la fréquence propre $\Omega_m$ que la dissipation est faible, ce qui conduit à utiliser des oscillateurs avec des facteurs de qualité mécaniques $Q=\Omega_m/\Gamma_m$ très élevés (supérieurs au million).
 
 Cette description classique ne permet cependant pas d'expliquer le comportement de l'oscillateur aux très basses températures.
@@ -211,15 +212,13 @@ Je pourrai ensuite montrer aux élèves comment ces techniques sont utilisées e
 \center
 \includegraphics[scale=0.75]{figures/thermal_peak_def_filled.png}
 \caption{Spectres du bruit de position d'un micro-pilier en cavité dû au mouvement brownien de l'oscillateur.
-L'unité $\meter\squared\per\hertz$ vient du fait que l'on s'intéresse ici non à l'amplitude mais plutôt à la puissance du bruit de position (donc $\meter\squared$).
-De plus pour obtenir des valeurs indépendantes de la bande passante $f_\mathrm{BP}$ de l'analyseur de spectre, on normalise les valeurs mesurée en les divisant par $f_\mathrm{BP}$, d'où $\per\hertz$.
-La figure de gauche est obtenue à température ambiante (\unit{300}{\kelvin}) alors que celle de droite est obtenue en cryogénie à \unit{30}{\milli\kelvin}.
-Le refroidissement de l'échantillon s'accompagne d'un déplacement de sa fréquence de résonance d'une augmentation de son facteur de qualité (en raison de la dépendance en température des propriétés mécaniques des matériaux utilisés), ainsi que d'une diminution de l'aire sous le pic associée à la réduction du mouvement brownien, proportionnelle à la température.
-La mesure permet de déterminer la masse effective du mode de l'oscillateur, pour déterminer ensuite la température effective lors des expériences de refroidissement.}
+Le déplacement est exprimé en $\meter\squared\per\hertz$ car on s'intéresse ici non à l'amplitude mais plutôt à la puissance du bruit de position, normalisé par la bande passante de l'analyseur de spectre.
+La figure de gauche est obtenue à température ambiante ($\sim\unit{300}{\kelvin}$) alors que celle de droite est obtenue en cryogénie à $\sim\unit{30}{\milli\kelvin}$.
+Le refroidissement de l'échantillon s'accompagne d'un déplacement de sa fréquence de résonance d'une augmentation de son facteur de qualité (en raison de la dépendance en température des propriétés mécaniques des matériaux utilisés), ainsi que d'une diminution de l'aire sous le pic associée à la réduction du mouvement brownien, proportionnelle à la température.}
 \label{fig:thermal_noise}
 \end{figure}
 
-\subsection{Cavité optique : sensibilité et couplage optomécanique}
+\subsection{Une cavité optique pour augmenter la sensibilité}
 
 Comme on l'a évoqué précédemment, la mesure des déplacements de l'oscillateur est réalisée par interférométrie optique : un faisceau laser se réfléchissant sur un miroir mobile acquiert un déphasage $\delta\varphi$ qui dépend du déplacement $\delta$ du miroir.
 La sensibilité $\delta\varphi / \delta x$ de cette mesure dépend du protocole de détection employé.
@@ -236,12 +235,13 @@ Pour les caractérisations préliminaires des échantillons un simple Michelson 
 En revanche, pour les mesures de mouvement brownien, la sensibilité du Michelson n'est plus suffisante et il est nécessaire d'utiliser une cavité Fabry-Perot, dont l'un des miroirs est l'oscillateur mécanique.
 On peut alors détecter la lumière réfléchie par la cavité :
 \begin{itemize}
-\item \textbf{détection directe} : si la cavité est légèrement désaccordée par rapport au laser, une variation de sa longueur est directement responsable de variations de l'intensité intracavité.
+\item détection directe : si la cavité est légèrement désaccordée par rapport au laser, une variation de sa longueur est directement responsable de variations de l'intensité intracavité.
 Le déplacement de l'oscillateur est ainsi relié à l'intensité réfléchie par la cavité ;
-\item \textbf{détection homodyne} : si la cavité est résonante avec le laser, aucune variation d'intensité n'est mesurable mais la sensibilité $\delta\varphi/\delta x$ est maximale.
+\item détection homodyne : si la cavité est résonante avec le laser, aucune variation d'intensité n'est mesurable mais la sensibilité $\delta\varphi/\delta x$ est maximale.
 En faisant interférer le faisceau réfléchi par la cavité avec un faisceau de référence dans un interféromètre de Michelson, on observe alors les variations de l'intensité transmise par l'interféromètre.
 L'utilisation d'une détection balancée permet d'atténuer fortement le bruit classique, ce qui autorise des mesures limitées par les bruits quantiques. 
 \end{itemize}
+Le principe de ces détections est résumé sur la figure~\ref{fig:detection_scheme}.
 D'autres méthodes (Pound-Drever-Hall, détection hétérodyne, détection synchrone) sont aussi nécessaires mais elles ne seront pas présentées ici.
 
 \begin{figure}
@@ -273,10 +273,9 @@ Ils mettraient ainsi en pratique des compétences variées : impression 3D, prog
 \includegraphics[height=130pt]{figures/cavity_microwheel.jpg}
 \includegraphics[height=130pt]{figures/cavity_uroc.jpg}
 \includegraphics[height=130pt]{figures/IMG_1766.JPG}
-\caption{À gauche : un échantillon micro-disque dans la première moitié de la cavité.
-Au centre : le miroir de couplage (\uroc) monté dans la deuxième partie de la cavité.
+\caption{La cavité est constituée de deux parties principales, avec l'oscillateur mécanique dans la première (à gauche : un micro-disque) et le miroir de couplage (\uroc) monté dans la seconde.
 Les fils permettent de contrôler les cales piézoélectriques qui permettent l'asservissement en longueur de la cavité.
-À droite : photographie de la cavité de mesure assemblée et montée sur le dernier étage du cryostat à dilution.
+À droite, on peut voir la cavité assemblée et montée sur le dernier étage du cryostat à dilution.
 La lentille de courte focale permet de coupler le faisceau incident au mode fondamental $\mathrm{TEM_{00}}$ de la micro-cavité.}
 \label{fig:cavity}
 \end{figure}
@@ -284,7 +283,7 @@ La lentille de courte focale permet de coupler le faisceau incident au mode fond
 \subsection{Refroidissement par rétroaction par pression de radiation}
 
 Pour préparer les oscillateurs mécaniques dans leur état quantique fondamental, il est nécessaire d'atteindre des températures inférieures au mK.
-L'utilisation d'un cryostat à circulation d'hélium permet de refroidir les échantillons à une température de quelques Kelvin suffisante pour une caractérisation préliminaire de leurs propriétés mécaniques, mais trop élevée pour espérer atteindre le régime quantique.
+L'utilisation d'un cryostat à circulation d'hélium permet de refroidir les échantillons à une température de quelques kelvin suffisante pour une caractérisation préliminaire de leurs propriétés mécaniques, mais trop élevée pour espérer atteindre le régime quantique.
 C'est donc à l'aide d'un cryostat à dilution fonctionnant avec un mélange $\mathrm{^4He/^3He}$ que la cavité de mesure est tout d'abord refroidie jusqu'à \unit{30}{\milli\kelvin}.
 
 \textit{Le fonctionnement de ces machines thermiques peut être abordé en PC dans le cadre d'une approche thermodynamique simplifiée.
@@ -298,6 +297,16 @@ On peut par exemple exploiter directement le couplage optomécanique dans une ca
 \end{itemize}
 Cet auto-refroidissement a été exploité et a conduit un refroidissement jusqu'à un taux d'occupation de 20 phonons, limité par la puissance injectable dans la cavité.
 
+\begin{figure}
+\center
+\includegraphics[scale=0.5]{figures/feedback_cooling.png}
+\caption{Schéma de principe du refroidissement par rétroaction.
+Le couplage à un bain thermique $T_\mathrm{env}$ en raison de la dissipation mécanique $\Gamma_m$ de l'oscillateur se traduit par un mouvement brownien du micro-pilier, qui peut être détecté optiquement en exploitant la réponse de la cavité résonante.
+Le signal obtenu est amplifié, filtré, et alimente un modulateur d'amplitude qui agit sur le pilier par l'intermédiaire de la pression de radiation.
+Une mesure indépendante de la boucle de rétroaction est obtenue grâce à un deuxième faisceau, indépendant du précédent.}
+\label{fig:feedback_scheme}
+\end{figure}
+
 Une autre méthode permet d'obtenir, à puissance optique égale, des taux de refroidissement plus important : le refroidissement par rétroaction.
 C'est une méthode active qui consiste à appliquer sur le miroir mobile une force qui va compenser la force thermique décrite précédemment.
 Un schéma de principe de cette méthode est représenté sur la figure~\ref{fig:feedback_scheme}.
@@ -308,23 +317,13 @@ Dans notre expérience, on utilise la pression de radiation en modulant l'intens
 Le modulateur d'amplitude présente en effet une fonction de transfert très plate dans une large gamme de fréquence et évite d'ajouter des connexions électriques à la cavité de mesure ce qui serait source de bruit et de chauffage.
 Il est alors possible d'augmenter le refroidissement en augmentant le gain de la boucle de rétroaction, soit en travaillant avec une puissance optique plus importante, soit en augmentant la profondeur de la modulation d'amplitude.
 
-Dans le cas d'une mesure parfaite, c'est à dire sans bruit donc avec une sensibilité infinie, une augmentation du gain $g$ se traduit toujours par un refroidissement du mode mécanique car seul le signal correspondant à ses déplacements est mesuré puis réinjecté dans la boucle.
+Dans le cas d'une mesure parfaite, c'est-à-dire sans bruit donc avec une sensibilité infinie, une augmentation du gain $g$ se traduit toujours par un refroidissement du mode mécanique car seul le signal correspondant à ses déplacements est mesuré puis réinjecté dans la boucle.
 En réalité, la sensibilité de la mesure est limitée (fluctuations de position du miroir d'entrée, bruit électronique et ultimement, bruit quantique de phase) et il existe un gain optimal $g_\mathrm{opt}$ pour lequel le mouvement brownien de l'oscillateur est équivalent au bruit de la mesure.
 Pour $g>g_\mathrm{opt}$, on réinjecte le bruit de la mesure dans la boucle qui est transcrit en bruit de position sur l'oscillateur.
 On observe alors dans le spectre du signal mesuré une diminution du bruit autour de la fréquence de résonance de l'oscillateur en dessous du bruit de mesure (squashing) car le bruit de mesure et les déplacements de l'oscillateur sont alors corrélés.
 Même s'il est possible de tenir compte de cet effet pour extraire la température effective du mode mécanique, on souhaite avoir une mesure indépendante de la boucle de rétroaction qui donne directement accès à la température de l'oscillateur.
 On injecte pour cela un deuxième faisceau dans la cavité, avec une polarisation orthogonale au premier qui permet d'obtenir une mesure directe des déplacements de l'oscillateur.
 L'effet de squashing ne perturbe pas cette mesure car le bruit des deux détections est décorrélé.
-
-\begin{figure}
-\center
-\includegraphics[scale=0.5]{figures/feedback_cooling.png}
-\caption{Schéma de principe du refroidissement par rétroaction.
-Le couplage à un bain thermique $T_\mathrm{env}$ en raison de la dissipation mécanique $\Gamma_m$ de l'oscillateur se traduit par un mouvement brownien du micro-pilier, qui peut être détecté optiquement en exploitant la réponse de la cavité résonante (ici grâce à une détection homodyne).
-Le signal obtenu est amplifié, filtré, et alimente un actuateur (ici un modulateur d'amplitude) qui agit sur le pilier (par l'intermédiaire de la pression de radiation).
-Une mesure indépendante de la boucle de rétroaction est obtenue grâce à la détection PDH.}
-\label{fig:feedback_scheme}
-\end{figure}
 
 \subsection{Contrôle de l'expérience : Arduino, RedPitaya et Python}
 
@@ -368,26 +367,23 @@ Avec ces échantillons et en seulement quelques mois, il a été possible d'atte
 \center
 \includegraphics[scale=0.75]{figures/feedback_cooling_6phonons.png}
 \caption{Refroidissement d'un micro-pilier proche de son état quantique fondamental.
-En haut à gauche : spectres du bruit de position obtenus avec la détection homodyne donnant le signal d'erreur pour la boucle de rétroaction.
-À droite, spectres obtenus avec la détection PDH indépendante de la boucle.
-Les deux mesures sont réalisées simultanément.
-Les données expérimentales sont tracées en transparence, l'ajustement par le modèle théorique correspond aux courbes pleines avec en rouge le gain le plus faible (correspondant à la température sans refroidissement par rétroaction) et en bleu la courbe obtenue pour le gain optimal correspondant à la température effective la plus faible.
-En bas à gauche : gain extrait de l'ajustement des spectres homodyne en fonction du gain analogique.
-À droite, températures effectives déduites des valeurs du gain en rouge (cas idéal d'une mesure parfaite des déplacements de l'oscillateur, sans bruit) et des spectres PDH (en bleu).
-La courbe rouge correspond au modèle qui tient compte des paramètres de l'expérience.}
+À gauche : spectres du bruit de position obtenus avec la détection indépendante de la boucle de rétroaction obtenus pour différents gains (du rouge pour les gains faibles au violet pour $g_\mathrm{opt}$).
+Les données expérimentales sont tracées en transparence et l'ajustement par le modèle théorique correspond aux courbes pleines.
+À droite : températures effectives déduites des spectres obtenus avec la détection indépendante de la boucle de rétroaction.
+La courbe orange correspond au modèle qui tient compte des paramètres de l'expérience.}
 \label{fig:feedback_cooling_pillar}
 \end{figure}
 
 \subsection{Vers des mesures sous la limite quantique standard}
 
-Les mesures présentées précédemment montrent deux limites de la sensibilité des mesures de petits déplacements : le bruit thermique et le bruit quantique de phase.
+Les mesures présentées précédemment montrent deux limites de la sensibilité des mesures de petits déplacements : le bruit thermique (proche de la fréquence propre) et le bruit quantique de phase (partout ailleurs).
 Compte tenu des puissances optiques utilisées et du niveau d'occupation thermique atteint, le bruit quantique de pression de radiation ne représente qu'une fraction du bruit de position mesuré (de l'ordre de \unit{1}{\%}).
 Grâce aux développements réalisés sur la cavité optomécanique, une observation du bruit de pression de radiation (proportionnel à l'intensité lumineuse) devrait être possible, notamment en utilisant une puissance optique plus importante.
 Il sera alors possible de démontrer une amélioration de la sensibilité de la mesure autour de la fréquence de résonance de l'oscillateur en remplaçant la source laser actuelle par une source de lumière comprimée.
 
 Cette source est actuellement développée au sein de l'équipe et a déjà permis d'observer une réduction du bruit de phase de l'ordre de \unit{10}{dB}.
 Il est aussi possible d'exploiter la réponse en phase d'une cavité optique (dite cavité de rotation) pour obtenir une réduction du bruit d'intensité à la fréquence de résonance de l'oscillateur (là où la réponse mécanique du système est maximale, et donc là où le bruit de pression de radiation est maximal) et une réduction du bruit de phase loin de la résonance (là où les fluctuations d'intensité ne perturbent pas la mesure).
-Cette technique sera ensuite employée sur Virgo lors des prochaines campagnes de mesure afin d'étendre la portée du détecteur et ainsi observer plus d'évènements (augmenter la sensibilité de l'appareil par un facteur deux double sa porté, ce qui multiplie par huit le volume observable et donc la probabilité d'observer des sources d'ondes gravitationnelles).
+Cette technique sera ensuite implémentée sur Virgo lors des prochaines campagnes de mesure afin d'étendre la portée du détecteur et ainsi observer plus d'évènements (augmenter la sensibilité de l'appareil par un facteur deux double sa porté, ce qui multiplie par huit le volume observable et donc la probabilité d'observer des sources d'ondes gravitationnelles).
 
 \section{Enseignement, diffusion et vulgarisation}
 
@@ -417,7 +413,7 @@ La communauté LIGO/Virgo est très dynamique et offre des ressources qu'il est 
 
 A l'occasion du sujet \textit{Peut on casser un verre avec la voix ?} de l'émission E=M6, j'ai aussi mis en place une expérience permettant de casser un verre en le faisant vibrer à l'aide d'une source sonore.
 Après avoir réalisé des simulations par éléments finis (COMSOL) comme on peut le voir sur la figure~\ref{fig:wine_glass}, on peut observer expérimentalement les différents modes propres d'un verre et visualiser les vibrations à l'aide d'un stroboscope.
-Cette expérience permet notamment d'aborder l'analyse spectrale et le phénomène de résonance, qui pourrait faire l'objet d'une manipulation de TP (un peu bruyante certe) sans bien sûr aller nécessairement jusqu'à la rupture.
+Cette expérience permet notamment d'aborder l'analyse spectrale et le phénomène de résonance, qui pourrait faire l'objet d'une manipulation de TP (un peu bruyante certes) sans bien sûr aller nécessairement jusqu'à la rupture.
 
 \begin{figure}
 \center
