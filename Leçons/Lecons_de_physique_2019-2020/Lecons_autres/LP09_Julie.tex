@@ -1,0 +1,97 @@
+\section{LP09 Modèle de l'écoulement parfait}
+
+\niveau CPGE
+
+\prerequis
+\begin{itemize}
+\item Viscosité, nombre de Reynolds ;
+\item Navier Stokes ;
+\item cinématique des fluides.
+\end{itemize}
+
+\objectif
+
+\footnotesize{\bibliography{biblio}}
+\bibentry{}
+
+\subsection{Introduction}
+
+Equation de NS compliqué car non linéaire : dans l'approximation de l'écoulement parfait, c'est plus simple.
+
+\subsection{Description du modèle de l'écoulement parfait}
+\subsubsection{Définition d'un écoulement parfait}
+
+\paragraph{Définition :}
+Si on peut négliger tous les phénomènes diffusifs (viscosité mais aussi transfert thermique), l'écoulement est parfait.
+L'évolution d'une particule de fluide et alors isentropique (adiabatique et réversible).
+Il faut faire la différence entre écoulement turbulent et écoulement parfait qui sont deux écoulement à grand nombre de Reynolds.
+
+\subsubsection{Une équation de la dynamique régissant l'écoulement parfait, l'équation d'Euler (4')}
+
+On applique le PFD à une particule de fluide de masse $\d m = \rho \d \tau$, dans un référentiel galiléen où les seules forces sont les forces de pression $-\grad P \d \tau$.
+On obtient l'équation d'Euler
+\begin{equation}
+\rho \left(\frac{\partial \overrightarrow{v}}{\partial t} + (\overrightarrow{v}\grad) \overrightarrow{v} \right) = -\grad P + \rho \overrightarrow{g}
+\end{equation}
+En changeant $t$ en $-t$ on voit que l'équation est réversible ce qui est cohérent avec l'absence de terme de viscosité.
+
+\subsection{Forces du modèle}
+\subsubsection{Equation de Bernoulli (9')}
+
+On considère un écoulement parfait, stationnaire et incompressible d'un fluide homogène.
+On utilise $(\overrightarrow{v\grad)\overrightarrow{v}} = \grad\frac{v^2}{2}+(\rot\overrightarrow{v}\wedge\overrightarrow{v})$.
+
+Dans le cas d'un écoulement irrotationnel, on obtient Bernoulli, sinon, il faut se placer sur une ligne de courant.
+Bernoulli est une équation de conservation de l'énergie.
+
+\subsubsection{Application : le tube de Pitot 16'}
+
+Schéma.
+
+Calcul de l'écart de pression pour le tube de Pitot.
+On obtient
+\begin{equation}
+v_\infty = \sqrt{\frac{2\Delta P}{\rho}}
+\end{equation}
+
+AN avec $\Delta P = \unit{0,26}{bar}$ et $\rho = \unit{1,3}{kg.m^{-3}}$ et on trouve $v_\infty = \unit{200}{m.s^{-2}}$.
+
+\subsection{Lien entre écoulement parfait et réel (25')}
+
+Paradoxe de d'Alembert, ou l'absence de trainée dans un écoulement parfait autour d'une aile d'avion.
+Le théorème de Kelvin dit qu'un écoulement irrotationnel ne peut devenir rotationnel.
+
+Pour faire le lien entre les écoulements parfaits et réels, on introduit la notion de couche limite.
+
+\subsection{Conclusion (39')}
+
+\subsection{Question}
+
+\begin{itemize}
+\item A propos de l'équation de Bernoulli, est il possible de l'appliquer sur un autre contour ?
+On a utilisé $\overrightarrow{v}\wedge\overrightarrow{\d l} = 0$, on peut ausi utiliser $\rot\overrightarrow{v} \wedge \overrightarrow{\d l}$.
+\item Peut-on utiliser un tube de Pitot pour mesurer la vitesse d'un vélo ?
+On fait l'application numérique et on trouve $\Delta h = \unit{1}{\milli\meter}$ pour $v=\unit{5}{m.s^{-1}}$ avec de l'eau, ce qui est très faible.
+Le tube de Pitot est plutôt utilisé pour mesurer des vitesses élevées.
+\item Pour le tube de Pitot, quelle est la ligne de courant sur laquelle on applique Bernoulli ?
+\item Le tube de Pitot doit être parfaitement aligné sur l'écoulement, y a-t-il une façon de s'affranchir de ce problème ?
+Un vrai tube de Pitot a plusieurs trous tout autur, connectés, qui permettent de moyenner ces effets.
+\item Y-a-t-il un lien entre la circulation et la vorticité ?
+La circulation sur un contour fermé est égal au flux de la vorticité.
+\item 
+\end{itemize}
+
+
+\begin{experience}
+\textbf{Mesure de la vitesse du son dans l'air}
+\end{experience}
+\begin{slide}
+Stylé
+\end{slide}
+\begin{transition}
+Pompélopie
+\end{transition}
+\begin{remarque}
+Pompélopie
+\end{remarque}
+\note{Trop de la bombe}

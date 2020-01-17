@@ -1,0 +1,97 @@
+\section{LP16 Microscopie optique (Léa)}
+
+\paragraph{Bibliographie :}
+\begin{itemize}
+\item 
+\end{itemize}
+
+\paragraph{Niveau : L3} 
+
+\paragraph{Pré-requis :}
+\begin{itemize}
+\item Optique géométrique
+\item Optique ondulatoire (diffraction)
+\end{itemize}
+
+\subsection{Introduction}
+
+Former une image agrandie d'un objet trop petit pour être vu (bactérie, objet transparent, etc.). 
+Lumière visible seulement
+
+\subsection{Principe du microscope moderne}
+
+\subsubsection{Microscope simplifié}
+
+Constitué de deux optique successives : objectif et oculaire et deux diaphragme
+
+\paragraph{Exp : } montage du microscope simplifié pas à pas : d'abord image du F par une lentille de 33 cm pour symboliser l'oeil, puis objectif pour montrer qu'on fait une image agrandie, puis finalement ajout de l'oculaire par autocolimation.
+Il faut alors mettre l'écran dans le plas focal image de la lentille.
+Rôle des différent éléments :
+\begin{itemize}
+\item Objectif : agrandir l'image ;
+\item oculaire : agit comme une image.
+\end{itemize}
+Ajout des diaphragmes de champ et d'ouverture :
+\begin{itemize}
+\item Do : permet de contrôler le flux lumineux ;
+\item Dc : permet de contrôler le champ visible de l'objet sur l'écran. 
+\end{itemize}
+
+Le microscope est caractérisé par le grossissement commercial.
+
+\subsubsection{Grossissement commercial du microscope}
+
+\begin{equation}
+G_\mathrm{c, micro} = \frac{\theta '}{\theta}
+\end{equation}
+où $\theta$ est l'angle sous lequel est vu l'objet au puctum proximum ($d_m=\unit{25}{cm}$).
+On peut exprimer ce grossissement en fonction des caractéristique des lentilles :
+\begin{equation}
+G_\mathrm{c, micro} = |\gamma_\mathrm{obj}G_\mathrm{c, oc}|
+\end{equation}
+
+Est-ce qu'on peut agrandir une image autant qu'on le souhaite ?
+
+\subsubsection{Limites du microscope}
+
+\begin{enumerate}
+\item Pouvoir de résolution : lié aux inhomogénéité à l'échelle de la longueur d'onde. On s'intéresse à l'ouverture numérique : $\omega_0 = n\sin(u)$
+\paragraph{Diapo : } Pouvoir de résolution de l'objectif
+Pour quantifier la limite de résolution :
+\begin{equation}
+(AB)_\mathrm{min} = 0,61\frac{\lambda_0}{n\sin(u)}
+\end{equation}
+Odg : $\lambda_0 = \unit{400}{nm}$, $n=1,5$, $\omega_0=1,25$.
+\item Aberration : géométriques liées à la forme de la lentille, chromatiques liées au caractère dispersif du verre des lentilles.
+\end{enumerate}
+
+\subsection{Développement récents en microscopie}
+
+\subsubsection{Microscopie à contraste de phase}
+
+Certains objets sont transparent et le contraste est nul, mais il y a une variation de longueur optique : 
+\begin{equation}
+s(A') = s_0 \rightarrow s(A') = |s_0|^2
+\end{equation}
+\begin{equation}
+s(A') = s_0 e^{i\phi} \rightarrow s(B') = |s_0|^2
+\end{equation}
+On n'observe donc pas de variation d'intensité.
+
+En ajoutant une lame quart d'onde au centre du cercle oculaire, on affecte seulement les faisceaux non diffracté par l'inhomogénéité en $B'$
+\begin{equation}
+s(B') = s_0e^{i\pi/2} + s_0(e^{i\phi}-1)
+\end{equation}
+Après calcul et en supposant le déphasage faible, on obtient 
+\begin{equation}
+|s_0^2||1-2\phi|
+\end{equation}
+
+\subsubsection{Microscopie de fluorescence confocale}
+
+Exploite la réponse de molécule fluorescente qui, à une longueur d'onde d'excitation, émettent une longueur d'onde d'émission.
+Schéma du principe, etc.
+
+\paragraph{Vidéo :} Microscopie confocale
+
+\subsection{Conclusion}

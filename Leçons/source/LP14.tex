@@ -1,0 +1,168 @@
+\section{LP14 Ondes acoustiques}
+
+\niveau CPGE
+
+\prerequis
+\begin{itemize}
+\item Mécanique des fluides ;
+\item Thermodynamique ;
+\item Ondes électromagnétiques ;
+\end{itemize}
+
+\objectif Décrire les ondes acoustiques dans différents milieux, leur propagation et ainsi expliquer le principe de fonctionnement de plusieurs instruments de musique. 
+
+\footnotesize{\bibliography{source/biblio}}
+\bibentry{Metzdorff2017}
+\bibentry{Stanford2014}
+
+\subsection{Introduction}
+
+Montrer l'extrait de la vidéo~\cite{Stanford2014}.
+Dans cette vidéo, on a vu de nombreux exemples qui montrent le caractère vibratoire des ondes acoustiques et leur lien avec le son, la musique.
+L'objectif de cette leçon va être de décrire les ondes acoustiques, principalement dans les fluides et de voir comment leur manipulation peut conduire à la fabrication d'instruments, mais aussi à la compréhension du comportement de nombreux objets.
+
+\subsection{Description d'une onde acoustique}
+
+Les ondes acoustiques sont des ondes mécaniques.
+Elles correspondent à la propagation d'une déformation dans un milieu matériel.
+Insister sur la nécessité d'un milieu matériel, qui peut être fluide ou solide.
+Ici on va principalement s'intéresser aux ondes acoustiques dans l'air.
+
+\subsubsection{Approximation acoustique}
+
+Les ondes acoustiques résultent d'un couplage entre des variations de pression et le déplacement des particules de fluide.
+On va donc s'intéresser à ces deux grandeurs principalement.
+Cependant, le fluide est compressible et il va aussi y avoir des variations de volume donc de masse volumique.
+D'autres grandeurs (température, etc.) sont également amenées à varier ce qui va conduire à effectuer certaine hypothèse, que l'on pourra vérifier ensuite.
+
+Dans un premier temps, on s'intéresse à un fluide au repos :
+\begin{itemize}
+\item de vitesse moyenne nulle ;
+\item de pression moyenne $P_0$ ;
+\item de masse volumique moyenne $\mu_0$.
+\end{itemize}
+
+L'onde sonore correspond à une faible perturbation du fluide par rapport à cet état de repos :
+\begin{itemize}
+\item $\overrightarrow{v}(M, t) = \overrightarrow{v_1}(M, t)$, petite devant un vitesse caractéristique que l'on déterminera ;
+\item $P(M, t) = P_0 + p_1(M, t)$, où $p_1(M, t) \ll P_0$ ;
+\item $\mu(M, t) = \mu_0 + \mu_1(M,t)$ où $\mu_1(M, t) \ll \mu_0$;
+\end{itemize}
+et sera traité comme tel.
+On négligera ainsi tous les termes d'ordre deux dans les équations.
+C'est l'approximation acoustique.
+
+Dans le cadre de cette leçon, on considère l'écoulement comme parfait en négligeant la viscosité du fluide.
+Ceci conduit à une déformation élastique rapide du fluide, c'est à dire réversible, ce qui nous permettra de formuler une hypothèse thermodynamique.
+
+\begin{transition}
+On vient de définir le cadre de l'étude des ondes acoustiques dans un fluide.
+On peut maintenant déterminer l'équation qui régit l'évolution de ces ondes en exploitant les outils de la mécanique des fluides et de la thermodynamique.
+\end{transition}
+
+\subsubsection{Équation de propagation}
+
+On peut tout d'abord utiliser l'équation de la conservation locale de la masse :
+\begin{equation*}
+\frac{\partial \mu}{\partial t} + \div(\mu\overrightarrow{v}) = 0,
+\end{equation*}
+qui conduit après linéarisation à
+\begin{equation*}
+\frac{\partial \mu_1}{\partial t} + \mu_0\div\overrightarrow{v_1} = 0.
+\end{equation*}
+Cette équation fait apparaitre un premier lien entre $\mu_1$ et $\overrightarrow{v_1}$ alors qu'on préfèrerai un lien entre $p_1$ et $\overrightarrow{v_1}$.
+
+On peut faire ce lien à travers un coefficient thermodynamique.
+La transformation associée au passage de l'onde est rapide donc on la supposera adiabatique et réversible, c'est à dire isentropique.
+Dans ce cas on utilise le coefficient de compressibilité isentropique $\chi_S$
+\begin{equation*}
+\chi_S = -\frac{1}{V} \left( \frac{\partial V}{\partial P} \right)_S = \frac{1}{\mu} \left( \frac{\partial \mu}{\partial V} \right)_S.
+\end{equation*}
+Un développement de Taylor donne ainsi la relation $\mu_1 = \chi_S\mu_0 p_1$.
+En l'injectant dans l'équation de conservation de la masse, on obtient après linéarisation
+\begin{equation}
+\chi_S \frac{\partial p_1}{\partial t} + \div  \overrightarrow{v_1} = 0.
+\label{eq:mass_conservation}
+\end{equation}
+
+L'écoulement étant parfait, on utilise l'équation d'Euler en négligeant la gravité :
+\begin{equation*}
+\mu \left( \frac{\partial \overrightarrow{v}}{\partial t} + \left( \overrightarrow{v}\grad\right)\overrightarrow{v}\right) = -\grad P.
+\end{equation*}
+L'hypothèse $v_1$ petite conduit à négliger le terme non linéaire de l'équation d'Euler
+\begin{equation*}
+\left|\left|\left( \overrightarrow{v}\grad\right)\overrightarrow{v}\right|\right| \ll \left|\left|\frac{\partial\overrightarrow{v}}{\partial t}\right|\right|
+\end{equation*}
+ce qui est vrai si $||v_1|| \ll c$, où $c=\lambda\nu$ est la vitesse de l'onde acoustique.
+Cette condition peut être vérifiée à posteriori.
+Avec ces hypothèses, on aboutit à l'équation linéarisée
+\begin{equation}
+\mu_0 \frac{\partial \overrightarrow{v_1}}{\partial t} = -\grad p_1.
+\label{eq:euler}
+\end{equation}
+
+En dérivant l'équation de conservation de la masse~\ref{eq:mass_conservation} par rapport au temps et en prenant la divergence de l'équation d'Euler~\ref{eq:euler}, on obtient l'équation de d'Alembert pour la surpression $p_1$
+\begin{equation}
+\frac{\partial^2 p_1}{\partial t^2} - \frac{1}{c^2}\Delta p_1 = 0,
+\label{eq:dalembert_p}
+\end{equation}
+où $c=\sqrt{\chi_S \mu_0}$ est la vitesse de l'onde acoustique.
+De même, en dérivant Euler par rapport au temps et en prenant le gradient de la conservation de la masse, on obtient l'équation de d'Alembert pour la vitesse $\overrightarrow{v_1}$
+\begin{equation}
+\frac{\partial^2 \overrightarrow{v_1}}{\partial t^2} - \frac{1}{c^2}\Delta \overrightarrow{v_1} = 0.
+\label{eq:dalembert_v}
+\end{equation}
+\begin{remarque}
+Pour l'équation de d'Alembert sur la vitesse, il faut de plus supposer l'écoulement irrotationnel, ce qui est raisonnable dans l'hypothèse d'un écoulement parfait et en appliquant le théorème de Kelvin.
+\end{remarque}
+
+\begin{transition}
+Pour établir ces équations de propagation, on a fait plusieurs hypothèses qu'il faut vérifier.
+\end{transition}
+
+\subsubsection{Retour sur les hypothèses}
+
+\begin{slide}
+\textbf{Quelques ordres de grandeur.}
+L'intensité sera définie proprement ensuite.
+Même pour des sons très intenses, les hypothèses de perturbations faibles sont vérifiées, donc l'approximation acoustique est valide.
+\end{slide}
+
+La deuxième hypothèse réalisée est celle d'une transformation adiabatique réversible.
+Pour une évolution isentropique du fluide, on utilise la loi de Laplace $PV^\gamma = \mathrm{cte}$, où $\gamma=c_p/c_v$ est le rapport des capacité calorifique à pression et volume constant.
+On trouve ainsi $\chi_S = 1/\gamma P_0$ et donc
+\begin{equation*}
+c = \sqrt{\frac{\gamma P_0}{\mu_0}}.
+\end{equation*}
+Si le fluide peut-être considéré comme un gaz parfait, on obtient finalement en utilisant l'équation d'état des gaz parfaits
+\begin{equation}
+c = \sqrt{\frac{\gamma RT_0}{M}}.
+\end{equation}
+
+On peut vérifier expérimentalement cette relation en mesurant la vitesse du son dans l'air.
+\begin{experience}
+\textbf{Mesure de la vitesse du son dans l'air avec une onde ultra-sonore.}
+On pourrait remonter à cette vitesse en mesurant le temps de vol d'une impulsion brève entre un émetteur et un récepteur ultra-sonore mais cette mesure est sujette à une incertitude importante car on ne connait pas exactement leur géométrie.
+Je préfère ici mesurer la longueur d'onde en déplaçant de plusieurs longueur d'onde le récepteur devant l'émetteur sur un banc optique.
+\end{experience}
+
+\begin{remarque}
+Pour une transformation isotherme, on utilise le coefficient de compressibilité isotherme $\chi_T$ et on trouve
+\begin{equation*}
+c = \sqrt{\frac{RT_0}{M}},
+\end{equation*}
+ce qui n'est pas en accord avec les observations expérimentales.
+\end{remarque}
+
+\subsection{Aspects énergétiques}
+\subsubsection{Impédance acoustique}
+\subsubsection{Conservation de l'énergie}
+\subsubsection{Intensité d'une onde acoustique}
+
+\subsection{Quelques instruments de musique}
+\subsubsection{L'orgue}
+\subsubsection{Plaque vibrante}
+
+\note{Trop de la bombe}
+
+\newpage

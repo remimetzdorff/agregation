@@ -1,0 +1,213 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,12pt]{article}
+% Alternative Options:
+%	Paper Size: a4paper / a5paper / b5paper / letterpaper / legalpaper / executivepaper
+% Duplex: oneside / twoside
+% Base Font Size: 10pt / 11pt / 12pt
+
+\voffset = 0pt
+\topmargin = 0pt
+\textheight = 650pt
+\headheight = 0pt
+\headsep = 0pt
+\oddsidemargin = 5pt
+\textwidth = 445pt
+
+%% Language %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[greek,french]{babel} %francais, polish, spanish, ...
+\usepackage[T1]{fontenc}
+\usepackage[UTF8]{inputenc}
+\usepackage{upgreek} % Permet d'avoir des lettres grecs non italiques
+\usepackage{lmodern} %Type1-font for non-english texts and characters
+\usepackage{sectsty}% Pour changer la taille des chapitres
+\usepackage{enumitem}
+\usepackage{ stmaryrd } % fancy arrow
+\usepackage{hyperref}
+
+%\sectiontitlefont{\Huge}
+%\sectionfont{\fontsize{11}{15}\selectfont\color{black}\bfseries}
+\bibliographystyle{abbrv}
+%\bibliographystyle{alpha}
+
+\usepackage{bibentry}
+
+
+%% Packages for Graphics & Figures %%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx} %%For loading graphic files
+%\usepackage{pst-all} %%PSTricks - not useable with pdfLaTeX
+\usepackage{subfig}
+%Pour la page de garde
+\usepackage{tabularx} % Permet d'utiliser l'environnement tabularx
+\usepackage{calc} % Pour pouvoir donner des formules dans les définitions de longueur
+\usepackage{epstopdf} % à combiner avec la commande pdflatex -shell-escape
+\usepackage[export]{adjustbox}
+
+%% Table Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{array,multirow,makecell}
+
+
+
+%% Math Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+%% Line Spacing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{setspace}
+%\singlespacing        %% 1-spacing (default)
+%\onehalfspacing       %% 1,5-spacing
+%\doublespacing        %% 2-spacing
+
+
+%% Other Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{a4wide} %%Smaller margins = more text per page.
+%\usepackage{fancyhdr} %%Fancy headings
+%\usepackage{longtable} %%For tables, that exceed one page
+\usepackage{changepage}   % for the adjustwidth environment
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Options / Modifications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{options} %You need a file 'options.tex' for this
+%% ==> TeXnicCenter supplies some possible option files
+%% ==> with its templates (File | New from Template...).
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Commmandes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[colorinlistoftodos,prependcaption,textsize=tiny,textwidth=3.0cm]{todonotes}
+\usepackage[colorinlistoftodos,prependcaption,textsize=footnotesize,textwidth=3.0cm]{todonotes}
+
+\newcommand{\note}[1]{\todo[color=red!15]{#1}}
+
+\usepackage{xcolor}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{chngcntr}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Définition des cadre comme dans le cours de Jéremy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Entete niveau/messsage/prérequis
+\newcommand{\niveau}{\colorbox[rgb]{0 0.6 0}{\textbf{\color{white} Niveau :}} }\newcommand{\prerequis}{\colorbox[rgb]{0 0.6 0}{\textbf{\color{white} Prérequis :}} }
+\newcommand{\objectif}{\colorbox[rgb]{0 0.44 0.76}{\textbf{\color{white} Objectif de la leçon :}} }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Transition
+
+\definecolor{brun}{rgb}{0.87,0.72,0.53}
+\definecolor{brunfonce}{rgb}{0.8,0.4,0.2}
+\definecolor{chamois}{rgb}{1.0,0.90,0.70}
+\definecolor{bleu_f}{rgb}{0.1,0.1,0.53}
+\definecolor{bleu_c}{rgb}{0.8,0.8,0.95}
+\definecolor{red_f}{rgb}{0.53,0.1,0.1}
+\definecolor{red_c}{rgb}{0.95,0.8,0.8}
+\definecolor{green_f}{rgb}{0.1,0.53,0.1}
+\definecolor{green_c}{rgb}{0.8,0.95,0.8}
+
+\mdfdefinestyle{s_trans}{%
+	linecolor=brunfonce!,
+	outerlinewidth=3pt,%
+	frametitlerule=false,
+	topline=false,
+	bottomline=false,
+	rightline=false,
+	backgroundcolor=chamois,
+	innertopmargin=\topskip,
+	roundcorner=0pt
+}
+\newmdenv[style=s_trans]{transition2_env}
+\newenvironment{transition}
+{%\stepcounter{exa}%
+	\addcontentsline{ldf}{figure}{0}%
+	\begin{transition2_env}}
+	{\end{transition2_env}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Expérience
+
+\mdfdefinestyle{s_experience}{%
+	linecolor=bleu_f!,
+	outerlinewidth=3pt,%
+	frametitlerule=false,
+	topline=false,
+	bottomline=false,
+	rightline=false,
+	backgroundcolor=bleu_c,
+	innertopmargin=\topskip,
+	roundcorner=0pt
+}
+\newmdenv[style=s_experience]{experience_env}
+\newenvironment{experience}
+{%\stepcounter{exa}%
+	\addcontentsline{ldf}{figure}{0}%
+	\begin{experience_env}}
+%	\begin{experience_env}[]{\noindent\colorbox[rgb]{0.1 0.1 0.53}{\textbf{\color{white} Expérience : }}\\}}
+	{\end{experience_env}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Slide
+
+\mdfdefinestyle{s_slide}{%
+	linecolor=green_f!,
+	outerlinewidth=3pt,%
+	frametitlerule=false,
+	topline=false,
+	bottomline=false,
+	rightline=true,
+	backgroundcolor=white,
+	innertopmargin=\topskip,
+	roundcorner=0pt
+}
+\newmdenv[style=s_slide]{slide_env}
+
+\newenvironment{slide}
+	{%\stepcounter{exa}%
+%		\newenvironment{myenv}{\begin{adjustwidth}{2cm}{}}{\end{adjustwidth}}
+		\addcontentsline{ldf}{figure}{0}%
+		\begin{slide_env}}
+		{\end{slide_env}
+	}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Remarques
+
+
+\mdfdefinestyle{s_remarque}{%
+	linecolor=red_f!,
+	outerlinewidth=3pt,%
+	frametitlerule=false,
+	topline=false,
+	bottomline=false,
+	rightline=false,
+	backgroundcolor=red_c,
+	innertopmargin=\topskip,
+	roundcorner=0pt
+}
+\newmdenv[style=s_remarque]{remarque_env}
+\newenvironment{remarque}
+{%\stepcounter{exa}%
+	\addcontentsline{ldf}{figure}{0}%
+	\begin{remarque_env}}
+	{\end{remarque_env}
+	}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Commandes personnelles
+
+\usepackage[thinspace,thinqspace,amssymb]{SIunits}
+
+\renewcommand{\d}{\mathrm{d}}
+\newcommand{\D}{\mathrm{D}}
+\newcommand{\sinc}{\mathrm{sinc}}
+\newcommand{\grad}{\overrightarrow{\mathrm{grad}}}
+\newcommand{\rot}{\overrightarrow{\mathrm{rot}}}
+\renewcommand{\div}{\mathrm{div}}
+

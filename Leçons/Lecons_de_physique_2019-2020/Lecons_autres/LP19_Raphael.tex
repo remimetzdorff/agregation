@@ -1,0 +1,118 @@
+\section{LP19 Diffraction de Fraunhofer (Raphaël) }
+
+\paragraph{Bibliographie :}
+\begin{itemize}
+\item 
+\end{itemize}
+
+\paragraph{Niveau : L3} 
+
+\paragraph{Pré-requis :}
+\begin{itemize}
+\item Otique géométrique
+\item Interférences à deux ondes
+\item Transformée de Fourier
+\item Produit de convolution
+\end{itemize}
+
+\subsection{Introduction}
+
+\emph{Exp : diffraction d'un laser par une fente? D'abord avec une fente large (tache du faisceau) et en diminuant on observe l'élargissement.}
+Pas explicable avec l'optique géométrique... optique ondulatoire
+
+\subsection{Phénomène de diffraction}
+
+\subsubsection{Principe d'Huygens Fresnel 1815}
+
+\emph{Diapo : vagues à l'entrée d'un port}
+
+Rappel : modèle scalaire, vibration lumineuse en un point M $s(M)$.
+
+\paragraph{Principe :}
+\begin{itemize}
+\item chaque élément $d\Sigma$ atteint par la lumière se comporte comme une source secondaire qui va émettre une onde sphérique ;
+\item cette ondelette est proportionnelle à la vibration lumineuse incidente et à l'élément de surface $d\Sigma$
+\item toutes les sources secondaires sont cohérentes entre elles et vont interférer pour donner naissance à la figure de diffraction.
+\end{itemize}
+Ce principe est démontrable avec les équations de Maxwell
+
+\emph{Schéma classique avec objet diffractant et système d'axes $(xOy)$ pour le plan d'observation et $(XOY)$ pour l'objet.}
+
+Facteur de transmission
+\begin{equation}
+t(X,Y) = \frac{s(X,Y, z=0^-)}{s(X,Y, z=0^+)}
+\end{equation}
+
+Le pricipe de HF s'écrit :
+\begin{equation}
+\d s(M) = t(X,Y) A s(P) e^{ikPM} \frac{1}{PM} dX dY
+\end{equation}
+déroulement du calcul en intégrant...
+Hypothèse champs lointain donc $d, D \gg x, y, X, Y$.
+Après calcul, DL, on trouve
+\begin{equation}
+PM \approx \left( 1 + \frac{x^2+y^2}{2D^2} - \frac{xY}{D^2} - \frac{yY}{D^2}\right) 
+\end{equation}
+\begin{equation}
+SP \approx \left( 1 + \frac{x_0^2+y_0^2}{2d^2} - \frac{x_0Y}{d^2} - \frac{y_0Y}{d^2}\right) 
+\end{equation}
+\begin{equation}
+s(M) = \frac{A's_0}{dD} \iint t(X,Y)e^{i \frac{2\pi}{\lambda} \left( -(\alpha - \alpha_0)X - (\beta-\beta_0) Y \right)} \d X \d Y
+\end{equation}
+On fait donc apparaitre la transformée de Fourier du facteur de transmission :
+\begin{equation}
+s(M) = K \times \mathrm{TF}[t(X,Y)]\left(\frac{\alpha-\alpha_0}{\lambda}, \frac{\beta-\beta_0}{\lambda} \right)
+\end{equation}
+
+\subsubsection{Validité de l'approximation}
+
+Une onde plane incidente est équivalente à une diffraction à l'infini
+
+\emph{Schéma : Montage à deux lentilles puis justification du montage à une lentille.}
+ 
+\subsection{Quelques figures de diffraction}
+
+\subsubsection{Fente rectangulaire}
+
+Largeur $a$ selon $X$ et $b$ selon $Y$ d'où
+\begin{equation}
+t(X,Y) = \mathrm{rect}_a(X) \mathrm{rect}_b(Y)
+\end{equation}
+\begin{equation}
+s(M) \propto \sinc\left(\frac{\pi a x}{\lambda f'}\right) \sinc\left(\frac{\pi b y}{\lambda f'}\right)
+\end{equation}
+\begin{equation}
+I(M) \propto \sinc^2\left(\frac{\pi a x}{\lambda f'}\right) \sinc^2\left(\frac{\pi b y}{\lambda f'}\right)
+\end{equation}
+
+\emph{Schéma du $\sinc^2$}
+
+\emph{Diapo : fentes d'Young}
+
+\subsection{Limitations/applications}
+
+\subsubsection{Limite de résolution angulaire}
+
+Observation de deux étoiles proches grâce à une lunette astronomique. On modélise l'ouverture de la lentille par ue fente de largeur $a$
+
+\emph{Schéma : deux étoiles proches avec deux incidence différentes de faisceaux parallèles.}
+
+Les figures de diffraction de chaque étoile sont centrées sur les images géométriques.
+Si les étoiles sont trop proches, on ne peut résoudre les deux étoiles.
+On choisit un critère : le critère de Rayleigh.
+On calcul l'angle limite $\theta_l$ tel que le maximum d'intensité d'une figure est au même endroit que la première annulation de l'autre figure.
+\begin{equation}
+\theta_l = \frac{\lambda}{a}
+\end{equation}
+
+\subsubsection{Expérience d'Abbe}
+
+\emph{Schéma de l'expérience.}
+
+\emph{Expérience d'Abbe.}
+
+\subsection{Conclusion}
+
+Filtrage spatial, diffraction par des réseaux périodiques.
+
+\subsection{Questions}
