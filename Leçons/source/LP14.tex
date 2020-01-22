@@ -106,7 +106,7 @@ En dérivant l'équation de conservation de la masse~\ref{eq:mass_conservation} 
 \frac{\partial^2 p_1}{\partial t^2} - \frac{1}{c^2}\Delta p_1 = 0,
 \label{eq:dalembert_p}
 \end{equation}
-où $c=\sqrt{\chi_S \mu_0}$ est la vitesse de l'onde acoustique.
+où $c=1/\sqrt{\chi_S \mu_0}$ est la vitesse de l'onde acoustique.
 De même, en dérivant Euler par rapport au temps et en prenant le gradient de la conservation de la masse, on obtient l'équation de d'Alembert pour la vitesse $\overrightarrow{v_1}$
 \begin{equation}
 \frac{\partial^2 \overrightarrow{v_1}}{\partial t^2} - \frac{1}{c^2}\Delta \overrightarrow{v_1} = 0.
@@ -144,6 +144,8 @@ On peut vérifier expérimentalement cette relation en mesurant la vitesse du so
 \textbf{Mesure de la vitesse du son dans l'air avec une onde ultra-sonore.}
 On pourrait remonter à cette vitesse en mesurant le temps de vol d'une impulsion brève entre un émetteur et un récepteur ultra-sonore mais cette mesure est sujette à une incertitude importante car on ne connait pas exactement leur géométrie.
 Je préfère ici mesurer la longueur d'onde en déplaçant de plusieurs longueur d'onde le récepteur devant l'émetteur sur un banc optique.
+
+L'air n'est pas un milieu dispersif pour les ondes acoustiques.
 \end{experience}
 
 \begin{remarque}
@@ -154,13 +156,166 @@ c = \sqrt{\frac{RT_0}{M}},
 ce qui n'est pas en accord avec les observations expérimentales.
 \end{remarque}
 
+\begin{transition}
+Les résultats que l'on a obtenu jusqu'à maintenant semblent expliquer convenablement les observations expérimentales.
+Montrer la vidéo~\cite{Metzdorff2017}.
+Cette vidéo met en évidence que les ondes sonores transportent de l'énergie.
+\end{transition}
+
 \subsection{Aspects énergétiques}
-\subsubsection{Impédance acoustique}
+
+Dans cette partie, on fait directement le parallèle avec les résultats obtenus pour les ondes électromagnétiques.
+
 \subsubsection{Conservation de l'énergie}
+
+La puissance $\d\cal{P}$ transférée par l'onde acoustique à travers une surface orientée $\overrightarrow{\d S}$ correspond à la puissance des forces de pression soit
+\begin{equation*}
+\d {\cal{P}} = (P_0+p_1) \overrightarrow{\d S} \cdot \overrightarrow{v_1}.
+\end{equation*}
+Comme $P_0$ est constante, elle donnera avec $\overrightarrow{v_1}$ un terme de moyenne temporelle nulle qu'il n'est pas nécessaire de considérer.
+On peut ainsi définir le vecteur de Poynting sonore $\overrightarrow{\Pi}$
+\begin{equation}
+\overrightarrow{\Pi} = p_1\overrightarrow{v_1},
+\end{equation}
+qui correspond aux transferts d'énergie dû à la surpression donc aux ondes acoustiques.
+
+Par ailleurs on souhaite exprimer la densité d'énergie du milieu liée au passage de l'onde acoustique.
+Comme il s'agit d'une onde de vitesse et de pression, on retrouve deux contributions :
+\begin{itemize}
+\item cinétique $e_c$ liée à la vitesse $\overrightarrow{v_1}$
+\begin{equation*}
+e_c = \frac{1}{2}\mu_0 v_1^2 ;
+\end{equation*}
+\item potentielle $e_p$ lié à la compression du fluide et analogue à l'énergie potentielle d'un ressort comprimé
+\begin{equation*}
+e_p = \frac{1}{2} \chi_S p_1^2.
+\end{equation*}
+\end{itemize}
+La densité volumique d'énergie associée à l'onde acoustique $e$ est donc
+\begin{equation}
+e = \frac{1}{2}\mu_0v_1^2 + \frac{1}{2}\chi_S p_1^2.
+\end{equation}
+
+Le cadre de la description des ondes acoustiques nous a conduit à négliger les phénomènes dissipatifs.
+Au niveau local, une variation d'énergie ne peut être due qu'à son transport par l'intermédiaire des forces de pression, si bien qu'on peut retrouver l'équation locale de conservation de l'énergie
+\begin{equation}
+\frac{\partial e}{\partial t} + \div\overrightarrow{\Pi} = 0.
+\end{equation}
+Dans ce modèle, une onde plane n'est pas atténuée et l'atténuation d'une onde sphérique n'est due qu'à un facteur géométrique de dilution dans l'espace.
+\begin{remarque}
+Pour une onde plane progressive harmonique, $e_c = e_p$.
+\end{remarque}
+
+\begin{transition}
+Les flux de puissance dûs aux ondes acoustiques sont généralement très faibles, si bien qu'il est souvent utile d'utiliser l'intensité acoustique. 
+\end{transition}
+
 \subsubsection{Intensité d'une onde acoustique}
 
-\subsection{Quelques instruments de musique}
-\subsubsection{L'orgue}
+L'intensité sonore $I$ est définie comme la moyenne temporelle de la puissance reçue par unité de surface, soit en utilisant le vecteur de Poynting
+\begin{equation*}
+I = \left\langle \overrightarrow{\Pi}\cdot\overrightarrow{n} \right\rangle.
+\end{equation*}
+Pour plus de commodité, il est d'usage de l'exprimer en décibel (dB)
+\begin{equation}
+I_\mathrm{dB} = 10\log\frac{I}{I_0},
+\end{equation}
+avec $I_0 = \unit{10^{-12}}{\watt\cdot\meter^{-2}}$ qui correspond au seuil d'audibilité.
+
+\begin{slide}
+\textbf{Audition humaine.}
+On entend bien les sons entre \unit{20}{\hertz} et \unit{20}{\kilo\hertz}.
+L'oreille est très sensible à une grande diversité d'intensité sonores ce qui justifie l'utilisation d'une échelle logarithmique.
+
+Ici c'est propre à l'Homme mais certains animaux sont capables de produire et percevoir des infra-sons (éléphant, girafe) et ultra-sons (cétacés).
+\end{slide}
+
+\begin{transition}
+Terminons le parallèle avec l'électromagnétisme en s'intéressant à la notion d'impédance acoustique, qui exprime un lien simple entre la vitesse du fluide et la surpression.
+\end{transition}
+
+\subsubsection{Impédance acoustique}
+
+Ici on s'intéresse à un type de solutions particulières de l'équation de d'Alembert : les ondes planes progressives harmoniques de la forme
+\begin{equation*}
+p_1 = P_0 \cos \left( \omega t - \overrightarrow{k}.\overrightarrow{r} + \varphi \right),
+\end{equation*}
+analogues aux OPPH électromagnétiques, où $\overrightarrow{k}=2\pi/\lambda$ est dans la direction de propagation de l'onde.
+Comme les équations qui décrivent le phénomène sont linéaires, on peut utiliser la notation complexe
+\begin{equation}
+\underline{p_1} = \underline{P_0} e^{i\left(\omega t - \overrightarrow{k}.\overrightarrow{r}\right)}.
+\end{equation}
+
+En utilisant l'équation d'Euler~\ref{eq:euler}, on trouve
+\begin{equation*}
+\mu_0 i\omega \underline{\overrightarrow{v_1}} = i\overrightarrow{k}\underline{p_1},
+\end{equation*}
+d'où
+\begin{equation}
+\underline{\overrightarrow{v_1}} = \frac{1}{\mu_0 c} \underline{p_1} \overrightarrow{n}.
+\end{equation}
+
+Ce lien entre la vitesse et la surpression peut être exprimé comme en électromagnétisme à l'aide de l'impédance acoustique du milieu $Z$ définie comme
+\begin{equation}
+Z = \frac{p_1}{v_1},
+\end{equation}
+exprimé en $\kilogram \cdot \meter^{-2} \cdot s^{-2}$.
+Dans le cas d'une onde plane progressive harmonique, ce rapport vaut
+\begin{equation}
+Z = \mu_0 c = \sqrt{\frac{\mu_0}{\chi_S}}.
+\end{equation}
+Plus la masse volumique du fluide est grande et plus la compressibilité du fluide est faible, plus l'impédance est grande, d'où
+\begin{equation*}
+Z_\mathrm{solide} > Z_\mathrm{liquide} \gg Z_\mathrm{gaz}.
+\end{equation*}
+\begin{remarque}
+L'impédance électromagnétique est définie comme
+\begin{equation*}
+Z = \frac{E}{H} = \frac{\mu}{\epsilon}.
+\end{equation*}
+\end{remarque}
+
+De la même façon qu'en électromagnétisme, la propagation d'une onde acoustique à travers un dioptre donne naissance à une onde réfléchie et une onde transmise.
+\begin{slide}
+\textbf{Réflexion et transmission sur un dioptre.}
+On voit qu'un changement brutal et important d'impédance ($Z\rightarrow 0$ ou $Z\rightarrow \infty$) conduit à une réflexion totale de l'onde acoustique incidente.
+On peut parler du gel pour l'échographie, de l'écho contre un mur, etc.
+\end{slide}
+
+\begin{transition}
+Des réflexions multiples peuvent conduire à l'établissement d'ondes stationnaires.
+Leur maitrise permet de fabriquer des cavités résonantes en vue de réaliser des instruments de musique par exemple.
+\end{transition}
+
+\subsection{Production d'ondes acoustiques}
+
+\subsubsection{Tuyau sonore}
+
+Schéma du tuyau.
+On s'intéresse à une onde acoustique se propageant dans le tuyau.
+Les extrémités du tuyau imposent des conditions aux limites :
+\begin{itemize}
+\item une extrémité ouverte impose que la pression doit être $P_0$, mais ne donne pas de restriction sur la vitesse ;
+\item à l'inverse, une extrémité fermée impose une vitesse nulle (impénétrabilité) mais rien sur la pression.
+\end{itemize}
+Les extrémités du tuyau correspondent donc à des sauts d'impédance
+\begin{equation}
+Z_\mathrm{fermé} = \infty \quad , \quad Z_\mathrm{ouvert} = 0,
+\end{equation}
+qui vont donner lieux à des réflexions totales.
+Dans le tuyaux, on a donc une superposition d'ondes contra-propageantes qui donne naissance à une onde stationnaire de la forme
+\begin{equation}
+p_1 = P_0 \cos(\omega t) \left[ A\cos(kx) + B\sin(kx) \right].
+\end{equation}
+Pour un tuyau ouvert aux deux extrémités, on trouve par exemple $A=0$ et
+\begin{equation}
+k_n = n\frac{\pi}{L}.
+\end{equation}
+\begin{slide}
+\textbf{Mode d'un tuyau sonore.}
+\end{slide}
+
+
 \subsubsection{Plaque vibrante}
 
 \note{Trop de la bombe}
