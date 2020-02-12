@@ -1,16 +1,8 @@
 \section{LP10 Induction électromagnétique (Martin)}
 
-\paragraph{Bibliographie :}
-\begin{itemize}
-\item Perez
-\item Dunod
-\item Cours Jérémy
-\item BFR
-\end{itemize}
+\niveau L3
 
-\paragraph{Niveau : L3} 
-
-\paragraph{Pré-requis :}
+\prerequis
 \begin{itemize}
 \item Electrocinétique ;
 \item Magnétostatique ;
@@ -19,19 +11,33 @@
 \item Potentiels ;
 \end{itemize}
 
+\footnotesize{\bibliography{biblio}}
+\bibentry{Perez}
+\bibentry{Dunod}
+\bibentry{Cours Jérémy}
+\bibentry{BFR}
+
 \subsection{Introduction}
 
 Qu'est ce que l'induction ?
 
-\paragraph{EXP : } en approchant un aimant d'une bobine, on constate l'apparition d'un courant.
+\begin{experience}
+En approchant un aimant d'une bobine, on constate l'apparition d'un courant.
 C'est l'induction : à partir d'un champ $\overrightarrow{B}$ on peut créer un courant dans un conducteur.
+\end{experience}
 
-\paragraph{Diapo :} Expérience historique de Faraday (1831) dans laquelle il observe le courant dans une bobine créé par une autre bobine alimentée par une pile.
+\begin{slide}
+Expérience historique de Faraday (1831) dans laquelle il observe le courant dans une bobine créé par une autre bobine alimentée par une pile.
 Il pensait que le courant été créé par un champ magnétique, mais c'est en allumant la bobine qu'on observe effectivement un courant : il faut une variation du champ $\overrightarrow{B}$.
+\end{slide}
 
-\paragraph{EXP : } on observe l'apparition de courant quand l'aimant se déplace dans la bobine. En revance, il n'y a pas de courant quand $\overrightarrow{B}$ est statique.
+\begin{experience}
+On observe l'apparition de courant quand l'aimant se déplace dans la bobine. En revanche, il n'y a pas de courant quand $\overrightarrow{B}$ est statique.
+\end{experience}
 
-\paragraph{Transition :} On va essayer de quantifier cet effet.
+\begin{transition}
+On va essayer de quantifier cet effet.
+\end{transition}
 
 \subsection{Les lois de l'induction}
 
@@ -63,9 +69,11 @@ Dans le cas d'un circuit indéformable, on retrouve la loi de Faraday, qui fait 
 e = \frac{\D \Phi}{\D t}
 \end{equation}
 
-\paragraph{Transition :} Le signe moins de la loi de Faraday est très important.
+\begin{transition}
+Le signe moins de la loi de Faraday est très important.
 Il indique que l'induction va créer un courant dont le sens s'oppose à sa cause (le champ magnétique créé par ce courant tend à s'opposer à la variation de flux qui lui donne naissance).
 C'est la loi de modération de Lenz.
+\end{transition}
 
 \subsubsection{Loi de Lenz 10'}
 
@@ -73,15 +81,19 @@ Les effets de l'induction s'opposent à la cause qui les a produit.
 
 Cette loi qualitative permet de prévoir les effets de l'induction.
 
-\paragraph{Exp : } Chute d'un aimant dans différent tubes
+\begin{experience}
+Chute d'un aimant dans différent tubes
 \begin{itemize}
 \item tube en plexiglas : c'est un isolant, il n'y a pas d'induction, l'aimant tombe rapidement sous l'effet de la gravité ;
 \item tube en cuivre : c'est un bon conducteur, le courant créé dans le tube par l'aimant qui tombe génère un champ magnétique qui ralenti l'aimant.
 C'est une manifestation de la loi de Lenz.
 \end{itemize}  puis cuivre.
+\end{experience}
 
-\paragraph{Transition :} Maintenant que l'on a étudié les aspects théoriques de l'induction, on va étudier chacun des deux régimes.
+\begin{transition}
+Maintenant que l'on a étudié les aspects théoriques de l'induction, on va étudier chacun des deux régimes.
 Commençons par l'induction de Neumann (champ $\overrightarrow{B}$ variable).
+\end{transition}
 
 \subsection{Induction de Neumann (B variable) 12'}
 
@@ -89,7 +101,7 @@ Commençons par l'induction de Neumann (champ $\overrightarrow{B}$ variable).
 
 \begin{figure}[!h]
 \center
-\includegraphics[scale=1]{bobine.png}
+\includegraphics[scale=1]{Lecons_de_physique_2019-2020/Lecons_autres/bobine.png}
 \end{figure}
 
 Importance de l'agébrisation : l'orientation du courant défini l'orientation des surfaces.
@@ -114,7 +126,8 @@ L'énergie stockée dans la bobine est liée à son inductance et se trouve en e
 {\cal{E}} = \frac{1}{2}Li^2
 \end{equation}
 
-\paragraph{Diapo, EXP 19'30: } Vérification de la dépendance en $N^2$ de l'inductance de plusieurs bobines en mesurant l'inductance d'après la fonction de transfert d'un circuit RL :
+\begin{experience}
+Vérification de la dépendance en $N^2$ de l'inductance de plusieurs bobines en mesurant l'inductance d'après la fonction de transfert d'un circuit RL :
 \begin{itemize}
 \item mesure de l'inductance de quatre bobines de même géométrie mais avec des nobres de spires différents (125, 250, 500 et 1000 spires).
 Une mesure est réalisée devant le jury.
@@ -125,8 +138,11 @@ Pour cela on mesure le rapport entre la tension $U_R$ et la tension du GBF, et o
 \item les différentes valeurs de $L$ obtenue sont ajustée en fonction du nombre de spire par un modèle $\mu_0N^\alpha S/L$ et on obtient bien $\alpha\approx2$.
 \end{itemize}
 Comparaison entre les valeurs mesurées et les valeurs déduites de la géométrie des bobines.
+\end{experience}
 
-\paragraph{Transition :} Regardons ce qui se passe maintenant dans le cas de l'expérience de Faraday, avec deux bobines.
+\begin{transition}
+Regardons ce qui se passe maintenant dans le cas de l'expérience de Faraday, avec deux bobines.
+\end{transition}
 
 \subsubsection{Inductance mutuelle 25'}
 
@@ -135,11 +151,13 @@ L'inductance mutuelle traduit le couplage entre les deux circuits :
 \begin{equation}
 e_2 = -L_2\frac{\d i_2}{\d t} - M\frac{\d i_1}{\d t}
 \end{equation}
-\paragraph{Remarques :}
+
+\begin{remarque}
 \begin{itemize}
 \item le signe de $M$ dépend de l'orientation des deux circuits ;
 \item on montre que $M_{12}$ = $M_{21}$ : le résultat est presque immédiat en passant par le potentiel vecteur (démo dans \cite{Perez2009} par exemple).
 \end{itemize}
+\end{remarque}
 
 L'inductance mutuelle traduit le fait qu'il est possible de transférer de l'énergie d'un circuit à l'autre.
 Une application importante de cet effet est le transformateur, nécessaire au transport de l'énergie à haute tension pour diminuer les pertes dues au transfert (les pertes par effets Joule sont proportionnelles au carré de l'intensité.
@@ -147,7 +165,9 @@ En travaillant avec des tensions très élevées ($\sim \unit{400}{\kilo\volt}$)
 On a $P_J = Ri^2 = U^2/R$, mais le $U$ ici correspond à la différence de potentiel entre les deux extrémités du fil électrique, et pas aux $\unit{400}{\kilo\volt}$ qui est la différence de potentiel entre le cable et la terre.)
 Le transformateur est utilisé pour abaisser la tension en vue d'une utilisation par les particuliers.
 
-\paragraph{Transition : } Après l'induction de Neumann, on va s'intéresser à l'induction de Lorentz, c'est à dire à un circuit mobile.
+\begin{transition}
+Après l'induction de Neumann, on va s'intéresser à l'induction de Lorentz, c'est à dire à un circuit mobile.
+\end{transition}
 
 \subsection{Induction de Lorentz (circuit mobile) 28'30}
 
@@ -184,14 +204,17 @@ Conversion électromécanique :
 Schéma des échanges ($P_{laplace}$ et $P_{induction}$) pour faire le lien entre les pertes par effet Joule et la variation d'énergie cinétique.
 On a $P_{laplace} + P_{induction} = 0$
 
-\paragraph{Diapo :} Freinage par induction utilisé pour les poids lourds ou encore les trains (présente l'avantage de ne pas nécessité de pièce d'usure).
+\begin{slide}
+Freinage par induction utilisé pour les poids lourds ou encore les trains (présente l'avantage de ne pas nécessité de pièce d'usure).
 Les courants créés dans la masse métallique sont appelés courants de Foucault.
 Une autre application de l'induction de Lorentz est la roue de Barlow qui peut être utilisée comme générateur de générateur de courant continu (actuellement, cette méthode sert encore pour générer les courants intenses nécessaires aux électrolyses).
 L'induction est aussi à la base des méthodes de production d'électricité (alternative) actuelles.
+\end{slide}
 
-\paragraph{EXP : }
+\begin{experience}
 Rail de Laplace : le rail a tendance à rester collé sur le support (les faux contacts entre les rails et la tige créent des arcs électriques qui soudent la barre aux rails).
 On pourrait ici faire une démonstration qualitative de la roue de Barlow.
+\end{experience}
 
 \subsection{Conclusion 39'}
 
@@ -201,10 +224,14 @@ Au cours de cette leçon, on a vu :
 \item les inductions de Neumann et Lorentz.
 \end{itemize}
 
-\paragraph{Diapo : }
+\begin{slide}
 Applications : générateurs, chauffage par induction, micro, chargeur sans fil...
+\end{slide}
 
-\paragraph{Vidéo (https://www.youtube.com/watch?v=nIFSZfKTUKA) :} Railgun de l'espace pour la blague :)
+\begin{slide}
+Vidéo \url{https://www.youtube.com/watch?v=nIFSZfKTUKA} Railgun de l'espace pour la blague :)	
+\end{slide}
+
 
 \subsection{Questions}
 

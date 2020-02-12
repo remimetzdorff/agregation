@@ -12,6 +12,11 @@
 \objectif Décrire les ondes acoustiques dans différents milieux, leur propagation et ainsi expliquer le principe de fonctionnement de plusieurs instruments de musique. 
 
 \footnotesize{\bibliography{source/biblio}}
+\bibentry{Chaigne2008}
+\bibentry{Brebec2004}
+\bibentry{Morse1986}
+\bibentry{Sanz2016}
+\bibentry{Landau}
 \bibentry{Metzdorff2017}
 \bibentry{Stanford2014}
 
@@ -44,7 +49,7 @@ Dans un premier temps, on s'intéresse à un fluide au repos :
 
 L'onde sonore correspond à une faible perturbation du fluide par rapport à cet état de repos :
 \begin{itemize}
-\item $\overrightarrow{v}(M, t) = \overrightarrow{v_1}(M, t)$, petite devant un vitesse caractéristique que l'on déterminera ;
+\item $\overrightarrow{v}(M, t) = \overrightarrow{v_1}(M, t)$, petite devant la vitesse du son $c=\lambda\nu$ ;
 \item $P(M, t) = P_0 + p_1(M, t)$, où $p_1(M, t) \ll P_0$ ;
 \item $\mu(M, t) = \mu_0 + \mu_1(M,t)$ où $\mu_1(M, t) \ll \mu_0$;
 \end{itemize}
@@ -138,16 +143,20 @@ Si le fluide peut-être considéré comme un gaz parfait, on obtient finalement 
 \begin{equation}
 c = \sqrt{\frac{\gamma RT_0}{M}}.
 \end{equation}
+\begin{remarque}
+Le plus simple pour redémontrer cette relation est de différencier $\ln(PV^\gamma)$ pour exprimer la compressibilité isentropique. 
+\end{remarque}
 
 On peut vérifier expérimentalement cette relation en mesurant la vitesse du son dans l'air.
 \begin{experience}
 \textbf{Mesure de la vitesse du son dans l'air avec une onde ultra-sonore.}
 On pourrait remonter à cette vitesse en mesurant le temps de vol d'une impulsion brève entre un émetteur et un récepteur ultra-sonore mais cette mesure est sujette à une incertitude importante car on ne connait pas exactement leur géométrie.
 Je préfère ici mesurer la longueur d'onde en déplaçant de plusieurs longueur d'onde le récepteur devant l'émetteur sur un banc optique.
-
-L'air n'est pas un milieu dispersif pour les ondes acoustiques.
 \end{experience}
 
+\begin{remarque}
+L'air n'est pas un milieu dispersif pour les ondes acoustiques.
+\end{remarque}
 \begin{remarque}
 Pour une transformation isotherme, on utilise le coefficient de compressibilité isotherme $\chi_T$ et on trouve
 \begin{equation*}
@@ -287,7 +296,7 @@ Des réflexions multiples peuvent conduire à l'établissement d'ondes stationna
 Leur maitrise permet de fabriquer des cavités résonantes en vue de réaliser des instruments de musique par exemple.
 \end{transition}
 
-\subsection{Production d'ondes acoustiques}
+\subsection{Quelques exemples}
 
 \subsubsection{Tuyau sonore}
 
@@ -312,12 +321,34 @@ Pour un tuyau ouvert aux deux extrémités, on trouve par exemple $A=0$ et
 k_n = n\frac{\pi}{L}.
 \end{equation}
 \begin{slide}
-\textbf{Mode d'un tuyau sonore.}
+\textbf{Mode d'un tuyau sonore.} Comparaison avec un tuyau fermé à une extrémité
 \end{slide}
-
+\begin{slide}
+\textbf{Orgue de la cathédrale Saint Étienne.}
+\end{slide}
+\begin{slide}
+\textbf{Micro-pilier.} Le micro-pilier est un analogue solide du tuyau sonore.
+On retrouve les mêmes conditions aux limites, mais il faut utiliser le module d'Young.
+Bien détailler ce qu'on voit à l'écran : la membrane permet de tenir le pilier etc.
+\end{slide}
 
 \subsubsection{Plaque vibrante}
 
-\note{Trop de la bombe}
+\begin{slide}
+\textbf{Plaque de Chladni.}
+Présentation rapide du système, mêmes équations qui interviennent, modes obtenus en tenant compte des conditions aux limites, etc.
+Cette fois-ci il s'agit d'ondes transverses et pas longitudinales.
+\end{slide}
+
+\subsection{Conclusion}
+
+\begin{slide}
+Récapitulatif et ouverture avec l'exemple du train :
+\begin{itemize}
+\item onde dans la caténaires (il a fallu retendre les caténaire lors des records de vitesse du TGV) ;
+\item ambiance sonore dans les cabines ;
+\item propagation des vibrations dans les structures.
+\end{itemize}
+\end{slide}
 
 \newpage
