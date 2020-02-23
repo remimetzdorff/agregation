@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE qti>
+<qti app="QtiPlot" version="1.0.0-rc1" dpi="96" arch="Win64" script="muParser" windows="8" expand="1" log="[2020-02-14 10:16:48&#9;Graphe: ''Graphe1'']&#10;Ajustement non-linéaire de données: Table1_Omega (rad-1), utilisant la fonction: x/K+C&#10;Trier: Non&#10;Méthode de pondération: Instrumentation, utilisant les données en barres d'erreurs: Table1_domega(radian.s-1)&#10;Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001&#10;De x  = 8,0000000000000e+00 à x  = 1,2000000000000e+01 (5 Données)&#10;--------------------------------------------------------------------------------------&#10;C = -2,8120441638720e-01 +/- 6,6135422458721e-02&#10;K = 7,2936769199379e+00 +/- 3,8586370095488e-01&#10;--------------------------------------------------------------------------------------&#10;Les erreurs ont été multipliées par le facteur sqrt(Chi^2/doF) = 1,0428048448909e-01&#10;Chi^2/doF = 1,0874419445279e-02&#10;R^2 = 9,9477236714354e-01&#10;Coefficient R^2 ajusté = 9,8954473428709e-01&#10;RMSE (La racine carrée moyenne des carrés des erreurs) = 1,0428048448909e-01&#10;RSS (Restes de la somme des carrés) = 3,2623258335838e-02&#10;---------------------------------------------------------------------------------------&#10;Nombre d'itérations = 7&#10;État = success&#10;---------------------------------------------------------------------------------------&#10;[2020-02-14 10:32:43&#9;Graphe: ''Graphe3'']&#10;Ajustement non-linéaire de données: Table2_Omegarad-1, utilisant la fonction: x/K+C&#10;Trier: Non&#10;Méthode de pondération: Instrumentation, utilisant les données en barres d'erreurs: Table2_domegaradians-1&#10;Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001&#10;De x  = 8,0000000000000e+00 à x  = 1,2000000000000e+01 (5 Données)&#10;--------------------------------------------------------------------------------------&#10;C = -3,1774300584778e-01 +/- 6,5513565709151e-02&#10;K = 7,0691157522416e+00 +/- 3,6906679342215e-01&#10;--------------------------------------------------------------------------------------&#10;Les erreurs ont été multipliées par le facteur sqrt(Chi^2/doF) = 1,0923820584941e-01&#10;Chi^2/doF = 1,1932985617197e-02&#10;R^2 = 9,9616229702311e-01&#10;Coefficient R^2 ajusté = 9,9232459404622e-01&#10;RMSE (La racine carrée moyenne des carrés des erreurs) = 1,0923820584941e-01&#10;RSS (Restes de la somme des carrés) = 3,5798956851591e-02&#10;---------------------------------------------------------------------------------------&#10;Nombre d'itérations = 7&#10;État = success&#10;---------------------------------------------------------------------------------------&#10;[2020-02-14 10:33:31&#9;Graphe: ''Graphe4'']&#10;Ajustement non-linéaire de données: Table2_Omegarad-1, utilisant la fonction: x/K+C&#10;Trier: Non&#10;Méthode de pondération: Instrumentation, utilisant les données en barres d'erreurs: Table2_domegaradians-1&#10;Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001&#10;De x  = 8,0000000000000e+00 à x  = 1,2000000000000e+01 (5 Données)&#10;--------------------------------------------------------------------------------------&#10;C = -3,1774300584778e-01 +/- 6,5513565709151e-02&#10;K = 7,0691157522416e+00 +/- 3,6906679342215e-01&#10;--------------------------------------------------------------------------------------&#10;Les erreurs ont été multipliées par le facteur sqrt(Chi^2/doF) = 1,0923820584941e-01&#10;Chi^2/doF = 1,1932985617197e-02&#10;R^2 = 9,9616229702311e-01&#10;Coefficient R^2 ajusté = 9,9232459404622e-01&#10;RMSE (La racine carrée moyenne des carrés des erreurs) = 1,0923820584941e-01&#10;RSS (Restes de la somme des carrés) = 3,5798956851591e-02&#10;---------------------------------------------------------------------------------------&#10;Nombre d'itérations = 7&#10;État = success&#10;---------------------------------------------------------------------------------------&#10;">
+	<window type="1" name="Table1" date="2458893.4161846" x="0" y="0" w="980" h="207">
+		<tab rows="30" cols="9" labels="0">
+			<col name="U (V)" type="6" num="0" prec="13" plot="1" width="100" data="8;9;10;11;12;"/>
+			<col name="L(m)" type="6" num="0" prec="13" plot="1" width="100" data="0.5;0.5;0.5;0.5;0.5;"/>
+			<col name="T (s)" type="6" num="0" prec="13" plot="2" width="100" data="6.47;5.32;4.78;4.31;3.85;"/>
+			<col name="R (m)" type="6" num="0" prec="13" plot="2" width="100" formula="0.0305" muparser="1" data="0.01525;0.01525;0.01525;0.01525;0.01525;"/>
+			<col name="I(A)" type="6" num="0" prec="13" plot="2" width="100" data="0.205;0.21;0.21;0.21;0.22;"/>
+			<col name="v(m.s-1)" type="6" num="0" prec="2" plot="2" width="100" formula="col(&quot;L(m)&quot;)/col(&quot;T (s)&quot;)" muparser="1" data="0.0772797527047913;0.093984962406015;0.104602510460251;0.116009280742459;0.12987012987013;"/>
+			<col name="Omega (rad-1)" type="6" num="0" prec="2" plot="2" width="100" formula="col(&quot;v(m.s-1)&quot;)/(2*pi*col(&quot;R (m)&quot;))" muparser="1" data="0.806521615992578;0.98086369463759;1.09167256390627;1.21071806391461;1.35537528713558;"/>
+			<col name="dT (s)" type="6" num="0" prec="13" plot="2" width="100" data="0.5;0.5;0.5;0.5;0.5;"/>
+			<col name="domega(radian.s-1)" type="6" num="0" prec="1" plot="5" width="100" formula="col(&quot;dT (s)&quot;)/col(&quot;T (s)&quot;)/(col(&quot;T (s)&quot;)*2*pi*col(&quot;R (m)&quot;))*0.5" muparser="1" data="0.0623277910349751;0.0921864374659389;0.114191690785175;0.140454531776637;0.176022764563062;"/>
+		</tab>
+	</window>
+	<window type="3" name="Graphe1" date="2458893.4276006" x="461" y="37" w="520" h="486" dpi="96">
+		<layout cw="504" ch="428" w="400" h="300" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" currentLayer="0" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="5" y="5" w="494" h="418" autoscale="1" maxMajorTicks="11" gap="1" scaleFont="1" dataMargins="1">
+			<page x="0.00992063" y="0.0116822" w="0.980159" h="0.976636"/>
+			<title text="Titre" color="#000000" font="Arial Unicode MS,10,-1,5,75,0,0,0,0,0" align="4228" fmw="31"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="52" y="76" w="400" h="300" fixRatio="0" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0">
+				<majx lc="#a0a0a4" lw="1" ls="0"/>
+				<minx lc="#a0a0a4" lw="1" ls="1"/>
+				<majy lc="#a0a0a4" lw="1" ls="0"/>
+				<miny lc="#a0a0a4" lw="1" ls="1"/>
+			</grid>
+			<curve type="1" z="21" table="Table1" x="U (V)" y="Omega (rad-1)" from="0" to="-1" line="0" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#000000" lw="1" ls="0" brc="#000000"/>
+				<errors type="1" z="22" table="Table1" col="domega(radian.s-1)" from="0" to="-1" lw="1" lc="#000000" cap="8" plus="1" minus="1" symb="1"/>
+			</curve>
+			<curve type="19" z="23" name="utilisateur1Ajustement1" f="0" y="x/K+C" from="8" to="12" points="10000" line="1" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<param name="C" val="-0.281204416387196"/>
+				<param name="K" val="7.29367691993787"/>
+			</curve>
+			<filter type="11" inCrv="0" from="8" to="12" outCrv="2" points="10000" recalc="1" sort="0" fmt="e" prec="13" modifiedData="0" alg="0" sclErr="1" chi2="0.032623258335838" func="1" weightMethod="1" weightData="Table1_domega(radian.s-1)" model="utilisateur1" form="x/K+C">
+				<parameter name="C" val="-0.281204416387196" err="0.40221863114653"/>
+				<parameter name="K" val="7.29367691993787" err="13.6918385817124"/>
+			</filter>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0.7" to="1.6" step="0" maj="10" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="1" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0.6" to="1.8" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="7" to="13" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="3" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="7" to="13" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<item type="2" x="7.15037593984962" y="1.56989966555184" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff,0" onTop="1" at="0" on="1" auto="1" font="Arial Unicode MS,7.92906,-1,5,50,0,0,0,0,0" text="\l(1)%(1)&#10;\l(2)%(2)&#10;&lt;b&gt;Données&lt;/b&gt;: Table1_Omega (rad-1)&#10;&lt;b&gt;Fonction&lt;/b&gt;: x/K+C&#10;&lt;b&gt;Chi^2/doF&lt;/b&gt; = 1,0874419445279e-02&#10;&lt;b&gt;R^2&lt;/b&gt; = 9,9477236714354e-01&#10;&lt;b&gt;C&lt;/b&gt; = -2,8120441638720e-01 +/- 6,6135422458721e-02&#10;&lt;b&gt;K&lt;/b&gt; = 7,2936769199379e+00 +/- 3,8586370095488e-01&#10;Les erreurs ont été multipliées par le facteur sqrt(Chi^2/doF) = 1,0428048448909e-01"/>
+		</tab>
+	</window>
+	<window type="1" name="Table2" date="2458893.4361798" x="4" y="154" w="990" h="230">
+		<tab rows="30" cols="9" labels="0">
+			<col name="UV" type="6" num="0" prec="13" plot="1" width="100" data="8;9;10;11;12;"/>
+			<col name="Lm" type="6" num="0" prec="13" plot="2" width="100" data="0.5;0.5;0.5;0.5;0.5;"/>
+			<col name="Ts" type="6" num="0" prec="13" plot="2" width="100" data="6;5.2;4.56;4.13;3.82;"/>
+			<col name="Rm" type="6" num="0" prec="13" plot="2" width="100" data="0.01525;0.01525;0.01525;0.01525;0.01525;"/>
+			<col name="IA" type="6" num="0" prec="13" plot="2" width="100" data="0.135;0.136;0.138;0.136;0.14;"/>
+			<col name="vms-1" type="6" num="0" prec="13" plot="2" width="100" data="0.077;0.094;0.1;0.12;0.13;"/>
+			<col name="Omegarad-1" type="6" num="0" prec="13" plot="2" width="100" data="0.81;0.98;1.1;1.2;1.4;"/>
+			<col name="dTs" type="6" num="0" prec="13" plot="2" width="100" data="0.2;0.2;0.2;0.2;0.2;"/>
+			<col name="domegaradians-1" type="6" num="0" prec="13" plot="5" width="100" data="0.1;0.2;0.2;0.3;0.4;"/>
+		</tab>
+	</window>
+	<window type="3" name="Graphe2" date="2458893.4385715" x="170" y="284" w="520" h="486" state="-1" dpi="96">
+		<layout cw="504" ch="428" w="400" h="300" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" currentLayer="0" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="5" y="5" w="494" h="418" autoscale="1" maxMajorTicks="11" gap="1" scaleFont="1" dataMargins="1">
+			<page x="0.00992063" y="0.0116822" w="0.980159" h="0.976636"/>
+			<title text="Titre" color="#000000" font="Arial Unicode MS,10,-1,5,75,0,0,0,0,0" align="4228" fmw="31"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="52" y="76" w="400" h="300" fixRatio="0" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0">
+				<majx lc="#a0a0a4" lw="1" ls="0"/>
+				<minx lc="#a0a0a4" lw="1" ls="1"/>
+				<majy lc="#a0a0a4" lw="1" ls="0"/>
+				<miny lc="#a0a0a4" lw="1" ls="1"/>
+			</grid>
+			<curve type="1" z="21" table="Table2" x="UV" y="Omegarad-1" from="0" to="-1" line="0" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#000000" lw="1" ls="0" brc="#000000"/>
+			</curve>
+			<curve type="1" z="22" table="Table2" x="UV" y="domegaradians-1" from="0" to="-1" line="0" lc="#ff0000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="2" size="7" lc="#ff0000" lw="1" ls="0" brc="#ff0000"/>
+			</curve>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1.6" step="0" maj="9" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="1" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="1.6" step="0" maj="9" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="7" to="13" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="3" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="7" to="13" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<item type="2" x="7.15037593984962" y="1.54648829431438" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff,0" onTop="1" at="0" on="1" auto="1" font="Arial Unicode MS,8.25,-1,5,50,0,0,0,0,0" text="\l(1)%(1)&#10;\l(2)%(2)"/>
+		</tab>
+	</window>
+	<window type="3" name="Graphe3" date="2458893.4392674" x="8" y="317" w="520" h="486" fw="16" fh="38" state="1" dpi="96">
+		<layout cw="504" ch="428" w="400" h="300" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" currentLayer="0" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="5" y="5" w="494" h="418" autoscale="1" maxMajorTicks="11" gap="1" scaleFont="1" dataMargins="1">
+			<page x="0.00992063" y="0.0116822" w="0.980159" h="0.976636"/>
+			<title text="Titre" color="#000000" font="Arial Unicode MS,10,-1,5,75,0,0,0,0,0" align="4228" fmw="31"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="52" y="76" w="400" h="300" fixRatio="0" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0">
+				<majx lc="#a0a0a4" lw="1" ls="0"/>
+				<minx lc="#a0a0a4" lw="1" ls="1"/>
+				<majy lc="#a0a0a4" lw="1" ls="0"/>
+				<miny lc="#a0a0a4" lw="1" ls="1"/>
+			</grid>
+			<curve type="1" z="21" table="Table2" x="UV" y="Omegarad-1" from="0" to="-1" line="0" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#000000" lw="1" ls="0" brc="#000000"/>
+				<errors type="1" z="22" table="Table2" col="domegaradians-1" from="0" to="-1" lw="1" lc="#000000" cap="8" plus="1" minus="1" symb="1"/>
+			</curve>
+			<curve type="19" z="23" name="utilisateur1Ajustement1" f="0" y="x/K+C" from="8" to="12" points="10000" line="1" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<param name="C" val="-0.317743005847782"/>
+				<param name="K" val="7.06911575224159"/>
+			</curve>
+			<filter type="11" inCrv="0" from="8" to="12" outCrv="2" points="10000" recalc="1" sort="0" fmt="e" prec="13" modifiedData="0" alg="0" sclErr="1" chi2="0.0357989568515913" func="1" weightMethod="1" weightData="Table2_domegaradians-1" model="utilisateur1" form="x/K+C">
+				<parameter name="C" val="-0.317743005847782" err="0.359677571867837"/>
+				<parameter name="K" val="7.06911575224159" err="11.4146033839685"/>
+			</filter>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0.6" to="1.8" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="1" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0.6" to="1.8" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="7" to="13" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="3" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="7" to="13" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<item type="2" x="7.15037593984962" y="1.75986622073579" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff,0" onTop="1" at="0" on="1" auto="1" font="Arial Unicode MS,8.25,-1,5,50,0,0,0,0,0" text="\l(1)%(1)&#10;\l(2)%(2)&#10;&lt;b&gt;Données&lt;/b&gt;: Table2_Omegarad-1&#10;&lt;b&gt;Fonction&lt;/b&gt;: x/K+C&#10;&lt;b&gt;Chi^2/doF&lt;/b&gt; = 1,1932985617197e-02&#10;&lt;b&gt;R^2&lt;/b&gt; = 9,9616229702311e-01&#10;&lt;b&gt;C&lt;/b&gt; = -3,1774300584778e-01 +/- 6,5513565709151e-02&#10;&lt;b&gt;K&lt;/b&gt; = 7,0691157522416e+00 +/- 3,6906679342215e-01&#10;Les erreurs ont été multipliées par le facteur sqrt(Chi^2/doF) = 1,0923820584941e-01"/>
+		</tab>
+	</window>
+	<window type="3" name="Graphe4" date="2458893.4398293" x="125" y="319" w="520" h="486" dpi="96">
+		<layout cw="504" ch="428" w="400" h="300" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" currentLayer="0" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="5" y="5" w="494" h="418" autoscale="1" maxMajorTicks="11" gap="1" scaleFont="1" dataMargins="1">
+			<page x="0.00992063" y="0.0116822" w="0.980159" h="0.976636"/>
+			<title text="Titre" color="#000000" font="Arial Unicode MS,10,-1,5,75,0,0,0,0,0" align="4228" fmw="31"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="52" y="76" w="400" h="300" fixRatio="0" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0">
+				<majx lc="#a0a0a4" lw="1" ls="0"/>
+				<minx lc="#a0a0a4" lw="1" ls="1"/>
+				<majy lc="#a0a0a4" lw="1" ls="0"/>
+				<miny lc="#a0a0a4" lw="1" ls="1"/>
+			</grid>
+			<curve type="1" z="21" table="Table2" x="UV" y="Omegarad-1" from="0" to="-1" line="0" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#000000" lw="1" ls="0" brc="#000000"/>
+				<errors type="1" z="22" table="Table2" col="domegaradians-1" from="0" to="-1" lw="1" lc="#000000" cap="8" plus="1" minus="1" symb="1"/>
+			</curve>
+			<curve type="19" z="23" name="utilisateur1Ajustement1" f="0" y="x/K+C" from="8" to="12" points="10000" line="1" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<param name="C" val="-0.317743005847782"/>
+				<param name="K" val="7.06911575224159"/>
+			</curve>
+			<filter type="11" inCrv="0" from="8" to="12" outCrv="2" points="10000" recalc="1" sort="0" fmt="e" prec="13" modifiedData="0" alg="0" sclErr="1" chi2="0.0357989568515913" func="1" weightMethod="1" weightData="Table2_domegaradians-1" model="utilisateur1" form="x/K+C">
+				<parameter name="C" val="-0.317743005847782" err="0.359677571867837"/>
+				<parameter name="K" val="7.06911575224159" err="11.4146033839685"/>
+			</filter>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0.6" to="1.8" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="1" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0.6" to="1.8" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="7" to="13" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="3" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="7" to="13" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<item type="2" x="7.15037593984962" y="1.75986622073579" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff,0" onTop="1" at="0" on="1" auto="1" font="Arial Unicode MS,8.25,-1,5,50,0,0,0,0,0" text="\l(1)%(1)&#10;\l(2)%(2)&#10;&lt;b&gt;Données&lt;/b&gt;: Table2_Omegarad-1&#10;&lt;b&gt;Fonction&lt;/b&gt;: x/K+C&#10;&lt;b&gt;Chi^2/doF&lt;/b&gt; = 1,1932985617197e-02&#10;&lt;b&gt;R^2&lt;/b&gt; = 9,9616229702311e-01&#10;&lt;b&gt;C&lt;/b&gt; = -3,1774300584778e-01 +/- 6,5513565709151e-02&#10;&lt;b&gt;K&lt;/b&gt; = 7,0691157522416e+00 +/- 3,6906679342215e-01&#10;Les erreurs ont été multipliées par le facteur sqrt(Chi^2/doF) = 1,0923820584941e-01"/>
+		</tab>
+	</window>
+	<window type="1" name="Table3" date="2458893.442289" x="44" y="231" w="948" h="385">
+		<tab rows="30" cols="7" labels="0">
+			<col name="m1 (kg)" type="6" num="0" prec="13" plot="1" width="100" data="1;1;1;1;1;;0.5;0.5;0.5;0.5;0.5;;2;2;2;2;2;"/>
+			<col name="I(A)" type="6" num="0" prec="13" plot="2" width="100" data="0.205;0.21;0.21;0.21;0.22;;0.135;0.136;0.138;0.136;0.14;;0.34;0.35;0.35;0.36;0.36;"/>
+			<col name="UV" type="6" num="0" prec="13" plot="2" width="100" data="8;9;10;11;12;;8;9;10;11;12;;8;9;10;11;12;"/>
+			<col name="T(s)" type="6" num="0" prec="13" plot="2" width="100" data="6.47;5.32;4.78;4.31;3.85;;6;5.2;4.56;4.13;3.82;;7.63;6.53;5.59;5;4.56;"/>
+			<col name="Omegarad-1" type="6" num="0" prec="13" plot="2" width="100" formula="0.5/col(&quot;T(s)&quot;)/(2/pi*0.01525)" muparser="1" data="0.81;0.98;1.1;1.2;1.4;;8.58358648521801;9.90413825217463;11.2941927437079;12.4701014313095;13.4820730134314;;6.74987141694732;7.8869094810579;9.21315186248803;10.3003037822616;11.2941927437079;"/>
+			<col name="dOmé" type="6" num="0" prec="13" plot="1" width="100" formula="0.2/col(&quot;T(s)&quot;)/col(&quot;T(s)&quot;)*0.5/(2*pi*0.01525)" muparser="1" data="0.02493111641399;0.0368745749863756;0.0456766763140699;0.0561818127106549;0.0704091058252249;;0.0289899714192888;0.0385961157949111;0.0501903937314556;0.0611857354557039;0.0715193505588112;;0.0179267355543561;0.0244750690321826;0.033398477702465;0.0417455588437758;0.0501903937314556;"/>
+			<col name="Gammaem" type="6" num="0" prec="13" plot="2" width="100" formula="7.3*col(&quot;I(A)&quot;)" muparser="1" data="1.4965;1.533;1.533;1.533;1.606;;0.9855;0.9928;1.0074;0.9928;1.022;;2.482;2.555;2.555;2.628;2.628;"/>
+		</tab>
+	</window>
+	<window type="3" name="Graphe5" date="2458893.4494117" x="2" y="352" w="520" h="486" active="1" dpi="96">
+		<layout cw="504" ch="428" w="400" h="300" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" currentLayer="0" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="5" y="5" w="494" h="418" autoscale="1" maxMajorTicks="11" gap="1" scaleFont="1" dataMargins="1">
+			<page x="0.00992063" y="0.0116822" w="0.980159" h="0.976636"/>
+			<title text="Titre" color="#000000" font="Arial Unicode MS,10,-1,5,75,0,0,0,0,0" align="4228" fmw="31"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="52" y="76" w="400" h="300" fixRatio="0" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0">
+				<majx lc="#a0a0a4" lw="1" ls="0"/>
+				<minx lc="#a0a0a4" lw="1" ls="1"/>
+				<majy lc="#a0a0a4" lw="1" ls="0"/>
+				<miny lc="#a0a0a4" lw="1" ls="1"/>
+			</grid>
+			<curve type="1" z="21" table="Table3" x="dOmé" y="Gammaem" from="0" to="-1" line="0" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#000000" lw="1" ls="0" brc="#000000"/>
+			</curve>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0.5" to="3" step="0" maj="6" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="1" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0.9" to="1.7" step="0" maj="9" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0.01" to="0.08" step="0" maj="8" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<axis id="3" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0.02" to="0.08" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Arial Unicode MS,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="36"/>
+				<labels space="4" font="Arial Unicode MS,8,-1,5,50,0,0,0,0,0" align="0"/>
+			</axis>
+			<item type="2" x="0.0117543859649123" y="2.91638795986622" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff,0" onTop="1" at="0" on="1" auto="1" font="Arial Unicode MS,8.25,-1,5,50,0,0,0,0,0" text="\l(1)%(1)"/>
+		</tab>
+	</window>
+</qti>
