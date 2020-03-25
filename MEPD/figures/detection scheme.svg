@@ -12,13 +12,16 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="43.60334mm"
-   height="33.833641mm"
-   viewBox="0 0 154.50003 119.88298"
+   width="197.17882mm"
+   height="33.833652mm"
+   viewBox="0 0 698.66513 119.88301"
    id="svg9282"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="detection scheme.svg">
+   sodipodi:docname="detection scheme.svg"
+   inkscape:export-filename="C:\Users\remi\Documents\GitHub\agregation\MEPD\figures\detection_scheme.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs9284">
     <marker
@@ -286,7 +289,7 @@
        x2="312.5"
        y2="112.3622"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(227.00002,-8.7333681e-6)" />
+       gradientTransform="translate(246.99999,-1.71289e-5)" />
     <marker
        inkscape:stockid="TriangleInM"
        orient="auto"
@@ -428,7 +431,7 @@
        x2="312.5"
        y2="112.3622"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(436.99999,-2.8364115e-5)" />
+       gradientTransform="translate(497.00002,7.2636376e-6)" />
     <marker
        inkscape:isstock="true"
        style="overflow:visible"
@@ -488,6 +491,68 @@
        x2="6.2859569"
        y2="27.534403"
        gradientUnits="userSpaceOnUse" />
+    <marker
+       inkscape:stockid="TriangleInM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleInM-5"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path10151-5"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#008000;fill-opacity:1;fill-rule:evenodd;stroke:#007d00;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(-0.4,-0.4)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM-9"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path10160-4"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#008000;fill-opacity:1;fill-rule:evenodd;stroke:#007d00;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4,0.4)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleInM-2"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path10151-4"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#008000;fill-opacity:1;fill-rule:evenodd;stroke:#007d00;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(-0.4,-0.4)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM-0"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path10160-7"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#008000;fill-opacity:1;fill-rule:evenodd;stroke:#007d00;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4,0.4)"
+         inkscape:connector-curvature="0" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -496,9 +561,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.2017578"
-     inkscape:cx="-58.345633"
-     inkscape:cy="25.382265"
+     inkscape:zoom="1.0235902"
+     inkscape:cx="388.47135"
+     inkscape:cy="151.7309"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="true"
@@ -519,8 +584,8 @@
     <inkscape:grid
        type="xygrid"
        id="grid9830"
-       originx="-595.00001"
-       originy="-885.45251" />
+       originx="-110.83498"
+       originy="-885.45236" />
   </sodipodi:namedview>
   <metadata
      id="metadata9287">
@@ -538,7 +603,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="laser"
-     transform="translate(-595.00002,-47.026704)">
+     transform="translate(-110.83498,-47.026712)">
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 160,112.3622 c 120,0 120,0 120,0"
@@ -554,13 +619,13 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:#008000;fill-rule:evenodd;stroke:#007d00;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleInM);marker-end:url(#TriangleOutM)"
+       style="fill:#008000;fill-rule:evenodd;stroke:#007d00;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleInM);marker-end:url(#TriangleOutM)"
        d="m 270.00001,137.3622 20,0"
        id="path10347"
        inkscape:connector-curvature="0"
-       transform="translate(-3.4178121e-6,-2.8555475e-6)"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-ydpi="90"
+       transform="translate(-3.4178121e-6,-2.8555475e-6)" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 280,112.3622 8,0 2,-5 5,10 5,-10 5,10 3,-5 2,0"
@@ -578,29 +643,22 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 385.00003,112.36221 c 120.00001,0 120.00001,0 120.00001,0"
+       d="m 405,112.36222 c 120.00001,0 120.00001,0 120.00001,0"
        id="path10007-1"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 420.00004,112.36221 -1e-5,40"
+       d="m 440.00001,112.36222 -10e-6,40"
        id="path10009-1"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:#008000;fill-rule:evenodd;stroke:#007d00;stroke-width:2.50000024;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker10815);marker-end:url(#TriangleOutM-2)"
-       d="m 495.00005,132.36221 20,0"
-       id="path10347-9"
-       inkscape:connector-curvature="0"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 505.00004,112.36221 8,0 2,-5 5,10 5,-10 5,10 3,-5 2,0"
+       d="m 525.00001,112.36222 8,0 2,-5 5,10 5,-10 5,10 3,-5 2,0"
        id="path10401-1"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccc"
@@ -608,7 +666,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:url(#linearGradient10419-8);stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 537.00004,97.362201 0,30.000009"
+       d="m 557.00001,97.362191 0,30.000029"
        id="path10407-0"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="90"
@@ -616,43 +674,29 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="541.76758"
-       y="61.034077"
+       x="557.97974"
+       y="68.407112"
        id="text10426-4"
        sodipodi:linespacing="125%"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan10428-3"
-         x="541.76758"
-         y="61.034077"
-         style="font-size:20px;text-align:end;text-anchor:end">Cavité</tspan><tspan
+         x="557.97974"
+         y="68.407112"
+         style="font-size:12.5px;text-align:end;text-anchor:end">Cavité</tspan><tspan
          sodipodi:role="line"
-         x="541.76758"
-         y="86.034073"
-         style="font-size:20px;text-align:end;text-anchor:end"
+         x="557.97974"
+         y="84.032112"
+         style="font-size:12.5px;text-align:end;text-anchor:end"
          id="tspan10928">optomécanique</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="492.23633"
-       y="154.80849"
-       id="text10430-9"
-       sodipodi:linespacing="125%"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         sodipodi:role="line"
-         id="tspan10432-7"
-         x="492.23633"
-         y="154.80849"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';fill:#008000">δx</tspan></text>
     <g
        style="display:inline;opacity:1;enable-background:new"
        i:rgbTrio="#4F008000FFFF"
        i:dimmedPercent="50"
        i:layer="yes"
        id="Layer_1-4"
-       transform="matrix(0,1,-1,0,431.71352,100.6487)"
+       transform="matrix(0,1,-1,0,451.71349,100.64871)"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -707,7 +751,7 @@
        i:dimmedPercent="50"
        i:layer="yes"
        id="g3815-7"
-       transform="translate(499.66452,97.814191)"
+       transform="translate(519.66449,97.814181)"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -773,7 +817,7 @@
        i:dimmedPercent="50"
        i:layer="yes"
        id="g5261-7"
-       transform="matrix(0,1,-1,0,431.71402,150.5697)"
+       transform="matrix(0,1,-1,0,451.71399,150.56971)"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -826,7 +870,7 @@
        i:dimmedPercent="50"
        i:layer="yes"
        id="g3850"
-       transform="matrix(-1,0,0,-1,480.31321,126.91021)"
+       transform="matrix(-1,0,0,-1,500.31318,126.91022)"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -885,29 +929,22 @@
     </g>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 595.00002,112.3622 c 120.00002,0 120.00002,0 120.00002,0"
+       d="m 655.00005,112.36225 c 120.00002,0 120.00002,0 120.00002,0"
        id="path10007-1-1"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 630.00003,52.362194 -1e-5,100.000006"
+       d="m 690.00006,52.362228 -10e-6,100.000022"
        id="path10009-1-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:#008000;fill-rule:evenodd;stroke:#007d00;stroke-width:2.50000024;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker11677);marker-end:url(#TriangleOutM-2-6)"
-       d="m 705.00005,132.3622 20,0"
-       id="path10347-9-6"
-       inkscape:connector-curvature="0"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 715.00004,112.3622 8,0 2,-5 5,10 5,-10 5,10 3,-5 2,0"
+       d="m 775.00007,112.36225 8,0 2,-5 5,10 5,-10 5,10 3,-5 2,0"
        id="path10401-1-6"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccc"
@@ -915,32 +952,18 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:url(#linearGradient10419-8-8);stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 747.00004,97.362185 0,30.000015"
+       d="m 807.00007,97.362219 0,30.000031"
        id="path10407-0-0"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="702.23627"
-       y="154.80849"
-       id="text10430-9-4"
-       sodipodi:linespacing="125%"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         sodipodi:role="line"
-         id="tspan10432-7-1"
-         x="702.23627"
-         y="154.80849"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';fill:#008000">δx</tspan></text>
     <g
        style="display:inline;opacity:1;enable-background:new"
        i:rgbTrio="#4F008000FFFF"
        i:dimmedPercent="50"
        i:layer="yes"
        id="Layer_1-4-3"
-       transform="matrix(0,1,-1,0,641.71348,100.64867)"
+       transform="matrix(0,1,-1,0,701.71351,100.64872)"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -995,7 +1018,7 @@
        i:dimmedPercent="50"
        i:layer="yes"
        id="g3815-7-1"
-       transform="translate(709.66448,97.814165)"
+       transform="translate(769.66451,97.814199)"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -1061,7 +1084,7 @@
        i:dimmedPercent="50"
        i:layer="yes"
        id="g5261-7-4"
-       transform="matrix(0,1,-1,0,641.71398,150.56968)"
+       transform="matrix(0,1,-1,0,701.71401,150.56973)"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -1114,7 +1137,7 @@
        i:dimmedPercent="50"
        i:layer="yes"
        id="g3850-2"
-       transform="matrix(-1,0,0,-1,690.31318,126.91019)"
+       transform="matrix(-1,0,0,-1,750.31321,126.91024)"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -1171,60 +1194,161 @@
            style="stroke:#000000;stroke-width:0.75" />
       </g>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="109.81936"
+       y="67.948135"
+       id="text4835"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan4837"
+         x="109.81936"
+         y="67.948135">a)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="359.20898"
+       y="67.948158"
+       id="text4835-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan4837-7"
+         x="359.20898"
+         y="67.948158">b)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="610.61523"
+       y="67.948151"
+       id="text4835-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan4837-5"
+         x="610.61523"
+         y="67.948151">c)</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="text"
-     transform="translate(-595.00002,-47.026704)">
+     transform="translate(-110.83498,-47.026712)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="170.99121"
-       y="64.632713"
+       x="238.3716"
+       y="57.397598"
        id="text10422"
        sodipodi:linespacing="125%"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan10424"
-         x="170.99121"
-         y="64.632713"
-         style="font-size:20px">OL</tspan></text>
+         x="238.3716"
+         y="57.397598"
+         style="font-size:12.5px">Référence</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="245.18068"
-       y="89.808479"
+       x="312.73621"
+       y="87.016129"
        id="text10426"
        sodipodi:linespacing="125%"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan10428"
-         x="245.18068"
-         y="89.808479"
-         style="font-size:20px">Echantillon</tspan></text>
+         x="312.73621"
+         y="87.016129"
+         style="font-size:12.5px;text-align:end;text-anchor:end">Oscillateur</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="267.23633"
-       y="159.80849"
+       x="272.02271"
+       y="157.01613"
        id="text10430"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="translate(8.0067383e-6,-1.2090257e-6)"><tspan
+         sodipodi:role="line"
+         id="tspan10432"
+         x="272.02271"
+         y="157.01613"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';fill:#008000">δx</tspan></text>
+    <path
+       style="fill:#008000;fill-rule:evenodd;stroke:#007d00;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleInM-5);marker-end:url(#TriangleOutM-9)"
+       d="m 515.00003,137.3622 20,0"
+       id="path10347-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="517.02271"
+       y="157.01611"
+       id="text10430-2"
        sodipodi:linespacing="125%"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
-         id="tspan10432"
-         x="267.23633"
-         y="159.80849"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';fill:#008000">δx</tspan></text>
+         id="tspan10432-5"
+         x="517.02271"
+         y="157.01611"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';fill:#008000">δx</tspan></text>
+    <path
+       style="fill:#008000;fill-rule:evenodd;stroke:#007d00;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleInM-2);marker-end:url(#TriangleOutM-0)"
+       d="m 765.00005,137.36225 20,0"
+       id="path10347-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="767.02277"
+       y="157.01616"
+       id="text10430-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan10432-0"
+         x="767.02277"
+         y="157.01616"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';fill:#008000">δx</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="169.51357"
+       y="149.20363"
+       id="text10422-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan10424-9"
+         x="169.51357"
+         y="149.20363"
+         style="font-size:12.5px">Photo-</tspan><tspan
+         sodipodi:role="line"
+         x="169.51357"
+         y="164.82863"
+         style="font-size:12.5px"
+         id="tspan4883">diode</tspan></text>
   </g>
   <g
      inkscape:label="optical_components"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-595.00002,-47.026704)">
+     transform="translate(-110.83498,-47.026712)">
     <g
        style="display:inline;opacity:1;enable-background:new"
        i:rgbTrio="#4F008000FFFF"
@@ -1471,7 +1595,7 @@
        i:dimmedPercent="50"
        i:layer="yes"
        id="g3815-4-9"
-       transform="matrix(0,-1,1,0,615.45203,57.6977)"
+       transform="matrix(0,-1,1,0,675.45206,57.697734)"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
