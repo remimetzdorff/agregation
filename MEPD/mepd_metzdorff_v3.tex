@@ -369,21 +369,20 @@ Il serait possible d'évaluer avec les étudiants l'importance de l'utilisation 
 Les techniques propres à l'optomécanique en cavité\footnote{Aspelmeyer \textit{et al.}, Cavity Optomechanics, \textit{Rev. Mod. Phys.}, (2014)} permettent ensuite de refroidir l'oscillateur mécanique jusqu'aux températures requises.
 Si le laser est légèrement désaccordée par rapport à la cavité, une perturbation de sa longueur provoquée par un déplacement du miroir mobile modifie la puissance intracavité, ce qui en retour change la force de pression de radiation exercée sur le miroir : c'est le \textit{couplage optomécanique}. 
 En raison de la durée de vie finie des photons dans la cavité, l'ajustement de la puissance intracavité par rapport à une perturbation de longueur est retardé.
-La modulation de la force de pression de radiation est donc déphasée par rapport aux déplacements du miroir.
-Cette force se décompose alors en deux termes :
+La modulation de la force de pression de radiation $F_\mathrm{rad}$ est donc déphasée par rapport aux déplacements du miroir et se décompose en deux termes :
 \begin{itemize}
-\item l'un en phase responsable de l'effet de ressort optique modifiant simplement la force de rappel exercée sur le miroir et donc la pulsation mécanique $\Omega_m$;
-\item l'autre en quadrature qui donne une force proportionnelle à la vitesse du miroir grâce à laquelle on peut obtenir une force analogue à un frottement visqueux et associée à un taux de dissipation $\Gamma_\mathrm{opt}$.
+\item l'un en phase $\delta F_{\mathrm{rad}, x}$, dont le premier ordre est proportionnel au déplacement, est associé à une force de rappel qui s'ajoute au ressort mécanique et déplace simplement la pulsation propre $\Omega_m$ : c'est l'effet de \textit{ressort optique} ;
+\item l'autre en quadrature $\delta F_{\mathrm{rad}, v}$, proportionnel à la vitesse du miroir, permet d'obtenir une force analogue à un frottement visqueux associé à un taux de dissipation $\Gamma_\mathrm{opt}$.
 \end{itemize}
-À la différence de la dissipation mécanique $\Gamma_m$ responsable du mouvement brownien, la dissipation optique $\Gamma_\mathrm{opt}$ appelée friction froide se fait sans ajout de bruit thermique, ce qui permet de refroidir l'oscillateur.
+À la différence de la dissipation mécanique $\Gamma_m$ responsable du mouvement brownien, la dissipation optique $\Gamma_\mathrm{opt}$ se fait sans ajout de bruit thermique, ce qui permet de refroidir l'oscillateur : c'est la \textit{friction froide}.
 Sa température effective $T_\mathrm{eff}$ est alors différente de celle de l'environnement $T_\mathrm{env}$ et on montre :
 \begin{equation}
 T_\mathrm{eff} = T_\mathrm{env} \frac{\Gamma_m}{\Gamma_\mathrm{eff}},
 \end{equation}
 où $\Gamma_\mathrm{eff} = \Gamma_m+\Gamma_\mathrm{opt}$.
 Cette relation justifie l'utilisation d'oscillateurs avec des grands facteurs de qualité et l'utilisation d'un cryostat à dilution pour avoir $T_\mathrm{env}$ aussi faible que possible.
-L'auto-refroidissement nécessite \og simplement \fg{} d'asservir la cavité pour que $\omega_\mathrm{L} < \omega_\mathrm{cav}$, où $\omega_\mathrm{cav}$ est la pulsation de la cavité et $\omega_\mathrm{L}$ celle du laser.
-Cette technique a été utilisée et a permis d'atteindre un taux d'occupation de 20 phonons, limité par la puissance injectable dans la cavité.
+L'auto-refroidissement nécessite \og simplement \fg{} d'asservir la longueur de la cavité pour que $\omega_\mathrm{L} < \omega_\mathrm{cav}$, où $\omega_\mathrm{cav}$ est la pulsation de la cavité et $\omega_\mathrm{L}$ celle du laser\footnote{Si à l'inverse $\omega_\mathrm{L} > \omega_\mathrm{cav}$, $\delta F_{\mathrm{rad}, v}$ correspond à un terme d'amplification ($\Gamma_\mathrm{opt} < 0 $ et $T_\mathrm{eff} > T_\mathrm{env}$), pouvant mener à un système instable si $\Gamma_\mathrm{eff} < 0$.}.
+Cette technique a permis d'atteindre un taux d'occupation de 20 phonons, limité par la puissance optique injectable dans la cavité.
 
 \begin{figure}
 \center
@@ -412,18 +411,19 @@ La sensibilité des mesures de déplacement est donc l'enjeu majeur pour atteind
 \subsection{Contrôle de l'expérience : Arduino, RedPitaya et Python}
 \label{sec:controls}
 
-L'expérience dépend de nombreuses boucles de rétroaction en plus de celle utilisée pour le refroidissement : stabilisations de températures, de puissances optiques et asservissement de longueur portant sur la position des miroirs des cavités et interféromètres.
+L'expérience dépend de plusieurs filtres et amplificateurs analogiques et numériques.
+J'ai donc notamment réalisé des filtres électroniques passifs et actifs, des photodiodes à haute efficacité quantique et faible bruit et un contrôleur fondé sur une carte Arduino interfacé avec Python permettant le positionnement reproductible d'une translation motorisée.
+
+Le bon fonctionnement du système repose également sur de nombreuses boucles de rétroaction en plus de celle utilisée pour le refroidissement : stabilisations de températures, de puissances optiques et asservissement de longueur portant sur la position des miroirs des cavités et interféromètres.
 Excepté le refroidissement par rétroaction analogique, ces asservissements sont réalisés numériquement par des micro-contrôleurs RedPitaya et la bibliothèque PyRPL\footnote{\url{https://pyrpl.readthedocs.io/en/latest/}} (Python RedPitaya Lockbox) développée au sein de l'équipe.
 Il est ainsi possible de piloter une grande partie de l'expérience à partir d'un PC, ce qui permet l'automatisation des séquences de mesures grâce à un répertoire de scripts Python que j'ai pu étoffer.
 
-Le bon fonctionnement du système repose également sur l'utilisation de plusieurs filtres et amplificateurs analogiques et numériques.
-J'ai donc notamment réalisé des filtres électroniques passifs et actifs, des photodiodes à haute efficacité quantique et faible bruit et un contrôleur fondé sur une carte Arduino interfacé avec Python permettant le positionnement reproductible d'une translation motorisée.
-
 \begin{mep}
-Le développement, l'utilisation et l'amélioration de ces systèmes bouclés m'a permis de développer une compréhension par l'expérience des systèmes asservis, renforcée par la suite par une approche plus théorique.
+Ces systèmes bouclés m'ont permis de développer une compréhension par l'expérience des systèmes asservis, renforcée par la suite par une approche plus théorique.
 Ceci me sera utile pour aborder ce thème avec des étudiants en PSI.
-Les compétences que j'ai acquises dans la programmation, l'électronique analogique et numérique et dans l'utilisation de micro-contrôleurs permettrons d'illustrer mes cours de simulations, mais aussi guider mes élèves dans le cadre de l'enseignement scientifique.
-L'utilisation de PyRPL et RedPitaya ouvre par ailleurs de nombreuses perspectives : grâce à une carte RedPitaya ($\sim\unit{200}{\text{\euro}}$) et du programme PyRPL (open source), on peut disposer d'un oscilloscope, d'un GBF, d'un analyseur de spectre, d'un analyseur de réseau et d'une boite d'asservissement pour ne citer que les fonctionnalités déjà existantes.
+Les compétences que j'ai acquises dans la programmation, l'électronique analogique et numérique et dans l'utilisation de micro-contrôleurs permettrons d'illustrer mes cours de simulations, mais aussi de guider mes élèves dans le cadre de l'enseignement scientifique.
+Les cartes RedPitaya ($\sim\unit{200}{\text{\euro}}$) disposent nativement d'un oscilloscope et d'une GBF numérique.
+L'utilisation du programme \textit{open source} PyRPL ouvre par ailleurs de nombreuses perspectives :  analyseur de spectre et de réseau ou boite d'asservissement pour ne citer que les fonctionnalités déjà implémentées.
 Cette ressource pourrait être introduite comme évolution de l'Arduino à des élèves de lycée et exploitée dans le cadre de travaux pratiques en CPGE.
 \end{mep}
 
