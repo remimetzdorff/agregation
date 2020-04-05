@@ -1,0 +1,180 @@
+\section{LP09 Conversion de puissance électromécanique}
+
+\begin{header}
+\begin{tabular}{p{0.4\textwidth} l}
+\niveau & \prerequis \\
+CPGE (PSI) & \textbullet{} Induction \\
+           & \textbullet{} Force de Laplace \\
+           & \textbullet{} Énergie électromagnétique \\
+           & \textbullet{} Électrocinétique \\
+           & \textbullet{} Notion de couple, puissance mécanique
+\end{tabular}
+
+\noindent
+\objectif
+Template
+\end{header}
+
+\subsection*{Bibliographie}
+{
+\footnotesize{}
+En gros : Polycopié de Jérémy et Dunod PSI (apparemment la dernière édition est la meilleure)
+\begin{itemize}
+\item \cite{Faroux1998}
+\item \cite{Salamito2016}
+\item \cite{Neveu2019}
+\item \cite{Cardini2017}
+\item \cite{Naval}
+\end{itemize}
+}
+
+\subsection*{Introduction}
+
+Électricité à la base de notre société : permet de transporter de l'énergie qu'il faut convertir en lumière, chaleur ou travail.
+Les moteurs et générateurs sont des exemples de machines tournantes très fréquemment rencontrés depuis la production électrique jusqu'aux moyens de transport.
+Ces machines sont constituées d'un stator et d'un rotor (définir).
+
+\subsection{Induction et force de Laplace}
+
+Ne pas faire cette partie probablement par manque de temps et redondance avec le moteur continu.
+
+On peut probablement la faire rapidement mais en insistant lourdement sur la correspondance entre énergie méca et elec.
+
+On s'intéresse à une barre en mouvement dans un champ magnétique uniforme.
+On trouve :
+\begin{equation}
+e = lBv
+\end{equation}
+Explication physique : l'opérateur met en mouvement les particules chargées du conducteur qui sont déviées par le champ magnétique.
+On peut alors assimiler cet effet à une force électromotrice $e$.
+
+La puissance électrique est donnée par 
+\begin{equation}
+{\mathcal{P}}_e = ilBv
+\end{equation}
+Ici un déplacement crée une force électromotrice, mais on sait qu'un champ magnétique variable en crée aussi ce qui est important dans les machines électromécaniques : soit un conducteur se déplace dans un champ magnétique soit le champ magnétique est variable.
+Faire le schéma équivalent électrique.
+
+Si l'induction transforme l'énergie mécanique en énergie électromagnétique, la force de Laplace fait l'inverse.
+
+Seule la force de Laplace est à prendre en compte :
+\begin{equation}
+F_L = -ilB
+\end{equation}
+dont la puissance est
+\begin{equation}
+{\mathcal{P}}_L = -ilBv
+\end{equation}
+
+On montre immédiatement l'égalité entre les puissances d'induction et de Laplace ce qui est l'essentiel de la conversion électromécanique.
+
+\begin{transition}
+Il existe des applications ou l'on souhaite faire des translations mais souvent une rotation plus utile.
+\end{transition}
+
+\subsection{Machine à courant continu}
+
+\subsubsection{Cas d'une spire -- Laplace}
+
+Suivre le cours de Jérémy
+
+\begin{slide}
+\textbf{Modèle de la machine à courant continu.}
+\end{slide}
+
+\begin{slide}
+\textbf{Couple de la machine à courant continu.}
+\end{slide}
+
+\begin{transition}
+On a un circuit mobile dans un champs magnétique constant ce qui conduit au phénomène d'induction.
+\end{transition}
+
+\subsubsection{Cas d'une spire -- Induction de Lorentz}
+
+Retrouver l'égalité des puissance mécanique (Laplace) et de l'induction en fonction du couple, de la vitesse de rotation, de la force électromotrice et du courant.
+
+\begin{transition}
+Le couple d'un tel système n'est pas acceptable, il faut utiliser plusieurs spires et des matériaux ferromagnétiques pour optimiser le couplage entre les champs rotoriques et statoriques.
+\end{transition}
+
+
+\subsubsection{Généralisation aux machines réelles}
+
+\begin{slide}
+\textbf{Machine à courant continu réelle}
+\end{slide}
+
+Introduire la constante de couplage électromécanique et établir l'expression de la vitesse de rotation en fonction de la force contre électromotrice.
+Insister sur le fait qu'ils sont facilement contrôlables (vitesse, piles).
+
+\begin{experience}
+\textbf{Caractérisque $\omega(E)$ du moteur à courant continu.}
+\end{experience}
+
+Dire un mot sur la réversibilité de ces machine mais sera développé après.
+
+\begin{transition}
+Ces machines sont essentielles mais présentent des inconvénients :
+\begin{itemize}
+\item pour la production : le transport d'électricité en CC n'est pas rentable, il vaut mieux utiliser le triphasé.
+\item pour les moteurs : contacts glissants qui s'abîment, puissances modérées. 
+\end{itemize}
+\end{transition}
+
+\subsubsection{Machine synchrone}
+
+Avant on avit un moment magnétique variable dans un champ magnétique permanent, maintenant on va voir un moment magnétique constant dans un champ magnétique variable
+
+\subsubsection{Création d'un champ tournant}
+\label{sec:lp09_rotating_field}
+
+Faire le cas avec un champ diphasé pour avoir l'idée puis montrer le cas réel avec 3 bobines.
+
+\begin{slide}
+\textbf{Création d'un champ tournant.}
+\end{slide}
+
+En plaçant un dipôle au centre, celui-ci sera soumis à un couple qui peut le mettre en rotation.
+
+\begin{experience}
+\textbf{Boussole dans un champ magnétique tournant.}
+\end{experience}
+
+\begin{transition}
+En pratique les champs obtenu grâce à de simples spires n'est pas très intense et il faut utiliser un milieux ferromagnétique doux pour canaliser le champ magnétique.
+\end{transition}
+
+\subsubsection{Champ statorique}
+
+\begin{slide}
+\textbf{Modèle de la machine synchrone.}
+Parler des hypothèses et insister sur le rôle du matériau ferromagnétique.
+\end{slide}
+
+\begin{slide}
+\textbf{Champ statorique.}
+\end{slide}
+
+Calculer le champs statorique avec le théorème d'Ampère dans les milieux comme dans le bouquin de PSI en faisant attention à bien justifier les symétries, etc.
+
+Aboutir sur l'expression du champ glissant (la donner par analogie avec la partie~\ref{sec:lp09_rotating_field} si manque de temps).
+
+Donner l'expression du champ rotorique par analogie avec le cas d'une seule spire.
+
+\subsection{Couple de la machine synchrone}
+
+Suivre le livre de PSI pour déterminer l'expression de l'énergie électromagnétique dans l'entrefer et en déduire l'expression du couple.
+Faire apparaitre la condition de synchronisme puis discuter des différents régimes de fonctionnement. 
+
+\begin{slide}
+\textbf{Caractéristique $\Gamma(\alpha)$}
+\end{slide}
+
+Faire un bilan de puissance comme dans le poly de Jérémy et insister sur les conventions.
+
+Discuter des avantages et inconvénients de la machine synchrone (ouvrir sur les problèmes liés au démarrage et éventuellement montrer la cage d'écureuil)
+
+\subsection*{Conclusion}
+
+\newpage

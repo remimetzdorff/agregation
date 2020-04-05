@@ -1,0 +1,159 @@
+\section{LP12 Traitement d'un signal, étude spectrale}
+
+\begin{header}
+\begin{tabular}{p{0.4\textwidth} l}
+\niveau & \prerequis \\
+CPGE (MP, PSI) & \textbullet{} Electrocinétique \\
+\end{tabular}
+
+\noindent
+\objectif
+Mettre en évidence l'importance du traitement de signal dans les protocoles de communication actuels.
+Discuter des avantages et inconvénients des traitements numériques et analogiques.
+Se familiariser avec l'étude spectrale.
+\end{header}
+
+{
+\footnotesize{}
+\subsection*{Bibliographie}
+\begin{itemize}
+\item \cite{Augier2014}
+\item \cite{Cardini2017}
+\item \cite{Salamito2017}
+\item \cite{Neveu2019}
+
+\end{itemize}
+}
+
+\subsection*{Introduction}
+
+Dans le cadre des télécommunications, on s'intéresse à la transmission d'un signal complexe qui doit être traité afin d'être transporté sur de longues distances.
+On distingue les méthodes analogiques qui conservent la nature continue du signal des méthodes numériques qui nécessite sa discrétisation.
+Ces deux méthodes présentent chacune des avantages et inconvénients que l'on discutera au cours de cette leçon.
+L'étude spectrale permet de s'affranchir de la redondance temporelle de la plupart des signaux et constitue donc un outils puissant pour leur étude.
+
+\subsection{Spectre d'un signal et filtrage}
+
+Le signal est une grandeur physique dons les variations temporelles encodent une information.
+
+\subsubsection{Signal périodique}
+
+Suivre \cite{Salamito2017}.
+Tout signal périodique $s(t)$ de fréquence $f_s$ s'exprime comme la superposition de fonctions sinusoïdales de fréquence multiple de $f_s$ :
+\begin{equation}
+s(t) = A_0 + \sum_{n=1}^\infty A_n \cos(2\pi n f_s t + \varphi_n).
+\end{equation}
+Toutes les informations sur $s(t)$ sont contenues dans les $A_n$ et $\varphi_n$ : on peut les représenter en fonction de la fréquence sous forme de spectres en amplitude et en phase.
+Faire les schémas $s(t)$, $A_n(f)$ et $\varphi_n(f)$.
+
+\begin{slide}
+\textbf{Spectre d'un signal en créneau.}
+\end{slide}
+
+\begin{experience}
+\textbf{FFT d'un signal en créneau sur l'oscilloscope.}
+\end{experience}
+
+Donner les interprétations physiques de $A_0$, $A_1$ et $A_n$ : les premières harmoniques décrivent la forme générale du signal mais les détails sont donnés par les hautes fréquences, c'est-à-dire par les harmoniques de rang élevé.
+
+\begin{transition}
+Cette description permet de s'affranchir de la redondance d'un signal périodique et est particulièrement utile pour décrire la réponse des filtres linéaires.
+\end{transition}
+
+\subsubsection{Filtrage linéaire}
+
+Faire une schéma d'un filtre avec $e$ et $s$.
+Définition d'un filtre : système pour lequel il existe une relation à coefficients constants entre les dérivées temporelles de l'entrée et celles de la sortie :
+\begin{equation}
+b_0 s(t) + b_1 \frac{\d s}{\d t} + ... + b_m \frac{\d^m s}{\d t^m} = a_0 e(t) + a_1 \frac{\d e}{\d t}+ ...
+\end{equation}
+$m$ est appelé l'ordre du filtre.
+Ce type de système est linéaire ce qui permet d'utiliser le principe de superposition.
+
+On suppose un signal d'entrée de la forme :
+\begin{equation}
+e(t) = E\cos(\omega t+\varphi_e)
+\end{equation}
+et on utilise la notation complexe :
+\begin{equation}
+\underline{e}(t) = E e^{j(\omega t + \varphi_e)}.
+\end{equation}
+En faisant de même pour la sortie, on définit la fonction de transfert d'un filtre linéaire comme le rapport :
+\begin{equation}
+\underline{H}(j\omega) = \frac{\underline{s}(t)}{\underline{e}(t)}.
+\end{equation}
+
+\begin{experience}
+\textbf{Diagramme de Bode d'un circuit RC.}
+Montrer l'effet du filtre sur un signal sinusoïdal en modifiant la fréquence pour mettre en évidence le caractère passe bas.
+Faire les calculs puis acquérir et ajuster le diagramme de Bode obtenu par le modèle.
+\end{experience}
+
+Calculs du filtre RC en utilisant les impédances complexes.
+On obtiendrait le même résultat en établissant l'équation temporelle du circuit.
+
+De manière générale les filtres permettent d'isoler une partie du spectre d'un signal pour en extraire l'information essentielle dont la nature varie avec l'application : musique, télécommunications, mesures de précisions...
+Il existe de nombreux types de filtres linéaires : passe-bas, passe-haut, passe-bande, etc. et pas seulement d'ordre 1.
+
+\begin{transition}
+Ces systèmes linéaires sont nécessaires pour le traitement du signal dans les télécommunications mais pas suffisants.
+\end{transition}
+
+\subsection{Transmission analogique : la radio AM}
+
+\subsubsection{Modulation}
+
+On s'intéresse à la transmission d'une musique pour expliquer le fonctionnement de la radio par exemple.
+Il est exclu de les transmettre via des ondes mécaniques pour des raisons évidentes : on préfère utiliser des ondes électromagnétiques.
+Il faut donc premièrement transformer le signal sonore en signal électrique grâce à un microphone par exemple.
+La fréquence du signal à transmettre est de l'ordre du kHz, ce qui correspond à une longueur d'onde de \unit{300}{\kilo\meter}.
+Comme les antennes sont du même ordre de grandeur que le signal à détecter il faudrait des antennes gigantesques !
+Pour éviter cela on va utiliser une porteuse de haute fréquence pour transporter l'information base fréquence, ce qui nécessite une modulation.
+
+Cette opération nécessite un composant non linéaire : le multiplieur.
+Faire un schéma
+\begin{equation}
+s_{AM}(t) = (1+\alpha s(t))s_p(t)
+\end{equation}
+Faire le calcul pour montrer que 
+\begin{equation}
+s_{AM}(t) = A_p \left[ \cos(\omega_p t) + \frac{m}{2}\cos(\omega_p-\omega)t + \frac{m}{2}\cos(\omega_p+\omega)t \right] 
+\end{equation}
+On voit immédiatement que le signal modulé contient trois fréquences.
+
+\begin{slide}
+\textbf{Spectre du signal modulé en amplitude.}
+\end{slide}
+
+\begin{transition}
+\textbf{Template}
+\end{transition}
+
+\subsubsection{Démodulation}
+
+\begin{transition}
+\textbf{Template}
+\end{transition}
+
+\subsection{Traitement numérique}
+
+\subsubsection{Numérisation}
+
+\begin{transition}
+\textbf{Template}
+\end{transition}
+
+\subsubsection{Filtrage}
+
+\begin{slide}
+\textbf{Traitement du signal pour la détection des ondes gravitationnelles.}
+\end{slide}
+
+\subsection*{Conclusion}
+
+
+\begin{remarque}
+\textbf{Template}
+\end{remarque}
+
+\newpage
