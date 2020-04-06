@@ -4,7 +4,8 @@
 \begin{tabular}{p{0.4\textwidth} l}
 \niveau & \prerequis \\
 CPGE & \textbullet{} Ondes électromagnétiques dans le vide \\
-        & \textbullet{} Template \\
+     & \textbullet{} Ondes acoustiques \\
+     & \textbullet{} Interférences lumineuses
 \end{tabular}
 
 \noindent
@@ -20,29 +21,120 @@ Template
 \item \cite{Olivier2000}, p771.
 \item \cite{Perez2009}
 \item \cite{Cardini2017}
+\item \cite{Moreau1992}
 \end{itemize}
 }
 
 \subsection*{Introduction}
 
-\subsection{Template}
+Dans le cas d'une onde sphérique valable aussi pour une antenne, l'amplitude décroit en $1/r$ et l'énergie en $1/r^2$.
+Le guidage permet d'éviter cette dilution de l'onde dans le milieu et de transporter de l'information sur de plus grandes distances.
+Le guidage peut intervenir dans plusieurs types d'ondes et de fréquences.
+Le guidage introduit cependant de la dispersion qu'il faudra prendre en compte dans les applications.
 
-\subsubsection{Template}
+\subsection{Modèle du guide électromagnétique}
 
-\begin{experience}
-\textbf{Template}
-\end{experience}
+\subsubsection{Position du problème}
 
-\begin{slide}
-\textbf{Template}
-\end{slide}
+Globalement, on suivra \cite{Thibierge2014} à partir de la p51.
+
+Faire un schéma et donner les hypothèses.
+Établir l'équation de d'Alembert.
+Poser les conditions aux limites.
+Mettre en évidence l'existence de deux groupes de solutions TE et TM formant une base des solutions, notion de mode hybride.
 
 \begin{transition}
-\textbf{Template}
+On va s'intéresser aux solutions TE.
 \end{transition}
 
-\begin{remarque}
-\textbf{Template}
-\end{remarque}
+\subsubsection{Solutions TE}
+
+Justifier la forme des solutions cherchées par l'idée d'une solution propagative qui satisfasse l'équation de d'Alembert et les conditions aux limites.
+Commenter sur la solution : stationnaire dans une direction et propagative dans l'autre.
+Introduire la constante de propagation, faire le lien avec $k$ en marquant bien qu'il n'ont pas la même signification.
+
+Aboutir sur la forme du champ $E$ en mentionnant que tout le reste s'exprime en fonction de lui.
+Quantification des modes, caractérisé par un entier donné.
+
+\begin{slide}
+\textbf{Allure des solutions TE.}
+\end{slide}
+
+On peut mentionner la décomposition en OPPH pour l'analyse géométrique du problème.
+
+\begin{transition}
+Si les conditions aux limites ne modifient pas l'équation de propagation, elles imposent des conditions fortes sur les modes pouvant se propager dans le guide.
+\end{transition}
+
+\subsubsection{Relation de dispersion}
+
+Établir la relation de dispersion.
+
+\begin{slide}
+\textbf{Relation de dispersion pour le guide plan-plan.}
+\end{slide}
+
+Mettre en évidence les notions de fréquence de coupure (le guide est un passe haut), avec l'interprétation si l'on envoie une OPPH sur le guide (\cite{Thibierge2014}, p56), de guidage monomode ou non.
+
+Faire apparaitre la vitesse de phase et la vitesse de groupe et discuter de leur signification.
+
+\begin{transition}
+Ce modèle du guide a permis de mettre en évidence les particularités liées à la propagation guidée d'une onde (dispersion, mode et fréquence de coupure) mais il ne représente pas un outils pratique de la vie courante.
+\end{transition}
+
+\subsection{Guide d'onde réels}
+
+\subsubsection{Guide microonde}
+
+\cite{Olivier2000} p771.
+\cite{Thibierge2014} p57.
+
+Il s'agit d'un guide rectangulaire.
+Les conditions aux limites sont similaires aux précédentes mais présentes dans deux directions.
+Donner la relation de dispersion et reparler de la condition monomode, et de comment rendre un guide monomode à une fréquence fixée : en réduisant sa dimension transverse. 
+Faire l'AN pour les microonde d'un four.
+Justifier qu'un guide "plat" fonctionne.
+
+\begin{transition}
+Le guidage ne s'applique pas seulement au domaine des ondes électromagnétiques.
+Voyons un exemple avec les ondes acoustiques.
+\end{transition}
+
+\subsubsection{Tuyau sonore}
+
+Présenter les conditions aux limites dans le cadre de l'écoulement parfait :  vitesse tangentielle sur les parois.
+Insister sur la particularité des ondes longitudinales : le mode fondamental n'est pas affecté, les autres modes ont une vitesse plus faible que dans l'air.
+Donner la relation de dispersion.
+La symétrie cylindrique complique la résolution analytique et fait intervenir les fonctions de Bessel dans les bases de solution.
+
+\begin{experience}
+\textbf{Mesure des vitesses de groupe des ondes acoustiques dans un tuyau sonore.}
+Montrer le fondamental en déplaçant latéralement l'émetteur.
+Incliner l'émetteur.
+Faire avec plusieurs tuyaux.
+\end{experience}
+
+Cette expérience est assez abstraite mais on utilisait avant des cornets acoustiques comme amplificateurs.
+
+\begin{transition}
+On voit qu'envoyant un pulse dans un milieu dispersif, on limite le débit... ce qui est un problème dans les télécommunications actuelles qui se font par fibre optiques. 
+\end{transition}
+
+\subsubsection{Fibre optique}
+
+Faire le raisonnement géométrique à partir de considérations d'interférences constructives. qui impose la quantification des modes.
+Approche très simpliste mais met en évidence la dispersion : une impulsion est élargie.
+On utilise des fibres à gradient d'indice pour limiter la dispersion.
+
+\begin{slide}
+\textbf{Fibre optique.}
+\end{slide}
+
+On pourrait utiliser des fibres monomode.
+Les différents modes permettent de faire voyager plus d'information
+
+\subsection*{Conclusion}
+
+Modes, dispersion, télécommunications.
 
 \newpage

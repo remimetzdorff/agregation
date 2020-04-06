@@ -3,7 +3,8 @@
 \begin{header}
 \begin{tabular}{p{0.4\textwidth} l}
 \niveau & \prerequis \\
-CPGE (MP, PSI) & \textbullet{} Electrocinétique \\
+CPGE (MP, PSI) & \textbullet{} Electrocinétique, fonction de transfert \\
+			   & \textbullet{} Filtre RC
 \end{tabular}
 
 \noindent
@@ -56,6 +57,11 @@ Faire les schémas $s(t)$, $A_n(f)$ et $\varphi_n(f)$.
 
 Donner les interprétations physiques de $A_0$, $A_1$ et $A_n$ : les premières harmoniques décrivent la forme générale du signal mais les détails sont donnés par les hautes fréquences, c'est-à-dire par les harmoniques de rang élevé.
 
+\begin{slide}
+\textbf{Spectre du signal sonore émis par un verre.}
+Parler de la transformée de Fourier pour les signaux non périodiques. 
+\end{slide}
+
 \begin{transition}
 Cette description permet de s'affranchir de la redondance d'un signal périodique et est particulièrement utile pour décrire la réponse des filtres linéaires.
 \end{transition}
@@ -69,6 +75,7 @@ b_0 s(t) + b_1 \frac{\d s}{\d t} + ... + b_m \frac{\d^m s}{\d t^m} = a_0 e(t) + 
 \end{equation}
 $m$ est appelé l'ordre du filtre.
 Ce type de système est linéaire ce qui permet d'utiliser le principe de superposition.
+Ne modifie pas le contenu fréquentiel mais altère la contribution de chaque fréquence.
 
 On suppose un signal d'entrée de la forme :
 \begin{equation}
@@ -83,14 +90,18 @@ En faisant de même pour la sortie, on définit la fonction de transfert d'un fi
 \underline{H}(j\omega) = \frac{\underline{s}(t)}{\underline{e}(t)}.
 \end{equation}
 
+Calculs du filtre RC en utilisant les impédances complexes.
+On obtiendrait le même résultat en établissant l'équation temporelle du circuit.
+
+\begin{slide}
+\textbf{Filtre passe-bas.}
+\end{slide}
+
 \begin{experience}
 \textbf{Diagramme de Bode d'un circuit RC.}
 Montrer l'effet du filtre sur un signal sinusoïdal en modifiant la fréquence pour mettre en évidence le caractère passe bas.
 Faire les calculs puis acquérir et ajuster le diagramme de Bode obtenu par le modèle.
 \end{experience}
-
-Calculs du filtre RC en utilisant les impédances complexes.
-On obtiendrait le même résultat en établissant l'équation temporelle du circuit.
 
 De manière générale les filtres permettent d'isoler une partie du spectre d'un signal pour en extraire l'information essentielle dont la nature varie avec l'application : musique, télécommunications, mesures de précisions...
 Il existe de nombreux types de filtres linéaires : passe-bas, passe-haut, passe-bande, etc. et pas seulement d'ordre 1.
@@ -125,19 +136,48 @@ On voit immédiatement que le signal modulé contient trois fréquences.
 \textbf{Spectre du signal modulé en amplitude.}
 \end{slide}
 
+Parler du problème de la porteuse qui nécessite beaucoup d'énergie.
+
 \begin{transition}
-\textbf{Template}
+On obtient donc un signal qui peut être transporté mais qui n'est pas utilisable en tant que tel.
+Il est nécessaire de le démoduler.
 \end{transition}
 
-\subsubsection{Démodulation}
+\subsubsection{Démodulation synchrone}
+
+Parler rapidement de la détection d'enveloppe.
+
+Faire le calcul de la démodulation synchrone et insister sur l'importance du filtrage.
+ 
+\begin{slide}
+\textbf{Spectre du signal démodulé en amplitude.}
+\end{slide}
 
 \begin{transition}
-\textbf{Template}
+Si les télécommunication analogiques sont encore utilisées actuellement, le numérique devient de plus en plus présent.
+Inconvénients de la transmissions analogique : sujet au bruit, difficile à stocker.
 \end{transition}
 
 \subsection{Traitement numérique}
 
 \subsubsection{Numérisation}
+
+Avantages du numériques \cite{Cardini2017} p136.
+Définition de l'échantillonnage \cite{Cardini2017} p127.
+
+\begin{slide}
+\textbf{Numérisation d'un signal.}
+\end{slide}
+
+Perte d'information
+
+\begin{slide}
+\textbf{Critère de Shanon.}
+\end{slide}
+Parler des DFT, FFT.
+Tracer le spectre d'un signal échantillonné et faire apparaitre la création de nouvelle fréquence en raisonnant par analogie avec la modulation vue avant.
+Repliement de spectre.
+Amener la nécessité de filtrer avant l'acquisition pour éviter le repliement de spectre.
 
 \begin{transition}
 \textbf{Template}
@@ -145,15 +185,16 @@ On voit immédiatement que le signal modulé contient trois fréquences.
 
 \subsubsection{Filtrage}
 
+Présenter la méthode de discrétisation en prenant l'exemple du passe bas.
+
 \begin{slide}
-\textbf{Traitement du signal pour la détection des ondes gravitationnelles.}
+\textbf{Filtrage numérique.}
 \end{slide}
 
 \subsection*{Conclusion}
 
-
-\begin{remarque}
-\textbf{Template}
-\end{remarque}
+\begin{slide}
+\textbf{Traitement du signal pour la détection des ondes gravitationnelles.}
+\end{slide}
 
 \newpage
