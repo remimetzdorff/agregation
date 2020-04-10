@@ -3,40 +3,216 @@
 \begin{header}
 \begin{tabular}{p{0.4\textwidth} l}
 \niveau & \prerequis \\
-Template& \textbullet{} Template \\
-        & \textbullet{} Template \\
+CPGE & \textbullet{} Cinématique du point \\
+     & \textbullet{} Théorèmes de la dynamique \\
+     & \textbullet{} Électrostatique.
 \end{tabular}
 
 \noindent
 \objectif
-Template
+Formaliser l'interaction gravitationnelle et étudier le mouvement d'une particule massique dans un champ de pesanteur. 
 \end{header}
 
 {
-%\footnotesize{\bibliography{biblio}}
-\bibentry{Template}
+\subsubsection*{Bibliographie}
+\footnotesize{}
+\begin{itemize}
+\item Page Wikipedia sur la \href{https://fr.wikipedia.org/wiki/Constante_gravitationnelle}{constante gravitationnelle} pour la mesure de $G$ ;
+\item \cite{Michel2017} chapitre 13
+\item \cite{Faroux1996}
+\item \cite{Salamito2016}
+\item \cite{Bocquet2002}
+\end{itemize}
 }
+
+\begin{remarque}
+Revoir \cite{Michel2017} p472 pour des rappels d'odg sur le système solaire.
+Pour ce qui est du niveau : plutôt première année sauf l'analogie avec l'électrostatique qui ne peut être réalisée qu'en deuxième année.
+\end{remarque}
 
 \subsection*{Introduction}
 
-\subsection{Template}
-
-\subsubsection{Template}
-
-\begin{experience}
-\textbf{Template}
-\end{experience}
-
+La gravitation décrit l'interaction entre des objets de masse non nulle.
+Il s'agit d'une des quatre interactions fondamentales.
 \begin{slide}
-\textbf{Template}
+\textbf{Les quatre interactions fondamentales.}
+\end{slide}
+Elle est de loin la plus faible mais régit l'évolution des astres, ce qui s'explique par la neutralité de la matière et la longue portée des interactions considérées.
+
+Plusieurs modèles des interactions gravitationnelles dans le but d'expliquer le mouvement des objets massifs et notamment celui des astres.
+\begin{slide}
+\textbf{Plusieurs théories de la gravitation.}
+Dire que la théorie de Newton marche très bien dans le cas des masses faibles (incluant le Soleil, ou presque !).
 \end{slide}
 
 \begin{transition}
-\textbf{Template}
+Nous allons décrire dans un premier l'interaction gravitationnelle dans le cadre de la mécanique newtonienne.
 \end{transition}
 
+\subsection{Interaction gravitationnelle}
+
+\subsubsection{Force et énergie}
+
+Justifier la forme de l'interaction proposée par Newton \cite{Faroux1996}p146.
+Décrire la force gravitationnelle \cite{Michel2017} p337 et \cite{Salamito2016} p569 : à distance, point d'application, attractive, expression.
+Principe des actions réciproques.
+Parler de $G$ : valeur et mesure \cite{Faroux1996} p148.
+Introduire le champ gravitationnel \cite{Salamito2016} p569.
+
+Faire apparaitre l'énergie potentielle gravitationnelle en calculant le travail de la force gravitationnelle \cite{Salamito2016} p622.
+Définition d'une force concervative.
+
+\begin{transition}
+On remarque une grande similitude entre la force gravitationnelle et l'interaction coulombienne.
+Peut-on faire un parallèle entre la gravitation et l'électrostatique ?
+\end{transition}
+
+\subsubsection{Champ gravitationnel}
+
+Dresser le parallèle entre la gravitation et l'électrostatique :
+\begin{itemize}
+\item écrire les forces;
+\item montrer les quantités analogues ($m \leftrightarrow q$, $1/4\pi\varepsilon_0 \leftrightarrow -G$);
+\item analogie entre ${\cal{G}}$ et $E$.
+\end{itemize}
 \begin{remarque}
-\textbf{Template}
+Attention au signe moins devant $G$ ! 
 \end{remarque}
+
+Écrire le théorème de Gauss gravitationnel \cite{Faroux1996} p149.
+Calculer le champ pour une distribution sphérique de masse volumique uniforme et la tracer en insistant sur les symétries.
+Insister sur le fait qu'en dehors de la sphère tout se passe comme si toute la masse était concentrée sur le centre de la sphère.
+Théorème de superposition.
+Faire l'application numérique pour retrouver l'accélération de pesanteur terrestre.
+\begin{remarque}
+Le rotationnel de $\overrightarrow{\cal{G}}$ étant nul, on peut aussi définir un potentiel gravitationnel pour le calcul de l'énergie gravitationnelle.
+\end{remarque}
+
+
+\begin{experience}
+\textbf{Mesure de $g$ d'après la période d'oscillation d'un pendule simple.}
+Lors des TP de préparation, faire le calcul avec le pendule pesant pour voir si ça améliore la sensibilité.
+Plusieurs façons de d'exprimer $T$ : $\sqrt{l/g}$, Borda, intégration.
+On pourrait aussi mesurer l'accélération d'une masse en chute libre par analyse d'une vidéo.
+\end{experience}
+
+Limites du parallèle :
+\begin{itemize}
+\item force toujours attractive ;
+\item pas de masse négative ;
+\item pas de champ magnétogravitationnel (en fait si mais compliqué~\cite{Mashhoon2007}, mentionner les ondes gravitationnelles).
+\end{itemize}
+
+\begin{transition}
+Historiquement, les lois de la gravitation ont été établies pour expliquer les observations astronomiques concernant le mouvement des astres dans le système solaire.
+\end{transition}
+
+\subsection{Mouvement dans un champ gravitationnel}
+
+Suivre \cite{Michel2017} à partir de p454.
+Objectif : étudier le mouvement d'une particule massique dans un champ de pesanteur
+Mentionner les trois lois de Kepler et formuler la première : \cite{Michel2017} p460.
+On va vérifier cette loi et les autres.
+
+\subsubsection{Position du problème}
+
+On s'intéresse plus particulièrement au mouvement d'une masse ponctuelle autour d'une autre beaucoup plus massive (Terre-Soleil par exemple : le Soleil est fixe).
+Position du problème :
+\begin{itemize}
+\item justifier l'approximation de masse ponctuelle;
+\item faire un schéma ;
+\item référentiel \cite{Salamito2016} p562 ;
+\item bilan des forces, pas de frottements ;
+\item PFD et montrer la conservation de la quantité de mouvement du barycentre ;
+\item un mot sur le mobile fictif pour la généralisation du problème.
+\end{itemize}
+
+C'est un mouvement à force centrale dans un champ newtonien (en $1/r^2$).
+
+\begin{remarque}
+L'obtention de l'équation de la trajectoire elliptique n'est pas au programme en PCSI mais elle l'est en MPSI où ils utilisent explicitement les coniques.
+La démonstration passe soit par les formules de Binet avec le changement de variable $u=1/r$ où par l'invariant de Runge-Lenz (cf Tout en un MPSI Dunod).
+
+\noindent
+Le mobile fictif n'est plus au programme mais si besoin, il est bien fait dans \cite{Bocquet2002} p128.
+\end{remarque}
+
+\begin{transition}
+Dans ce cadre, étudions le mouvement d'une particule massique dans un champ de gravité.
+\end{transition}
+
+\subsubsection{Conservation du moment cinétique}
+
+Établir la conservation du moment cinétique et en déduire :
+\begin{itemize}
+\item la planéité du mouvement : dans le plan défini par le vecteur vitesse et la force ce qui justifie l'utilisation de coordonnées polaires ;
+\item la constante des aires ;
+\item la vitesse aréolaire et donc la loi des aires.
+\end{itemize}
+
+Formuler la 2ème loi de Kepler : \og le rayon Soleil-planète balaie des aires égales pendant des intervalles de temps égaux \fg{}.
+
+\begin{slide}
+\textbf{Vitesse aréolaire.}
+Développer le cas circulaire et elliptique et montrer les étoiles au centre de la voie lactée orbitant autour de Sagitarius A : \href{https://www.youtube.com/watch?v=wyuj7-XE8RE}{simulation} ou \href{https://www.youtube.com/watch?v=TF8THY5spmo}{timelapse}.
+On l'a illustré dans le cas particulier de trajectoires elliptiques mais c'est aussi valable dans le cas général
+\end{slide}
+
+\begin{transition}
+La forme des trajectoires est-elle toujours elliptique ?
+\end{transition}
+
+\subsubsection{Conservation de l'énergie}
+
+Introduire le potentiel effectif en éliminant $\dot{\theta}$ avec la constante des aires et le tracer en faisant apparaitre les deux contributions.
+Problème à un ddl \cite{Bocquet2002} p124.
+
+Faire apparaitre les trois régimes avec le nom des trajectoires.
+Retour sur la première loi de Kepler qui est un cas particulier.
+
+\begin{transition}
+On souhaite connaitre la période des trajectoires fermées.
+\end{transition}
+
+\subsubsection{Période du mouvement}
+
+Dans le cas circulaire, établir l'expression de la vitesse de l'orbite et donner la période du mouvement.
+Faire l'application numérique avec la station spatiale internationale et les dires de Thomas Pesquier ($T=\unit{92{,}69}{min}$, cf notebook).
+
+Généraliser aux trajectoires elliptiques pour donner et donner la troisième loi de Kepler \cite{Michel2017} p463.
+
+\begin{slide}
+\textbf{Vérification de la troisième loi de Kepler.}
+\end{slide}
+
+\begin{transition}
+Nous avons bien retrouvé les loi empiriques de Kepler avec l'interaction gravitationnelle proposée par Einstein.
+Voyons quelques cas particuliers
+\end{transition}
+
+\subsection{Applications et limite}
+
+Toujours dans \cite{Michel2017}.
+
+\subsubsection{Vitesses cosmiques}
+
+Surtout parler de la vitesse de libération et évoquer les trous noirs.
+
+\subsubsection{Orbite géostationnaire}
+
+Faire les calculs après avoir fait le raisonnement pour montrer qu'elle est unique.
+Il y a actuellement environ 300 satellites sur l'orbite, soit un tous les \unit{900}{\kilo\meter}.
+
+\subsubsection{Vers des masses non-ponctuelles}
+
+\cite{Sanz2016} p212 pour la non verticalité de $\overrightarrow{g}$.
+
+Effets de marée, synchronisation des orbites, etc.
+
+\subsection*{Conclusion}
+
+La dernière section peut largement être mise en conclusion si le temps vient à manquer...
+
+Ouvrir vaguement sur la RG avec le retour sur le cas de Mercure dans l'article d'Einstein \cite{Faroux1996} p165.
 
 \newpage

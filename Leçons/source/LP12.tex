@@ -26,6 +26,11 @@ Se familiariser avec l'étude spectrale.
 \end{itemize}
 }
 
+\begin{remarque}
+Cette leçon se prête particulièrement bien à des expériences qualitatives rapides sur l'oscilloscope, aussi bien dans le filtrage avec l'étude de l'action du RC sur un créneau par exemple que pour montrer le traitement numérique.
+Il faut bien reprendre en main l'oscilloscope, notamment sur la FFT pour montrer rapidement les effets mentionnés dans la leçon. 
+\end{remarque}
+
 \subsection*{Introduction}
 
 Dans le cadre des télécommunications, on s'intéresse à la transmission d'un signal complexe qui doit être traité afin d'être transporté sur de longues distances.
@@ -34,6 +39,11 @@ Ces deux méthodes présentent chacune des avantages et inconvénients que l'on 
 L'étude spectrale permet de s'affranchir de la redondance temporelle de la plupart des signaux et constitue donc un outils puissant pour leur étude.
 
 \subsection{Spectre d'un signal et filtrage}
+
+\begin{remarque}
+L'objectif de cette partie est de justifier le passage à l'étude de spectre et de comprendre comment agit un système simple (filtre linéaire) sur le signal.
+Par la suite il est possible d'étudier directement les spectres.
+\end{remarque}
 
 Le signal est une grandeur physique dons les variations temporelles encodent une information.
 
@@ -68,6 +78,11 @@ Cette description permet de s'affranchir de la redondance d'un signal périodiqu
 
 \subsubsection{Filtrage linéaire}
 
+\begin{remarque}
+Attention à la cohérence dans cette partie avec les pré-requis : si les filtres électroniques ont déjà été vus, il n'est pas utile d'introduire les notions de diagramme de Bode etc.
+Il faut plutôt je pense rattacher la description générale au cas particulier des filtres électroniques.
+\end{remarque}
+
 Faire une schéma d'un filtre avec $e$ et $s$.
 Définition d'un filtre : système pour lequel il existe une relation à coefficients constants entre les dérivées temporelles de l'entrée et celles de la sortie :
 \begin{equation}
@@ -75,7 +90,7 @@ b_0 s(t) + b_1 \frac{\d s}{\d t} + ... + b_m \frac{\d^m s}{\d t^m} = a_0 e(t) + 
 \end{equation}
 $m$ est appelé l'ordre du filtre.
 Ce type de système est linéaire ce qui permet d'utiliser le principe de superposition.
-Ne modifie pas le contenu fréquentiel mais altère la contribution de chaque fréquence.
+Il permet d'agir sur le spectre d'un signal sans modifier le contenu fréquentiel (ne fait pas apparaitre de nouvelle fréquences, ce qui traduirait une non-linéarité).
 
 On suppose un signal d'entrée de la forme :
 \begin{equation}
@@ -87,7 +102,7 @@ et on utilise la notation complexe :
 \end{equation}
 En faisant de même pour la sortie, on définit la fonction de transfert d'un filtre linéaire comme le rapport :
 \begin{equation}
-\underline{H}(j\omega) = \frac{\underline{s}(t)}{\underline{e}(t)}.
+\underline{H}(j\omega) = \frac{\underline{s}}{\underline{e}}.
 \end{equation}
 
 Calculs du filtre RC en utilisant les impédances complexes.
@@ -103,8 +118,15 @@ Montrer l'effet du filtre sur un signal sinusoïdal en modifiant la fréquence p
 Faire les calculs puis acquérir et ajuster le diagramme de Bode obtenu par le modèle.
 \end{experience}
 
+\begin{remarque}
+Prendre le temps de discuter l'altération du spectre en fonction de la différence de fréquence entre le signal et le filtre dans le cas simple du passe-bas.
+\end{remarque}
+
+Mettre en évidence le comportement intégrateur du passe-bas par le calcul dans le cas $\omega\gg\omega_c$ et par l'expérience.
+
 De manière générale les filtres permettent d'isoler une partie du spectre d'un signal pour en extraire l'information essentielle dont la nature varie avec l'application : musique, télécommunications, mesures de précisions...
 Il existe de nombreux types de filtres linéaires : passe-bas, passe-haut, passe-bande, etc. et pas seulement d'ordre 1.
+Ils peuvent agir dans des domaines différents (mécanique, électronique, etc.).
 
 \begin{transition}
 Ces systèmes linéaires sont nécessaires pour le traitement du signal dans les télécommunications mais pas suffisants.
@@ -169,7 +191,7 @@ Définition de l'échantillonnage \cite{Cardini2017} p127.
 \textbf{Numérisation d'un signal.}
 \end{slide}
 
-Perte d'information
+Il y a une perte d'information mais facilement mémorisable.
 
 \begin{slide}
 \textbf{Critère de Shanon.}
@@ -191,10 +213,21 @@ Présenter la méthode de discrétisation en prenant l'exemple du passe bas.
 \textbf{Filtrage numérique.}
 \end{slide}
 
+Le traitement du signal peut être fait a posteriori mais aussi en temps réel : parler des micro-contrôleurs qui permettent de réaliser des filtres complexes sans modifier le hardware.
+Il y a donc plus de flexibilité !
+
 \subsection*{Conclusion}
 
 \begin{slide}
 \textbf{Traitement du signal pour la détection des ondes gravitationnelles.}
+Il faut garder du temps pour traiter convenablement cette partie : elle permet de récapituler le contenu de la leçon :
+\begin{itemize}
+\item étude d'un spectre ;
+\item filtrage analogique : expliquer les systèmes de suspension des miroirs filtrage passe-bande pour éliminer hautes et basses fréquence du signal à la sortie de l'interféromètre ;
+\item filtrage numérique : traitement du signal pour éliminer les harmoniques, analyse des données (massives) et automatique.
+\end{itemize}
 \end{slide}
+
+On peut aussi parler des asservissements.
 
 \newpage

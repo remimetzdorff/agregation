@@ -11,7 +11,7 @@ Licence & \textbullet{} Electrocinétique \\
 
 \noindent
 \objectif
-Template
+Comprendre l'origine physique de l'induction et quantifier ses effets. Les illustrer à travers plusieurs applications.
 \end{header}
 
 {
@@ -24,6 +24,13 @@ Template
 \item \cite{Bertin1984}
 \end{itemize}
 }
+
+\begin{remarque}
+Dans cette leçon, il faut faire particulièrement attention à insister sur l'importance du choix des conventions d'orientation et les respecter.
+L'introduction de la fem d'induction est délicate : avoir en tête les différentes approches possibles (empirique, modèle de Drude et force de Lorentz, changement de référentiel) et être prêt à défendre ses choix.
+Les aspects énergétiques sont importants.
+\end{remarque}
+
 
 \subsection*{Introduction}
 
@@ -51,6 +58,8 @@ On va essayer de quantifier cet effet.
 
 \subsubsection{La loi de Faraday 2'30}
 
+Relire le début du poly de Jérémy sur les moteurs pour l'introduction de la fem.
+
 Dans le cadre de l'ARQS, on s'intéresse à un contour fermé $ABCD$ placé dans un champ magnétique $\overrightarrow{B}$ et on donne une vitesse $\overrightarrow{v}$ au circuit.
 On calcule la force de Lorentz qui s'applique aux porteurs de charge du circuit
 \begin{equation}
@@ -74,8 +83,16 @@ Cette expression fait apparaitre les deux termes de l'induction :
 
 Dans le cas d'un circuit indéformable, on retrouve la loi de Faraday, qui fait intervenir la dérivée totale du flux :
 \begin{equation}
-e = \frac{\D \Phi}{\D t}
+e = - \frac{\D \Phi}{\D t}
 \end{equation}
+
+Plutôt que d'établir cette formule il est sans doute préférable d'étudier les cas particuliers utiles pour la leçon :
+\begin{itemize}
+\item induction de Neumann : se contenter d'un circuit fixe et indéformable dant un champ magnétique variable.
+Eventuellement parler des flux coupé pour la généralisation de cette loi qui est la loi empirique.
+Insister sur la convention d'orientation.
+\item induction de Lorentz : garder le terme $\overrightarrow{v}\wedge\overrightarrow{B}$.
+\end{itemize}
 
 \begin{transition}
 Le signe moins de la loi de Faraday est très important.
@@ -97,6 +114,8 @@ Chute d'un aimant dans différent tubes
 C'est une manifestation de la loi de Lenz.
 \end{itemize}  puis cuivre.
 \end{experience}
+
+Pendant la leçon, penser à traiter qualitativement les cas étudiés avec la loi de Lenz.
 
 \begin{transition}
 Maintenant que l'on a étudié les aspects théoriques de l'induction, on va étudier chacun des deux régimes.
@@ -134,6 +153,10 @@ L'énergie stockée dans la bobine est liée à son inductance et se trouve en e
 {\cal{E}} = \frac{1}{2}Li^2
 \end{equation}
 
+\begin{remarque}
+L'énergie stockée dans la bobine se retrouve aussi en calculant l'énergie volumique magnétique $B^2/2\mu_0$ et en multipliant par le volume de la bobine.
+\end{remarque}
+
 \begin{experience}
 Vérification de la dépendance en $N^2$ de l'inductance de plusieurs bobines en mesurant l'inductance d'après la fonction de transfert d'un circuit RL :
 \begin{itemize}
@@ -164,10 +187,16 @@ e_2 = -L_2\frac{\d i_2}{\d t} - M\frac{\d i_1}{\d t}
 \begin{itemize}
 \item le signe de $M$ dépend de l'orientation des deux circuits ;
 \item on montre que $M_{12}$ = $M_{21}$ : le résultat est presque immédiat en passant par le potentiel vecteur (démo dans \cite{Perez2009} par exemple).
+\item l'énergie d'un système de deux inductance couplées par une mutuelle est donnée par 
+\begin{equation}
+E_\mathrm{tot} = \frac{1}{2}L_1 i_1^2 + M i_1 i_2 + \frac{1}{2}L_2 i_2^2
+\end{equation}
 \end{itemize}
 \end{remarque}
 
 L'inductance mutuelle traduit le fait qu'il est possible de transférer de l'énergie d'un circuit à l'autre.
+
+Traiter le cas du transformateur : faire le calcul de $i_1/i_2$ avec le théorème d'Ampère et déduire la relation en tension par conservation des puissances.
 Une application importante de cet effet est le transformateur, nécessaire au transport de l'énergie à haute tension pour diminuer les pertes dues au transfert (les pertes par effets Joule sont proportionnelles au carré de l'intensité.
 En travaillant avec des tensions très élevées ($\sim \unit{400}{\kilo\volt}$), il est possible de transporter des puissances importantes sans avoir un courant important.
 On a $P_J = Ri^2 = U^2/R$, mais le $U$ ici correspond à la différence de potentiel entre les deux extrémités du fil électrique, et pas aux $\unit{400}{\kilo\volt}$ qui est la différence de potentiel entre le cable et la terre.)
@@ -296,13 +325,9 @@ Le problème est symétrique.
 
 \subsection*{Commentaires}
 
-Débit de parole important. Faire quelques pauses.
-Bien expliqué
 Point noir de la leçon : comment amener les lois de l'induction ?
 On peut écrire que la vitesse des électrons est la composition des électrons dans le circuit + la vitesse du circuit.
 Une autre possibilité serait de faire l'approche historique entière et introduire le dphi directement.
-Bonne utilisation des couleurs, mais défaut de diction : pas dire mon/ma tout le temps (mesurer mon inductance...)
 Bq d'applications : bien
-Faire des pauses, poser des questions ouvertes, pendant l'écriture du titre tu te tais.
 A n'est pas mesurable car il y a une jauge près mais ddp mesurable et la circulation de A aussi.
 \newpage

@@ -12,7 +12,7 @@ CPGE (PSI) & \textbullet{} Induction \\
 
 \noindent
 \objectif
-Template
+Aborder la conversion réciproque d'énergie électromécanique par l'intermédiaire de l'énergie magnétique et mettre en évidence le rôle des ferromagnétiques.
 \end{header}
 
 \subsection*{Bibliographie}
@@ -28,6 +28,13 @@ En gros : Polycopié de Jérémy et Dunod PSI (apparemment la dernière édition
 \end{itemize}
 }
 
+\begin{remarque}
+Dans cette leçon le jury attend explicitement une approche énergétique pour le calcul du couple du moteur qui permet de mettre en avant le rôle de l'énergie magnétique. Cela n'empêche pas de faire l'approche avec le moment magnétique que je trouve plus parlante.
+Le rôle du milieu ferromagnétique doit être mis en avant : canalisation parfaite des lignes de champ et $\overrightarrow{B}$ radial dans l'entrefer dans le cas idéal permettant un recouvrement parfait entre les champs statoriques et rotoriques.
+J'imagine qu'on peut alors discuter des pertes si le temps le permet : avoir en tête les pertes de flux, par hystérésis, courants de Foucault, effet Joule et les façons de les diminuer.
+Comme dans l'induction, il faut faire attention aux conventions. 
+\end{remarque}
+
 \subsection*{Introduction}
 
 Électricité à la base de notre société : permet de transporter de l'énergie qu'il faut convertir en lumière, chaleur ou travail.
@@ -36,7 +43,11 @@ Ces machines sont constituées d'un stator et d'un rotor (définir).
 
 \subsection{Induction et force de Laplace}
 
+\begin{remarque}
 Ne pas faire cette partie probablement par manque de temps et redondance avec le moteur continu.
+Je l'ai écrite pour rien ???
+Oui sans doute...
+\end{remarque}
 
 On peut probablement la faire rapidement mais en insistant lourdement sur la correspondance entre énergie méca et elec.
 
@@ -68,6 +79,10 @@ dont la puissance est
 
 On montre immédiatement l'égalité entre les puissances d'induction et de Laplace ce qui est l'essentiel de la conversion électromécanique.
 
+\begin{remarque}
+On peut partir du résultat ${\mathcal{P}}_L+{\mathcal{P}}_e = 0$ pour les considération énergétiques dans le cas où la partie n'est pas traitée.
+\end{remarque}
+
 \begin{transition}
 Il existe des applications ou l'on souhaite faire des translations mais souvent une rotation plus utile.
 \end{transition}
@@ -94,6 +109,8 @@ On a un circuit mobile dans un champs magnétique constant ce qui conduit au ph�
 
 Retrouver l'égalité des puissance mécanique (Laplace) et de l'induction en fonction du couple, de la vitesse de rotation, de la force électromotrice et du courant.
 
+Dire un mot sur la réversibilité de ces machine mais sera développé après.
+
 \begin{transition}
 Le couple d'un tel système n'est pas acceptable, il faut utiliser plusieurs spires et des matériaux ferromagnétiques pour optimiser le couplage entre les champs rotoriques et statoriques.
 \end{transition}
@@ -106,13 +123,11 @@ Le couple d'un tel système n'est pas acceptable, il faut utiliser plusieurs spi
 \end{slide}
 
 Introduire la constante de couplage électromécanique et établir l'expression de la vitesse de rotation en fonction de la force contre électromotrice.
-Insister sur le fait qu'ils sont facilement contrôlables (vitesse, piles).
+Insister sur le fait que les moteurs CC sont facilement contrôlables (vitesse, piles).
 
 \begin{experience}
 \textbf{Caractérisque $\omega(E)$ du moteur à courant continu.}
 \end{experience}
-
-Dire un mot sur la réversibilité de ces machine mais sera développé après.
 
 \begin{transition}
 Ces machines sont essentielles mais présentent des inconvénients :
@@ -124,12 +139,16 @@ Ces machines sont essentielles mais présentent des inconvénients :
 
 \subsubsection{Machine synchrone}
 
-Avant on avit un moment magnétique variable dans un champ magnétique permanent, maintenant on va voir un moment magnétique constant dans un champ magnétique variable
+Avant on avait un moment magnétique variable dans un champ magnétique permanent, maintenant on va voir un moment magnétique constant dans un champ magnétique variable
 
 \subsubsection{Création d'un champ tournant}
 \label{sec:lp09_rotating_field}
 
 Faire le cas avec un champ diphasé pour avoir l'idée puis montrer le cas réel avec 3 bobines.
+
+\begin{remarque}
+On peut raisonner par analogie avec les polarisations circulaires qui se décomposent en somme de polarisation linéaires.
+\end{remarque}
 
 \begin{slide}
 \textbf{Création d'un champ tournant.}
@@ -142,7 +161,8 @@ En plaçant un dipôle au centre, celui-ci sera soumis à un couple qui peut le 
 \end{experience}
 
 \begin{transition}
-En pratique les champs obtenu grâce à de simples spires n'est pas très intense et il faut utiliser un milieux ferromagnétique doux pour canaliser le champ magnétique.
+En pratique les champs obtenu grâce à de simples spires n'est pas très intense et le couplage entre les champs statorique et rotorique n'est pas optimal.
+Il faut utiliser un milieux ferromagnétique doux pour canaliser le champ magnétique.
 \end{transition}
 
 \subsubsection{Champ statorique}
@@ -176,5 +196,8 @@ Faire un bilan de puissance comme dans le poly de Jérémy et insister sur les c
 Discuter des avantages et inconvénients de la machine synchrone (ouvrir sur les problèmes liés au démarrage et éventuellement montrer la cage d'écureuil)
 
 \subsection*{Conclusion}
+
+Faire un bilan de puissance avec les systèmes mécanique et électrique et montrer le couplage entre les deux par l'induction et la force de Laplace.
+Parler des pertes si cela n'a pas été fait dans la leçon.
 
 \newpage
