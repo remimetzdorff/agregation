@@ -3,42 +3,191 @@
 \begin{header}
 \begin{tabular}{p{0.4\textwidth} l}
 \niveau & \prerequis \\
-Template& \textbullet{} Template \\
-        & \textbullet{} Template \\
+CPGE & \textbullet{} Dynamique du point \\
+     & \textbullet{} PFD, TMC, TEC, TEM \\
 \end{tabular}
 
 \noindent
 \objectif
-Template
+Montrer la puissance des lois de conservation et faire apparaitre leur lien avec des symétries du problème. 
 \end{header}
 
 {
 %\footnotesize{}
 \begin{itemize}
-\item \cite{Landau1969} Chapitre II 
+\item \cite{Faroux1996}
+\item \cite{Bocquet2002}
+\item \cite{Michel2017}
+\item \cite{Salamito2016}
+\item \cite{Landau1969} Chapitre II : en mécanique lagrangienne...
 \end{itemize}
 }
 
+\begin{remarque}
+Reprendre cette leçon avec de la bibliographie de MP...
+
+\noindent
+Avoir en tête le théorème de Noether mais ne pas forcément en parler : \href{https://fr.wikipedia.org/wiki/Th\%C3\%A9or\%C3\%A8me_de_Noether_(physique)}{Wikipedia}.
+
+\noindent
+Dans le théorème de Noether, l'invariance porte sur le potentiel.
+
+\noindent
+Pour le problème à deux corps, les rapports de jury stipulent que les cas les plus intéressants apparaissent quand les deux corps ont des masses proches : pas sûr de comprendre pourquoi.
+Peut-être parce que là, le mouvement d'un des deux corps ne peut être négligé ?
+\end{remarque}
+
 \subsection*{Introduction}
 
-\subsection{Template}
+\subsection{Conservation de l'impulsion}
 
-\subsubsection{Template}
+\subsubsection{Loi de conservation}
 
-\begin{experience}
-\textbf{Template}
-\end{experience}
+Développer le cas d'un système dans un référentiel galiléen et écrire le PFD pour faire apparaitre les conditions de conservation :
+\begin{itemize}
+\item système isolé.
+\item résultante nulle (mentionner le cas de l'impesanteur : chute libre).
+\item projection dans une direction nulle.
+\end{itemize}
+L'impulsion est constante donc $\overrightarrow{p}$ est une intégrale première du mouvement.
 
-\begin{slide}
-\textbf{Template}
-\end{slide}
+Cela vient de l'homogénéité de l'espace : une invariance par translation dans l'espace est équivalente à une conservation de l'impulsion.
+Si le potentiel $V$ est indépendant de $x$ par exemple, pas de force selon $x$ et $p_x$ est conservé.
 
 \begin{transition}
-\textbf{Template}
+Voyons un cas concret de la conservation de l'impulsion.
 \end{transition}
 
+\subsubsection{Lancer au curling}
+
+Calculer la vitesse de recul d'un patineur à l'arrêt (analogue à \cite{Bocquet2002} p401) avec :
+\begin{itemize}
+\item masse de la pierre $m=\unit{20}{\kilo\gram}$
+\item masse du lanceur $M=\unit{80}{\kilo\gram}$
+\item vitesse de la pierre après le lancer $v=\unit{1}{\meter\per\second}$
+\end{itemize}
+On trouve $V=\unit{-0{,}25}{\meter\per\second}$.
+
+\begin{transition}
+Pas besoin de connaitre les détails de l'interaction, seulement les situations initiale et finale.
+Mentionner le ralentissement et refroidissement d'un jet d'atomes par absorptions de photons.
+\end{transition}
+
+\subsubsection{Problème à deux corps -- Mobile fictif}
+
+Suivre \cite{Faroux1996} p136 ou \cite{Bocquet2002} p129 :
+\begin{itemize}
+\item référentiel barycentrique ;
+\item mobile fictif.
+\end{itemize}
+
+\begin{transition}
+Le système à deux corps se résume à un problème à force centrale.
+Existe-t-il un invariant particulier dans ce cas ?
+\end{transition}
+
+\subsection{Conservation du moment cinétique}
+
+\subsubsection{Loi de conservation}
+
+Comme avant mais avec le TMC au lieu du PFD.
+\begin{itemize}
+\item système isolé ;
+\item résultante nulle ;
+\item force centrale
+\end{itemize}
+
+Dans un espace isotrope, une invariance par rotation dans l'espace est équivalente à une conservation de l'impulsion.
+
 \begin{remarque}
-\textbf{Template}
+Attention : si le point d'application du TMC est un point mobile par rapport au système, il faut ajouter un terme.
+La forme la plus simple n'est valide que par rapport à un point/axe fixe.
 \end{remarque}
+
+\begin{transition}
+Voyons un cas concret de la conservation du moment cinétique.
+\end{transition}
+
+\subsubsection{Patinage artistique}
+
+Faire les calculs pour une patineuse \cite{Perez2014}.
+Dire qu'une fois de plus le détails du passage de la situation initiale à la situation finale n'ont pas d'importance.
+
+\begin{transition}
+En revenant au problème à deux corps, que nous apprend la conservation du moment cinétique ?
+\end{transition}
+
+\subsubsection{Problème à deux corps -- Planéité du mouvement}
+
+Suivre \cite{Michel2017} p456 pour montrer la planéité du mouvement et introduire la constante des aires.
+Mentionner la loi de Kepler ?
+
+\begin{transition}
+Une dernière loi de conservation permet de simplifier ce problème : elle porte sur l'énergie.
+\end{transition}
+
+\subsection{Conservation de l'énergie}
+
+\subsubsection{Loi de conservation}
+
+Suivre \cite{Salamito2016} p624.
+Partir de l'expression infinitésimale du théorème de l'énergie cinétique et faire apparaitre le cas où la force dérive d'une énergie potentielle.
+Les forces internes interviennent dans ce bilan.
+On aboutit à la conservation de l'énergie mécanique (approximation : frottements, etc...)
+
+\begin{remarque}
+La conservation de l'énergie mécanique est toujours une approximation mais la conservation de l'énergie (interne) est vraie.
+\end{remarque}
+
+Faire rapidement le cas du pendule pour montrer que s'il n'y a qu'un seul degré de liberté, la résolution du pendule simple est rapide.
+\begin{experience}
+\textbf{Pendule simple.}
+\end{experience}
+
+Pour un système indépendant du temps, l'invariance par translation dans le temps est équivalente à une conservation de l'énergie.
+
+\begin{transition}
+Cette conservation est particulièrement utile pour étudier la physique des collisions : on ne connait pas l'interaction au moment du choc mais ce n'est pas un soucis.
+\end{transition}
+
+\subsubsection{Choc entre deux pierres au curling}
+
+Faire le cas à 1D si le temps manque ou en 2D.
+Le problème se résout aussi en 3D mais c'est plus lourd en calcul.
+
+\begin{experience}
+\textbf{Collision de deux mobiles ???}
+\end{experience}
+
+\begin{transition}
+Qu'en est-il du problème à deux corps ?
+\end{transition}
+
+\subsubsection{Problème à deux corps -- Trajectoires}
+
+Suivre \cite{Michel2017} p459.
+Parler du potentiel effectif et distinguer les 3 trajectoires possibles.
+
+\cite{Faroux1996} p132 pour la discussion, collision, etc.
+
+\begin{remarque}
+Ce type de problème se résout très bien avec l'invariant de Runge-Lenz.
+\end{remarque}
+
+\subsection*{Conclusion}
+
+\begin{slide}
+\textbf{Pulsar binaire.}
+Conservation de l'énergie : rayonnement d'ondes gravitationnelles comme première preuve indirecte de l'existence des OG
+\end{slide}
+
+
+
+\subsection*{Exercices}
+
+\begin{itemize}
+\item diffusion de Rutherford : \cite{Faroux1996} p142, \cite{Michel2017} p466.
+\item effet Compton : \href{http://supernovae.in2p3.fr/~llg/Enseignements/Agregation/Relativite/}{Polycopié de TD (corrigé)} p60.
+\end{itemize}
 
 \newpage
