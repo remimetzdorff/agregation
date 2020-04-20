@@ -3,40 +3,210 @@
 \begin{header}
 \begin{tabular}{p{0.4\textwidth} l}
 \niveau & \prerequis \\
-Template& \textbullet{} Template \\
-        & \textbullet{} Template \\
+CPGE & \textbullet{} Cinématique des fluides, description eulérienne \\
+     & \textbullet{} Hydrostatique \\
+     & \textbullet{} Équation de diffusion
 \end{tabular}
 
 \noindent
 \objectif
-Template
+Décrire la viscosité d'un fluide et comprendre son origine en la rattachant à un processus de diffusion.
+Mettre en évidence son influence dans plusieurs écoulements.
 \end{header}
 
+\subsection*{Bibliographie}
 {
-%\footnotesize{\bibliography{biblio}}
-\bibentry{Template}
+\footnotesize{}
+\begin{itemize}
+\item \cite{Olivier2000}
+\item \cite{Sanz2016}
+\item \cite{Landau1971}
+\item \cite{Rabaud2019}
+\item \cite{Guyon2001}
+\item \href{http://bupdoc.udppc.asso.fr/consultation/une_fiche.php?ID_fiche=7701}{BUP 814, 1999}
+\end{itemize}
 }
 
 \subsection*{Introduction}
 
-\subsection{Template}
-
-\subsubsection{Template}
-
 \begin{experience}
-\textbf{Template}
+\textbf{Évaluation qualitative de la viscosité de quelques fluides.}
+Faire couler plusieurs liquides et constater des différences majeures de comportement.
+Mentionner la différence entre les gaz et les liquides.
 \end{experience}
 
 \begin{slide}
-\textbf{Template}
+\textbf{Existence de contraintes tangentielles dans un fluide.}
+\end{slide}
+
+\subsection{Description de la viscosité d'un fluide}
+
+\subsubsection{Actions de contact dans un fluide}
+
+Dire un mot sur la pression : force normale.
+
+\begin{slide}
+\href{https://youtu.be/pqWwHxn6LNo?t=213}{\textbf{Video.}}
+Bien décrire le setup et dire que le régime permanent est atteint lors de la mesure.
+On mesure la force nécessaire pour faire bouger les plaques, c'est une force surfacique.
+\end{slide}
+Établir l'expression intégrale de la force tangentielle : \cite{Olivier2000} p418.
+La force dépend de la nature du fluide : introduire $\eta$.
+
+Établir l'expression de la force de viscosité mésoscopique :
+\begin{itemize}
+\item unité de $\eta$
+\item exemples de valeurs \cite{Olivier2000} p423
+\item commentaires de \cite{Olivier2000} p419 pour introduire le caractère diffusif de la viscosité.
+\end{itemize}
+
+\begin{transition}
+Ici on modélise bien l'interaction avec une paroi, mais dans un fluide il vaut mieux utiliser l'équivalent volumique des forces de viscosité 
+\end{transition}
+
+\subsubsection{Force volumique de viscosité}
+
+Faire le bilan sur une particule mésoscopique de fluide \cite{Olivier2000} p420.
+Bien faire le schéma et préciser les hypothèses sur l'écoulement.
+L'expression est valable pour un écoulement incompressible, ce qui est le cas ici.
+
+\begin{remarque}
+Se rappeler de la démonstration pour montrer qu'un écoulement incompressible ($\frac{\mathrm{D}\rho}{\mathrm{D}t}=0$) est équivalent à $\div \overrightarrow{v}$ avec la conservation locale de la masse et la définition de la dérivée particulaire.
+
+\noindent
+Il existe une viscosité de volume ou viscosité volumique qui intervient dans le cas des écoulements compressibles.
+\end{remarque}
+
+\begin{transition}
+Quelle est l'origine de la viscosité ?
+Comme souvent, l'explication se trouve dans la description de phénomènes microscopiques.
+\end{transition}
+
+\subsubsection{Interprétation microscopique qualitative de la viscosité}
+
+Dans le cas d'un gaz.
+Faire un schéma d'un écoulement laminaire avec les différentes couches de fluide et expliquer la variation de quantité de mouvement d'une particule de fluide par le passage d'un atome dans la particule de fluide voisine par l'agitation thermique.
+
+Dire que c'est bien un phénomène diffusif au même titre que la température, où le coefficient qui caractérise l'évolution du système est $\nu$.
+Justifier sa forma par analyse dimensionnelle.
+
+\begin{remarque}
+La modélisation quantitative \cite{Olivier2000} p424 et \cite{Guyon2001} p95-99 permet de relier la viscosité à la vitesse quadratique d'un gaz.
+C'est la modélisation d'Enskog.
+Il est alors normal que la viscosité soit fonction croissante de la température, contrairement aux liquides dans lesquels les interactions entre particules sont fortes.
+Voir la page \href{https://fr.wikipedia.org/wiki/Viscosit\%C3\%A9#Viscosit\%C3\%A9_des_liquides}{Wikipedia} pour quelques détails.
+\end{remarque}
+
+\begin{transition}
+Comment décrire l'écoulement d'un fluide visqueux ?
+\end{transition}
+
+\subsection{Écoulements visqueux}
+
+\subsubsection{Équation de Navier-Stokes}
+
+Suivre \cite{Sanz2016} p305.
+Faire un bilan des forces et appliquer le PFD pour trouver l'équation de Navier-Stokes.
+\begin{remarque}
+L'équation de Navier Stokes n'est valable que pour un écoulement incompressible et pour un fluide newtownien compte tenu de la forme supposée pour la force volumique de viscosité.
+\end{remarque}
+
+Suivre \cite{Olivier2000} p422 pour la discussion des termes convectif et diffusif.
+Faire apparaitre explicitement l'équation de diffusion sur la quantité de mouvement.
+
+\begin{slide}
+\textbf{Viscosité de quelques fluides.}
+\end{slide}
+
+Introduire le nombre de Reynolds \cite{Olivier2000} p423.
+
+\begin{remarque}
+Interprétation du nombre de Reynolds en terme de temps caractéristiques de diffusion et convection dans \cite{Guyon2001} p101.
+\end{remarque}
+
+\begin{transition}
+La résolution de l'équation de Navier-Stokes nécessite des conditions aux limites.
+\end{transition}
+
+\subsubsection{Conditions aux limites}
+
+Suivre \cite{Rabaud2019} p25, les explications sont un peu plus poussées que dans \cite{Sanz2016}.
+\begin{remarque}
+On néglige ici les effets liés à la tension de surface, mais garder en tête qu'ils apparaissent dès que la surface est courbée (loi de Laplace).
+\end{remarque}
+
+\begin{slide}
+\textbf{Conditions aux limites.}
+Présenter correctement le tableau directement pour gagner du temps si nécessaire.
 \end{slide}
 
 \begin{transition}
-\textbf{Template}
+Voyons un cas particulier : l'écoulement de Poiseuille.
 \end{transition}
 
+\subsubsection{Écoulement de Poiseuille}
+
+\cite{Sanz2016} p351 ou mieux : \cite{Olivier2000} p435.
+Retrouver le profil parabolique de vitesse et le montrer en \href{http://culturesciencesphysique.ens-lyon.fr/la-physique-animee/la-physique-animee-une-serie-de-videos-de-physique}{vidéo}.
+
+\begin{slide}
+\textbf{Loi de Poiseuille et expérience de Reynolds.}
+Faire la distinction entre écoulement laminaire et turbulent.
+\href{https://www.youtube.com/watch?v=k7ZZtxdtmeQ}{Une belle vidéo} pour montrer un écoulement à très faible Reynolds.
+\end{slide}
+
+\begin{experience}
+\textbf{Écoulement de Poiseuille.}
+Juste une idée, elle est pénible à installer mais bon.
+\end{experience}
+
+\begin{transition}
+La viscosité est associée à des processus de dissipation.
+Voyons le cas d'un écoulement autour d'une bille.
+\end{transition}
+
+\subsection{Écoulement autour d'une sphère}
+
+\subsubsection{Viscosimètre à chute de bille}
+
+Faire l'expérience qualitative pour introduire le fait que l'écoulement de fluide visqueux est à l'origine d'une trainée.
+Supposer \og comme d'habitude \fg{} une force de frottement linéaire en la vitesse et calculer la vitesse limite.
+Présenter le principe de l'expérience et faire le calcul de la vitesse limite puis faire la manip.
+
+\begin{experience}
+\textbf{Chute d'une bille dans le glycérol.}
+L'expression de la vitesse limite trouvée dépend fortement des conditions aux limites.
+Elle n'est valable exactement que pour un fluide infini ce qui n'est pas le cas ici.
+Elle constitue une bonne approximation si le diamètre du contenant est cent fois plus grand que celui de la bille.
+Voir le poly de TP et le BUP pour plus d'informations là dessus.
+\end{experience}
+
 \begin{remarque}
-\textbf{Template}
+Avoir en tête d'autres \href{https://fr.wikipedia.org/wiki/Viscosim\%C3\%A8tre}{méthodes} pour déterminer la viscosité d'un fluide :
+\begin{itemize}
+\item viscosimètre à écoulement libre ;
+\item \href{https://fr.wikipedia.org/wiki/Rh\%C3\%A9om\%C3\%A8tre}{rhéomètre}.
+\end{itemize}
 \end{remarque}
+
+\begin{transition}
+En fait l'expression de la trainée est plus complexe et dépend du nombre de Reynolds.
+\end{transition}
+
+\subsubsection{Trainée}
+
+Objectif : déterminer la force subie par une sphère dans un écoulement de fluide.
+Suivre \cite{Sanz2016} p315 pour introduire la force de trainée en fonction du nombre de Reynolds.
+\begin{slide}
+\textbf{Coefficient de trainée autour d'une sphère.}
+\end{slide}
+
+Établir la loi de Stokes et mentionner le cas à haut Reynolds.
+
+\subsection*{Conclusion}
+On s'est restreint à l'étude d'écoulement laminaire puisque les écoulements turbulents sont extrêmement difficile à décrire.
+Les effets de la viscosité se cantonnent parfois sur des faibles épaisseurs en dehors desquelles il est possible de décrire l'écoulement comme un écoulement parfait : couche limite.
+
+On a étudié seulement les fluides newtowniens mais il existe aussi des fluide rhéofluidifiants et rhéoépaississant.
 
 \newpage

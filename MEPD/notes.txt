@@ -1,13 +1,16 @@
 résonance : barre de weber, résonateur mécanique, isolation par suspension, verre
-thermodynamique : cryostats (He4, He3, N2), cryostat à dilution
-électronique : amplificateur, photodiode, filtre
-rétroaction : asservissement, feedback-cooling
+DONE thermodynamique : cryostats (He4, He3, N2), cryostat à dilution
+DONE électronique : amplificateur, photodiode, filtre
+DONE rétroaction : asservissement, feedback-cooling
 optique : michelson, fabry-perot, optique gaussienne
 
-deux aspects de la lumière : perturbation et controle via pression de radiation
+DONE deux aspects de la lumière : perturbation et controle via pression de radiation
 
 formation par l'expérience : des galères et encore des galères
 
 A ramener pour l'oral :
 	- un micro-pilier
-	- 
+	-
+
+Questions pour Arnaud et Agnès :
+	- Utile de ramener un pilier ?

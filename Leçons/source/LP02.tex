@@ -13,12 +13,14 @@ Montrer la puissance des lois de conservation et faire apparaitre leur lien avec
 \end{header}
 
 {
-%\footnotesize{}
+\subsection*{Bibliographie}
+\footnotesize{}
 \begin{itemize}
 \item \cite{Faroux1996}
 \item \cite{Bocquet2002}
 \item \cite{Michel2017}
 \item \cite{Salamito2016}
+\item \cite{Seigne2014}
 \item \cite{Landau1969} Chapitre II : en mécanique lagrangienne...
 \end{itemize}
 }
@@ -27,7 +29,8 @@ Montrer la puissance des lois de conservation et faire apparaitre leur lien avec
 Reprendre cette leçon avec de la bibliographie de MP...
 
 \noindent
-Avoir en tête le théorème de Noether mais ne pas forcément en parler : \href{https://fr.wikipedia.org/wiki/Th\%C3\%A9or\%C3\%A8me_de_Noether_(physique)}{Wikipedia}.
+Avoir en tête le théorème de Noether mais ne pas en parler : \href{https://fr.wikipedia.org/wiki/Th\%C3\%A9or\%C3\%A8me_de_Noether_(physique)}{Wikipedia}.
+Je ne sais pas si les histoires de symétries doivent être mentionnées dans la leçon en la plaçant au niveau CPGE.
 
 \noindent
 Dans le théorème de Noether, l'invariance porte sur le potentiel.
@@ -53,6 +56,13 @@ L'impulsion est constante donc $\overrightarrow{p}$ est une intégrale première
 
 Cela vient de l'homogénéité de l'espace : une invariance par translation dans l'espace est équivalente à une conservation de l'impulsion.
 Si le potentiel $V$ est indépendant de $x$ par exemple, pas de force selon $x$ et $p_x$ est conservé.
+
+\begin{remarque}
+Dans le cas d'une collision, même si le système n'est pas isolé, on a conservation de l'impulsion car la durée de la collision est très faible.
+La collision est localisée temporellement et spatialement !
+Voir \cite{Seigne2014} p192.
+Garder en tête qu'une quantité est négligeable par rapport à une autre : ici $F_\mathrm{ext}\tau \ll p_\mathrm{avant}$.
+\end{remarque}
 
 \begin{transition}
 Voyons un cas concret de la conservation de l'impulsion.
@@ -152,12 +162,23 @@ Cette conservation est particulièrement utile pour étudier la physique des col
 
 \subsubsection{Choc entre deux pierres au curling}
 
+Suivre par exemple \cite{Seigne2014} p372.
 Faire le cas à 1D si le temps manque ou en 2D.
 Le problème se résout aussi en 3D mais c'est plus lourd en calcul.
 
 \begin{experience}
 \textbf{Collision de deux mobiles ???}
 \end{experience}
+
+\begin{remarque}Pour la collision 2D, il n'y a pas assez d'équations pour résoudre entièrement le problème : deux équations pour l'impulsion et une pour l'énergie.
+Il faut imposer un angle.
+
+\noindent
+Collision directe : les vecteurs avant et après la collision sont colinéaires.
+
+\noindent
+Pour l'effet Compton et plus généralement en mécanique relativiste, il faut écrire la conservation du quadri-vecteur énergie impulsion du système.
+\end{remarque}
 
 \begin{transition}
 Qu'en est-il du problème à deux corps ?
@@ -187,7 +208,7 @@ Conservation de l'énergie : rayonnement d'ondes gravitationnelles comme premiè
 
 \begin{itemize}
 \item diffusion de Rutherford : \cite{Faroux1996} p142, \cite{Michel2017} p466.
-\item effet Compton : \href{http://supernovae.in2p3.fr/~llg/Enseignements/Agregation/Relativite/}{Polycopié de TD (corrigé)} p60.
+\item effet Compton : \href{http://supernovae.in2p3.fr/~llg/Enseignements/Agregation/Relativite/}{Polycopié de TD (corrigé)} p60 pour le traitement avec les quadrivecteurs et \cite{Seigne2014}, p381 sans les quadrivecteurs.
 \end{itemize}
 
 \newpage

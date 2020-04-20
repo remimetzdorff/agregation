@@ -3,40 +3,197 @@
 \begin{header}
 \begin{tabular}{p{0.4\textwidth} l}
 \niveau & \prerequis \\
-Template& \textbullet{} Template \\
-        & \textbullet{} Template \\
+CPGE & \textbullet{} Statique et dynamique des fluides  \\
+     & \textbullet{} Viscosité \\
 \end{tabular}
 
 \noindent
 \objectif
-Template
+Mettre en évidence les limites du modèle de l'écoulement parfait et voir quelques applications.
 \end{header}
 
 {
-%\footnotesize{\bibliography{biblio}}
-\bibentry{Template}
+\subsection*{Bibliographie}
+\footnotesize{}
+\begin{itemize}
+\item \cite{Olivier2000}
+\item \cite{Sanz2016}
+\item \cite{Landau1971}
+\item \cite{Rabaud2019}
+\item \cite{Guyon2001}
+\end{itemize}
 }
+
+\begin{remarque}
+Avoir en tête les principaux effets susceptibles d'être décrits dans ce modèle : Coanda, Magnus, Venturi, portance, etc.
+\end{remarque}
 
 \subsection*{Introduction}
 
-\subsection{Template}
+L'équation de Navier-Stokes est difficile à résoudre analytiquement :
+\begin{itemize}
+\item terme d'accélération convective non linéaire ;
+\item terme diffusif du second ordre.
+\end{itemize}
+Dans le cas des écoulement parfaits, l'équation se simplifie.
+Écrire l'équation et souligner les termes. 
 
-\subsubsection{Template}
+\subsection{Cadre et limites du modèle}
 
-\begin{experience}
-\textbf{Template}
-\end{experience}
+\subsubsection{Équation d'Euler}
+
+
+Définition d'un écoulement parfait : \cite{Olivier2000} p432 et \cite{Sanz2016} p311.
+Parler de l'évolution isentropique et des grands Reynolds.
+Mentionner le cas des ondes acoustiques qui se fait précisément dans ce cadre.
+
+Faire la différence avec les fluides parfait comme l'hélium superfluide \cite{Guyon2001} p170 et p353-355.
+
+Écrire l'équation d'Euler \cite{Sanz2016} p355 et \cite{Olivier2000} p449 sous ses deux formes.
+Commentaires
+
+Éventuellement, parler des écoulements particuliers \cite{Sanz2016} p356-357.
+
+\begin{transition}
+Pour résoudre l'équation, il est nécessaire de préciser les conditions aux limites.
+\end{transition}
+
+\subsubsection{Conditions aux limites}
+
+Il n'y a plus de contrainte tangentielle et les seules forces surfaciques sont les forces de pression.
 
 \begin{slide}
-\textbf{Template}
+\textbf{Conditions aux limites.}
+Le faire par comparaison aux écoulements visqueux.
 \end{slide}
 
 \begin{transition}
-\textbf{Template}
+L'écoulement parfait est un modèle qui possède ses limites.
 \end{transition}
 
+\subsubsection{Couche limite}
+
+Suivre \cite{Olivier2000} p433-435 :
+\begin{itemize}
+\item écoulement parfait : n'existe pas ;
+\item notion de couche limite : écoulement parfait en dehors ;
+\item épaisseur de la couche limite, limiter la trainée ;
+\item raccordement de la vitesse tangentielle ;
+\item ordre de grandeur \cite{Sanz2016} p310.
+\end{itemize}
+
 \begin{remarque}
-\textbf{Template}
+La couche limite fait l'objet du chapitre 9 de \cite{Guyon2001}.
 \end{remarque}
+
+\begin{transition}
+L'équation d'Euler présente seulement des dérivées premières : il est possible de l'intégrer pour trouver des quantités conservées.
+\end{transition}
+
+\subsection{Théorème de Bernoulli}
+
+\subsubsection{Équation de conservation de l'énergie}
+
+On néglige les processus dissipatifs : on va pouvoir exprimer la conservation de l'énergie.
+Dans un champs de pensanteur uniforme, dans un rférentiel galiléen, établir l'expression du théorème de Bernoulli dans le cas d'un écoulement parfait (on part d'Euler), stationnaire (indépendant du temps), incompressible et homogène ($\rho$ constante) en intégrant le long d'une ligne de courant \cite{Olivier2000} p454.
+
+Interprétation des différents termes : énergie cinétique, énergie potentielle de pesanteur, énergie due au travail des forces de pression.
+Voir \cite{Rabaud2019} pour les noms des différents termes, charge, etc.
+Évoquer le cas où l'on néglige les effets de la pesanteur et les \og vases énergétiques communicants\fg{}.
+
+\begin{remarque}
+Avoir en tête les autres expressions, notamment la version non stationnaire irrotationnel avec le potentiel des vitesses \cite{Olivier2000} p455.
+\end{remarque}
+
+\begin{transition}
+Voyons quelques applications.
+\end{transition}
+
+\subsubsection{Application au tube de Pitot}
+
+Suivre \cite{Rabaud2019} p53 et \cite{Olivier2000} p459.
+
+\begin{slide}
+\textbf{Tube de Pitot.}
+\end{slide}
+
+\begin{remarque}
+Valable seulement si le fluide est incompressible donc un écoulement incompressible : \cite{Guyon2001} p139 pour la condition d'incompressibilité.
+\end{remarque}
+
+\begin{experience}
+\textbf{Mesure de la vitesse d'un fluide avec un tube de Pitot.}
+Comparer les vitesses obtenues avec l'anémomètre et le tube dans la soufflerie.
+\end{experience}
+
+\begin{transition}
+Le tube de Pitot est utilisé en aviation.
+\end{transition}
+
+\subsubsection{Application : l'effet Venturi}
+
+Adapter en fonction du temps : ne pas faire cette partie pour concerver du temps pour la dernière si nécessaire.
+
+Dégager de cette partie qu'une augmentation de la vitesse du fluide se traduit par une diminution de sa pression.
+
+Bien faire le schéma et préciser les hypothèses conformément à précédemment.
+Faire le calcul \cite{Olivier2000} p457 et parler du débitmètre.
+
+\begin{experience}
+\textbf{Souffler entre deux feuilles pour les rapprocher.}
+\end{experience}
+
+\begin{slide}
+\textbf{Effet Venturi.}
+\end{slide}
+
+Applications : parfums, trompe à eau, artériosclérose.
+
+\begin{transition}
+Une mesure différentielle de pression pour mesurer la vitesse : le tube de Pitot.
+\end{transition}
+
+\subsection{Écoulement autour d'une aile}
+
+\subsubsection{Écoulement autour d'un obstacle}
+
+Ne pas faire l'analyse quantitative mais elle est faite dans \cite{Olivier2000} p405.
+
+\begin{slide}
+\textbf{Écoulement autour d'un obstacle.}
+\end{slide}
+
+Raisonner qualitativement et montrer qu'il n'y a pas de portance.
+Un des moyens est de faire tourner l'objet : effet Magnus et montrer la \href{https://youtu.be/05zF0sBwHe8?t=85}{vidéo}.
+
+\begin{transition}
+L'idée est donc d'avoir une circulation de la vitesse non nulle autour de l'aile.
+\end{transition}
+
+\subsubsection{Estimation de la portance}
+
+Suivre \cite{Rabaud2019} p59.
+
+\begin{remarque}
+Le calcul analytique est possible (\cite{Olivier2000} p461) mais reste lourd.
+Il passe par l'utilisation du potentiel des vitesses dans l'hypothèse d'un écoulement irrotationnel. 
+\end{remarque}
+
+\begin{slide}
+\textbf{Écoulement autour d'un obstacle.}
+\end{slide}
+
+\subsubsection{Paradoxe de d'Alembert}
+
+\cite{Rabaud2019} pour l'énoncé du paradoxe et \cite{Guyon2001} p535-537 pour la levée du paradoxe.
+
+\begin{remarque}
+Avoir en tête les problèmes liés au décollement de la couche limite \cite{Guyon2001} p538-543.
+\end{remarque}
+
+\subsection*{Conclusion}
+
+Le modèle de l'écoulement parfait permet de simplifier les calculs pour analyser des écoulements loin d'obstacles.
+Les effets liés à la viscosité du fluide sont souvent restreints à une faible épaisseur mais qui explique la trainée et la vorticité.
 
 \newpage

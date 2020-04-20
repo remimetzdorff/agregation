@@ -3,40 +3,219 @@
 \begin{header}
 \begin{tabular}{p{0.4\textwidth} l}
 \niveau & \prerequis \\
-Template& \textbullet{} Template \\
-        & \textbullet{} Template \\
+Licence & \textbullet{} Statique des fluides \\
+        & \textbullet{} Potentiels thermodynamiques \\
+        & \textbullet{} Interactions moléculaires
 \end{tabular}
 
 \noindent
 \objectif
-Template
+Décrire la tension superficielle et voir ses conséquences sur des interfaces statiques et dynamiques.
 \end{header}
 
 {
-%\footnotesize{\bibliography{biblio}}
-\bibentry{Template}
+\subsection*{Bibliographie}
+\footnotesize{}
+\begin{itemize}
+\item \cite{Rabaud2019}
+\item \cite{Diu2008}
+\item \cite{Marchand2011}
+\item \cite{Sanz2016}
+\item \cite{Guyon2001}
+\item \cite{Graner2011}
+\item \cite{Charru2007}
+\end{itemize}
 }
+
+\begin{remarque}
+Pas évident de placer cette leçon au niveau CPGE compte tenu du programme restreint sur cette notion.
+
+\noindent
+Rattacher les phénomènes décrits à des observations courantes !
+\end{remarque}
 
 \subsection*{Introduction}
 
-\subsection{Template}
+Dans la vie courante, et depuis tout petit, on sait qu'il vaut mieux utiliser de l'eau savonneuse pour faire des bulles.
+On observe que liquides mouillent différemment les parois solide, qu'il est possible de traiter certaines surfaces pour modifier son comportement par rapport à un fluide.
+C'est effet sont liés à la tension de surface que nous allons décrire.
 
-\subsubsection{Template}
+\subsection{La tension de surface}
+
+On modélise l'interface entre deux fluides comme une surface séparant deux fluides...
+Dire qu'il s'agit d'un volume dont l'épaisseur est de quelques molécules qui concentre les variation de densité, etc.
+Voir la figure 5 de \cite{Marchand2011}.
+
+\subsubsection{Interprétation mécanique}
+
+Suivre \cite{Diu2008} p82-83 pour introduire la tension de surface depuis une expérience.
 
 \begin{experience}
-\textbf{Template}
+\textbf{Fil tendu par un film de savon.}
 \end{experience}
 
+Donner son expression et ses caractéristiques : direction, attractive et unité du coefficient.
+Dire que cela ne dépend que de la nature de l'interface.
+
+\begin{experience}
+\textbf{Tensiomètre à lame mouillée.}
+Passer sur les subtilités dues au mouillage total sur lesquelles on revient plus tard.
+\end{experience}
+
+Introduire le travail de la tension superficielle pour la transition.
+
+\begin{transition}
+On voit que la tension superficielle est liée à une énergie surfacique.
+\end{transition}
+
+\subsubsection{Interprétation thermodynamique}
+
+Bien définir le système et les quantités constantes pour justifier l'emploi de tel potentiel thermodynamique : \cite{Graner2011} p100.
+Deux façons de faire :
+\begin{itemize}
+\item à partir de l'énergie libre dans \cite{Marchand2011} p1 à $T$, $V$ et $n$ fixé ;
+\item à partir de l'enthalpie libre dans \cite{Diu2008} p210 dans le cas d'une bulle, à $S$ et $V$ fixés.
+\end{itemize}
+La deuxième méthode est probablement plus propre et mais compliquée à ce stade je trouve.
+
+Insister sur l'interprétation : l'augmentation de la surface d'une interface est couteuse en énergie.
+Le système tend à minimiser la surface de l'interface.
+Dans le cas ou plusieurs interfaces sont susceptibles de se former, la situation d'équilibre est celle d'énergie minimale.
+
 \begin{slide}
-\textbf{Template}
+\textbf{Surface minimale.}
 \end{slide}
 
 \begin{transition}
-\textbf{Template}
+Poursuivons l'analyse microscopique du phénomène.
 \end{transition}
 
+\subsubsection{Interprétation microscopique}
+
+Suivre \cite{Marchand2011} p4-5.
+Prendre le temps pour expliquer la figure 6 de l'article.
+Donner les ordres de grandeur de la fin de \cite{Marchand2011} p1, avec l'interprétation en terme d'énergie d'interaction dans le liquide.
+\begin{slide}
+\textbf{Quelques valeurs du coefficient de tension superficielle.}
+\end{slide}
+
+Facteurs influençant $gamma$ :
+\begin{itemize}
+\item tensioactifs : \cite{Rabaud2019} p81 ;
+\item température : \cite{Rabaud2019} p80.
+\end{itemize}
+
 \begin{remarque}
-\textbf{Template}
+Attention à bien justifier que la résultante est parallèle à l'interface.
+
+\noindent
+A ce stade, il est normal que l'enthalpie de vaporisation soit liée à $\gamma$ puisque les mêmes interactions microscopiques interviennent.
+\end{remarque}
+
+\begin{transition}
+Quel est l'effet de la tension superficielle sur l'équilibre des interfaces entre fluides ?
+\end{transition}
+
+\subsection{Interface statique}
+
+\subsubsection{Pression}
+
+Retrouver la loi de Laplace avec a force de tension superficielle \cite{Sanz2016} p328.
+Citer des exemples pratiques :
+\begin{itemize}
+\item cohésion du sable mouillé ;
+\item retard à l'ébullition \cite{Guyon2001} p57 ;
+\item bulle de savon qui se vide dans une plus grande.
+\end{itemize}
+
+\begin{remarque}
+La formule n'est valable que dans le cas d'une sphère.
+Dans le cas général, il faut tenir compte des rayons de courbure dans les deux direction de l'espace normale à l'interface :
+\begin{equation}
+P_\mathrm{int} - P_\mathrm{ext} = \gamma \left( \frac{1}{R_x} + \frac{1}{R_y} \right).
+\end{equation}
+Attention aussi au cas de la bulle qui possède deux interfaces.
+\end{remarque}
+
+Insister sur l'interprétation qualitative :
+\begin{itemize}
+\item la surpression est d'autant plus grande que le rayon de courbure est faible ;
+\item la pression est plus élevée à l'intérieur de la courbure.
+\end{itemize}
+
+\begin{transition}
+La tension superficielle permet aussi d'expliquer la capillarité.
+\end{transition}
+
+\subsubsection{Capillarité}
+
+Retrouver la loi de Jurin avec l'interprétation énergétique \cite{Sanz2016} p329.
+
+\begin{slide}
+\textbf{Loi de Jurin.}
+\end{slide}
+
+\begin{experience}
+\textbf{Loi de Jurin.}
+\end{experience}
+
+\begin{transition}
+Utiliser la fin de la slide : la forme de l'interface dépend des coefficients de tension superficielle mis en jeu.
+\end{transition}
+
+\subsubsection{Mouillage}
+
+Retrouver la relation de Young-Dupré à partir des deux lois précédentes \cite{Sanz2016} et discuter des différents régimes.
+
+\begin{remarque}
+Pour les mesures de l'angle de mouillage, voir \cite{Guyon2001}.
+
+\noindent
+Relire \cite{Marchand2011} p7 pour l'interprétation des interactions solide-liquide.
+\end{remarque}
+
+\begin{slide}
+\textbf{Mouillage.}
+\end{slide}
+
+\begin{transition}
+Utiliser la fin de la slide avec le mercure pour introduire qualitativement la longueur capillaire.
+Elle intervient dans de nombreux phénomènes dynamiques.
+\end{transition}
+
+\subsection{Interface dynamique}
+
+\subsubsection{Instabilité de Rayleigh-Taylor}
+
+\begin{experience}
+\textbf{Bouteille remplie d'eau et tube fin bouché à une extrémité.}
+But comprendre pourquoi l'une des situations est stable et pas l'autre.
+\end{experience}
+Suivre \cite{Guyon2001} p68-70 et \cite{Charru2007} p53-55.
+Donner la longueur capillaire de l'eau.
+
+\subsubsection{Ondes capillaires}
+
+\begin{slide}
+\textbf{Ondes à la surface d'un fluide.}
+Faire l'analyse qualitative du problème avant de commencer pour mettre en évidence la compétition entre tension superficielle et gravité.
+\end{slide}
+Faire apparaitre la longueur capillaire.
+Dire que l'on peut mesurer aussi la tension superficielle en mesurant cette relation de dispersion.
+
+
+\subsection*{Conclusion}
+
+On a mis en évidence les propriétés et les manifestations de la tension superficielle qui permettent d'expliquer de nombreux phénomènes de la vie courante, mais aussi des phénomènes plus complexes.
+
+\begin{remarque}
+Autres méthodes de mesure de la tension superficielle :
+\begin{itemize}
+\item méthode d'arrachement, ou méthode de DuNoüy : avec un anneau ;
+\item méthode de la goutte pendante ;
+\item loi de Jurin ;
+\item relation de dispersion des ondes de surface.
+\end{itemize}
 \end{remarque}
 
 \newpage
