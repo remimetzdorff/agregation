@@ -2,7 +2,7 @@
 %% HEADER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,12pt]{report}
 
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 %\usepackage[square,numbers,sort&compress]{natbib}
@@ -17,11 +17,21 @@
 \usepackage{enumitem}
 \usepackage{stmaryrd } % fancy arrow
 \usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=theme,
+    citecolor=theme
+}
+\setcounter{tocdepth}{1} %Just show section title in toc
+\setcounter{secnumdepth}{3} %add subsubsection numbering in report mode
+
 \usepackage{eurosym}
 
 %% Bibliography Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibliographystyle{template/custom-bib/thesis}
+%\bibliographystyle{apalike}
 %\bibliographystyle{abbrv}
+%\bibliographystyle{alpha}
 \usepackage{bibentry}
 %\usepackage{multibbl}
 
@@ -70,6 +80,8 @@
 \definecolor{green_c}{rgb}{0.8,0.95,0.8}
 \definecolor{gray_f}{rgb}{0.5,0.5,0.5}
 \definecolor{gray_c}{rgb}{0.95,0.95,0.95}
+\definecolor{theme}{RGB}{56,115,179}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % New environnements
@@ -190,7 +202,7 @@
 \newenvironment{remarque}
 {%\stepcounter{exa}%
 	\addcontentsline{ldf}{figure}{0}%
-	\begin{remarque_env}}
+	\begin{remarque_env}\small}
 	{\end{remarque_env}
 	}
 

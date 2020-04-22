@@ -2,7 +2,7 @@ résonance : barre de weber, résonateur mécanique, isolation par suspension, verr
 DONE thermodynamique : cryostats (He4, He3, N2), cryostat à dilution
 DONE électronique : amplificateur, photodiode, filtre
 DONE rétroaction : asservissement, feedback-cooling
-optique : michelson, fabry-perot, optique gaussienne
+DONE optique : michelson, fabry-perot, optique gaussienne
 
 DONE deux aspects de la lumière : perturbation et controle via pression de radiation
 

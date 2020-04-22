@@ -3,40 +3,261 @@
 \begin{header}
 \begin{tabular}{p{0.4\textwidth} l}
 \niveau & \prerequis \\
-Template& \textbullet{} Template \\
-        & \textbullet{} Template \\
+CPGE & \textbullet{} Oscillateur harmonique, amorti \\
+     & \textbullet{} Impédance complexe \\
+     & \textbullet{} Interférence à N ondes
 \end{tabular}
 
 \noindent
 \objectif
-Template
+Définir le phénomène de résonance, en dégager les caractéristiques et mettre en évidence son caractère universel.
 \end{header}
 
 {
-%\footnotesize{\bibliography{biblio}}
-\bibentry{Template}
+\subsubsection*{Bibliographie}
+\footnotesize{}
+\begin{itemize}
+\item \cite{Taillet2018}
+\item \cite{Michel2017}
+\item \href{http://www.lkb.upmc.fr/cqed/teaching/teachingsayrin/}{TD Interférences} de Clément Sayrin
+\item \cite{Adloff1998} pour l'expérience du diapason
+\item \cite{Graner2011} p244 : exercice sur l'exploitation de la RMN à l'IRM.
+\end{itemize}
 }
+
+\begin{remarque}
+Relire l'article \href{https://fr.wikipedia.org/wiki/R\%C3\%A9sonance}{Wikipedia} pour quelques généralités et les utilisations et avantages de la résonance.
+Ne pas dire de bêtise sur le pont de Tacoma.
+
+\noindent
+Selon les rapport de jury, il ne faut pas négliger :
+\begin{itemize}
+\item les aspects énergétiques ;
+\item le rapprochement des caractéristiques entre le régime libre et forcé ;
+\item la différence entre résonance en amplitude et en vitesse ;
+\item la généralisation du phénomène à différents domaines ;
+\item la cavité optique et les aspects microscopiques.
+\end{itemize}
+
+\noindent
+Il y a probablement trop de manips dans ce plan...
+\end{remarque}
 
 \subsection*{Introduction}
 
-\subsection{Template}
+Dans l'idée de \cite{Michel2017} p233.
+Faire apparaitre les aspects négatifs et utiles de l'existence de résonances.
 
-\subsubsection{Template}
+\subsection{Système à un degré de liberté}
+
+Donner la définition du phénomène de résonance : voir celle de \cite{Taillet2018} et \cite{Michel2017} p240 ou \og phénomène marqué par l'existence d'un maximum de réponse d'un système à une excitation \fg{}.
+Insister sur la nécessité d'une excitation.
+On s'intéresse seulement à des systèmes linéaires : encadré p234 de \cite{Michel2017}.
+
+\begin{slide}
+\textbf{Oscillateurs forcés.}
+\end{slide}
+
+\subsubsection{Oscillateur amorti en régime sinusoïdal forcé}
+
+Faire un schéma d'un système masse/ressort et poser clairement le problème : système, référentiel, forces, hypothèses sur l'excitation.
+Établir l'équation canonique en position de l'oscillateur amorti avec une excitation sinusoïdale :
+\begin{equation}
+\ddot{x} + \Gamma \dot{x} + \omega_0^2 x = a \omega_0^2 \cos(\omega t).
+\label{eq:lp24_osc}
+\end{equation}
+Interpréter l'oscillation en terme d'échange d'énergie cinétique potentielle et parler de la dissipation et du travail de l'opérateur sans aller trop loin.
+
+Dresser le parallèle avec un circuit RLC alimenté par un GBF : quantité analogues (position = charge, vitesse = courant), échange entre énergie magnétique et électrique et dissipation par effet Joule compensée par le générateur.
 
 \begin{experience}
-\textbf{Template}
+Montrer très qualitativement la dépendance de la réponse d'un système masse/ressort et d'un circuit RLC avec la fréquence. 
+\end{experience}
+
+\begin{transition}
+On veut quantifier ces observations
+\end{transition}
+
+\subsubsection{Résonance en amplitude}
+
+Justifier le passage en complexe par la linéarité du système et la possible décomposition de tout signal périodique en série de Fourier.
+Arriver à l'expression de l'amplitude complexe \cite{Michel2017} p237 et introduire $Q$.
+
+Pour faire le lien avec les observations expérimentales, on préfère regarder le module et la phase de l'amplitude complexe en fonction de la fréquence.
+
+\begin{experience}
+\textbf{Résonance en charge du RLC.}
+Montrer la réponse d'un circuit RLC en faisant varier la valeur de $R$. Montrer la présence ou non d'une résonance.
 \end{experience}
 
 \begin{slide}
-\textbf{Template}
+\textbf{Réponse à une excitation forcée :} résonance en amplitude/charge.
+\end{slide}
+
+Déterminer la pulsation de résonance \cite{Michel2017} p240 et insister sur le fait qu'elle est toujours plus petite que $\omega_0$.
+Faire le lien qualitatif entre le facteur de qualité et l'allure de la courbe.
+
+\begin{transition}
+La résonance en position n'est pas systématique.
+Elle dépend du facteur de qualité et est caractérisée par une pulsation inférieure à la pulsation propre de l'oscillateur.
+Qu'en est-il pour la vitesse ?
+\end{transition}
+
+\subsubsection{Résonance en vitesse}
+
+Multiplier \eqref{eq:lp24_osc} par $j\omega$ pour obtenir l'équation sur la vitesse, analogie avec le RLC puis suivre \cite{Michel2017} p242.
+Calculer la bande passante et mentionner le cas de la bande passante pour la résonance en amplitude à haut facteur de qualité.
+
+\begin{experience}
+\textbf{Résonance en intensité du RLC.}
+\end{experience}
+
+\begin{slide}
+\textbf{Réponse à une excitation forcée :} résonance en vitesse/intensité.
+\end{slide}
+
+Insister sur le fait que la résonance se fait à la pulsation propre.
+Un grand facteur de qualité caractérise une résonance aiguë, de grande finesse spectrale.
+Donner quelques ordres de grandeur :
+\begin{itemize}
+\item amortisseur de voiture, sismographe : $Q \sim 1/\sqrt{2}$ ;
+\item diapason : $Q \sim 1000$ ;
+\item quartz, mode pendules de Virgo : $Q \sim 10^6$.
+\end{itemize}
+
+\begin{experience}
+\textbf{Régimes transitoires d'un diapason.}
+\end{experience}
+
+\begin{transition}
+Le temps nécessaire à l'établissement du régime permanent en présence d'une excitation, puis la persistance des oscillations après arrêt de l'excitation montre que l'oscillateur emmagasine de l'énergie.
+Intéressons nous aux transferts d'énergie.
+\end{transition}
+
+\subsection{Aspects énergétiques}
+
+\subsubsection{Transferts d'énergie}
+
+En multipliant \eqref{eq:lp24_osc} par $v$ on fait apparaitre l'énergie potentielle stockée par le ressort, l'énergie cinétique de la masse en mouvement, le terme de dissipation et le terme source : 
+\begin{equation}
+\frac{\d}{\d t} \left( \frac{1}{2}mv^2 + \frac{1}{2}kx^2 \right) = -m\Gamma v^2 + kav.
+\end{equation}
+
+Loin de la résonance et en régime permanent, la moyenne sur une période du terme de gauche est nulle (position en quadrature avec la vitesse) et la puissance fournie par l'opérateur, compensée par les pertes, est faible car la vitesse reste faible.
+À résonance, le terme de gauche est nul à tout instant, la puissance fournie par l'opérateur est toujours entièrement compensée par les pertes mais est cette fois maximale car la vitesse est maximale.
+À résonance, un système extrait un maximum d'énergie de l'excitation.
+
+\begin{slide}
+\textbf{Une montre qui ne retarde jamais.}
+\end{slide}
+
+Relier cette absorption à la physique atomique et à la résonance microonde du césium pour la détermination de la seconde.
+Justifier le traitement du césium dans le cadre de l'oscillateur amorti par le modèle de l'électron élastiquement lié, l'excitation étant une onde microonde.
+L'idée est de transférer la stabilité d'une transition atomique sur un oscillateur à quartz pour définir la seconde.
+
+\begin{remarque}
+Les \href{https://www.rp-photonics.com/optical_clockworks.html}{horloges optiques} sont plus performantes car les transitions atomiques utilisées sont plus fines encore : les horloges à ytterbium ont les \href{https://www.nature.com/articles/s41586-018-0738-2.epdf?sharing_token=FIAZjmJMqixyHlimG5lZR9RgN0jAjWel9jnR3ZoTv0NOfvtdRGwNwsijc3L-wdrRb6DF0vb25L6JDgze8-Ez9_P7gtDhvd6Ohf2fGgppvCB0X-kg27ArE1M-_123JKobog97pnYcj6HXzgnQR8rvnEnh2szZWcsjs3iTQoltrq902DQaUqdwu-tfeoFpO2IP38lBfqV_hdqg28l1ptt7M-PeiTD59RRAR6YB4NH8cdhllMt46BYK03GkjoGNMHdUg-jFHfsZFxk8V2FOARslaavGtlPodYzx2Knkijyvf6sgup8zUfeTjvHaoHNKaM6y&tracking_referrer=ici.radio-canada.ca}{meilleures performances} en terme de stabilité avec des dérives de l'ordre de \unit{1}{\second} sur plusieurs centaines de milliards d'années (moins d'un dixième de seconde depuis le Big Bang !).
+Quelques remarques utiles sur la détermination de la fréquence absolue d'un laser sur \href{https://www.rp-photonics.com/frequency_metrology.html}{RP Phtonics}.
+\end{remarque}
+
+\begin{slide}
+Montrer la \href{https://www.youtube.com/watch?v=7cgZcbHmxm4}{vidéo du verre vibrant} : la présence d'une résonance peut être problématique.
 \end{slide}
 
 \begin{transition}
-\textbf{Template}
+Les caractéristiques de la résonance sont liées aux paramètres de l'oscillateur amorti que l'on observe en régime libre.
 \end{transition}
 
-\begin{remarque}
-\textbf{Template}
-\end{remarque}
+\subsubsection{Lien avec le régime libre}
+
+\begin{experience}
+\textbf{Caractérisation de la résonance en intensité du RLC.}
+Faire la mesure avec un créneau et avec la mesure de la fonction de transfert.
+Pour le régime libre, voir \cite{Michel2017} p227.
+$\Gamma$ est le taux de dissipation en énergie !
+Pour l'amplitude, c'est $\Gamma/2$
+
+\noindent
+Ou avec le diapason.
+L'exemple me semble moins pertinent car comme le facteur de qualité est grand, on ne voit pas de nuance entre résonance en amplitude et en intensité ce qui va à l'encontre d'une des messages de la leçon je crois.
+La manip est aussi faiblement reproductible : il faut s'assurer que l'aimant et le diapason ne bougent pas entre la préparation et la leçon.
+En plus, comme on mesure le son et pas directement l'oscillateur, la quantité que l'on détecte n'est pas clairement identifiable à la vitesse ou à la position.
+En tous cas il faut être prêt à défendre cette manip et relire le BUP pour avoir les idées claires.
+\end{experience}
+
+Relier le facteur de qualité à la dissipation de l'énergie \cite{Faroux1996} p237-238.
+
+\begin{transition}
+On a vu le cas d'un oscillateur isolé ou éventuellement de plusieurs mais sans interaction.
+Que se passe-t-il si on couple plusieurs oscillateurs ?
+\end{transition}
+
+\subsection{Système à N degrés de liberté}
+
+\subsubsection{Deux oscillateurs couplés}
+
+\begin{experience}
+\textbf{Résonances de deux circuit LC en série.}
+Observer expérimentalement la présence des deux résonances.
+Ici les deux circuits sont couplés en tension.
+Un couplage en intensité passerait par une inductance mutuelle.
+\end{experience}
+
+Pour le calcul, on néglige $R$ pour la simplicité du calcul mais en pratique il y a toujours des résistance résiduelles : fils et résistance de fuite.
+Soit faire le calcul, soit écrire directement la formule 
+\begin{equation}
+s = \frac{e}{\frac{\omega^4}{\omega_0^4} - 3\frac{\omega^2}{\omega_0^2} + 1},
+\end{equation}
+où $\omega_0^2=1/LC$ et en déduire l'existence de deux pulsations de résonance :
+\begin{equation}
+\omega_r = \omega_0 \sqrt{\frac{3\pm\sqrt{5}}{2}}.
+\end{equation}
+
+Le passage la limite correspond à un cas à N degrés de libertés où l'on retrouve l'équation des télégraphistes qui même à l'équation de d'Alembert pour les ondes dans le câble coaxial.
+Expliquer que les conditions aux limites discrétisent les solutions au problème et provoque l'apparition de mode sous forme d'onde stationnaires qui peuvent exister dans le câble.
+Voir \cite{Taillet2018} pour la définition d'un mode.
+
+
+\begin{slide}
+\textbf{Simulations des modes du verre.}
+Analogie avec la corde de Melde, la matière (N atomes : 3N oscillateurs couplés), etc.
+\end{slide}
+
+\begin{transition}
+Et les cavités optiques dans tout ça ?
+\end{transition}
+
+\subsubsection{Cavité optique}
+
+Pour l'analogie :
+\begin{itemize}
+\item l'équation de d'Alembert qui régit la propagation des ondes EM et les miroirs qui impose des conditions aux limites ;
+\item les réflexions multiples (infinies) qui couplent les ondes car elles interfèrent.
+\end{itemize}
+Faire le cas d'une cavité plan-plan en incidence normale en suivant le TD de Clément Sayrin.
+
+Donner les résultats si manque de temps et interpréter la courbe :
+\begin{itemize}
+\item existence d'une infinité de modes longitudinaux ;
+\item hors résonance : la lumière est simplement réfléchie par le miroir d'entrée ;
+\item intensité intracavité  maximale à résonance : la lumière incidente est perdue car transmise par la cavité ;
+\item parler du filtrage introduit par une cavité de grande finesse, ou grand facteur de qualité pour rester dans la terminologie de la leçon.
+\end{itemize}
+
+\begin{slide}
+\textbf{Résonance optique d'une cavité Fabry-Perot}
+\end{slide}
+
+\subsection*{Conclusion}
+
+On a vu l'universalité des phénomènes de résonance dans de nombreux domaines de la physique.
+
+Pour en revenir à la détection des ondes gravitationnelles, les barres de Weber constituent la première piste pour leur observation avec des cylindres d'aluminium dont la résonance permet d'amplifier l'effet d'une OG.
+Problème : compromis entre amplification et sélectivité spectrale.
+\begin{slide}
+\textbf{Les détecteur LIGO et Virgo et leurs résonances.}
+\end{slide}
+Les cavités optiques sont indispensables au fonctionnement de l'appareil : output mode cleaner, etc.
+Parler du problème des modes violon et des modes mécaniques des miroirs dans Virgo : on veut des grands facteurs de qualité pour ces modes afin de poluer la plus petite région spectrale possible.
 
 \newpage

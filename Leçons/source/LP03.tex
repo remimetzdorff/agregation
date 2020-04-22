@@ -27,6 +27,10 @@ Mettre en évidence son influence dans plusieurs écoulements.
 \end{itemize}
 }
 
+\begin{remarque}
+Prendre le temps de bien poser le problème à chaque fois ! Et donner les hypothèses avant, pas à la fin de l'énoncé de la formule.
+\end{remarque}
+
 \subsection*{Introduction}
 
 \begin{experience}
@@ -46,19 +50,24 @@ Mentionner la différence entre les gaz et les liquides.
 Dire un mot sur la pression : force normale.
 
 \begin{slide}
+Pas le temps. Choisir entre ça et l'intro.
 \href{https://youtu.be/pqWwHxn6LNo?t=213}{\textbf{Video.}}
 Bien décrire le setup et dire que le régime permanent est atteint lors de la mesure.
 On mesure la force nécessaire pour faire bouger les plaques, c'est une force surfacique.
 \end{slide}
-Établir l'expression intégrale de la force tangentielle : \cite{Olivier2000} p418.
 La force dépend de la nature du fluide : introduire $\eta$.
 
-Établir l'expression de la force de viscosité mésoscopique :
+Établir l'expression de la force de viscosité mésoscopique \cite{Olivier2000} p418 :
 \begin{itemize}
 \item unité de $\eta$
 \item exemples de valeurs \cite{Olivier2000} p423
 \item commentaires de \cite{Olivier2000} p419 pour introduire le caractère diffusif de la viscosité.
 \end{itemize}
+
+\begin{remarque}
+Cette forme de la force de viscosité est propre aux fluides newtoniens.
+Cette relation constitue la définition du coefficient de viscosité dynamique.
+\end{remarque}
 
 \begin{transition}
 Ici on modélise bien l'interaction avec une paroi, mais dans un fluide il vaut mieux utiliser l'équivalent volumique des forces de viscosité 
@@ -146,6 +155,11 @@ Voyons un cas particulier : l'écoulement de Poiseuille.
 
 \subsubsection{Écoulement de Poiseuille}
 
+\begin{remarque}
+Pas faire l'écoulement de Poiseuille ça prend trop de temps.
+Faire plutôt l'exercice 2.4 de \cite{Olivier2000} p444 pour insister encore sur le caractère diffusif.
+\end{remarque}
+
 \cite{Sanz2016} p351 ou mieux : \cite{Olivier2000} p435.
 Retrouver le profil parabolique de vitesse et le montrer en \href{http://culturesciencesphysique.ens-lyon.fr/la-physique-animee/la-physique-animee-une-serie-de-videos-de-physique}{vidéo}.
 
@@ -159,6 +173,11 @@ Faire la distinction entre écoulement laminaire et turbulent.
 \textbf{Écoulement de Poiseuille.}
 Juste une idée, elle est pénible à installer mais bon.
 \end{experience}
+
+\begin{remarque}
+L'exemple de l'écoulement de Poiseuille se prête mal à la discussion autour du nombre de Reynolds : dans la forme supposée de l'écoulement, le terme convectif est exactement nul.
+Le nombre de Reynolds est alors nul aussi et l'estimation par les grandeurs caractéristiques de l'écoulement est fausse.
+\end{remarque}
 
 \begin{transition}
 La viscosité est associée à des processus de dissipation.
@@ -203,10 +222,26 @@ Suivre \cite{Sanz2016} p315 pour introduire la force de trainée en fonction du 
 
 Établir la loi de Stokes et mentionner le cas à haut Reynolds.
 
-\subsection*{Conclusion}
-On s'est restreint à l'étude d'écoulement laminaire puisque les écoulements turbulents sont extrêmement difficile à décrire.
-Les effets de la viscosité se cantonnent parfois sur des faibles épaisseurs en dehors desquelles il est possible de décrire l'écoulement comme un écoulement parfait : couche limite.
+\begin{remarque}
+A faible Reynolds : régime de Stokes.
+A grand Reynolds : régime inertiel.
+\end{remarque}
 
+\begin{remarque}
+Il faut marquer une différence entre un écoulement tourbillonnaire et un écoulement turbulent :
+\begin{itemize}
+\item un écoulement tourbillonnaire se caractérise par une circulation de la vitesse non nulle : on peut associer à l'écoulement un vecteur tourbillon.
+En ce sens, il s'agit d'une propriété mathématique de l'écoulement.
+\item un écoulement turbulent est caractérisé par la création de structures à toutes les échelles de temps et d'espace.
+Il y a une cascade d'énergie à toutes les échelles, depuis les grands tourbillons qui possèdent une grande énergie cinétique vers les petits qui finissent par la dissiper en raison de la viscosité du fluide.
+Ce phénomène est décrit qualitativement en 1922 (cascade de Richardson) puis quantitativement (cascade de Kolmogorov) par la théorie K41.
+\end{itemize}
+Les phénomènes de viscosité sont nécessaires à la création de turbulence, de même qu'ils sont nécessaires à la création de tourbillons (théorème de Kelvin)
+\end{remarque}
+
+\subsection*{Conclusion}
+On s'est restreint à l'étude d'écoulement laminaire puisque les écoulements turbulents sont extrêmement difficiles à décrire.
+Les effets de la viscosité se cantonnent parfois sur des faibles épaisseurs en dehors desquelles il est possible de décrire l'écoulement comme un écoulement parfait : couche limite.
 On a étudié seulement les fluides newtowniens mais il existe aussi des fluide rhéofluidifiants et rhéoépaississant.
 
 \newpage
