@@ -3,8 +3,9 @@
 \begin{header}
 \begin{tabular}{p{0.4\textwidth} l}
 \niveau & \prerequis \\
-Template& \textbullet{} Template \\
-        & \textbullet{} Template \\
+CPGE & \textbullet{} Modèle du gaz parfait \\
+     & \textbullet{} Travail, transfert thermique \\
+     & \textbullet{} Transformation thermodynamique \\
 \end{tabular}
 
 \noindent
@@ -15,27 +16,175 @@ Template
 {
 \subsubsection*{Bibliographie}
 \footnotesize{}
-%\begin{itemize}
-%\item 
-%\end{itemize}
+\begin{itemize}
+\item \cite{Michel2017}
+\item \cite{Olivier1998}
+\item \cite{Salamito2016}
+\item \cite{Diu2008}
+\end{itemize}
 }
 
 \begin{remarque}
-Pour expliquer que $C_V$ soit définit à volume constant : on cherche à expliquer la variation d'énergie interne causée par un $\delta Q$ seulement.
-Il faut donc annuler le travail des forces de pression en travaillant à volume constant.
+Relire le début de \cite{Diu2008} sur le postulat fondamental de la thermodynamique et p18 pour les variables d'état et équation d'état.
+Un mot sur les fonctions d'état p66 et p143.
 \end{remarque}
 
 \subsection*{Introduction}
 
-\subsection{Template}
+Partir du problème de la conservation de l'énergie mécanique avec l'exemple du livre lancé sur la table \cite{Salamito2016} p905 : ou va l'énergie ?
+L'énergie mécanique n'est pas conservée mais l'énergie totale du système l'est.
+L'augmentation de la température marque une augmentation de l'énergie microscopique que l'on va chercher à décrire dans cette leçon.
 
-\subsubsection{Template}
+\subsection{Le premier principe}
 
-\subsection*{Questions}
+\begin{remarque}
+Équivalence travail-chaleur montrée par Joule en 1843.
+Énoncé du premier principe par Mayer en 1845.
+\end{remarque}
+
+\subsubsection{Énoncé}
+
+Exprimer la variation de l'énergie totale d'un système pour faire apparaitre l'énergie interne
+\begin{equation}
+\Delta E_c^\mathrm{macro} + \Delta E_p^\mathrm{macro} + \Delta U = W_\mathrm{nc}^\mathrm{ext} + Q.
+\end{equation}
+Relire la note de bas de page de \cite{Olivier1998} p132 pour expliquer qu'on suppose $W_\mathrm{nc}^\mathrm{micro} = 0$.
+Revenir sur l'exemple introductif.
+
+Se mettre dans le cadre du programme : pas de variation d'énergie potentielle et énergie interne extensive.
+Restreindre au cas courant : $\Delta E_c^\mathrm{macro}=0$ et $W_\mathrm{nc}^\mathrm{ext}$ est le travail des forces de pression.
+Marquer la différence entre les termes de gauche qui sont des fonctions d'état et les termes de droite qui dépendent du chemin suivi \cite{Michel2017} p533 puis passer à la forme infinitésimale.
+\begin{remarque}
+L'énergie interne n'est extensive que si les interactions à longue portée sont inexistante ou négligeable : c'est strictement vrai pour le gaz parfait mais pas dans les autres cas.
+On peut penser à la tension superficielle notamment, qui est toujours négligée.
+\end{remarque}
+
+Insister sur la convention : travail et transfert thermique REÇU par le système comptés positivement.
+
+\begin{transition}
+L'énergie interne résulte essentiellement de l'agitation thermique : on souhaiterait relier $U$ et $T$.
+\end{transition}
+
+\subsubsection{Capacité calorifique}
+
+Suivre \cite{Salamito2016} p839 et première loi de Joule p841.
+Détailler le cas du GP et du solide (loi de Dulong et Petit 1819)
+
+\begin{remarque}
+Pour expliquer que $C_V$ soit définit à volume constant : on cherche à expliquer la variation d'énergie interne causée par un $\delta Q$ seulement.
+Il faut donc annuler le travail des forces de pression en travaillant à volume constant.
+De même pour $C_P$, on souhaite connaitre la variation d'enthalpie causée par un transfert thermique.
+
+\noindent
+Le modèle d'Einstein permet d'expliquer la dépendance en température de la capacité calorifique mais il est remplacé par le modèle de Debye pour expliquer la variation aux basses températures.
+\end{remarque}
+
+\begin{transition}
+Appliquons le premier principe dans le cas de quelques transformations classiques.
+\end{transition}
+
+\subsection{Quelques transformations}
+
+\subsubsection{Détente de Joule Gay-Lussac}
+
+\begin{slide}
+\textbf{Détente de Joule Gay-Lussac.}
+\end{slide}
+
+Suivre \cite{Michel2017} p547.
+Bien poser les hypothèses avant de partir dans le calcul.
+
+\begin{remarque}
+Si l'on fait l'expérience, on voit que juste après l'ouverture de la vanne, le gaz du récipient initialement plein se refroidit et celui du récipient vide se réchauffe.
+En effet le gaz du récipient plein subit une détente adiabatique et celui du récipient vide subit une compression adiabatique.
+Après retour à l'équilibre, la température est bien identique à la température initiale.
+\end{remarque}
+
+Dans le cas du gaz parfait, il n'y a pas d'élévation de la température ce ui peut servir à savoir si un gaz peut être considéré comme un GP.
+
+\begin{remarque}
+Relire l'exercice suivant sur la détente de Joule Thomson au cas où.
+\end{remarque}
+
+\begin{transition}
+On ressent un échauffement lors du gonflage d'un pneu : peut-on l'expliquer avec le premier principe ?
+\end{transition}
+
+\subsubsection{Compression adiabatique}
+
+Suivre \cite{Salamito2016} p903 sur le principe, mais sans force de frottement et en posant une masse $m$ de \unit{5}{\kilo\gram} sur un piston de surface $s=\unit{1}{\centi\meter\squared}$.
+On trouve
+\begin{equation}
+T_f = T_i \frac{5P_0+2P_f}{7P_0} = \unit{729}{\kelvin},
+\end{equation}
+où $P_f = P_0+mg/s$ et $T_0=\unit{300}{\kelvin}$.
+
+\begin{slide}
+\textbf{\href{https://youtu.be/4qe1Ueifekg?t=146}{Fire syringe.}}
+\end{slide}
+
+À partir de cet état final, on laisse évoluer (isobare) le système qui va se refroidir en raison d'un transfert thermique $Q$.
+Faire apparaitre :
+\begin{equation}
+\Delta(U+PV) = Q.
+\end{equation}
+
+\begin{transition}
+Dans une évolution monobare ou isobare, la quantité $U+PV$ est conservée...
+\end{transition}
+
+\subsection{Enthalpie}
+
+\subsubsection{Définition}
+
+Suivre \cite{Salamito2016} p906.
+Donner la définition et l'unité.
+Il peut y avoir d'autres travaux que celui des forces de pression qu'il faut prendre en compte.
+
+Introduire la capacité calorifique à pression constante et la donner pour un GP diatomique, relation de Mayer.
+Donner le cas des phases condensées et justifier que $C_P = C_V$ par leur incompressibilité.
+
+\begin{transition}
+L'enthalpie se prête particulièrement à la calorimétrie comme nous allons le voir.
+\end{transition}
+
+\subsubsection{Calorimétrie}
+
+Présenter le principe \cite{Salamito2016} p915 :
+\begin{itemize}
+\item vase Dewar : limite les transferts thermiques de conduction et radiatifs ;
+\item couvercle percé : peu de convection mais expérience monobare ;
+\item agitateur pour l'équilibre ;
+\item thermomètre car c'est le seul instrument nécessaire.
+\end{itemize}
+Principe de la mesure de capacité thermique \cite{Salamito2016} p916.
+
+\begin{remarque}
+Ne pas oublier que le calorimètre est un composant du système : il faut prendre en compte sa capacité thermique ou la négliger sous les bonnes approximations.
+\end{remarque}
+
+\begin{transition}
+Une application importante de la calorimétrie est la détermination des enthalpies de changement d'état.
+\end{transition}
+
+\subsubsection{Enthalpie de changement d'état}
+
+Suivre \cite{Salamito2016} p917 et adapter au cas de présent.
+
+\begin{experience}
+\textbf{Enthalpie de vaporisation de l'azote liquide.}
+\end{experience}
+
+\subsection*{Conclusion}
+
+L'expérience commune montre que les transferts thermiques se font du corps le plus chaud vers le corps le plus froids : deuxième principe.
+Il est nécessaire pour comprendre le fonctionnement des machines thermiques.
+
+\subsection*{Questions (FD)}
 
 \begin{enumerate}
 \item L'énergie est toujours conservée en physique : ça vient d'où ? Postulé en mécanique newtonienne et démontrable en mécanique lagrangienne par l'intermédiaire du théorème de Noether.
-\item Quel est l'énergie de l'Univers ?
+\item Quelle est l'énergie de l'Univers ?
 \item Qu'est ce qu'une fonction d'état ? C'est une fonction de variables d'état qui définissent l'état d'équilibre d'un système. Pour une transformation, elle ne dépend pas du chemin suivi.
 \item Questions autour de variable/fonction d'état.
 \item Qu'est ce qu'une variable extensive ?
@@ -44,21 +193,5 @@ Il faut donc annuler le travail des forces de pression en travaillant à volume 
 \item Qu'est ce qu'un état d'équilibre ? Équilibre thermique, mécanique et chimique.
 \item Quelle est l'énergie cinétique et l'énergie potentielle du premier principe ? Énergie macroscopique du centre de masse
 \end{enumerate}
-
-\begin{experience}
-\textbf{Template}
-\end{experience}
-
-\begin{slide}
-\textbf{Template}
-\end{slide}
-
-\begin{transition}
-\textbf{Template}
-\end{transition}
-
-\begin{remarque}
-\textbf{Template}
-\end{remarque}
 
 \newpage
