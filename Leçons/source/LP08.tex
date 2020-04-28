@@ -3,8 +3,9 @@
 \begin{header}
 \begin{tabular}{p{0.4\textwidth} l}
 \niveau & \prerequis \\
-Template& \textbullet{} Template \\
-        & \textbullet{} Template \\
+CPGE & \textbullet{} Hydrodynamique : notion de viscosité \\
+     & \textbullet{} Thermodynamique à l'équilibre \\
+     & \textbullet{} Électromagnétisme : loi d'ohm locale, de Joule \\
 \end{tabular}
 
 \noindent
@@ -15,32 +16,252 @@ Template
 {
 \subsubsection*{Bibliographie}
 \footnotesize{}
-%\begin{itemize}
-%\item 
-%\end{itemize}
+\begin{itemize}
+\item \cite{Olivier1998}
+\item \cite{Olivier2000}
+\item \cite{Sanz2016}
+\item \cite{Guyon2001}
+\item \cite{Augier2014}
+\item \cite{Taillet2018}
+\item \cite{Diu2008}
+\end{itemize}
 }
 
+\begin{remarque}
+En l'état, la leçon est probablement un peu catalogue, ce qui va à l'encontre des retours de jury. 
+\end{remarque}
+
+\begin{experience}
+On peut réaliser des expériences qualitatives :
+\begin{itemize}
+\item diffusion d'une goutte d'encre sur un buvard humide ;
+\item simulations de marche aléatoire pour la modélisation microscopique de la diffusion de particules ;
+\end{itemize}
+et quantitatives :
+\begin{itemize}
+\item mesure du coefficient de diffusion du glycérol dans l'eau (TP Fluides - Capilarité ;
+\item conductivité thermique d'un barreau de cuivre (TP Métaux).
+\end{itemize}
+\end{experience}
 
 \subsection*{Introduction}
 
-\subsection{Template}
+Jusqu'à présent en thermodynamique, on s'est intéressé à des systèmes à l'équilibre auxquels on pouvait associer des grandeurs intensives telles que la température ou la pression.
+Le détail des transformations est souvent difficile à étudier car elles peuvent passer par à des systèmes hors équilibres, dans lesquels il existe des transport de plusieurs quantités.
+L'étude de ces phénomènes de transport ne ce restreint pas à la thermodynamique :
+\begin{itemize}
+\item mécanique des fluides : transport de quantité de mouvement ;
+\item thermodynamique : transport d'énergie et de particules ;
+\item électromagnétisme : transport de charge.
+\end{itemize}
 
-\subsubsection{Template}
+L'idée générale est décrite dans \cite{Diu2008} p461 ou l'on étudie le transport de quantités conservées.
 
-\begin{experience}
-\textbf{Template}
-\end{experience}
+\subsection{Généralités}
 
-\begin{slide}
-\textbf{Template}
-\end{slide}
+On va principalement étudier les phénomènes de transport dans le cadre de la thermodynamique tout en établissant les similitudes à d'autres domaines.
+Il faut étudier les phénomènes de transport si le système n'est pas à l'équilibre.
+Cela nécessite de poser quelques hypothèses (linéarité et ETL) que nous allons tout d'abord énoncer.
 
 \begin{transition}
-\textbf{Template}
+Quels sont les phénomènes de transports que nous pouvons rencontrer ?
 \end{transition}
 
+\subsubsection{Différents phénomènes}
+
+Décrit dans \cite{Olivier2000} p342.
+\begin{slide}
+\textbf{Différents phénomènes de transport.}
+Donner quelque exemples \cite{Sanz2016} p89 :
+\begin{itemize}
+\item diffusion : parfum, thermique, viscosité, conduction électrique ;
+\item convection : brassage de l'air, convection forcée ou naturelle ;
+\item rayonnement : prendre l'exemple du vase Dewar.
+\end{itemize}
+\end{slide}
+
+En général il faut considérer tous les phénomènes de transport.
+Cependant, si l'un de ces phénomènes est majoritaire, on peut négliger les autres.
+Prendre le cas de l'énergie thermique et donner l'expression du vecteur densité de courant surfacique et son unité \cite{Sanz2016} p122.
+
 \begin{remarque}
-\textbf{Template}
+À ce stade, on ne précise pas s'il s'agit de conduction, de convection ou de rayonnement.
+Voir \cite{Sanz2016} p148 exercice 3{.}9 pour les modèles sur les différents phénomènes.
+\end{remarque} 
+
+\begin{transition}
+Comme les systèmes étudiés ne sont pas à l'équilibre thermodynamique, il faut faire quelques hypothèses pour étudier ces phénomènes avec les outils de la thermodynamique ou de la mécanique des fluides.
+\end{transition}
+
+\subsubsection{Équilibre thermodynamique local}
+
+Reprendre les hypothèses sur l'étude des phénomènes de transport énoncées dans \cite{Diu2008} p465 en commençant par l'équilibre thermodynamique local \cite{Diu2008} p462, définition p464 et \cite{Olivier2000} p344 ;
+
+Il faut dégager les différentes échelles de temps et d'espace.
+\begin{slide}
+\textbf{Différentes échelles spatiales.}
+Faire le parallèle avec la mécanique des fluides et la notion de particules de fluide.
+\end{slide}
+
+Pour les échelles temporelles, voir \cite{Diu2008} p463.
+
+Faire le bilan énergétique local à 1D en présence de sources de \cite{Sanz2016} et donner l'équivalent 3D.
+
+\begin{transition}
+Pour simplifier l'analyse, on se restreint à des situations proches de l'équilibre ce qui mène à la linéarisation des équations. 
+\end{transition}
+
+\subsubsection{Linéarité}
+
+Approximation linéaire \cite{Diu2008} p476.
+
+Donner la loi de Fourier ainsi que ses limites \cite{Sanz2016} p130-131 et \cite{Olivier2000} p348.
+
+Aboutir à l'équation de diffusion avec source \cite{Sanz2016} p132.
+
+\begin{transition}
+Les deux équations obtenues permettent d'aboutir à une équation rencontrée dans de nombreux domaines de la physique.
+\end{transition}
+
+\subsection{Équation de diffusion}
+
+\subsubsection{Analogies}
+
+Donner l'expression de l'équation de diffusion thermique sans source et mettre en évidence
+\begin{itemize}
+\item la grandeur intensive : $T$ ;
+\item la grandeur extensive conservée : $E$ ;
+\item l'origine de la diffusion : $\grad$ qui donne lieu à un flux de la quantité conservée.
+\end{itemize}
+\cite{Diu2008} p479 sur les conditions initiales nécessaires à la résolution de l'équation.
+
+\begin{slide}
+\textbf{Équation de diffusion.}
+Bien relire \cite{Olivier2000} p361-363 et marquer les limites de l'analogie.
+Pour la viscosité, on se place dans le cas de l'écoulement de Couette plan.
+
+\noindent
+Donner un exemple pour chaque situation :
+\begin{itemize}
+\item barreau de cuivre ;
+\item fibre à gradient d'indice, \cite{Olivier1998} p92 ;
+\item mise en évidence du caractère diffusif de la viscosité \cite{Olivier2000} p444 ;
+\item conduction électrique dans un conducteur.
+\end{itemize}
+\end{slide}
+
+\begin{slide}
+\textbf{Ordres de grandeur.}
+Continuer sur les limites de l'analogie en montrant les différences qui peuvent être énormes entre les ordres de grandeur.
+En revanche, on remarque la proximité des coefficients de diffusion dans les gaz : c'est normal car le même processus microscopique est à l'œuvre : \cite{Olivier2000} p428.
+\end{slide}
+
+Donner la loi d'échelle qui lie temps caractéristique, taille caractéristique et coefficient de diffusion comme \cite{Olivier2000} p354 et \cite{Diu2008} p480.
+
+\begin{remarque}
+Davantage de détails sur la loi de Fick dans \cite{Diu2008} p477, sur la loi d'Ohm p483 et sur le transport de quantité de mouvement p514.
+
+\noindent
+Être conscient que dans les deux cas, le gradient à l'origine du transport porte en toute rigueur sur le potentiel chimique.
+De manière générale, l'inhomogénéité d'une grandeur se traduit par un flux de la grandeur thermodynamique conjuguée \cite{Diu2008} p524.
 \end{remarque}
+
+\begin{transition}
+Cette équation générale décrit un phénomène irréversible : on le voit directement car elle fait intervenir une dérivée première par rapport au temps.
+Un interprétation microscopique permet de comprendre pourquoi.
+\end{transition}
+
+\subsubsection{Caractère irréversible}
+
+Remarque générale de \cite{Olivier2000} et lire \cite{Diu2008} p480.
+
+Bien poser le cadre : étude d'un gaz monoatomique sans mouvement macroscopique ce qui permet de considérer uniquement la diffusion.
+
+\begin{slide}
+\textbf{Diffusion et marche aléatoire.}
+\end{slide}
+
+\begin{remarque}
+Modèle microscopique de la diffusion thermique dans un gaz monoatomique dans \cite{Olivier2000} p351 et de la viscosité p426.
+
+\noindent
+On peut montrer le caractère irréversible de la diffusion thermique en faisant un bilan d'entropie \cite{Sanz2016} p134.
+\end{remarque}
+
+\begin{transition}
+On peut exploiter les propriétés du phénomène de diffusion pour mesurer la conductivité d'un matériau.
+\end{transition}
+
+\subsubsection{Mesure de la conductivité thermique du cuivre}
+
+\begin{experience}
+\textbf{Mesure de la conductivité thermique d'un barreau de cuivre.}
+Valeurs tabulées : 
+\begin{itemize}
+\item $\lambda_\mathrm{Cu}=\unit{390\times 10^{-6}}{\watt\cdot\meter^{-1}\cdot\kelvin^{-1}}$ ;
+\item $\rho_\mathrm{Cu} = \unit{8{,}93\times10^3}{\kilo\gram\cdot\meter^{-3}}$ ;
+\item $c_\mathrm{Cu} = \unit{0{,}382}{\kilo\joule\cdot\kilo\gram^{-1}\cdot\kelvin^{-1}}$ ;
+\item $D_\mathrm{Cu} = \unit{117\times10^{-6}}{\meter^2\cdot\second^{-1}}$.  
+\end{itemize}
+On en déduit un temps caractéristique pour l'établissement du régime permanent de l'ordre de \unit{85}{\second} (pour un barreau de \unit{10}{\centi\meter}).
+\end{experience}
+
+Faire un schéma et résoudre l'équation de Laplace.
+Les conditions aux limites $T(x=0)=T_0$ et ${\cal{P}}=S\lambda\frac{\partial T}{\partial x}$ donnent :
+\begin{equation}
+T(x) = \frac{\cal{P}}{S\lambda} x + T_0.
+\end{equation}
+Comparer la valeur mesurée avec les valeurs tabulées en justifiant l'écart avec le fait que l'intégrale de la puissance électrique fournie à la résistance n'est pas transmise au barreau.
+On doit normalement obtenir une conductivité plus grande que prévue.
+
+\begin{remarque}
+Avoir en tête la loi de Wiedemann-Franz qui lie la conductivité thermique, électrique et la température (voir \href{http://ressources.agreg.phys.ens.fr/ressources/}{TP Métaux}).
+\end{remarque}
+
+\begin{transition}
+On l'a vu la diffusion n'est pas le seul moyen de transport.
+Comment peut-on les comparer ?
+\end{transition}
+
+\subsection{Comparaison entre les différents phénomènes}
+
+\subsubsection{Résistance thermique}
+
+Établir l'expression de la résistance thermique de conduction \cite{Sanz2016} p140, donner la loi de Newton et la résistance associée au rayonnement p148.
+
+\begin{slide}
+\textbf{Résistance thermique en régime permanent.}
+La résistance associée à la convection est donnée pour un \og jour de grand vent \fg{}.
+Donner l'interprétation de cette loi : continuité microscopique sur une couche limite thermique de faible épaisseur qui apparait comme une discontinuité macroscopique \cite{Diu2008} p498.
+\end{slide}
+
+\begin{remarque}
+Remarques sur le transport convectif de chaleur \cite{Guyon2001} p564.
+\end{remarque}
+
+\begin{transition}
+Pour expliquer le comportement d'un système, il est souvent suffisant de tenir compte uniquement du phénomène majoritaire.
+Comme en mécanique des fluides, on peut distinguer différents régime grâce à des nombres addimensionnés.
+\end{transition}
+
+\subsubsection{Phénomène prépondérant}
+
+Exprimer le rapport entre convection en $U \times \rho U$ et diffusion en $\eta \grad U$ et remarquer qu'il s'agit du nombre de Reynolds et revenir sur le rapport entre les termes de l'équation de Navier-Stokes.
+
+Mentionner les nombres de Péclet et Prandtl \cite{Guyon2001} p102-103.
+Application numérique pour une tasse et du sucre :
+\begin{equation}
+Pe = \frac{UL}{D} = \frac{10^{-2}\times 5.10^{-2}}{0,52.10^{-9}} \approx 10^4.
+\end{equation}
+La diffusion est remarquablement inefficace !
+
+\subsection*{Conclusion}
+
+\begin{slide}
+\textbf{Obtention de très basses températures  : un cryostat à dilution.}
+Récapituler les différents transferts thermiques qu'il est nécessaire contrôler pour obtenir des température aussi basses. 
+\end{slide}
+
+Ouvrir sur l'effet Seebeck, Peltier \cite{Diu2008} p518 et suivantes.
 
 \newpage

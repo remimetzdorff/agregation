@@ -164,7 +164,7 @@ class Fit():
                 guess_params = autoguess_params
             except:
                 guess_params = None
-        fit_params, pcov = curve_fit(self.func, self.x, self.y, sigma=self.uy, p0=guess_params)
+        fit_params, pcov = curve_fit(self.func, self.x, self.y, sigma=self.uy, p0=guess_params, maxfev=50000)
         self.fit_params = fit_params
         self.fit_uparams = np.sqrt(np.abs(np.diagonal(pcov)))
         if verbosemode is None:
