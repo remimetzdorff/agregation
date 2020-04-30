@@ -3,50 +3,263 @@
 \begin{header}
 \begin{tabular}{p{0.4\textwidth} l}
 \niveau & \prerequis \\
-Template& \textbullet{} Template \\
-        & \textbullet{} Template \\
+Licence & \textbullet{} Optique géométrique \\
+		& \textbullet{} Optique ondulatoire \\
+        & \textbullet{} Diffraction \\
+        & \textbullet{} Interférences \\
+        & \textbullet{} Polarisation
 \end{tabular}
 
 \noindent
 \objectif
-Template
+Comprendre le fonctionnement et les caractéristiques du microscope à deux lentilles, ses limitations et présenter une technique moderne.
 \end{header}
 
 {
 \subsubsection*{Bibliographie}
 \footnotesize{}
-%\begin{itemize}
-%\item 
-%\end{itemize}
+\begin{itemize}
+\item \href{http://www.agregation-physique.org/index.php/annales-des-epreuves-ecrites/54-sujets-et-corriges-annee-2015}{Sujet de l'agrégation externe de 2015} : Microscopies
+\item \href{http://www.lkb.upmc.fr/cqed/teaching/teachingsayrin/}{TD d'optique de Clément Sayrin} : Optique géométrique et Diffraction(2) : Applications
+\item \cite{Hecht2002}
+\item \cite{Perez2017}
+\item \cite{Salamito2016}
+\item \cite{Sanz2016}
+\item \cite{Wastiaux1994}
+\item \href{https://www.nikonsmallworld.com/techniques}{Nikon Small World}
+\item \href{https://www.microscopyu.com/}{MicroscopyU}
+\item \cite{Kastler1948} \href{bupdoc.udppc.asso.fr/consultation/article-bup.php?ID_fiche=3494}{BUP}
+\item \cite{Faget1962} \href{bupdoc.udppc.asso.fr/consultation/article-bup.php?ID_fiche=15314}{BUP}
+\item \cite{Zanier2015} : des manips de malade sur le filtrage dans l'espace de Fourier.
+\end{itemize}
 }
 
 \begin{remarque}
-L'ouverture numérique $n\sin\theta$ est aussi l'invariant de Lagrange du microscope car il est invariant au cours du trajet dans le microscope.
+Une technique moderne est explicitement attendue par le jury.
+Il faut garder du temps pour la présenter correctement.
 
 \noindent
-Parler de l'\href{http://www.optique-ingenieur.org/fr/cours/OPI_fr_M03_C03/co/Contenu_03.html}{éclairage de Köhler} et de l'éclairage en général : pas au cœur de la leçon mais 
-
-\noindent
-Autres types de microscopie optique : confocale, de champ proche, à deux photons, super résolution.
-Être conscient que souvent ce n'est pas l'œil qui est utilisé comme capteur.
-
-\noindent
-Parler de lentille de tube dans les microscopies récentes qui permet d'avoir un éclairage parallèle dans le tube pour utiliser des composants optiques variés facilement.
-Grâce à ça on peut faire un zoom : adapter le grossissement sans changer d'objectif.
-
-\noindent
-Il faut garder du temps pour parler des méthodes récentes : pas passer trop de temps sur la diffraction qui n'est pas propre au microscope.
-
-\noindent
-Pour parler de microscopie confocale, il faut parler de profondeur de champ.
+Deux façons possibles de faire cette leçon :
+\begin{enumerate}
+\item présenter le microscope à deux lentilles pour illustrer les caractéristiques d'un microscope et présenter plus qualitativement une technique moderne ;
+\item supposer en pré-requis que le microscope à deux lentilles est connu et présenter directement des méthodes modernes.
+Probablement trop ambitieux...
+Et pour le coup, difficile de caser la manip quantitative dans la leçon.
+\end{enumerate}
 \end{remarque}
-
 
 \subsection*{Introduction}
 
-\subsection{Template}
+\begin{slide}
+\textbf{Petite histoire du microscope moderne.}
+Voir la \href{https://fr.wikipedia.org/wiki/Microscope_optique}{page Wikipedia} sur la microscopie optique pour l'historique.
+\end{slide}
 
-\subsubsection{Template}
+\subsection{Microscope à deux lentilles}
+
+Dans cette partie on dégage les propriétés du microscope à deux lentilles tout en le construisant en live.
+Faire des schéma propres !
+Les calculs sont fait dans le TD de Clément Sayrin.
+
+\begin{experience}
+\textbf{Modélisation de l'oeil.}
+Faire l'image d'un objet par une lentille de focale \unit{33}{\centi\meter} sur un écran.
+Introduire le punctum proximum (pp) qui limite la taille de l'objet que l'on peut voir et donner sa valeur.
+\end{experience}
+
+L'idée du microscope est d'obtenir une image agrandie que l'on observe ensuite à la loupe.
+C'est un dispositif optique centré.
+
+\begin{transition}
+Voyons une première partie du microscope : l'oculaire.
+\end{transition}
+
+\subsubsection{L'oculaire}
+
+Dire que l'oculaire agit comme une loupe, donner son grossissement commercial.
+L'image à l'infini permet une observation sans fatigue car l'œil n'accommode pas.
+
+\begin{experience}
+\textbf{Grossissement par une loupe.}
+Utiliser une lentille de focale \unit{20}{\centi\meter} avec le faux œil.
+\end{experience}
+
+Montrer l'oculaire du microscope de la collection et donner ses caractéristiques.
+à comparer à une lentille simple : les grossissements commerciaux accessibles sont limités à 2 ou 3.
+Des focales plus courtes présentes des aberrations importantes.
+
+\begin{remarque}
+Lire \cite{Hecht2002} p222 pour les raisons qui limitent le grossissement d'une simple loupe.
+\end{remarque}
+
+\begin{transition}
+On peut augmenter l'efficacité du dispositif en formant au préalable une image agrandie de l'objet, c'est le rôle de l'objectif.
+\end{transition}
+
+\subsubsection{L'objectif}
+
+\begin{experience}
+\textbf{Modifier le montage pour y insérer l'objectif de focale \unit{10}{\centi\meter}.}
+Expliquer en même temps le principe.
+\end{experience}
+
+Exprimer le grandissement de l'objectif.
+En plaçant le foyer objet de l'objectif proche de l'objet, on obtient un fort grandissement.
+La focale de l'objectif doit être courte pour obtenir des dispositifs compacts.
+L'obtention de courtes focales propres est délicate : l'objectif est un système complexe.
+
+\begin{transition}
+On a tout pour faire un microscope.
+\end{transition}
+
+\subsubsection{Caractéristiques du microscope}
+
+Établir l'expression du grandissement commercial du microscope et l'exprimer en fonction des caractéristiques de l'objectif et de l'oculaire.
+Introduire la longueur de tube (typiquement \unit{160}{\milli\meter}).
+Donner des valeurs classiques : oculaire $\times 10$ et objectif $\times 10$ jusqu'à $\times 100$.
+
+\begin{experience}
+\textbf{Mesure du grossissement commercial du microscope de la collection.}
+Montrer le cercle oculaire.
+\end{experience}
+
+\begin{slide}
+\textbf{Microscope à deux lentilles.}
+Parler des diaphragmes de champ et d'ouverture en réalité, le diaphragme d'ouverture est tellement proche de l'objectif qu'il s'agit de la lentille elle même.
+La puissance intrinsèque est le rapport de l'angle sous lequel on voit l'objet à travers le microscope et la taille de l'objet : voir question 10 du sujet.
+La profondeur de champ définie ici est propre à l'observation à l'œil, mais être conscient que souvent ce n'est pas l'œil qui est utilisé comme capteur.
+La profondeur de champ est alors définie de manière classique.
+Donner l'ordre de grandeur : quelques microns.
+\end{slide}
+
+\begin{remarque}
+Transition vers les microscopes actuels : lentille de tube qui permet d'avoir des rayons parallèles dans le tube pour utiliser des composants optiques variés facilement : on n'est plus sensible à la position longitudinale.
+Grâce à ça on peut notamment faire un zoom : adapter le grossissement sans changer d'objectif.
+\end{remarque}
+
+\begin{transition}
+La conception de microscopes performants est soumise à de nombreuses contraintes.
+Il faut tenir compte des phénomènes qui peuvent limiter la qualité de l'image obtenue pour les atténuer.
+\end{transition}
+
+\subsection{Limitations}
+
+\subsubsection{Résolution latérale}
+
+Pas passer trop de temps sur cette partie qui n'est pas propre au microscope.
+
+\begin{slide}
+\textbf{Critère de Rayleigh.}
+\end{slide} 
+
+Justifier que le diaphragme d'ouverture est l'objet diffractant : question 34 du sujet.
+Établir l'expression de résolution latérale minimale : question 35 et 36.
+Donner la résolution maximale accessible : de l'ordre de la longueur d'onde.
+
+\begin{slide}
+\textbf{Objectif à immersion.}
+\end{slide}
+
+\begin{remarque}
+La quantité $nAB\sin\theta$ est appelé invariant de Lagrange-Helmohltz et est conservée au cours du trajet dans le microscope.
+Voir condition du sinus d'Abbe qui traduit mathématiquement l'aplanétisme du système.
+
+\noindent
+Les techniques permettant d'aller au delà de la limite de diffraction sont dite super-résolues.
+Elles sont basées sur l'utilisation de molécules fluorescentes et utilisent des méthodes d'éclairage très particulières.
+On peut citer la méthode \href{https://science.sciencemag.org/content/313/5793/1642}{PALM} par exemple, qui a été récompensée par le prix Nobel de chimie 2014.
+Voir aussi la \href{https://fr.wikipedia.org/wiki/Microscopie_PALM}{page Wikipedia} ou mieux \href{https://www.microscopyu.com/techniques/super-resolution/single-molecule-super-resolution-imaging}{MicroscopyU}.
+
+\noindent
+Il existe aussi une limite de diffraction longitudinale : voir \href{https://www.microscopyu.com/techniques/super-resolution/the-diffraction-barrier-in-optical-microscopy}{MicroscopyU}.
+\end{remarque}
+
+\begin{transition}
+Augmenter l'ouverture numérique n'est pas sans conséquence sur le choix des optiques du microscope.
+\end{transition}
+
+\subsubsection{Aberrations}
+
+\begin{slide}
+\textbf{Aberrations.}
+Si le temps le permet, relire \cite{Hecht2002} p266.
+\end{slide}
+
+\begin{remarque}
+Il existe des doublets achromatiques qui corrigent les aberrations chromatiques pour deux longueurs d'ondes et géométriques pour une, mais il existe aussi des \href{https://fr.wikipedia.org/wiki/Triplet_apochromatique}{triplets apochromatiques} qui corrigent les abérations chromatiques pour trois longueurs d'onde et géométriques pour deux.
+\end{remarque}
+
+\begin{transition}
+L'éclairage est un élément important pour la qualité des observations.
+\end{transition}
+
+\subsubsection{Éclairage}
+
+Sauter cette section si manque de temps.
+
+Un bon éclairage est fondamental pour obtenir des images de qualité : il faut un éclairage intense pour obtenir une image lumineuse mais aussi uniforme.
+Si l'on focalise les rayons issus de la source, on fait l'image du filament sur la préparation : le filament sera aussi visible à travers le microscope.
+On peut utiliser des diffuseurs mais le mieux est de réaliser un \href{http://www.optique-ingenieur.org/fr/cours/OPI_fr_M03_C03/co/Contenu_03.html}{éclairage de Köhler}.
+
+\begin{remarque}
+Dans l'éclairage de Köhler, le diaphragme d'ouverture permet non seulement d'ajuster la luminosité de l'image mais aussi le degré de cohérence spatiale de l'image.
+Si le diaphragme est quasiment fermé, on se rapproche d'une source ponctuelle et l'éclairage est cohérent.
+La cohérence de l'éclairage modifie la résolution, le contraste et la profondeur de champ.
+Voir dans le Taillet ou Houard s'il y a plus d'infos. 
+\end{remarque}
+
+\begin{transition}
+Le principe du microscope présenté jusqu'ici repose sur l'utilisation d'objets faisant varier l'intensité du faisceau d'illumination.
+De nombreux objets sont transparent et leur observation par des méthodes classiques donne lieu à des images faiblement contrastées.
+\end{transition}
+
+\subsection{Microscopie à contraste de phase}
+
+Relire le raisonnement de \cite{Kastler1948} et \href{https://www.microscopyu.com/techniques/phase-contrast/introduction-to-phase-contrast-microscopy}{Introduction to phase contrast microscopy}.
+
+Commencer par faire un schéma de principe de la diffraction de Fraunhofer en ajoutant la lentille de l'oculaire \cite{Faget1962} : éclairement par une source ponctuelle au foyer objet d'une lentille et observation de l'image de la préparation sur un écran.
+Mettre en évidence le plan de Fourier et expliquer qualitativement le principe en raisonnant en transformée et transformée inverse de Fourier (fait dans le Taillet).
+
+Faire le calcul du Bruhat.
+On éclaire la préparation, considérée comme un objet de phase, en $A\sin(\omega t)$.
+Après la préparation, l'amplitude de l'onde est 
+\begin{equation}
+A\sin(\omega t +\varphi) = A\varphi\sin(\omega t) + A\cos(\omega t),
+\end{equation}
+si les variations de phase introduites par l'objet sont suffisamment faibles.
+Le premier terme porte l'information sur la phase et correspond au faisceau diffracté, le deuxième étant seulement responsable de l'éclairement.
+Deux options dans le plan de Fourier :
+\begin{itemize}
+\item cacher le centre du plan de Fourier pour éliminer la composante d'éclairement.
+L'image de la préparation est donc en $\varphi^2$ ce qui n'est pas idéal car pas d'information sur le signe de la phase et image très peu lumineuse.
+\item déphaser l'un des deux faisceaux de $\pi/2$ avec une lame quart d'onde.
+On obtient alors une image en $1+2\varphi$ au premier ordre en $\varphi$.
+\end{itemize}
+Dans les deux cas, on a bien transformé des variations de phase en variation d'intensité.
+
+Méthode mise au point par Zernike dans la première moité du $\mathrm{XX^e}$ siècle qui lui a valu le prix Nobel de physique en 1953.
+Donner les avantages : pas besoin de marquer la préparation et donc souvent de la tuer, observations en temps réel...
+
+\begin{slide}
+\textbf{Contraste de phase.}
+Pas sûr de comprendre pourquoi on utilise en pratique des ouvertures sous forme d'anneau.
+\end{slide}
+
+\subsection*{Conclusion}
+
+On récapitule la leçon et on ouvre sur d'autres techniques modernes avec des jolies photos !
+
+\begin{slide}
+\textbf{Éclairage.}
+\end{slide}
+
+\begin{slide}
+\textbf{Microscopie à contraste de phase.}
+\end{slide}
+
+\begin{slide}
+\textbf{Et bien d'autres...}
+\end{slide}
 
 \subsection*{Questions (JH)}
 
