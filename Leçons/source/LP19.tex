@@ -3,48 +3,181 @@
 \begin{header}
 \begin{tabular}{p{0.4\textwidth} l}
 \niveau & \prerequis \\
-Template& \textbullet{} Template \\
-        & \textbullet{} Template \\
+Licence & \textbullet{} Modèle scalaire des ondes lumineuses \\
+        & \textbullet{} Interférence \\
+        & \textbullet{} Transformée de Fourier
 \end{tabular}
 
 \noindent
 \objectif
-Template
+Dégager les principales propriétés du phénomène de diffraction dans l'approximation de Fraunhofer et mettre en évidence son rôle dans la formation des images.
 \end{header}
 
 {
 \subsubsection*{Bibliographie}
 \footnotesize{}
-%\begin{itemize}
-%\item 
-%\end{itemize}
+\begin{itemize}
+\item \cite{Sanz2016}
+\item \cite{Olivier2000}
+\item \cite{Fruchart2016}
+\item \cite{Hecht2002}
+\item \cite{Sayrin2019} : \href{http://www.lkb.upmc.fr/cqed/teaching/teachingsayrin/}{TD d'optique de Clément Sayrin}, Diffraction (1) et Difraction (2) : Applications
+\end{itemize}
 }
 
-
 \begin{remarque}
-nombre de Fresnel, apodisation 
+Dans le cadre des nouveaux programmes de CPGE, la diffraction est vue essentiellement à travers l'étude des fréquences spatiales de l'objet diffractant et seulement dans l'approximation de Fraunhofer.
+On ne peut donc placer cette leçon qu'en licence.
 \end{remarque}
 
 \subsection*{Introduction}
 
-\subsection{Template}
-
-\subsubsection{Template}
-
 \begin{experience}
-\textbf{Template}
+\textbf{Fente simple éclairée par un laser.}
+L'objectif de cette expérience est simplement de mettre en évidence le phénomène de diffraction : on ne cherche pas à être strictement dans les conditions de Fraunhofer même si on les approche largement.
+Relire \cite{Fruchart2016} p284 et 319 pour de arguments basés sur le nombre de Fresnel.
 \end{experience}
 
+La diffraction apparait dès lors qu'une onde est limitée transversalement quelque soit la nature de l'onde.
+
 \begin{slide}
-\textbf{Template}
+\textbf{Limite de résolution des instruments optiques liée à la diffraction.}
+L'image de droite est pixelisée mais avoir des capteurs plus précis est ici inutile car la diffraction donne des taches plus grandes que la taille d'un pixel.
 \end{slide}
 
-\begin{transition}
-\textbf{Template}
-\end{transition}
+Dire que l'on va aussi voir des cas où la diffraction peut être utilisée pour du filtrage dans l'espace de Fourier.
+
+\subsection{Description de la diffraction}
+
+\subsubsection{Principe de Huygens-Fresnel}
+
+On sait que la lumière peut être transmise, réfléchie, réfractée mais aussi diffractée : travaux de Grimaldi du milieu du $\mathrm{XVIIe}$ siècle \cite{Sanz2016} p833.
+Donner les principaux noms associés à la diffraction : Huygens, Fresnel, Kirchoff \cite{Sanz2016} p833-834.
+
+Faire un schéma et énoncer le principe d'Huygens-Fresnel et donner son expression mathématique en oubliant le facteur $A(\theta)$ : \cite{Sayrin2019} p1.
 
 \begin{remarque}
-\textbf{Template}
+La diffraction de Fraunhofer a été nommée en hommage à ce dernier même s'il n'a pas pris part directement au développement de la théorie.
+
+\noindent
+Savoir parler du théorème de Fresnel-Kirchhoff, expression plus tardive démontrée à partir de solutions aux équations de Maxwell \cite{Fruchart2016} p296 pour la version courte ou \cite{Hecht2002} p527.
 \end{remarque}
+
+\begin{transition}
+Ajoutons un objet diffractant.
+\end{transition}
+
+\subsubsection{Diffraction par un objet quelconque}
+
+Suivre \cite{Sayrin2019} p2.
+Il faut faire attention à bien justifier l'ordre auquel on fait le DL :
+\begin{itemize}
+\item pour l'amplitude : ordre 0 car des petites variations vont très légèrement modifier l'intensité sur l'écran.
+\item pour la phase : ordre 2 car il faut tenir compte des termes qui modifient le chemin optique à l'échelle de la longueur d'onde.
+\end{itemize}
+Attention aussi à justifier correctement l'omission des termes constants sur la pupille dans l'expression de la phase.
+
+\begin{transition}
+On peut encore simplifier cette relation en se plaçant dans le cadre de l'approximation de Fraunhofer.
+\end{transition}
+
+\subsubsection{Approximation de Fraunhofer}
+
+Sous certaines conditions, on peut négliger les termes quadratiques restants.
+Arriver à l'expression finale \cite{Sayrin2019} p2 et reconnaitre la transformée de Fourier de la transmission de l'objet diffractant \cite{Sayrin2019} (2) p5.
+Introduire la notion de fréquence spatiale.
+
+Donner les cas pratiques de l'observation de la diffraction de Fraunhofer \cite{Sayrin2019} p3 en les illustrant par l'experience.
+
+\begin{experience}
+\textbf{Montage à une lentille pour la diffraction de Fraunhofer.}
+Faire d'abord le montage à deux lentilles et e ramener à une seule.
+Il faut être très clair sur cette partie et en conclure que la diffraction intervient dans la formation des images.
+\end{experience}
+
+\begin{remarque}
+Pour simplifier, on peut peut être mener tout ces calculs en supposant $\alpha_0 = \beta_0 = 0$, c'est-à-dire que le vecteur d'onde incident est normal à la surface de l'objet diffractant et donner à l'oral l'effet qu'aura une incidence quelconque : déplacement de l'image géométrique donc déplacement de la figure de diffraction.
+
+\noindent
+Le nombre de Fresnel \cite{Fruchart2016} p284 permet de savoir si l'on est dans le cadre de la diffraction de champ proche (Fresnel) ou bien dans celui de la diffraction de champ lointain (Fraunhofer).
+
+\noindent
+Voir le Sextant p139 pour une autre interprétation du montage à une lentille.
+\end{remarque}
+
+\begin{transition}
+Voyons quelques figures classiques de diffraction. 
+\end{transition}
+
+\subsection{Figures de diffractions}
+
+\subsubsection{Fente rectangulaire}
+
+Donner l'expression de l'éclairement sur l'écran obtenu dans le cas d'une fente rectangulaire \cite{Sayrin2019} p4 en faisant directement Intervenir une transformée de Fourier d'une fonction rectangle.
+Expliquer l'image obtenue sur l'écran : pas de diffraction dans la direction de la petite fréquence spatiale.
+
+\begin{experience}
+\textbf{Largeur de la tache de diffraction associée à une fente fine.}
+Mesurer la largeur de la tache centrale en fonction de la largeur de la fente source.
+Mettre aussi en évidence que la position de la fente n'influe pas sur la position de la figure d'interférence.
+\end{experience}
+
+\begin{transition}
+La plupart des instruments optiques ont plutôt une ouverture circulaire.
+\end{transition}
+
+\subsubsection{Ouverture circulaire}
+
+Encadrer le diamètre de la tache de diffraction avec deux carrés : \cite{Sayrin2019} p4.
+Dire qu'en réalité, il faut faire intervenir une fonction de Bessel de première espèce et donner l'expression du diamètre angulaire en fonction du rayon de l'ouverture.
+
+\begin{experience}
+\textbf{Tache d'Airy.}
+On peut éventuellement montrer l'expérience avec les spores de lycopode pour parler du théorème de Babinet : dans ce cas il faudrait sans doute aller jusqu'au bout de l'expérience et mesurer la taille de la tache d'Airy pour en déduire la taille des spores.
+\end{experience}
+
+\begin{transition}
+Revenons sur les limites de résolutions.
+\end{transition}
+
+\subsubsection{Limites de résolutions}
+
+\begin{slide}
+\textbf{Critère de Rayleigh.}
+\end{slide}
+
+\begin{remarque}
+On peut parler de beaucoup de choses ici : astronomie, microscopie, etc.
+À adapter donc en fonction du temps.
+Relire le principe de l'apodisation \cite{Sayrin2019} (2) et se rappeler que c'est le même principe que le fenêtrage effectué lors des mesures de spectres.
+C'est normal, on procède également à une transformée de Fourier du signal tronqué.
+\end{remarque}
+
+\begin{transition}
+La diffraction n'est pas toujours un problème
+\end{transition}
+
+\subsection{Filtrage}
+
+\begin{experience}
+\textbf{Croix d'Abbe.}
+Montrer la figure de diffraction, dire que c'est la TF de l'objet diffractant et montrer l'image de la grille, TF inverse de la figure de diffraction.
+Raisonner en terme de fréquence spatiale : les faibles fréquences spatiales donnent des faisceaux proches de l'image géométrique et inversement.
+Que se passe-t-il si on élimine les composantes haute fréquence du spectre dans l'espace de Fourier ?
+On agit directement sur le spectre et on peut supprimer des composantes de l'image.
+\end{experience}
+
+Applications : microscopie de champ sombre, microscopie à contraste de phase, strioscopie, filtrage d'image, etc.
+
+\begin{slide}
+\textbf{\href{https://youtu.be/4tgOyU34D44?t=11}{Strioscopie.}}
+Voir \cite{Hecht2002} p638 sur la méthode de Schlieren.
+\end{slide}
+
+\subsection*{Conclusion}
+
+Faire ressortir que malgré la lourdeur apparente du formalisme mathématique associé au phénomène de diffraction, on peut déduire simplement l'allure de la tache de diffraction dans associé à un objet diffractant en étudiant les fréquences spatiales de l'objet.
+Redonner les limitations dues à la diffraction mais aussi rappeler qu'on peut en tirer profit avec l'optique de Fourier : il s'agit d'un filtrage analogique.
+Ce n'est pas le seul cas ou le filtrage spectral est utilisé.
 
 \newpage
