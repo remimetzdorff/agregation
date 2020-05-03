@@ -35,6 +35,10 @@ Comprendre le fonctionnement et les caractéristiques du microscope à deux lent
 }
 
 \begin{remarque}
+La leçon est placée niveau licence à cause de la dernière partie qui n'est pas explicitement au programme de CPGE.
+Il me semble toutefois que le programme de CPGE fournit tous les pré-requis nécessaires à la compréhension de la microscopie à contraste de phase et de la microscopie confocale.
+
+\noindent
 Une technique moderne est explicitement attendue par le jury.
 Il faut garder du temps pour la présenter correctement.
 
@@ -155,6 +159,15 @@ Pas passer trop de temps sur cette partie qui n'est pas propre au microscope.
 Justifier que le diaphragme d'ouverture est l'objet diffractant : question 34 du sujet.
 Établir l'expression de résolution latérale minimale : question 35 et 36.
 Donner la résolution maximale accessible : de l'ordre de la longueur d'onde.
+\begin{remarque}
+D'après cette relation, la solution la plus efficace pour améliorer la résolution est de diminuer la longueur d'onde.
+Le gain est toutefois limité si l'on souhaite rester dans l'optique : la microscopie électronique a été développée justement parce qu'en jouant sur l'énergie des électrons, on peut descendre à des longueurs de de Broglie très faibles :
+\begin{equation}
+\lambda_\mathrm{deBroglie} = \frac{h}{p} = \frac{h}{\gamma mv}
+\end{equation}
+où $\gamma$ est le facteur de Lorentz.
+Avec une énergie de \unit{100}{keV}, on trouve $\lambda_\mathrm{deBroglie}=\unit{3{,}7}{\pico\meter}$.
+\end{remarque}
 
 \begin{slide}
 \textbf{Objectif à immersion.}
@@ -240,9 +253,15 @@ Dans les deux cas, on a bien transformé des variations de phase en variation d'
 Méthode mise au point par Zernike dans la première moité du $\mathrm{XX^e}$ siècle qui lui a valu le prix Nobel de physique en 1953.
 Donner les avantages : pas besoin de marquer la préparation et donc souvent de la tuer, observations en temps réel...
 
+\begin{remarque}
+Dans le cas où l'on ne fait que bloquer le faisceau non diffracté, cette méthode se rapproche de la microscopie en fond noir.
+Dans ce cas le contraste est très grand mais l'image est très peu lumineuse.
+\end{remarque}
+
 \begin{slide}
 \textbf{Contraste de phase.}
-Pas sûr de comprendre pourquoi on utilise en pratique des ouvertures sous forme d'anneau.
+Pas sûr de comprendre pourquoi on utilise en pratique des ouvertures sous forme d'anneau : il semble que ce soit pour augmenter le contraste.
+Les objets masquants sont partiellement opaques et déphasants : c'est la microscopie de Zernike.
 \end{slide}
 
 \subsection*{Conclusion}
@@ -260,6 +279,16 @@ On récapitule la leçon et on ouvre sur d'autres techniques modernes avec des j
 \begin{slide}
 \textbf{Et bien d'autres...}
 \end{slide}
+
+\begin{funfact}
+Prix Nobel associés à la microscopie optique :
+\begin{itemize}
+\item 1953 (physique) : Frits (Frederik) Zernike pour la microscopie à contraste de phase ;
+\item 1984 (physiologie ou médecine) : Georges J.F. Köhler pour ses travaux en rapport avec le système immunitaire ;
+\item 2014 (chimie) : Eric Betzig pour la microscopie à fluorescence super-résolue.
+\end{itemize}
+Il y en a encore bien d'autres pour les microscopies autres qu'optique.
+\end{funfact}
 
 \subsection*{Questions (JH)}
 

@@ -3,44 +3,235 @@
 \begin{header}
 \begin{tabular}{p{0.4\textwidth} l}
 \niveau & \prerequis \\
-Template& \textbullet{} Template \\
-        & \textbullet{} Template \\
+CPGE    & \textbullet{} Interférences à deux ondes \\
+        & \textbullet{} Notions de cohérence spatiale et temporelle \\
+        & \textbullet{} Phénomène de résonance
 \end{tabular}
 
 \noindent
 \objectif
-Template
+Mettre en évidence l'intérêt des dispositifs à division d'amplitude par rapport aux dispositifs à division du front d'onde et dégager les contraintes d'observation d'interférences liées à l'incohérence de la source.
+Il faut parler d'applications.
 \end{header}
 
 {
 \subsubsection*{Bibliographie}
 \footnotesize{}
-%\begin{itemize}
-%\item 
-%\end{itemize}
+\begin{itemize}
+\item \cite{Olivier2000}
+\item \cite{Sanz2016}
+\item \cite{Fruchart2016}
+\item \cite{Graner2011}
+\item \cite{Augier2014}
+\item \cite{Mauras2001}
+\item \cite{Perez2017}
+\item \cite{Hecht2002}
+\item \href{http://www.lkb.upmc.fr/cqed/teaching/teachingsayrin/}{TD d'optique de Clément Sayrin} : Interférences -- Notions de cohérence
+\item \href{https://youtu.be/iEcw8I-_ty4?list=PLIlsLCejddaM4czs3fZsSIYguEFxmiGR-}{Interféromètre de Michelson (1/5) : les trois configurations qu'il faut retenir} : vidéo de E-Learning Physique pour se remettre au clair sur l'utilisation de l'interféromètre de Michelson en division d'amplitude ou non.
+\end{itemize}
 }
 
+\begin{remarque}
+L'interféromètre de Michelson est l'outil de la cohérence temporelle !
+\end{remarque}
 
 \subsection*{Introduction}
 
-\subsection{Template}
-
-\subsubsection{Template}
-
 \begin{experience}
-\textbf{Template}
+\textbf{Fentes d'Young éclairées par une source étendue.}
+Mettre en évidence la diminution du contraste avec l'augmentation de la largeur de la fente source.
 \end{experience}
 
+On voit dans cette expérience le problème des interféromètres à division du front d'onde lorsqu'ils sont éclairés par une source étendue incohérente spatialement.
+En dehors de l'aspect historique de cette expérience pour la mise en évidence du caractère ondulatoire de la lumière, la dépendance du contraste avec la largeur de la source est utilisé par exemple pour mesurer la diamètre apparent d'une étoile.
+
+Ces méthodes interférométriques ne permettent cependant pas d'introduire de différences de marche très importantes et se limitent à des figures peu lumineuses.
+L'utilisation d'interféromètres à division d'amplitude permet de palier à ces deux problèmes mais nécessite des conditions d'éclairement et d'observation particulières.
+Nous présenterons en particulier l'interféromètre de Michelson, outil indispensable de la physique expérimentale moderne comme on le verra à travers quelques applications.
+
+\subsection{Division d'amplitude}
+
+\subsubsection{Division d'amplitude ou division du front d'onde ?}
+
 \begin{slide}
-\textbf{Template}
+\textbf{Division du front d'onde ou division d'amplitude ?}
+Bien mentionner le fait que la présence d'une séparatrice n'est pas suffisante pour obtenir de la division d'amplitude.
+\end{slide}
+
+La présence d'une séparatrice est nécessaire pour la division d'amplitude : cela peut être un simple dioptre air-verre, une lame recouverte d'un dépôt métallique ou diélectrique.
+Donner le théorème de localisation \cite{Mauras2001} p159.
+Si la source est ponctuelle, les interférences ne sont localisées dans aucun des deux cas.
+Si la source est étendue, la localisation des interférences apparait.
+
+Au cours de la leçon, on va se poser deux questions :
+\begin{itemize}
+\item comment le dispositif interférentiel est-il éclairé ?
+\item où regarder pour observer des interférences.
+\end{itemize}
+
+\begin{transition}
+Voyons un premier cas très simple d'interféromètre à division d'amplitude : une simple lame de verre.
+\end{transition}
+
+\subsubsection{Lame à faces parallèles}
+
+Faire le calcul de la différence de marche du TD de Clément Sayrin p8-9 en supposant une source monochromatique et en ne considérant que deux réflexions. 
+Retrouver le résultat par un raisonnement géométrique : on suppose deux dioptres fictifs qui n'introduisent pas de déviation et on trouve la position des sources fictives d'où viennent les rayons qui interfèrent.
+Souligner que, pour une lame donnée, le seul paramètre influençant la différence de marche est l'inclinaison du rayon incident.
+\begin{remarque}
+On peut peut-être faire directement le raisonnement géométrique pour gagner du temps. 
+
+\noindent
+Dans un premier temps, on ne considère que deux faisceaux dans le cas d'une lame de verre : en intensité la première réflexion représente \unit{4}{\%} de la lumière incidente, la deuxième \unit{3{,}7}{\%} et la troisième seulement \unit{59}{ppm} ce qui peut être négligé \cite{Olivier2000} p809.
+On peut aussi le justifier a posteriori par l'idée des miroirs fictifs du Michelson replié.
+\end{remarque}
+
+\begin{slide}
+\textbf{Figure d'interférence dans le cas de deux sources ponctuelles.}
+Pour introduire les anneaux d'égale inclinaison.
+\end{slide}
+
+Traiter qualitativement le cas d'une source incohérente étendue spatialement : les figures d'interférence de chaque point de la source sont décalées et les intensités s'ajoutent ce qui diminue le contraste, sauf si l'on regarde à l'infini c'est à dire dans le plan focal d'une lentille.
+
+\begin{remarque}
+Les anneaux d'égale inclinaison sont aussi appelés anneaux de Haidinger.
+\end{remarque}
+
+\begin{transition}
+Une simple lame de verre n'est pas pratique à utiliser.
+Voyons un dispositif interférométrique à division d'amplitude réel : l'interféromètre de Michelson.
+\end{transition}
+
+\subsection{L'interféromètre de Michelson}
+
+\begin{remarque}
+Le développement de l'interféromètre de Michelson remonte à la fin du $\mathrm{XIX^e}$ siècle avec l'expérience de Michelson et Morley visant à démontrer l'existence de l'éther : \href{https://fr.wikipedia.org/wiki/Exp\%C3\%A9rience_de_Michelson_et_Morley}{Wikipedia}, \href{https://owl-ge.ch/travaux-d-eleves/2007-2008/article/l-experience-de-michelson-morley}{Apprendre en ligne}, \href{http://culturesciencesphysique.ens-lyon.fr/ressource/physique-animee-Michelson-Morley.xml}{Culture sciences physique}.
+\end{remarque}
+
+\subsubsection{Configuration lame d'air}
+
+Présenter les différents éléments de l'interféromètre sur le modèle de TP :
+\begin{itemize}
+\item miroirs avec leurs montures dont le dispositif de chariotage ;
+\item séparatrice et compensatrice ;
+\item filtre antithermique.
+\end{itemize}
+
+Faire un schéma et se ramener à la lame d'air \cite{Olivier2000} p61.
+Donner les conditions d'observation des interférences : éclairage avec des incidences multiples pour observer beaucoup d'anneaux et observation à l'infini. 
+
+\begin{experience}
+\textbf{Anneaux d'égale inclinaison avec la lampe à vapeur de sodium.}
+Illustrer les points de la leçons au fur et à mesure sur l'interféromètre de Michelson.
+\end{experience}
+Calculer l'éclairement à l'infini en utilisant directement la formule de Fresnel \cite{Olivier2000} p58 et la formule de la différence de marche trouvée précédemment.
+Faire le calcul du rayon des anneaux comme dans le TD de Clément Sayrin p9.
+
+\begin{slide}
+\textbf{Mesures interférométriques de précision.}
+Parler de la teinte plate et du contact optique pour les mesures de surfaces.
 \end{slide}
 
 \begin{transition}
-\textbf{Template}
+Mettre en évidence expérimentalement la diminution du contraste causée par la présence du doublet jaune du sodium.
 \end{transition}
 
+\subsubsection{Analyse du doublet jaune du sodium}
+
+Suivre le TD de Clément Sayrin p10 ou \cite{Olivier2000} p73 et mettre en évidence le terme de contraste.
+
 \begin{remarque}
-\textbf{Template}
+Le théorème de Wiener-Kintchine relie le terme de contraste à la transformée de Fourier du profil spectral de la source \cite{Perez2017}.
 \end{remarque}
+
+\begin{experience}
+\textbf{Étude interférométrique du doublet jaune du sodium.}
+Voir \cite{Fruchart2016} p218 et le TP Interférences.
+\end{experience}
+
+\begin{transition}
+La spectroscopie n'est pas la seule application de l'interféromètre de Michelson.
+\end{transition}
+
+\subsubsection{Les interféromètres gravitationnels}
+
+\begin{slide}
+\textbf{Les interféromètres gravitationnels.}
+\end{slide}
+
+\begin{slide}
+\textbf{Des interféromètres hors norme.}
+Sur le schéma, on voit aussi devant le laser le miroir de recyclage de puissance nécessaire car l'interféromètre fonctionne très proche d'une frange sombre et en sortie, le miroir de recyclage du signal.
+\end{slide}
+
+Donner les ordres de grandeur et justifier la taille de l'interféromètre.
+
+\begin{transition}
+Dans le cas des ondes gravitationnelles, le signal à détecter est tellement faible que la sensibilité d'un interféromètre de Michelson n'est pas suffisant.
+Il faut utiliser des cavité optiques.
+\end{transition}
+
+\subsubsection{Configuration coin d'air}
+
+\begin{remarque}
+La présentation de l'interféromètre de Michelson est incomplète dans le cadre de CPGE sans cette section.
+Elle permet de discuter une autre illumination de l'interféromètre et une nouvelle localisation des interférences.
+En revanche, les applications me semblent plus anecdotiques et sauter cette partie pourrait permettre de dégager du temps pour parler du Fabry-Perot.
+\end{remarque}
+
+\subsection{Interféromètre de Fabry-Perot}
+
+Présenter le principe du Fabry-Perot sur l'interféromètre historique de la collection.
+Rappeler les conditions d'éclairement et d'observation des interférences par analogie avec le Michelson en lame d'air.
+Reprendre la lame à faces parallèles en supposant cette fois une infinité de réflexions et faire le calcul de l'intensité transmise comme dans le TD de Clément Sayrin p12-13.
+
+\begin{slide}
+\textbf{Une cavité optique : l'interféromètre de Fabry-Perot.}
+\end{slide}
+Dégager les caractéristiques de la cavité : ISL, largeur des pics et finesse.
+Donner l'interprétation de la finesse comme le nombre d'aller-retours dans la cavité.
+
+Donner plusieurs causes possibles de variation de la phase $\varphi$ : variation de la fréquence du laser (filtrage), variation de la longueur de la cavité (interférométrie gravitationnelle), variation d'indice (biréfringence magnétique du vide).
+Expliquer l'utilisation du Fabry-Perot comme cavité de filtrage par analogie avec les systèmes résonants.
+
+\begin{experience}
+\textbf{Interféromètre de Fabry-Perot.}
+\end{experience}
+
+\begin{remarque}
+Tous les calculs (transmission et réflexion) concernant la lame à face parallèle sont fait dans \cite{Hecht2002} p435.
+Attention à la convention choisie pour le coefficient de réflexion en amplitude sur les dioptres !
+Il faut être cohérent et rigoureux : on pose $r$ pour le coefficient de réflexion en amplitude pour le dioptre air-verre et $r'=-r$ pour le dioptre verre-air.
+On suppose en général $t$ et $t'$ tels que $t=t'$ et $tt'=T$ qui permet de vérifier la conservation de l'énergie même si, en toute rigueur $t\ne t'$ \cite{Olivier2000} p809.
+
+\noindent
+Revoir l'interprétation de l'interférence à N ondes dans la représentation de Fresnel : \cite{Sanz2016} p748 et \cite{Hecht2002} p435.  
+\end{remarque}
+
+\subsection*{Conclusion}
+
+\begin{slide}
+\textbf{Des cavités pour améliorer la sensibilité des interféromètres.}
+\end{slide}
+
+Donner l'interprétation qualitative de l'amélioration de sensibilité d'après la finesse : c'est comme si les bras de l'interféromètre faisaient $50\times \unit{3}{\kilo\meter}$.
+Interpréter d'après la phase du faisceau réfléchi.
+
+\begin{slide}
+\textbf{eLISA : toujours plus grand !}
+Quelques chiffres pour l'evolved laser interferometer space antenna :
+\begin{itemize}
+\item longueur des côtés de l'interféromètre : 2{,}5 millions de kilomètres ;
+\item demi grand-axe de l'orbite : $\unit{150\times10^6}{\kilo\meter}$ ;
+\item bande de fréquence : 0{,}1 à \unit{100}{\milli\hertz} ;
+\item sensibilité : $\sim 10^{-21}$.
+\end{itemize}
+\end{slide}
+
+\begin{funfact}
+Un exercice sur la mesure des pertes de cavités de très grande finesse : \cite{Graner2011} p193.
+Exercices sur la détection interférométrique d'ondes gravitationnelles : \cite{Graner2011} p200 et \cite{Augier2014} p338.
+\end{funfact}
+
 
 \newpage

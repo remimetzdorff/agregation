@@ -81,14 +81,32 @@
 \definecolor{gray_f}{rgb}{0.5,0.5,0.5}
 \definecolor{gray_c}{rgb}{0.95,0.95,0.95}
 \definecolor{theme}{RGB}{56,115,179}
+\definecolor{yellow_f}{rgb}{255,255,0}
+\definecolor{yellow_c}{rgb}{255,255,50}
+
+%% Colors new attempts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\definecolor{gray_f}{RGB}{68,84,106}
+\definecolor{gray_c}{RGB}{214,220,229}
+\definecolor{bleu_f}{RGB}{91,155,213}
+\definecolor{bleu_c}{RGB}{222,235,247}
+\definecolor{red_f}{RGB}{204,0,0}
+\definecolor{red_c}{RGB}{245,204,204}
+\definecolor{orange_f}{RGB}{237,125,49}
+\definecolor{orange_c}{RGB}{251,229,214}
+\definecolor{green_f}{RGB}{112,173,71}
+\definecolor{green_c}{RGB}{226,240,217}
+\definecolor{yellow_f}{RGB}{255,192,0}
+\definecolor{yellow_c}{RGB}{255,242,204}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % New environnements
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Entete niveau/messsage/prérequis
-\newcommand{\niveau}{\colorbox{gray_f}{\textbf{\color{white} Niveau :}} }\newcommand{\prerequis}{\colorbox{gray_f}{\textbf{\color{white} Prérequis :}} }
-\newcommand{\objectif}{\colorbox{gray_f}{\textbf{\color{white} Objectif de la leçon :}} }
+\newcommand{\niveau}{\textcolor{gray_f}{\textbf{Niveau :}}}
+\newcommand{\prerequis}{\textcolor{gray_f}{\textbf{Prérequis :}}}
+\newcommand{\objectif}{\textcolor{gray_f}{\textbf{Objectif de la leçon : }}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Header
@@ -103,7 +121,8 @@
 	backgroundcolor=gray_c,
 	innertopmargin=8pt,
 	roundcorner=0pt,
-	nobreak=true
+	nobreak=true,
+	fontcolor=gray_f
 }
 \newmdenv[style=s_head]{header_env}
 \newenvironment{header}
@@ -116,13 +135,13 @@
 % Transition
 
 \mdfdefinestyle{s_trans}{%
-	linecolor=brunfonce!,
+	linecolor=yellow_f!,
 	outerlinewidth=3pt,%
 	frametitlerule=false,
 	topline=false,
 	bottomline=false,
 	rightline=false,
-	backgroundcolor=chamois,
+	backgroundcolor=yellow_c,
 	innertopmargin=8pt,
 	roundcorner=0pt,
 	nobreak=true
@@ -205,6 +224,30 @@
 	\begin{remarque_env}\small}
 	{\end{remarque_env}
 	}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Funfacts
+
+
+\mdfdefinestyle{s_funfact}{%
+	linecolor=orange_f!,
+	outerlinewidth=3pt,%
+	frametitlerule=false,
+	topline=false,
+	bottomline=false,
+	rightline=false,
+	backgroundcolor=orange_c,
+	innertopmargin=8pt,
+	roundcorner=0pt,
+	nobreak=true
+}
+\newmdenv[style=s_funfact]{funfact_env}
+\newenvironment{funfact}
+{%\stepcounter{exa}%
+	\addcontentsline{ldf}{figure}{0}%
+	\begin{funfact_env}\small}
+	{\end{funfact_env}
+	}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Commandes personnelles
@@ -215,4 +258,6 @@
 \newcommand{\grad}{\overrightarrow{\mathrm{grad}}}
 \newcommand{\rot}{\overrightarrow{\mathrm{rot}}}
 \renewcommand{\div}{\mathrm{div}}
+
+%\renewcommand{\textbullet}{\textcolor{gray_f}{\textbullet}}
 

@@ -3,6 +3,7 @@
 import numpy as np
 from scipy.optimize import curve_fit
 import pandas
+from inspect import signature
 
 def find_exponent(value):
     return np.floor(np.log10(abs(value)))
@@ -17,15 +18,22 @@ def display_readable(param, uparam):
 
 class Fit():
 
-    def __init__(self, func, x=None, y=None, uy=None, verbosemode=True):
-        self.x = x
-        self.y = y
-        self.data = pandas.Series(y, index=x)
-        self.func_name = func
-        self.func = (getattr(self, self.func_name))
+    def __init__(self, func, data=None, x=None, y=None, uy=None, ux=None, verbosemode=True):
+        if data is not None:
+            self.data = data
+        else:
+            self.data = pandas.Series(y, index=x)
+        self.x = self.data.index.values
+        self.y = self.data.values
         self.uy = uy
-        self.verbosemode = verbosemode
+        self.ux = ux
 
+        self.func_name = func
+        self.func      = (getattr(self, self.func_name))
+
+        self.verbosemode = verbosemode
+        self.fit_params = None
+        self.number_of_fitparams = len(signature(self.func).parameters)-1
 
     def linear(self, x, slope, y0):
         """
@@ -34,6 +42,12 @@ class Fit():
         """
         self.params_key = ["slope", "y0"]
         return slope*x + y0
+    def _difflinear(self):
+        if self.fit_params is not None:
+            slope, y0 = self.fit_params
+        else:
+            slope, y0 = self._guesslinear()
+        return slope
     def _guesslinear(self):
         max = self.data.max()
         min = self.data.min()
@@ -110,7 +124,7 @@ class Fit():
         """
         self.params_key = ["center", "freq", "scale", "offset"]
         X = 2*np.pi*freq*(x-center)
-        return offset + scale*np.sin(X)/X
+        return offset + scale*np.sinc(X/np.pi)
 
     def sinc_squarred(self, x, center, freq, scale, offset):
         """
@@ -141,9 +155,9 @@ class Fit():
         guess_params = [center, freq, scale, offset]
         return guess_params
 
-    def gaussian(self, x, center, bandwidth, scale):
-        self.params_key = ["center", "bandwidth", "scale"]
-        return scale * np.exp(-1 * ((x - center) / abs(bandwidth)) ** 2)
+    def gaussian(self, x, center, bandwidth, scale, offset):
+        self.params_key = ["center", "bandwidth", "scale", "offset"]
+        return scale * np.exp(-1 * ((x - center) / abs(bandwidth)) ** 2) + offset
 
 
 
@@ -157,14 +171,19 @@ class Fit():
             guess_params = manualguess_params
         else:
             try:
-                function_name = str(self.func.__name__)
-                guess_function = "_guess"+function_name
+                guess_function = "_guess"+self.func_name
                 self._guessfunction = (getattr(Fit, guess_function))
                 autoguess_params = self.guess_params()
                 guess_params = autoguess_params
             except:
                 guess_params = None
-        fit_params, pcov = curve_fit(self.func, self.x, self.y, sigma=self.uy, p0=guess_params, maxfev=50000)
+        if self.ux is not None:
+            diff_function = "_diff" + self.func_name
+            self._difffunction = (getattr(Fit, diff_function))
+            uy = np.sqrt(self.uy**2 + (self._difffunction(self)*self.ux)**2)
+        else:
+            uy = self.uy
+        fit_params, pcov = curve_fit(self.func, self.x, self.y, sigma=uy, p0=guess_params, maxfev=50000)
         self.fit_params = fit_params
         self.fit_uparams = np.sqrt(np.abs(np.diagonal(pcov)))
         if verbosemode is None:
@@ -180,6 +199,10 @@ class Fit():
             uy = self.uy
         else:
             uy = np.ones(len(self.x))
+        if self.ux is not None:
+            diff_function = "_diff" + self.func_name
+            self._difffunction = (getattr(Fit, diff_function))
+            uy = np.sqrt(uy ** 2 + (self._difffunction(self)*self.ux) ** 2)
         return np.sum(((self.y - self.func(self.x, *self.fit_params))/uy)**2)
 
     def chi2r(self):
