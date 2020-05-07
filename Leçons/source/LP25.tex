@@ -3,48 +3,233 @@
 \begin{header}
 \begin{tabular}{p{0.4\textwidth} l}
 \niveau & \prerequis \\
-Template& \textbullet{} Template \\
-        & \textbullet{} Template \\
+Licence & \textbullet{} Oscillateur harmonique, amorti \\
+        & \textbullet{} Mécanique, frottements \\
+        & \textbullet{} Électrocinétique
 \end{tabular}
 
 \noindent
 \objectif
-Template
+Savoir construire et dégager les propriétés du portrait de phase.
+Illustrer son importance pour décrire l'évolution de systèmes dynamiques complexes sans solution analytique.
 \end{header}
 
 {
 \subsubsection*{Bibliographie}
 \footnotesize{}
-%\begin{itemize}
-%\item 
-%\end{itemize}
+\begin{itemize}
+\item \cite{Michel2017}
+\item \cite{Salamito2016}
+\item \cite{Landau1969}
+\item \cite{Bocquet2002}
+\item \cite{Fruchart2016}
+\item \cite{Taillet2018}
+\item \cite{Gie1992}
+\item \cite{Sartre1998}
+\item \cite{Vigoureux1990a}
+\item \cite{Vigoureux1990}
+\item \href{https://www.youtube.com/watch?v=fDek6cYijxI}{The Science Behind the Butterfly Effect} : LA vidéo de Veritasium !
+\end{itemize}
 }
-
-\begin{remarque}
-Parler des frottements solides
-\end{remarque}
-
 
 \subsection*{Introduction}
 
-\subsection{Template}
+On a toujours traité le pendule simple dans le cadre des petites oscillations.
+Dans cette leçon on se propose de développer un outil pour étudier le comportement non linéaire de cet oscillateur : le portrait de phase.
+L'utilisation de cet outil pourra être généralisée à l'étude de systèmes complexes.
 
-\subsubsection{Template}
+Définir un oscillateur \cite{Taillet2018} et en donner des exemples en illustrant les effets antagonistes (inertie, potentiel) : pendule, planètes, RLC et autres...
+Il est décrit par un système d'équations différentielles qu'il faut a priori résoudre pour déterminer l'évolution du système : ce n'est pas toujours possible !
 
-\begin{experience}
-\textbf{Template}
-\end{experience}
-
-\begin{slide}
-\textbf{Template}
-\end{slide}
-
-\begin{transition}
-\textbf{Template}
-\end{transition}
+On se limite à des oscillateurs à un seul degré de liberté.
+Annoncer le plan de la leçon : on va introduire un outil puissant pour étudier le comportement d'un oscillateur et étudier des systèmes complexes, dont l'évolution est régie par des équations non linéaires.
 
 \begin{remarque}
-\textbf{Template}
+La définition du Taillet est peut-être déjà trop restrictive : on se limite à une évolution autour d'une position d'équilibre ce qui exclue le régime libre du pendule.
+On peut dire simplement qu'un oscillateur est un système dont une grandeur augmente et diminue sous l'effet des deux effets antagonistes.
+Pour un système mécanique, on peut utiliser l'images des vases d'énergie communiquant.
 \end{remarque}
+
+\subsection{Oscillateur et portrait de phase}
+
+\subsubsection{Portrait de phase}
+
+Poser proprement le problème : on s'intéresse au pendule simple sans frottements dans le cas des faibles oscillations.
+Faire un schéma, référentiel, forces, conservation de l'énergie.
+Etablir l'équation canonique de l'oscillateur harmonique, la résoudre \cite{Gie1992} p720.
+On a un système qui oscille périodiquement : la représentation temporelle présente une grande redondance.
+On va plutôt représenter l'évolution de l'oscillateur dans le plan de phase.
+Définir \cite{Gie1992} p719 : plan de phase, trajectoire de phase et portrait de phase.
+Le tracer.
+
+\begin{slide}
+\href{https://youtu.be/fDek6cYijxI?t=150}{\textbf{Construction du portrait de phase.}}
+A voir...
+Il introduit directement les frottements ce qui va sans doute gêner le discours.
+\end{slide}
+
+\begin{remarque}
+On a traité le cas du pendule simple, mais l'équation est la même dans le cas du pendule pesant \cite{Bocquet2002} p380.
+Il faut simplement prendre en compte le moment d'inertie du pendule et le fait que le point d'application du poids est au barycentre du mobile, ce qui modifie la pulsation propre de l'oscillateur.
+\end{remarque}
+
+\begin{experience}
+\textbf{Portrait de phase du circuit LC.}
+Faire le circuit à résistance négative \cite{Gie1992} p730 et se placer à la limite des oscillations pour avoir un régime aussi sinusoïdal que possible et montrer le portrait de phase en XY.
+Cet exemple illustre le fait que le tracé d'un portrait de phase est facile.
+\end{experience}
+
+\begin{transition}
+Quelles sont les propriétés générales du portrait de phase d'un oscillateur ?
+\end{transition}
+
+\subsubsection{Propriétés}
+
+Suivre \cite{Salamito2016} p634 et \cite{Bocquet2002} p419 en justifiant qualitativement les affirmations.
+\begin{slide}
+\textbf{Propriétés générales du portrait de phase.}
+\end{slide}
+Pour le deuxième point, dire que des trajectoires elliptiques correspondent à une évolution sinusoïdale \cite{Gie1992} p720.
+Faire la démonstration du quatrième point \cite{Bocquet2002} p419.
+
+Le portrait de phase permet donc de déterminer rapidement :
+\begin{itemize}
+\item la périodicité d'un mouvement, et même son caractère sinusoïdal ;
+\item la présence de points d'équilibres stables et instables ;
+\item l'évolution d'un système à partir de conditions initiales données.
+\end{itemize}
+
+\begin{remarque}
+Il faut utiliser ces points pour analyser les portraits de phase présentés au cours de la leçon.
+
+\noindent
+Le non croisement des trajectoires de phase est une conséquence du \href{https://fr.wikipedia.org/wiki/Th\%C3\%A9or\%C3\%A8me_de_Cauchy-Lipschitz}{théorème de Cauchy-Lipschitz} qui assure le déterminisme de systèmes d'équations différentielles vérifiant certaines conditions.
+En particulier, le PFD conduit à un tel système.
+
+\noindent
+Le croisement des trajectoires de phase au niveau des points d'équilibre instable n'est pas un problème : ces points ne sont atteints lors d'une évolution libre que pour des temps infiniment longs.
+
+\noindent
+La dimension de l'espace de phase dépend du nombre de degrés de liberté du système.
+En mécanique hamiltonienne, on utilise les variables conjuguées $x$ et $p$ qui possèdent chacune trois composantes.
+Un système de $N$ particules est donc décrit dans un espace des phases à $6N$ dimensions.
+\end{remarque}
+
+\begin{transition}
+Quelle est l'influence de la dissipation ?
+\end{transition}
+
+\subsubsection{Dissipation}
+
+Ajouter le terme d'amortissement dans l'équation de l'oscillateur, tracer qualitativement la trajectoire obtenue et introduire la notion de point attracteur : quelles que soient les conditions initiales, on fini par tomber sur ce point.
+
+\begin{slide}
+\textbf{Dissipation et irréversibilité.}
+Donner les arguments de symétrie de \cite{Gie1992} p752.
+\end{slide}
+
+Construire graphiquement le cas des frottements solides pour montrer la puissance du portrait de phase.
+Insister sur le fait que même si le système d'équation est difficile à résoudre, avec ici deux phases du mouvement décrites par des équations différentes, le comportement est vite interprété sur un portrait de phase.
+On voit au passage un autre type d'attracteur non ponctuel.
+
+\begin{transition}
+Le système soumis à des frottements solides est non linéaire.
+Même sans tenir compte de la dissipation, de nombreux systèmes présentent un comportement non linéaire.
+L'OH est un modèle important puisque de nombreux systèmes lui sont assimilés dans la limite des faibles oscillations mais il s'agit d'une approximation qui rend impossible la description d'effets plus subtils.
+\end{transition}
+
+\subsection{Vers des oscillateurs plus réalistes}
+
+\subsubsection{Lien avec l'énergie potentielle}
+
+Reprendre l'équation de la conservation de l'énergie du pendule \cite{Gie1992} p721 et en déduire que l'on peut construire facilement le portrait de phase.
+Il faut insister sur le fait qu'on a pas besoin de résoudre le système : on déduit le comportement de l'oscillateur dans l'espace des phases d'après les conditions initiales. 
+Insister sur le déterminisme et que la donnée des conditions initiales suffit.
+
+\begin{slide}
+\textbf{Portrait de phase du pendule simple.}
+\end{slide}
+
+Détailler les différents régimes \cite{Gie1992} p721 :
+\begin{itemize}
+\item énergie mécanique positive ;
+\item mouvement révolutif ;
+\item séparatrice ;
+\item mouvement oscillatoire ;
+\item amplitude faible.
+\end{itemize}
+Faire la remarque de \cite{Gie1992} p722 sur la périodicité.
+
+\begin{experience}
+\textbf{Simulation du pendule amorti.}
+Mise en évidence de l'infinité de points attracteurs
+\end{experience}
+
+\begin{transition}
+La complexité du mouvement semble provenir de la non linéarité des équations qui régissent l'évolution de l'oscillateur.
+Quels sont ses conséquences ?
+\end{transition}
+
+\subsubsection{Influence des non linéarités}
+
+Reprendre l'équation du pendule.
+Définir la linéarité : si $a$ et $b$ sont solutions de l'équation différentielle alors $a+\lambda b$ est aussi solution.
+Les trajectoires de phase d'un système linéaire sont simplement obtenues par homotétie.
+Ce n'est plus le cas en présence de non linéarité : cf pendule.
+
+\begin{experience}
+\textbf{Enrichissement spectral.}
+Le mettre en évidence grâce à la simulation.
+\end{experience}
+
+\begin{experience}
+\textbf{Isochronisme du pendule ?}
+Galilée l'a remarqué en 1583 pour les faibles amplitudes mais ce n'est plus vrai aux grandes amplitudes.
+\end{experience}
+
+\begin{remarque}
+Dans le cas du pendule, l'apparition d'harmoniques impaires est tout à fait normale compte tenu de la forme du potentiel \cite{Fruchart2016} p481.
+
+\noindent
+Les non linéarités influent aussi sur l'allure des résonances \cite{Landau1969} p124.
+\end{remarque}
+
+\begin{transition}
+Comment expliquer la stabilité de systèmes oscillant malgré la présence de dissipation.
+\end{transition}
+
+\subsection{Oscillateurs auto-entretenu}
+
+Expliquer ce que l'on cherche à obtenir dans l'espace des phases, indépendance aux conditions initiales, et qu'il ne peut s'agir que d'un oscillateur non linéaire \cite{Gie1992} p727.
+Introduire la notion de cycle limite comme nouvel attracteur \cite{Gie1992} p729.
+Revenir sur le cas de l'oscillateur à résistance négative.
+Suivant le temps on détaille le calcul pour arriver aux deux équations différentielles pour le cas linéaire et le cas saturé, sinon on les donne directement et on analyse en fonction du signe de $R_g-R$.
+Bien faire apparaitre que c'est la saturation de l'ALI qui entraine le changement de régime et la stabilisation des oscillations sur le cycle limite.
+Parler du démarrage des oscillations.
+
+\begin{experience}
+\textbf{Oscillateur à résistance négative non linéaire.}
+\end{experience}
+
+Ouvrir sur le Van der Pol et montrer les simulations.
+
+\begin{remarque}
+A propos de l'oscillateur de Van der Pol : il est utilisé pour modéliser les \href{https://asa.scitation.org/doi/abs/10.1121/1.4798467}{oscillations des plis vocaux} afin d'améliorer la fidélité des synthétiseurs vocaux, les potentiels d'actions neuronaux ou encore en sismologie pour étudier le comportement de deux plaques au niveau d'une faille.
+Elle a été introduite pour expliquer l'existence de cycles limites stables dans certains circuits électroniques.
+En régime forcé et pour certaines fréquences, ce système présente un comportement chaotique déterministe.
+
+\noindent
+Un oscillateur forcé est décrit dans un espace des phases à trois dimensions : cela explique les apparents croisements des trajectoires dans la représentation à deux dimensions.
+\end{remarque}
+
+\subsection*{Conclusion}
+
+Revenir rapidement sur les aspects clés : périodicité, réversibilité, linéarité, équilibre.
+Remettre en évidence l'importance du portrait de phase dans l'étude des systèmes dynamiques, en particulier dans l'étude des systèmes qui ne sont pas solubles analytiquement : en un seul graphique, on représente toutes les évolutions possibles du système !
+L'étude de systèmes non linéaires est pourtant nécessaire à la compréhension de nombreux phénomènes depuis le pendule simple jusqu'à l'équation de Navier-Stokes comme dans l'étude des \href{https://fr.wikipedia.org/wiki/Instabilit\%C3\%A9_de_Rayleigh-B\%C3\%A9nard}{instabilités de Rayleigh-Bénard}.
+
+Ne pas ouvrir sur les systèmes chaotiques, mais garder en tête que ça peut arriver sur le tapis.
+On peut l'illustrer modestement avec le pendule 2D à double puits.
+Mots clés : déterminisme, temps de Liapounov, attracteur étrange de Lorenz, etc... 
 
 \newpage

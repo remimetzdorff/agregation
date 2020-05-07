@@ -5,13 +5,24 @@
 \niveau & \prerequis \\
 CPGE & \textbullet{} Oscillateur harmonique, amorti \\
      & \textbullet{} Impédance complexe \\
-     & \textbullet{} Interférence à N ondes
+     & \textbullet{} Modèle du câble coaxial \\
+     & \textbullet{} Équation de d'Alembert \\
+     & \textbullet{} Interférence à N ondes, transmission du FP
 \end{tabular}
 
 \noindent
 \objectif
 Définir le phénomène de résonance, en dégager les caractéristiques et mettre en évidence son caractère universel.
 \end{header}
+
+\begin{remarque}
+On pourrait gagner du temps en supposant connu les fonctions de transfert pour des systèmes du deuxième ordre.
+On exploite alors seulement les résultats et on peut passer plus de temps sur le couplage entre deux oscillateurs.
+
+\noindent
+Degré de liberté : paramètre du système qui permet de décrire la dynamique du système.
+Le nombre de degrés de liberté est le nombre de ces paramètres indépendants.
+\end{remarque}
 
 {
 \subsubsection*{Bibliographie}
@@ -69,6 +80,16 @@ Faire un schéma d'un système masse/ressort et poser clairement le problème : 
 Interpréter l'oscillation en terme d'échange d'énergie cinétique potentielle et parler de la dissipation et du travail de l'opérateur sans aller trop loin.
 
 Dresser le parallèle avec un circuit RLC alimenté par un GBF : quantité analogues (position = charge, vitesse = courant), échange entre énergie magnétique et électrique et dissipation par effet Joule compensée par le générateur.
+
+\begin{remarque}
+$\Gamma$ est le taux de dissipation en énergie.
+Le taux de dissipation en amplitude est $\Gamma/2$.
+
+\noindent
+On peut aller plus loin dans l'analogie : en écrivant l'énergie stockée dans un condensateur $\frac{1}{2}\frac{q^2}{C}$ et celle stockée dans un ressort on trouve que la constante de raideur est analogue à $1/C$.
+On peut faire la même chose pour l'inductance.
+\end{remarque}
+
 
 \begin{experience}
 Montrer très qualitativement la dépendance de la réponse d'un système masse/ressort et d'un circuit RLC avec la fréquence. 
@@ -137,6 +158,10 @@ Intéressons nous aux transferts d'énergie.
 \subsection{Aspects énergétiques}
 
 \subsubsection{Transferts d'énergie}
+
+\begin{remarque}
+La résonance à ce stade peut être vue le fait qu'on stocke de l'énergie dans l'oscillateur.
+\end{remarque}
 
 En multipliant \eqref{eq:lp24_osc} par $v$ on fait apparaitre l'énergie potentielle stockée par le ressort, l'énergie cinétique de la masse en mouvement, le terme de dissipation et le terme source : 
 \begin{equation}
@@ -213,10 +238,14 @@ où $\omega_0^2=1/LC$ et en déduire l'existence de deux pulsations de résonanc
 \omega_r = \omega_0 \sqrt{\frac{3\pm\sqrt{5}}{2}}.
 \end{equation}
 
-Le passage la limite correspond à un cas à N degrés de libertés où l'on retrouve l'équation des télégraphistes qui même à l'équation de d'Alembert pour les ondes dans le câble coaxial.
+Il faut soigner ce passage...
+Le passage à la limite correspond à un cas à N degrés de libertés où l'on retrouve l'équation des télégraphistes qui même à l'équation de d'Alembert pour les ondes dans le câble coaxial.
 Expliquer que les conditions aux limites discrétisent les solutions au problème et provoque l'apparition de mode sous forme d'onde stationnaires qui peuvent exister dans le câble.
 Voir \cite{Taillet2018} pour la définition d'un mode.
 
+\begin{remarque}
+Les modes propres peuvent être très compliqués mais se caractérisent par le fait que tous les degrés de liberté du système oscillent à la même fréquence.
+\end{remarque}
 
 \begin{slide}
 \textbf{Simulations des modes du verre.}
@@ -244,6 +273,11 @@ Donner les résultats si manque de temps et interpréter la courbe :
 \item parler du filtrage introduit par une cavité de grande finesse, ou grand facteur de qualité pour rester dans la terminologie de la leçon.
 \end{itemize}
 
+\begin{remarque}
+Degrés de liberté pour la corde de Melde : la position $y$ de la chaque point de la corde que l'on peut décomposer en ondes progressives ou modes propres.
+Pareil pour le Fabry-Perot pour le champ électromagnétique.
+\end{remarque}
+
 \begin{slide}
 \textbf{Résonance optique d'une cavité Fabry-Perot}
 \end{slide}
@@ -259,5 +293,11 @@ Problème : compromis entre amplification et sélectivité spectrale.
 \end{slide}
 Les cavités optiques sont indispensables au fonctionnement de l'appareil : output mode cleaner, etc.
 Parler du problème des modes violon et des modes mécaniques des miroirs dans Virgo : on veut des grands facteurs de qualité pour ces modes afin de poluer la plus petite région spectrale possible.
+
+\begin{funfact}
+Sur la résonance paramétrique dans un RLC en faisant varier la distance entre les armatures du condensateur : il y a résonance si on rapproche les armatures quand le condensateur est chargé, ce qui revient à lui fournir de l'énergie potentielle au moment ou il en déjà stocké un maximum.
+Rapprocher les armatures quand le condensateur n'est pas chargé ne sert à rien car cela ne change pas l'énergie du système.
+On ne lui fourni de l'énergie que si l'excitation a la bonne phase.
+\end{funfact}
 
 \newpage

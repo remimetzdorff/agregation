@@ -5,8 +5,10 @@ from scipy.optimize import curve_fit
 import pandas
 from inspect import signature
 
+
 def find_exponent(value):
     return np.floor(np.log10(abs(value)))
+
 
 def display_readable(param, uparam):
     exponent = find_exponent(param)
@@ -14,7 +16,12 @@ def display_readable(param, uparam):
     poweroften = int(exponent - uexponent)
     new_uparam = np.round(uparam * 10 ** (-uexponent)) * 10 ** -poweroften
     new_param = np.round(param * 10 ** (-uexponent)) * 10 ** -poweroften
-    return (str("(%." + str(poweroften) + "f +/- %." + str(poweroften) + "f) * 1e%.0f") % (new_param, new_uparam, exponent))
+    if np.abs(param) > np.abs(uparam) :
+        row = (str("(%." + str(poweroften) + "f +/- %." + str(poweroften) + "f) * 1e%.0f") % (new_param, new_uparam, exponent))
+    else:
+        row = ""
+    return row
+
 
 class Fit():
 
@@ -55,6 +62,11 @@ class Fit():
         y0 = self.data.mean() - self.x.mean()*slope
         fit_params = [slope, y0]
         return fit_params
+
+    def pendulum(self, x, T0, a, b):
+        self.params_key = ["T0", "a", "b"]
+        X = x-0
+        return T0 * (1 + a * X**2 + b * X**4)
 
     def exponential(self, x, scale, alpha):
         """
@@ -183,7 +195,7 @@ class Fit():
             uy = np.sqrt(self.uy**2 + (self._difffunction(self)*self.ux)**2)
         else:
             uy = self.uy
-        fit_params, pcov = curve_fit(self.func, self.x, self.y, sigma=uy, p0=guess_params, maxfev=50000)
+        fit_params, pcov = curve_fit(self.func, self.x, self.y, sigma=uy, p0=guess_params, maxfev=50000, absolute_sigma=True)
         self.fit_params = fit_params
         self.fit_uparams = np.sqrt(np.abs(np.diagonal(pcov)))
         if verbosemode is None:
