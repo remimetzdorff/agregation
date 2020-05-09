@@ -3,8 +3,10 @@
 \begin{header}
 \begin{tabular}{p{0.4\textwidth} l}
 \niveau & \prerequis \\
-Template& \textbullet{} Template \\
-        & \textbullet{} Template \\
+CPGE    & \textbullet{} Filtrage linéaire \\
+        & \textbullet{} ALI, modèle d'ordre un \\
+        & \textbullet{} Fonction de transfert \\
+        & \textbullet{} Diagramme de Bode
 \end{tabular}
 
 \noindent
@@ -15,35 +17,213 @@ Template
 {
 \subsubsection*{Bibliographie}
 \footnotesize{}
-%\begin{itemize}
-%\item 
-%\end{itemize}
+\begin{itemize}
+\item \cite{Neveu2019a}
+\item \cite{Cardini2017}
+\end{itemize}
 }
+
+\begin{remarque}
+Le programme est vaste !
+Les quatre premiers chapitres de \cite{Cardini2017} rentrent dans le cadre de la leçon.
+Elle est franchement orientée PSI.
+
+\noindent
+Il faut prendre parti dès le début je pense : justifier rapidement qu'on utilise $p$ à la place de $j\omega$.
+Même si on ne le dit pas explicitement pendant la leçon, on se place ainsi dans le formalisme de Laplace et ça simplifie les notations.
+Quand on parle de polynôme pour la fonction de transfert, c'est encore plus évident avec $p$ qu'avec un polynôme en $j\omega$.
+Garder en tête que contrairement à la transformée de Fourier, la transformation de Laplace fait intervenir les conditions initiales.
+
+\noindent
+Il faut poser calmement le schéma bloc du système et identifier $A$ et $\beta$ à chaque fois pour éviter de se mélanger les pinceaux.
+Dans le montage amplificateur non inverseur, $A$ est la fonction de transfert de l'ALI, $\beta$ celle du pont diviseur.
+Dans l'oscillateur à pont de Wien, $A$ est la fonction de transfert de l'amplificateur non inverseur et $\beta$ celle du filtre de Wien.
+Bien faire attention à différencier fonction de transfert en boucle ouverte et boucle fermée !
+
+\noindent
+Par rapport au rapport de jury qui précise de différencier système bouclé et rétroaction : un système bouclé a sa sortie reliée à son entrée ce qui est une rétraction particulière.
+\end{remarque}
 
 \subsection*{Introduction}
 
-Les rétroactions sont nécessaires pour assurer la stabilité de nombreux systèmes : elles interviennent dans les asservissement.
-Toutefois, une rétroaction peut mener à une instabilité comme c'est le cas de l'effet Larsen.
-Cette instabilité est problématique dans l'effet Larsen, mais elle est aussi utile pour créer des systèmes oscillants comme le laser. 
+Les rétroactions sont nécessaires pour assurer la stabilité de nombreux systèmes : elles interviennent dans les asservissements : un automobiliste ajuste sa trajectoire afin de ne pas finir dans un platane.
+Les perturbations, ici les changements de direction de la route, sont captées visuellement, analysées par le cerveau puis l'action adaptée est envoyée pour corriger la trajectoire.
 
-\subsection{Template}
-
-\subsubsection{Template}
-
-\begin{experience}
-\textbf{Template}
-\end{experience}
+Toutefois, une rétroaction inappropriée peut mener à une instabilité : par exemple l'effet Larsen.
+Cette instabilité est parfois problématique puisqu'elle peut mener à la rupture de tout ou partie du système.
+Dans certains cas, la rétroaction mène à une comportement périodique qui, s'il est maitrisé permet de construire des oscillateurs à la base du fonctionnement des montres par exemple.
 
 \begin{slide}
-\textbf{Template}
+\textbf{Rétroaction et oscillations.}
+Apparemment, il y a des concours de Larsen...
 \end{slide}
 
+\subsection{Nécessité d'une rétroaction}
+
+\subsubsection{Thermostat}
+
+Décrire le principe de la boucle ouverte et de la boucle fermée avec un exemple pratique, une régulation de température :
+\begin{itemize}
+\item en boucle ouverte : on donne une consigne à un radiateur qui va permettre de compenser les pertes thermiques dans une pièce.
+Si rien ne change, pas de problème mais si la température extérieure évolue, il faudra adapter la consigne.
+On ne veut pas ajuster en permanence la consigne donc on va automatiser le système en lui ajoutant une boucle de contrôle.
+\item en boucle fermée, la sortie est comparée à la consigne et le système ajuste son action.
+\end{itemize}
+Faire apparaitre le schéma bloc du système en présentant les protagonistes : consigne, actuateur (radiateur), rétroaction (thermomètre) et comparateur (soustracteur).
+
 \begin{transition}
-\textbf{Template}
+Ce formalisme est très général et particulièrement adapté à la description des systèmes bouclés.
+Appliquons le à un système facilement accessible en TP : le montage amplificateur non inverseur.
 \end{transition}
 
+\subsubsection{Amplificateur non inverseur}
+
+On s'intéresse à des systèmes linéaires, continus et invariants \cite{Cardini2017} p31.
+Suivre \cite{Neveu2019a} p74 pour introduire la fonction de transfert en boucle ouverte et boucle fermée en prenant pour l'ALI un modèle de passe-bas du premier ordre.
+Introduire les notions de chaine directe et chaine de retour \cite{Cardini2017} p47.
+Montrer qu'en prenant $\mu_0 \rightarrow \infty$, on retrouve bien un amplificateur.
+Il faut être efficace dans les calculs.
+
+\begin{experience}
+\textbf{Amplificateur non inverseur.}
+Mesurer sa fonction de transfert et la relier aux valeurs des composants.
+\end{experience}
+
+Montrer la conservation du produit gain bande et tracer le diagramme de Bode pour quelques gains : il faut souligner que le montage est un passe-bas.
+Faire apparaitre clairement le lien avec l'asservissement présenté précédemment et parler de précision et rapidité.
+Dire qu'en réalisé on ajoute un correcteur.
+De manière très générale, les asservissements sont un compromis entre rapidité, précision et stabilité.
+
 \begin{remarque}
-\textbf{Template}
+La fonction de transfert harmonique d'un système linéaire est aussi appelée transmittance harmonique.
+
+\noindent
+Bien relire \cite{Neveu2019a} p84-88 pour être au clair sur le PID au cas où.
+
+\noindent
+Il faut faire la différence entre l'électronique de puissance où la précision n'est pas aussi importante que l'obtention de forts courants et le traitement du signal par exemple où la précision est essentielle pour préserver la fidélité du signal. 
 \end{remarque}
+
+\begin{transition}
+La présence d'une rétroaction adaptée est essentielle pour les asservissements : amplificateur, thermostat, robotique, etc.
+Cependant, elle peut mener à un système instable.
+\end{transition}
+
+\subsection{Stabilité}
+
+\subsubsection{Comparateur à hystérésis}
+
+\begin{experience}
+\textbf{Comparateur à hystérésis.}
+Montrer que l'inversion des bornes amène une saturation du système : la rétroaction peut conduire à une instabilité.
+\end{experience}
+
+Analysons ce qu'il se passe \cite{Neveu2019a} p90 :
+\begin{itemize}
+\item reprendre le modèle du premier ordre de l'ALI pour justifier l'effet de l'inversion du signe : on passe de $\mu_0$ à $-\mu_0$ ;
+\item reprendre la fonction de transfert simplifiée de l'amplificateur non inverseur comme un passe-bas d'ordre un et passer en réel pour obtenir l'équation différentielle du filtre ;
+\item analyser qualitativement l'effet du changement de signe de $\mu_0$ en remarquant qu'une exponentielle croissante ou décroissante est solution.
+\item parler de la saturation qui empêche la divergence du système.
+\end{itemize}
+On comprend bien pourquoi la rétroaction sur la borne non inverseuse est source d'instabilité.
+
+\begin{transition}
+Étudions le cas général.
+\end{transition}
+
+\subsubsection{Critère de stabilité}
+
+On se limite en accord avec le programme à des systèmes d'ordre deux :
+\begin{itemize}
+\item écrire l'équation différentielle générale du système ;\\
+\item donner l'équivalence du critère de stabilité \cite{Cardini2017} p38 et interpréter physiquement le rôle du signe du coefficient d'amortissement.
+Donner la condition générale en terme de signe pour les coefficients \cite{Neveu2019a} p91 ;
+\item passer en complexe pour écrire la fonction de transfert et bien souligner l'équivalence des deux notations ;
+\item définir un système stable \cite{Cardini2017} p35 ;
+\item remarquer que l'ordre du numérateur est forcément inférieur à celui du dénominateur sinon divergence à haute fréquence ;
+\item la condition de stabilité porte donc sur le dénominateur : remarquer qu'il ne doit pas s'annuler et dire que la limite de stabilité du système est atteinte aux zéros du dénominateur.
+\end{itemize}
+Deux points importants à retenir :
+\begin{itemize}
+\item on peut connaitre la stabilité du système en étudiant sa réponse en boucle ouverte, il ne faut pas que $H_\mathrm{TBO}=-1$ ;
+\item les descriptions fréquentielle et temporelle sont équivalentes : on étudie souvent la réponse impulsionnelle.
+\end{itemize}
+
+\begin{remarque}
+La stabilité d'un système fermé est définie avec des marges en gain et en phase car les paramètres de la rétroaction sont susceptibles de changer en raison de variation thermique etc.
+
+\noindent
+Le fait que l'ordre du numérateur soit plus faible que celui du dénominateur dans la fonction de transfert traduit aussi la causalité du système \cite{Neveu2019a} p78.
+
+\noindent
+Savoir parler du lieu de Nyquist.
+
+\noindent
+La réponse temporelle des systèmes linéaires est réalisée en utilisant le formalisme de Laplace : la connaissance de la fonction de transfert et des conditions initiales permet de remonter très simplement à l'évolution temporelle du circuit grâce à une transformation inverse de Laplace.
+Ce n'est toutefois pas vraiment au programme de PSI même s'ils passent du $j\omega$ à $p$ dans les calculs.
+Il semble que ce soit vu un peu plus en SI.
+\end{remarque}
+
+\begin{transition}
+Les instabilité sont potentiellement dangereuses mais peuvent être exploitées pour créer des oscillateurs.
+\end{transition}
+
+\subsection{Oscillateur quasi sinusoïdal}
+
+\subsubsection{Système bouclé}
+
+Faire le schéma \cite{Neveu2019a} p97 et réécrire les fonctions de transfert en boucles ouverte et fermée en faisant attention au changement de signe dû au passage d'un soustracteur à un sommateur.
+Reprendre l'exemple de l'amplificateur non inverseur et dire que c'est débile de le boucler mais que si on ajoute un passe bande, on va pouvoir sélectionner une composante spectrale.
+Mettre l'accent sur la condition pour observer une oscillation : gain unitaire et déphasage nul.
+Bien faire apparaitre la nécessité d'un amplificateur.
+Énoncer la condition de Barkhausen \cite{Neveu2019a} p98.
+
+\begin{transition}
+Voyons un exemple pratique, l'oscillateur à pont de Wien.
+\end{transition}
+
+\subsubsection{Analyse de la boucle ouverte}
+
+Reprendre l'amplificateur et lui ajouter le filtre de Wien sans boucler, identifier $A$ et $\beta$ et faire le schéma bloc.
+Suivant le temps, on fait les calculs ou on balance.
+
+\begin{experience}
+\textbf{Filtre de Wien.}
+Mettre en évidence qu'à résonance le déphasage est nul.
+Résonance au sens réponse maximale mais gain inférieur à un : il faut un ampli.
+\end{experience}
+
+Trouver la condition d'oscillation avec le critère de Barkhausen \cite{Neveu2019a} p100.
+
+\begin{experience}
+\textbf{Fonction de transfert en boucle ouverte.}
+Se rapprocher des conditions d'oscillation en restant en dessous.
+\end{experience}
+
+\begin{transition}
+Et maintenant, on boucle !
+\end{transition}
+
+\subsubsection{Oscillateur à pont de Wien}
+
+\begin{experience}
+\textbf{Oscillateur à pont de Wien.}
+Bam ! Ça oscille.
+On peut regarder le portrait de phase pour vérifier que les oscillations sont presque sinusoïdales.
+Mettre en évidence que la saturation est responsable de la non divergence des oscillations : sauvé par la non-linéarité !
+\end{experience}
+
+Parler du facteur de qualité : ici c'est nul on a 1/3 mais avec des quartz, on transfert la stabilité mécanique d'un micro-diapason sur un oscillateur électronique.
+C'est à la base de tous les appareils électroniques récents.
+Applications suivant le temps : montre, laser...
+
+\begin{remarque}
+Ici on ne s'intéresse qu'à un type d'oscillateur : l'oscillateur quasi-sinusoïdal mais il existe aussi l'oscillateur à relaxation \cite{Neveu2019a} p103.
+\end{remarque}
+
+\subsection*{Conclusion}
+
+En récapitulant, on peut parler des correcteurs sur les asservissements par exemple.
+Donner des exemples.
 
 \newpage

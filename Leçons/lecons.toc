@@ -1,0 +1,311 @@
+\babel@toc {french}{}
+\contentsline {chapter}{Introduction}{3}{chapter*.2}
+\contentsline {chapter}{\numberline {1}Le\IeC {\c c}ons de physique}{4}{chapter.1}
+\contentsline {section}{\numberline {1.1}LP01 Gravitation}{5}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Interaction gravitationnelle}{5}{subsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1.1}Force et \IeC {\'e}nergie}{5}{subsubsection.1.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1.2}Champ gravitationnel}{6}{subsubsection.1.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.1.3}Le poids}{6}{subsubsection.1.1.1.3}
+\contentsline {subsection}{\numberline {1.1.2}Mouvement dans un champ gravitationnel}{7}{subsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.2.1}Position du probl\IeC {\`e}me}{7}{subsubsection.1.1.2.1}
+\contentsline {subsubsection}{\numberline {1.1.2.2}Conservation du moment cin\IeC {\'e}tique}{7}{subsubsection.1.1.2.2}
+\contentsline {subsubsection}{\numberline {1.1.2.3}Conservation de l'\IeC {\'e}nergie}{8}{subsubsection.1.1.2.3}
+\contentsline {subsubsection}{\numberline {1.1.2.4}P\IeC {\'e}riode du mouvement}{8}{subsubsection.1.1.2.4}
+\contentsline {subsection}{\numberline {1.1.3}Applications et limite}{8}{subsection.1.1.3}
+\contentsline {subsubsection}{\numberline {1.1.3.1}Vitesses cosmiques}{8}{subsubsection.1.1.3.1}
+\contentsline {subsubsection}{\numberline {1.1.3.2}Orbite g\IeC {\'e}ostationnaire}{8}{subsubsection.1.1.3.2}
+\contentsline {subsubsection}{\numberline {1.1.3.3}Vers des masses non-ponctuelles}{8}{subsubsection.1.1.3.3}
+\contentsline {section}{\numberline {1.2}LP02 Lois de conservation en dynamique}{10}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Conservation de l'impulsion}{10}{subsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.1.1}Loi de conservation}{10}{subsubsection.1.2.1.1}
+\contentsline {subsubsection}{\numberline {1.2.1.2}Lancer au curling}{11}{subsubsection.1.2.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1.3}Probl\IeC {\`e}me \IeC {\`a} deux corps -- Mobile fictif}{11}{subsubsection.1.2.1.3}
+\contentsline {subsection}{\numberline {1.2.2}Conservation du moment cin\IeC {\'e}tique}{11}{subsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.2.1}Loi de conservation}{11}{subsubsection.1.2.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2.2}Patinage artistique}{11}{subsubsection.1.2.2.2}
+\contentsline {subsubsection}{\numberline {1.2.2.3}Probl\IeC {\`e}me \IeC {\`a} deux corps -- Plan\IeC {\'e}it\IeC {\'e} du mouvement}{12}{subsubsection.1.2.2.3}
+\contentsline {subsection}{\numberline {1.2.3}Conservation de l'\IeC {\'e}nergie}{12}{subsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.3.1}Loi de conservation}{12}{subsubsection.1.2.3.1}
+\contentsline {subsubsection}{\numberline {1.2.3.2}Choc entre deux pierres au curling}{12}{subsubsection.1.2.3.2}
+\contentsline {subsubsection}{\numberline {1.2.3.3}Probl\IeC {\`e}me \IeC {\`a} deux corps -- Trajectoires}{12}{subsubsection.1.2.3.3}
+\contentsline {section}{\numberline {1.3}LP03 Notion de viscosit\IeC {\'e} d'un fluide. \IeC {\'E}coulement visqueux}{14}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Description de la viscosit\IeC {\'e} d'un fluide}{14}{subsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.1.1}Actions de contact dans un fluide}{14}{subsubsection.1.3.1.1}
+\contentsline {subsubsection}{\numberline {1.3.1.2}Force volumique de viscosit\IeC {\'e}}{15}{subsubsection.1.3.1.2}
+\contentsline {subsubsection}{\numberline {1.3.1.3}Interpr\IeC {\'e}tation microscopique qualitative de la viscosit\IeC {\'e}}{15}{subsubsection.1.3.1.3}
+\contentsline {subsection}{\numberline {1.3.2}\IeC {\'E}coulements visqueux}{15}{subsection.1.3.2}
+\contentsline {subsubsection}{\numberline {1.3.2.1}\IeC {\'E}quation de Navier-Stokes}{15}{subsubsection.1.3.2.1}
+\contentsline {subsubsection}{\numberline {1.3.2.2}Conditions aux limites}{16}{subsubsection.1.3.2.2}
+\contentsline {subsubsection}{\numberline {1.3.2.3}\IeC {\'E}coulement de Poiseuille}{16}{subsubsection.1.3.2.3}
+\contentsline {subsection}{\numberline {1.3.3}\IeC {\'E}coulement autour d'une sph\IeC {\`e}re}{17}{subsection.1.3.3}
+\contentsline {subsubsection}{\numberline {1.3.3.1}Viscosim\IeC {\`e}tre \IeC {\`a} chute de bille}{17}{subsubsection.1.3.3.1}
+\contentsline {subsubsection}{\numberline {1.3.3.2}Train\IeC {\'e}e}{17}{subsubsection.1.3.3.2}
+\contentsline {section}{\numberline {1.4}LP04 Mod\IeC {\`e}le de l'\IeC {\'e}coulement parfait d'un fluide}{18}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Cadre et limites du mod\IeC {\`e}le}{18}{subsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.1.1}\IeC {\'E}quation d'Euler}{18}{subsubsection.1.4.1.1}
+\contentsline {subsubsection}{\numberline {1.4.1.2}Conditions aux limites}{18}{subsubsection.1.4.1.2}
+\contentsline {subsubsection}{\numberline {1.4.1.3}Couche limite}{19}{subsubsection.1.4.1.3}
+\contentsline {subsection}{\numberline {1.4.2}Th\IeC {\'e}or\IeC {\`e}me de Bernoulli}{19}{subsection.1.4.2}
+\contentsline {subsubsection}{\numberline {1.4.2.1}\IeC {\'E}quation de conservation de l'\IeC {\'e}nergie}{19}{subsubsection.1.4.2.1}
+\contentsline {subsubsection}{\numberline {1.4.2.2}Application au tube de Pitot}{19}{subsubsection.1.4.2.2}
+\contentsline {subsubsection}{\numberline {1.4.2.3}Application : l'effet Venturi}{20}{subsubsection.1.4.2.3}
+\contentsline {subsection}{\numberline {1.4.3}\IeC {\'E}coulement autour d'une aile}{20}{subsection.1.4.3}
+\contentsline {subsubsection}{\numberline {1.4.3.1}\IeC {\'E}coulement autour d'un obstacle}{20}{subsubsection.1.4.3.1}
+\contentsline {subsubsection}{\numberline {1.4.3.2}Estimation de la portance}{20}{subsubsection.1.4.3.2}
+\contentsline {subsubsection}{\numberline {1.4.3.3}Paradoxe de d'Alembert}{20}{subsubsection.1.4.3.3}
+\contentsline {section}{\numberline {1.5}LP05 Ph\IeC {\'e}nom\IeC {\`e}nes interfaciaux impliquant des liquides}{21}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}La tension de surface}{21}{subsection.1.5.1}
+\contentsline {subsubsection}{\numberline {1.5.1.1}Interpr\IeC {\'e}tation m\IeC {\'e}canique}{21}{subsubsection.1.5.1.1}
+\contentsline {subsubsection}{\numberline {1.5.1.2}Interpr\IeC {\'e}tation thermodynamique}{22}{subsubsection.1.5.1.2}
+\contentsline {subsubsection}{\numberline {1.5.1.3}Interpr\IeC {\'e}tation microscopique}{22}{subsubsection.1.5.1.3}
+\contentsline {subsection}{\numberline {1.5.2}Interface statique}{22}{subsection.1.5.2}
+\contentsline {subsubsection}{\numberline {1.5.2.1}Pression}{22}{subsubsection.1.5.2.1}
+\contentsline {subsubsection}{\numberline {1.5.2.2}Capillarit\IeC {\'e}}{23}{subsubsection.1.5.2.2}
+\contentsline {subsubsection}{\numberline {1.5.2.3}Mouillage}{23}{subsubsection.1.5.2.3}
+\contentsline {subsection}{\numberline {1.5.3}Interface dynamique}{23}{subsection.1.5.3}
+\contentsline {subsubsection}{\numberline {1.5.3.1}Instabilit\IeC {\'e} de Rayleigh-Taylor}{23}{subsubsection.1.5.3.1}
+\contentsline {subsubsection}{\numberline {1.5.3.2}Ondes capillaires}{24}{subsubsection.1.5.3.2}
+\contentsline {section}{\numberline {1.6}LP06 Premier principe de la thermodynamique}{25}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}Le premier principe}{25}{subsection.1.6.1}
+\contentsline {subsubsection}{\numberline {1.6.1.1}\IeC {\'E}nonc\IeC {\'e}}{25}{subsubsection.1.6.1.1}
+\contentsline {subsubsection}{\numberline {1.6.1.2}Capacit\IeC {\'e} calorifique}{26}{subsubsection.1.6.1.2}
+\contentsline {subsection}{\numberline {1.6.2}Quelques transformations}{26}{subsection.1.6.2}
+\contentsline {subsubsection}{\numberline {1.6.2.1}D\IeC {\'e}tente de Joule Gay-Lussac}{26}{subsubsection.1.6.2.1}
+\contentsline {subsubsection}{\numberline {1.6.2.2}Compression adiabatique}{26}{subsubsection.1.6.2.2}
+\contentsline {subsection}{\numberline {1.6.3}Enthalpie}{27}{subsection.1.6.3}
+\contentsline {subsubsection}{\numberline {1.6.3.1}D\IeC {\'e}finition}{27}{subsubsection.1.6.3.1}
+\contentsline {subsubsection}{\numberline {1.6.3.2}Calorim\IeC {\'e}trie}{27}{subsubsection.1.6.3.2}
+\contentsline {subsubsection}{\numberline {1.6.3.3}Enthalpie de changement d'\IeC {\'e}tat}{27}{subsubsection.1.6.3.3}
+\contentsline {section}{\numberline {1.7}LP07 Transitions de phase}{29}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}Template}{29}{subsection.1.7.1}
+\contentsline {subsubsection}{\numberline {1.7.1.1}Template}{29}{subsubsection.1.7.1.1}
+\contentsline {section}{\numberline {1.8}LP08 Ph\IeC {\'e}nom\IeC {\`e}nes de transport}{30}{section.1.8}
+\contentsline {subsection}{\numberline {1.8.1}G\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s}{31}{subsection.1.8.1}
+\contentsline {subsubsection}{\numberline {1.8.1.1}Diff\IeC {\'e}rents ph\IeC {\'e}nom\IeC {\`e}nes}{31}{subsubsection.1.8.1.1}
+\contentsline {subsubsection}{\numberline {1.8.1.2}\IeC {\'E}quilibre thermodynamique local}{31}{subsubsection.1.8.1.2}
+\contentsline {subsubsection}{\numberline {1.8.1.3}Lin\IeC {\'e}arit\IeC {\'e}}{32}{subsubsection.1.8.1.3}
+\contentsline {subsection}{\numberline {1.8.2}\IeC {\'E}quation de diffusion}{32}{subsection.1.8.2}
+\contentsline {subsubsection}{\numberline {1.8.2.1}Analogies}{32}{subsubsection.1.8.2.1}
+\contentsline {subsubsection}{\numberline {1.8.2.2}Caract\IeC {\`e}re irr\IeC {\'e}versible}{33}{subsubsection.1.8.2.2}
+\contentsline {subsubsection}{\numberline {1.8.2.3}Mesure de la conductivit\IeC {\'e} thermique du cuivre}{33}{subsubsection.1.8.2.3}
+\contentsline {subsection}{\numberline {1.8.3}Comparaison entre les diff\IeC {\'e}rents ph\IeC {\'e}nom\IeC {\`e}nes}{34}{subsection.1.8.3}
+\contentsline {subsubsection}{\numberline {1.8.3.1}R\IeC {\'e}sistance thermique}{34}{subsubsection.1.8.3.1}
+\contentsline {subsubsection}{\numberline {1.8.3.2}Ph\IeC {\'e}nom\IeC {\`e}ne pr\IeC {\'e}pond\IeC {\'e}rant}{34}{subsubsection.1.8.3.2}
+\contentsline {section}{\numberline {1.9}LP09 Conversion de puissance \IeC {\'e}lectrom\IeC {\'e}canique}{35}{section.1.9}
+\contentsline {subsection}{\numberline {1.9.1}Induction et force de Laplace}{35}{subsection.1.9.1}
+\contentsline {subsection}{\numberline {1.9.2}Machine \IeC {\`a} courant continu}{36}{subsection.1.9.2}
+\contentsline {subsubsection}{\numberline {1.9.2.1}Cas d'une spire -- Laplace}{36}{subsubsection.1.9.2.1}
+\contentsline {subsubsection}{\numberline {1.9.2.2}Cas d'une spire -- Induction de Lorentz}{36}{subsubsection.1.9.2.2}
+\contentsline {subsubsection}{\numberline {1.9.2.3}G\IeC {\'e}n\IeC {\'e}ralisation aux machines r\IeC {\'e}elles}{37}{subsubsection.1.9.2.3}
+\contentsline {subsubsection}{\numberline {1.9.2.4}Machine synchrone}{37}{subsubsection.1.9.2.4}
+\contentsline {subsubsection}{\numberline {1.9.2.5}Cr\IeC {\'e}ation d'un champ tournant}{37}{subsubsection.1.9.2.5}
+\contentsline {subsubsection}{\numberline {1.9.2.6}Champ statorique}{37}{subsubsection.1.9.2.6}
+\contentsline {subsection}{\numberline {1.9.3}Couple de la machine synchrone}{38}{subsection.1.9.3}
+\contentsline {section}{\numberline {1.10}LP10 Induction \IeC {\'e}lectromagn\IeC {\'e}tique}{39}{section.1.10}
+\contentsline {subsection}{\numberline {1.10.1}Les lois de l'induction}{39}{subsection.1.10.1}
+\contentsline {subsubsection}{\numberline {1.10.1.1}La loi de Faraday 2'30}{39}{subsubsection.1.10.1.1}
+\contentsline {subsubsection}{\numberline {1.10.1.2}Loi de Lenz 10'}{40}{subsubsection.1.10.1.2}
+\contentsline {subsection}{\numberline {1.10.2}Induction de Neumann (B variable) 12'}{41}{subsection.1.10.2}
+\contentsline {subsubsection}{\numberline {1.10.2.1}Auto-induction}{41}{subsubsection.1.10.2.1}
+\contentsline {subsubsection}{\numberline {1.10.2.2}Inductance mutuelle 25'}{42}{subsubsection.1.10.2.2}
+\contentsline {subsection}{\numberline {1.10.3}Induction de Lorentz (circuit mobile) 28'30}{42}{subsection.1.10.3}
+\contentsline {subsubsection}{\numberline {1.10.3.1}Rail de Laplace}{42}{subsubsection.1.10.3.1}
+\contentsline {section}{\numberline {1.11}LP11 R\IeC {\'e}troaction et oscillations}{46}{section.1.11}
+\contentsline {subsection}{\numberline {1.11.1}N\IeC {\'e}cessit\IeC {\'e} d'une r\IeC {\'e}troaction}{46}{subsection.1.11.1}
+\contentsline {subsubsection}{\numberline {1.11.1.1}Thermostat}{46}{subsubsection.1.11.1.1}
+\contentsline {subsubsection}{\numberline {1.11.1.2}Amplificateur non inverseur}{47}{subsubsection.1.11.1.2}
+\contentsline {subsection}{\numberline {1.11.2}Stabilit\IeC {\'e}}{47}{subsection.1.11.2}
+\contentsline {subsubsection}{\numberline {1.11.2.1}Comparateur \IeC {\`a} hyst\IeC {\'e}r\IeC {\'e}sis}{47}{subsubsection.1.11.2.1}
+\contentsline {subsubsection}{\numberline {1.11.2.2}Crit\IeC {\`e}re de stabilit\IeC {\'e}}{48}{subsubsection.1.11.2.2}
+\contentsline {subsection}{\numberline {1.11.3}Oscillateur quasi sinuso\IeC {\"\i }dal}{49}{subsection.1.11.3}
+\contentsline {subsubsection}{\numberline {1.11.3.1}Syst\IeC {\`e}me boucl\IeC {\'e}}{49}{subsubsection.1.11.3.1}
+\contentsline {subsubsection}{\numberline {1.11.3.2}Analyse de la boucle ouverte}{49}{subsubsection.1.11.3.2}
+\contentsline {subsubsection}{\numberline {1.11.3.3}Oscillateur \IeC {\`a} pont de Wien}{49}{subsubsection.1.11.3.3}
+\contentsline {section}{\numberline {1.12}LP12 Traitement d'un signal, \IeC {\'e}tude spectrale}{50}{section.1.12}
+\contentsline {subsection}{\numberline {1.12.1}Spectre d'un signal et filtrage}{50}{subsection.1.12.1}
+\contentsline {subsubsection}{\numberline {1.12.1.1}Signal p\IeC {\'e}riodique}{50}{subsubsection.1.12.1.1}
+\contentsline {subsubsection}{\numberline {1.12.1.2}Filtrage lin\IeC {\'e}aire}{51}{subsubsection.1.12.1.2}
+\contentsline {subsection}{\numberline {1.12.2}Transmission analogique : la radio AM}{52}{subsection.1.12.2}
+\contentsline {subsubsection}{\numberline {1.12.2.1}Modulation}{52}{subsubsection.1.12.2.1}
+\contentsline {subsubsection}{\numberline {1.12.2.2}D\IeC {\'e}modulation synchrone}{53}{subsubsection.1.12.2.2}
+\contentsline {subsection}{\numberline {1.12.3}Traitement num\IeC {\'e}rique}{53}{subsection.1.12.3}
+\contentsline {subsubsection}{\numberline {1.12.3.1}Num\IeC {\'e}risation}{53}{subsubsection.1.12.3.1}
+\contentsline {subsubsection}{\numberline {1.12.3.2}Filtrage}{53}{subsubsection.1.12.3.2}
+\contentsline {section}{\numberline {1.13}LP13 Ondes progressives, ondes stationnaires}{54}{section.1.13}
+\contentsline {subsection}{\numberline {1.13.1}Template}{54}{subsection.1.13.1}
+\contentsline {subsubsection}{\numberline {1.13.1.1}Template}{54}{subsubsection.1.13.1.1}
+\contentsline {section}{\numberline {1.14}LP14 Ondes acoustiques}{55}{section.1.14}
+\contentsline {subsection}{\numberline {1.14.1}Description d'une onde acoustique}{55}{subsection.1.14.1}
+\contentsline {subsubsection}{\numberline {1.14.1.1}Approximation acoustique}{55}{subsubsection.1.14.1.1}
+\contentsline {subsubsection}{\numberline {1.14.1.2}\IeC {\'E}quation de propagation}{56}{subsubsection.1.14.1.2}
+\contentsline {subsubsection}{\numberline {1.14.1.3}Retour sur les hypoth\IeC {\`e}ses}{57}{subsubsection.1.14.1.3}
+\contentsline {subsection}{\numberline {1.14.2}Aspects \IeC {\'e}nerg\IeC {\'e}tiques}{58}{subsection.1.14.2}
+\contentsline {subsubsection}{\numberline {1.14.2.1}Conservation de l'\IeC {\'e}nergie}{58}{subsubsection.1.14.2.1}
+\contentsline {subsubsection}{\numberline {1.14.2.2}Intensit\IeC {\'e} d'une onde acoustique}{59}{subsubsection.1.14.2.2}
+\contentsline {subsubsection}{\numberline {1.14.2.3}Imp\IeC {\'e}dance acoustique}{59}{subsubsection.1.14.2.3}
+\contentsline {subsection}{\numberline {1.14.3}Quelques exemples}{60}{subsection.1.14.3}
+\contentsline {subsubsection}{\numberline {1.14.3.1}Tuyau sonore}{60}{subsubsection.1.14.3.1}
+\contentsline {subsubsection}{\numberline {1.14.3.2}Plaque vibrante}{61}{subsubsection.1.14.3.2}
+\contentsline {section}{\numberline {1.15}LP15 Propagation guid\IeC {\'e}e des ondes}{62}{section.1.15}
+\contentsline {subsection}{\numberline {1.15.1}Mod\IeC {\`e}le du guide \IeC {\'e}lectromagn\IeC {\'e}tique}{62}{subsection.1.15.1}
+\contentsline {subsubsection}{\numberline {1.15.1.1}Position du probl\IeC {\`e}me}{62}{subsubsection.1.15.1.1}
+\contentsline {subsubsection}{\numberline {1.15.1.2}Solutions TE}{62}{subsubsection.1.15.1.2}
+\contentsline {subsubsection}{\numberline {1.15.1.3}Relation de dispersion}{63}{subsubsection.1.15.1.3}
+\contentsline {subsection}{\numberline {1.15.2}Guide d'onde r\IeC {\'e}els}{63}{subsection.1.15.2}
+\contentsline {subsubsection}{\numberline {1.15.2.1}Guide microonde}{63}{subsubsection.1.15.2.1}
+\contentsline {subsubsection}{\numberline {1.15.2.2}Tuyau sonore}{63}{subsubsection.1.15.2.2}
+\contentsline {subsubsection}{\numberline {1.15.2.3}Fibre optique}{64}{subsubsection.1.15.2.3}
+\contentsline {section}{\numberline {1.16}LP16 Microscopies optiques}{65}{section.1.16}
+\contentsline {subsection}{\numberline {1.16.1}Microscope \IeC {\`a} deux lentilles}{65}{subsection.1.16.1}
+\contentsline {subsubsection}{\numberline {1.16.1.1}L'oculaire}{66}{subsubsection.1.16.1.1}
+\contentsline {subsubsection}{\numberline {1.16.1.2}L'objectif}{66}{subsubsection.1.16.1.2}
+\contentsline {subsubsection}{\numberline {1.16.1.3}Caract\IeC {\'e}ristiques du microscope}{66}{subsubsection.1.16.1.3}
+\contentsline {subsection}{\numberline {1.16.2}Limitations}{67}{subsection.1.16.2}
+\contentsline {subsubsection}{\numberline {1.16.2.1}R\IeC {\'e}solution lat\IeC {\'e}rale}{67}{subsubsection.1.16.2.1}
+\contentsline {subsubsection}{\numberline {1.16.2.2}Aberrations}{68}{subsubsection.1.16.2.2}
+\contentsline {subsubsection}{\numberline {1.16.2.3}\IeC {\'E}clairage}{68}{subsubsection.1.16.2.3}
+\contentsline {subsection}{\numberline {1.16.3}Microscopie \IeC {\`a} contraste de phase}{68}{subsection.1.16.3}
+\contentsline {section}{\numberline {1.17}LP17 Interf\IeC {\'e}rences \IeC {\`a} deux ondes en optique}{71}{section.1.17}
+\contentsline {subsection}{\numberline {1.17.1}Superposition de deux ondes}{71}{subsection.1.17.1}
+\contentsline {subsubsection}{\numberline {1.17.1.1}\IeC {\'E}clairement}{71}{subsubsection.1.17.1.1}
+\contentsline {subsubsection}{\numberline {1.17.1.2}Conditions d'interf\IeC {\'e}rence}{72}{subsubsection.1.17.1.2}
+\contentsline {subsection}{\numberline {1.17.2}Une dispositif \IeC {\`a} division du front d'onde : les fentes d'Young}{72}{subsection.1.17.2}
+\contentsline {subsubsection}{\numberline {1.17.2.1}Dispositif exp\IeC {\'e}rimental}{72}{subsubsection.1.17.2.1}
+\contentsline {subsubsection}{\numberline {1.17.2.2}Calcul de la diff\IeC {\'e}rence de marche}{72}{subsubsection.1.17.2.2}
+\contentsline {subsubsection}{\numberline {1.17.2.3}Figure d'interf\IeC {\'e}rence}{73}{subsubsection.1.17.2.3}
+\contentsline {subsection}{\numberline {1.17.3}Coh\IeC {\'e}rence de la source}{73}{subsection.1.17.3}
+\contentsline {subsubsection}{\numberline {1.17.3.1}\IeC {\'E}volution du contraste}{73}{subsubsection.1.17.3.1}
+\contentsline {subsubsection}{\numberline {1.17.3.2}Source \IeC {\'e}tendue}{74}{subsubsection.1.17.3.2}
+\contentsline {subsubsection}{\numberline {1.17.3.3}Coh\IeC {\'e}rence temporelle}{74}{subsubsection.1.17.3.3}
+\contentsline {paragraph}{Interf\IeC {\'e}rence avec un laser :}{75}{section*.59}
+\contentsline {paragraph}{Variation du contraste avec une source \IeC {\'e}tendue :}{75}{section*.60}
+\contentsline {section}{\numberline {1.18}LP18 Interf\IeC {\'e}rom\IeC {\'e}trie \IeC {\`a} division d'amplitude}{76}{section.1.18}
+\contentsline {subsection}{\numberline {1.18.1}Division d'amplitude}{76}{subsection.1.18.1}
+\contentsline {subsubsection}{\numberline {1.18.1.1}Division d'amplitude ou division du front d'onde ?}{76}{subsubsection.1.18.1.1}
+\contentsline {subsubsection}{\numberline {1.18.1.2}Lame \IeC {\`a} faces parall\IeC {\`e}les}{77}{subsubsection.1.18.1.2}
+\contentsline {subsection}{\numberline {1.18.2}L'interf\IeC {\'e}rom\IeC {\`e}tre de Michelson}{77}{subsection.1.18.2}
+\contentsline {subsubsection}{\numberline {1.18.2.1}Configuration lame d'air}{78}{subsubsection.1.18.2.1}
+\contentsline {subsubsection}{\numberline {1.18.2.2}Analyse du doublet jaune du sodium}{78}{subsubsection.1.18.2.2}
+\contentsline {subsubsection}{\numberline {1.18.2.3}Les interf\IeC {\'e}rom\IeC {\`e}tres gravitationnels}{78}{subsubsection.1.18.2.3}
+\contentsline {subsubsection}{\numberline {1.18.2.4}Configuration coin d'air}{79}{subsubsection.1.18.2.4}
+\contentsline {subsection}{\numberline {1.18.3}Interf\IeC {\'e}rom\IeC {\`e}tre de Fabry-Perot}{79}{subsection.1.18.3}
+\contentsline {section}{\numberline {1.19}LP19 Diffraction de Fraunhofer}{81}{section.1.19}
+\contentsline {subsection}{\numberline {1.19.1}Description de la diffraction}{81}{subsection.1.19.1}
+\contentsline {subsubsection}{\numberline {1.19.1.1}Principe de Huygens-Fresnel}{81}{subsubsection.1.19.1.1}
+\contentsline {subsubsection}{\numberline {1.19.1.2}Diffraction par un objet quelconque}{82}{subsubsection.1.19.1.2}
+\contentsline {subsubsection}{\numberline {1.19.1.3}Approximation de Fraunhofer}{82}{subsubsection.1.19.1.3}
+\contentsline {subsection}{\numberline {1.19.2}Figures de diffractions}{83}{subsection.1.19.2}
+\contentsline {subsubsection}{\numberline {1.19.2.1}Fente rectangulaire}{83}{subsubsection.1.19.2.1}
+\contentsline {subsubsection}{\numberline {1.19.2.2}Ouverture circulaire}{83}{subsubsection.1.19.2.2}
+\contentsline {subsubsection}{\numberline {1.19.2.3}Limites de r\IeC {\'e}solutions}{83}{subsubsection.1.19.2.3}
+\contentsline {subsection}{\numberline {1.19.3}Filtrage}{83}{subsection.1.19.3}
+\contentsline {section}{\numberline {1.20}LP20 Diffraction par des structures p\IeC {\'e}riodiques}{85}{section.1.20}
+\contentsline {subsection}{\numberline {1.20.1}Template}{85}{subsection.1.20.1}
+\contentsline {subsubsection}{\numberline {1.20.1.1}Template}{85}{subsubsection.1.20.1.1}
+\contentsline {section}{\numberline {1.21}LP21 Absorption et \IeC {\'e}mission de la lumi\IeC {\`e}re}{86}{section.1.21}
+\contentsline {subsection}{\numberline {1.21.1}Template}{86}{subsection.1.21.1}
+\contentsline {subsubsection}{\numberline {1.21.1.1}Template}{86}{subsubsection.1.21.1.1}
+\contentsline {section}{\numberline {1.22}LP22 Propri\IeC {\'e}t\IeC {\'e}s macroscopiques des corps ferromagn\IeC {\'e}tiques}{87}{section.1.22}
+\contentsline {subsection}{\numberline {1.22.1}Template}{87}{subsection.1.22.1}
+\contentsline {subsubsection}{\numberline {1.22.1.1}Template}{87}{subsubsection.1.22.1.1}
+\contentsline {section}{\numberline {1.23}LP23 M\IeC {\'e}canismes de la conduction \IeC {\'e}lectrique dans les solides}{88}{section.1.23}
+\contentsline {subsection}{\numberline {1.23.1}Template}{88}{subsection.1.23.1}
+\contentsline {subsubsection}{\numberline {1.23.1.1}Template}{88}{subsubsection.1.23.1.1}
+\contentsline {section}{\numberline {1.24}LP24 Ph\IeC {\'e}nom\IeC {\`e}ne de r\IeC {\'e}sonance dans diff\IeC {\'e}rents domaines de la physique}{89}{section.1.24}
+\contentsline {subsection}{\numberline {1.24.1}Syst\IeC {\`e}me \IeC {\`a} un degr\IeC {\'e} de libert\IeC {\'e}}{89}{subsection.1.24.1}
+\contentsline {subsubsection}{\numberline {1.24.1.1}Oscillateur amorti en r\IeC {\'e}gime sinuso\IeC {\"\i }dal forc\IeC {\'e}}{90}{subsubsection.1.24.1.1}
+\contentsline {subsubsection}{\numberline {1.24.1.2}R\IeC {\'e}sonance en amplitude}{90}{subsubsection.1.24.1.2}
+\contentsline {subsubsection}{\numberline {1.24.1.3}R\IeC {\'e}sonance en vitesse}{91}{subsubsection.1.24.1.3}
+\contentsline {subsection}{\numberline {1.24.2}Aspects \IeC {\'e}nerg\IeC {\'e}tiques}{91}{subsection.1.24.2}
+\contentsline {subsubsection}{\numberline {1.24.2.1}Transferts d'\IeC {\'e}nergie}{91}{subsubsection.1.24.2.1}
+\contentsline {subsubsection}{\numberline {1.24.2.2}Lien avec le r\IeC {\'e}gime libre}{92}{subsubsection.1.24.2.2}
+\contentsline {subsection}{\numberline {1.24.3}Syst\IeC {\`e}me \IeC {\`a} N degr\IeC {\'e}s de libert\IeC {\'e}}{92}{subsection.1.24.3}
+\contentsline {subsubsection}{\numberline {1.24.3.1}Deux oscillateurs coupl\IeC {\'e}s}{92}{subsubsection.1.24.3.1}
+\contentsline {subsubsection}{\numberline {1.24.3.2}Cavit\IeC {\'e} optique}{93}{subsubsection.1.24.3.2}
+\contentsline {section}{\numberline {1.25}LP25 Oscillateurs ; portraits de phase et non-lin\IeC {\'e}arit\IeC {\'e}s}{95}{section.1.25}
+\contentsline {subsection}{\numberline {1.25.1}Oscillateur et portrait de phase}{95}{subsection.1.25.1}
+\contentsline {subsubsection}{\numberline {1.25.1.1}Portrait de phase}{95}{subsubsection.1.25.1.1}
+\contentsline {subsubsection}{\numberline {1.25.1.2}Propri\IeC {\'e}t\IeC {\'e}s}{96}{subsubsection.1.25.1.2}
+\contentsline {subsubsection}{\numberline {1.25.1.3}Dissipation}{97}{subsubsection.1.25.1.3}
+\contentsline {subsection}{\numberline {1.25.2}Vers des oscillateurs plus r\IeC {\'e}alistes}{97}{subsection.1.25.2}
+\contentsline {subsubsection}{\numberline {1.25.2.1}Lien avec l'\IeC {\'e}nergie potentielle}{97}{subsubsection.1.25.2.1}
+\contentsline {subsubsection}{\numberline {1.25.2.2}Influence des non lin\IeC {\'e}arit\IeC {\'e}s}{98}{subsubsection.1.25.2.2}
+\contentsline {subsection}{\numberline {1.25.3}Oscillateurs auto-entretenu}{98}{subsection.1.25.3}
+\contentsline {chapter}{\numberline {2}Le\IeC {\c c}ons de chimie}{100}{chapter.2}
+\contentsline {section}{\numberline {2.1}LC01 S\IeC {\'e}parations, purifications, contr\IeC {\^o}les de puret\IeC {\'e}}{101}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Template}{101}{subsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Template}{101}{subsubsection.2.1.1.1}
+\contentsline {section}{\numberline {2.2}LC02 Chimie durable}{102}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Template}{102}{subsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Template}{102}{subsubsection.2.2.1.1}
+\contentsline {section}{\numberline {2.3}LC03 Synth\IeC {\`e}se inorganique}{103}{section.2.3}
+\contentsline {paragraph}{Exp\IeC {\'e}riences :}{103}{section*.86}
+\contentsline {subsection}{\numberline {2.3.1}Synth\IeC {\`e}se du dichlore}{103}{subsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.1.1}Synth\IeC {\`e}se de l'eau de Javel en laboratoire}{103}{subsubsection.2.3.1.1}
+\contentsline {subsubsection}{\numberline {2.3.1.2}Synth\IeC {\`e}se industrielle}{104}{subsubsection.2.3.1.2}
+\contentsline {subsubsection}{\numberline {2.3.1.3}Vers des synth\IeC {\`e}ses plus vertes}{105}{subsubsection.2.3.1.3}
+\contentsline {subsection}{\numberline {2.3.2}Les complexes}{105}{subsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2.1}Mise en \IeC {\'e}vidence}{105}{subsubsection.2.3.2.1}
+\contentsline {subsubsection}{\numberline {2.3.2.2}Synth\IeC {\`e}se d'un complexe}{106}{subsubsection.2.3.2.2}
+\contentsline {subsection}{\numberline {2.3.3}Complexes bioinorganiques}{106}{subsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.3.1}Transport de l'oxyg\IeC {\`e}ne}{106}{subsubsection.2.3.3.1}
+\contentsline {subsubsection}{\numberline {2.3.3.2}Un complexe en chimioth\IeC {\'e}rapie}{106}{subsubsection.2.3.3.2}
+\contentsline {section}{\numberline {2.4}LC04 Strat\IeC {\'e}gies et s\IeC {\'e}lectivit\IeC {\'e} en synth\IeC {\`e}se organique}{107}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Template}{107}{subsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.1.1}Template}{107}{subsubsection.2.4.1.1}
+\contentsline {section}{\numberline {2.5}LC05 Dosages}{108}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Template}{108}{subsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.1.1}Template}{108}{subsubsection.2.5.1.1}
+\contentsline {section}{\numberline {2.6}LC06 Cin\IeC {\'e}tique et catalyse}{109}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Template}{109}{subsection.2.6.1}
+\contentsline {subsubsection}{\numberline {2.6.1.1}Template}{109}{subsubsection.2.6.1.1}
+\contentsline {section}{\numberline {2.7}LC07 Capteurs \IeC {\'e}lectrochimiques}{110}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Template}{110}{subsection.2.7.1}
+\contentsline {subsubsection}{\numberline {2.7.1.1}Template}{110}{subsubsection.2.7.1.1}
+\contentsline {section}{\numberline {2.8}LC08 Mol\IeC {\'e}cules de la sant\IeC {\'e}}{111}{section.2.8}
+\contentsline {paragraph}{Exp\IeC {\'e}riences :}{111}{section*.98}
+\contentsline {subsection}{\numberline {2.8.1}La chimie au service de la sant\IeC {\'e}}{112}{subsection.2.8.1}
+\contentsline {subsubsection}{\numberline {2.8.1.1}Action th\IeC {\'e}rapeutique : les m\IeC {\'e}dicaments}{112}{subsubsection.2.8.1.1}
+\contentsline {subsubsection}{\numberline {2.8.1.2}Hygi\IeC {\`e}ne : antiseptiques et d\IeC {\'e}sinfectants}{112}{subsubsection.2.8.1.2}
+\contentsline {subsection}{\numberline {2.8.2}Obtention du principe actif}{113}{subsection.2.8.2}
+\contentsline {subsubsection}{\numberline {2.8.2.1}Extraction de principes actifs}{113}{subsubsection.2.8.2.1}
+\contentsline {subsubsection}{\numberline {2.8.2.2}Synth\IeC {\`e}se du parac\IeC {\'e}tamol}{114}{subsubsection.2.8.2.2}
+\contentsline {subsection}{\numberline {2.8.3}Contr\IeC {\^o}le qualit\IeC {\'e}}{115}{subsection.2.8.3}
+\contentsline {subsubsection}{\numberline {2.8.3.1}Identification, v\IeC {\'e}rification de la puret\IeC {\'e}}{115}{subsubsection.2.8.3.1}
+\contentsline {subsubsection}{\numberline {2.8.3.2}Dosage}{115}{subsubsection.2.8.3.2}
+\contentsline {section}{\numberline {2.9}LC09 Acides et bases}{116}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Template}{116}{subsection.2.9.1}
+\contentsline {subsubsection}{\numberline {2.9.1.1}Template}{116}{subsubsection.2.9.1.1}
+\contentsline {section}{\numberline {2.10}LC10 Solvants}{117}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}Template}{117}{subsection.2.10.1}
+\contentsline {subsubsection}{\numberline {2.10.1.1}Template}{117}{subsubsection.2.10.1.1}
+\contentsline {section}{\numberline {2.11}LC11 Corps purs et m\IeC {\'e}langes binaires}{118}{section.2.11}
+\contentsline {subsection}{\numberline {2.11.1}Template}{118}{subsection.2.11.1}
+\contentsline {subsubsection}{\numberline {2.11.1.1}Template}{118}{subsubsection.2.11.1.1}
+\contentsline {section}{\numberline {2.12}LX12 Application du premier principe de la thermodynamique \IeC {\`a} la r\IeC {\'e}action chimique}{119}{section.2.12}
+\contentsline {subsection}{\numberline {2.12.1}Template}{119}{subsection.2.12.1}
+\contentsline {subsubsection}{\numberline {2.12.1.1}Template}{119}{subsubsection.2.12.1.1}
+\contentsline {section}{\numberline {2.13}LC13 D\IeC {\'e}terminations de constantes d'\IeC {\'e}quilibre}{120}{section.2.13}
+\contentsline {subsection}{\numberline {2.13.1}Template}{120}{subsection.2.13.1}
+\contentsline {subsubsection}{\numberline {2.13.1.1}Template}{120}{subsubsection.2.13.1.1}
+\contentsline {section}{\numberline {2.14}LC14 Cin\IeC {\'e}tique homog\IeC {\`e}ne}{121}{section.2.14}
+\contentsline {subsection}{\numberline {2.14.1}Template}{121}{subsection.2.14.1}
+\contentsline {subsubsection}{\numberline {2.14.1.1}Template}{121}{subsubsection.2.14.1.1}
+\contentsline {section}{\numberline {2.15}LC15 Evolution et \IeC {\'e}quilibre chimique}{122}{section.2.15}
+\contentsline {subsection}{\numberline {2.15.1}Template}{122}{subsection.2.15.1}
+\contentsline {subsubsection}{\numberline {2.15.1.1}Template}{122}{subsubsection.2.15.1.1}
+\contentsline {section}{\numberline {2.16}LC16 Diagrammes potentiel-pH (construction exclue}{123}{section.2.16}
+\contentsline {subsection}{\numberline {2.16.1}Template}{123}{subsection.2.16.1}
+\contentsline {subsubsection}{\numberline {2.16.1.1}Template}{123}{subsubsection.2.16.1.1}
+\contentsline {section}{\numberline {2.17}LC17 Corrosion humide des m\IeC {\'e}taux}{124}{section.2.17}
+\contentsline {subsection}{\numberline {2.17.1}Template}{124}{subsection.2.17.1}
+\contentsline {subsubsection}{\numberline {2.17.1.1}Template}{124}{subsubsection.2.17.1.1}
+\contentsline {section}{\numberline {2.18}LC18 Conversion r\IeC {\'e}ciproque d'\IeC {\'e}nergie \IeC {\'e}lectrique en \IeC {\'e}nergie chimique}{125}{section.2.18}
+\contentsline {subsection}{\numberline {2.18.1}Template}{125}{subsection.2.18.1}
+\contentsline {subsubsection}{\numberline {2.18.1.1}Template}{125}{subsubsection.2.18.1.1}
+\contentsline {section}{\numberline {2.19}LC19 Solubilit\IeC {\'e}}{126}{section.2.19}
+\contentsline {subsection}{\numberline {2.19.1}Template}{126}{subsection.2.19.1}
+\contentsline {subsubsection}{\numberline {2.19.1.1}Template}{126}{subsubsection.2.19.1.1}
+\contentsline {chapter}{Op\IeC {\'e}rateurs vectoriels}{127}{appendix*.123}
+\contentsline {chapter}{Liens}{129}{appendix*.130}
+\contentsline {chapter}{Bibliographie}{132}{appendix*.133}
