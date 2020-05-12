@@ -3,8 +3,9 @@
 \begin{header}
 \begin{tabular}{p{0.4\textwidth} l}
 \niveau & \prerequis \\
-Template& \textbullet{} Template \\
-        & \textbullet{} Template \\
+CPGE    & \textbullet{} Mécanique \\
+        & \textbullet{} \'Electrocinétique \\
+        & \textbullet{} Équations de Maxwell
 \end{tabular}
 
 \noindent
@@ -12,41 +13,253 @@ Template& \textbullet{} Template \\
 Template
 \end{header}
 
-\begin{remarque}
-Taux d'onde stationnaire : rapport entre l'amplitude max (au niveau des ventres) et l'amplitude min (au niveau des nœuds).
-Pour une onde progressive, il vaut 1, pour une onde parfaitement stationnaire, il tend vers l'infini.
-\end{remarque}
-
-
 {
 \subsubsection*{Bibliographie}
 \footnotesize{}
-%\begin{itemize}
-%\item 
-%\end{itemize}
+\begin{itemize}
+\item \cite{Thibierge2014}
+\item \cite{Sanz2016}
+\item \cite{Olivier2000}
+\item \cite{Brebec2004}
+\end{itemize}
 }
-
 
 \subsection*{Introduction}
 
-\subsection{Template}
-
-\subsubsection{Template}
-
-\begin{experience}
-\textbf{Template}
-\end{experience}
+On peut définir une onde comme \cite{Olivier2000} p655.
+Cette définition est très générale et englobe de nombreux phénomènes physiques.
 
 \begin{slide}
-\textbf{Template}
+\textbf{Ondes.}
+Insister sur :
+\begin{itemize}
+\item 1D, 2D, 3D ;
+\item multiples domaines.
+\end{itemize}
 \end{slide}
 
-\begin{transition}
-\textbf{Template}
-\end{transition}
+Dans un premier temps, on va étudier une équation très fréquente quand on s'intéresse aux ondes et on va étudier en particulier deux grandes familles de solutions de cette équation.
 
 \begin{remarque}
-\textbf{Template}
+Les champs dont il est question dans la définition de \cite{Olivier2000} peuvent être scalaires, vectoriels ou même tensoriels (ondes gravitationnelles).
+
+\noindent
+D'aucuns rajouterons à la définition de \cite{Olivier2000} que l'équation doit admettre des solutions propagatives...
 \end{remarque}
+
+\subsection{Équation d'onde}
+
+\subsubsection{Corde de Melde}
+
+\begin{remarque}
+\important
+Attention à la convention choisie : pour éviter de trainer des signes - partout et contrairement à ce qui est fait dans \cite{Brebec2004} p31, on appelle $\overrightarrow{T}(x,t)$ la tension exercée par la partie \emph{droite} de la corde sur la partie \emph{gauche} en $x$ avec l'axe des $x$ orienté de la gauche vers la droite !
+Pour le bilan des forces parler de $F$ plutôt que de $T$ et exprimer après $F$ en fonction de $T$ : $\overrightarrow{F}(x,t)=-\overrightarrow{T}(x,t)$ et $\overrightarrow{F}(x+\d x,t)=+\overrightarrow{T}(x+\d x,t)$.
+
+\noindent
+De même, attention au signe : les équations couplées sont données avec un signe -.
+Si $F_y$ est vers les $y$ croissants (contrairement à \cite{Brebec2004}), les grandeurs couplées sont bien $v_y$ et $-F_y$.
+\end{remarque}
+
+Suivre \cite{Olivier2000} p657-659.
+Bien poser le problème : schéma et hypothèses, bilan des forces, projection sur les deux axes et arriver à l'équation de d'Alembert.
+Pendant la démonstration, encadrer les deux équations de couplage \cite{Brebec2004} p32 et dire que l'équation de d'Alembert provient de ces deux équations.
+
+\begin{remarque}
+Discussion sur la comparaison de la tension de la corde avec le poids \cite{Sanz2016} p874 : il faut ajouter une condition sur l'angle que fait la corde avec l'horizontale 
+car sinon on compare deux forces qui sont orthogonales.
+Avec leurs valeurs, le rapport entre le poids de la corde et la tension donne $10^4$ ce qui fait que la déformation due au poids est de l'ordre $\unit{0{,}5\times10^{-4}}{rad}$ soit $\unit{0{,}003}{\degree}$.
+Pour des angles très petits devant \unit{1}{rad} mais très grands devant cette valeur les approximations sont vérifiées.
+
+\noindent
+Pour la corde, $y$, $v_y$, $\alpha$ et $F_y$ vérifient l'équation de d'Alembert.
+
+\noindent
+Considérer une corde de raideur non nulle amène un terme supplémentaire avec des dérivées d'ordre 4 dans l'équation de d'Alembert \cite{Brebec2004} p182.
+\end{remarque}
+
+En fait cette équation est très générale et est obtenue pour des champs scalaires comme vectoriels : donner l'expression vectorielle.
+
+\begin{transition}
+Voyons quelques propriétés de cette équation.
+\end{transition}
+
+\subsubsection{Équation de d'Alembert}
+
+\begin{slide}
+\textbf{Universalité de l'équation de d'Alembert.}
+Onde acoustique \cite{Sanz2016} p925.
+\end{slide}
+
+Dire que l'équation de d'Alembert est la même pour les deux grandeurs couplées, parler de réversibilité, de linéarité donc superposition.
+Remarquer que le produit des deux grandeurs couplées donne une puissance ou une puissance surfacique : c'est une flux d'énergie !
+
+Le fait que l'on trouve cette équation est souvent le résultat d'approximations : absence de dissipation (donc réversibilité), linéarisation des équations, etc. ce qui la rend très fréquente en physique.
+L'existence de grandeurs couplées est une caractéristique fondamentale des phénomènes propagatifs et peut aboutir à d'autres équations.
+
+\begin{slide}
+\textbf{D'autres équations de propagation.}
+Effet de peau \cite{Olivier2000} p765, onde dans un plasma \cite{Brebec2004} p182, corde avec frottements \cite{Brebec2004} p182.
+\end{slide}
+
+On peut insister en particulier sur l'irréversibilité de l'équation pour la corde avec frottement.
+
+\begin{transition}
+Comme toutes les équations aux dérivées partielles, il est nécessaire de connaitre des contions initiales ou des contions aux limites pour la résoudre.
+Dans la suite on s'intéresse seulement à des solutions de l'équation de d'Alembert.
+On va d'abord s'intéresser à une famille particulière de solutions : les ondes progressives.
+\end{transition}
+
+\subsection{Ondes progressives}
+
+\subsubsection{Expression générale}
+
+Donner la forme générale \cite{Olivier2000} p660 sans démonstration et donner l'interprétation en faisant les graphes $y=f(x)$ et $y=f(t)$ pour le cas d'une onde se propageant dans le sens des $x$ croissants (attention de bien faire une allure asymétrique pour voir la différence entre les deux graphes).
+Montrer qu'il y a translation du motif à l'identique.
+Retour sur les conditions initiales : si l'on connait la forme de la déformation à un instant $t$, on peut déterminer l'évolution du système.
+
+\begin{transition}
+En général, les ondes se propagent en 3D mais on peut simplifier en étudiant les ondes planes.
+\end{transition}
+
+\subsubsection{Ondes planes progressives harmoniques}
+
+Donner la définition d'une onde plane \cite{Brebec2004} p33 et justifier le nom avec l'interprétation sur les surfaces d'onde \cite{Thibierge2014} p11-12.
+Ca n'a pas trop de sens avec la corde qui est 1D mais la forme est la même.
+Elle vérifie la définition d'une onde progressive et justifier harmonique par le fait qu'on puisse appliquer la superposition.
+
+Définir la vitesse de phase, établir la relation de dispersion et remarquer que $v_\varphi=c$ mais dire que c'est un cas particulier.
+
+\begin{experience}
+\textbf{Mesure de la vitesse du son dans l'air.}
+\end{experience}
+
+Dire qu'il s'agit d'une base complète de solution.
+Nuancer en remarquant que ces solutions ne sont pas physiques car extension spatiale et temporelle infinie mais adapté à la description dans certaines géométries.
+On pourrait aussi parler d'ondes sphériques.
+
+\begin{remarque}
+Selon FD il vaut mieux éviter de parler de Fourier...
+On peut rester vague en parlant simplement de superposition.
+
+\noindent
+Ici on ne parle pas de vitesse de groupe ce qui est justifié par l'absence de dispersion.
+\end{remarque}
+
+\begin{transition}
+On a vu que l'équation de propagation venait du couplage entre deux champs associables à des énergies  cinétique et potentielle.
+Remarquer que l'expression célérité dépend des grandeurs caractéristiques du milieu sur l'inertie et le terme de rappel.
+\end{transition}
+
+\subsubsection{Aspects énergétiques}
+
+Donner l'expression des énergies cinétique et potentielle de la corde : suivre  \cite{Brebec2004} p89 exercice 6.
+Expliquer pourquoi la tension agit au premier ordre comme une force de rappel avec les mains : inclinaison de la corde par rapport à la position d'équilibre horizontale.
+Reprendre la slide \og Universalité de l'équation de l'équation de d'Alembert \fg{} pour avoir les équations couplées et dériver l'expression de l'énergie obtenue pour faire apparaitre le vecteur de Poynting.
+Interpréter en faisant le schéma d'un bilan d'énergie d'une section de corde de longueur $\d x$.
+Analogie avec l'électrocinétique, l'acoustique.
+
+Dans le cas des OPP, on peut pousser l'analogie et définir l'impédance \cite{Brebec2004} p63 qui donne un lien simple entre les grandeurs couplées : c'est la relation de structure \cite{Thibierge2014} p14 valable pour une OPP dans un milieu homogène et isotrope.
+Donner le cas pour la corde \cite{Sanz2016} p1066 et l'expression de l'impédance $\sqrt{\mu T_0}$.
+C'est la même chose en électrocinétique et c'est pour ça que l'adaptation d'impédance est primordiale.
+
+\begin{slide}
+\textbf{Réflexion et transmission sur un dioptre.}
+\end{slide}
+
+\begin{remarque}
+La tension d'une corde est une force non conservative.
+Pour s'en convaincre, on peut comparer le travail de la tension quand on soulève une masse au bout d'un fil sur une même distance mais pendant deux durées différentes.
+
+\noindent
+Pour la corde : si l'extrémité est fixe, la réflexion s'accompagne d'un déphasage de $pi$ mais si l'extrémité est libre, l'onde est réfléchie à l'identique. 
+
+\noindent
+En optique on a le même genre de relation avec les indices : ce sont les relations de Fresnel \cite{Olivier2000} p809.
+Pourquoi les indices prennent le rôle des impédance, je ne sais pas... ok ça sort des relations de passage mais le lien entre $Z$ et $n$ ?
+
+\noindent
+Ne pas confondre impédance propagative et impédance dissipative \cite{Thibierge2014} p14.
+
+\noindent
+Impédance électromagnétique du vide : $Z=\sqrt{\frac{\mu_0}{\epsilon_0}}=\unit{377}{\ohm}$.
+Impédance d'un câble coaxial : \unit{50}{\ohm} ou \unit{75}{\ohm}.
+Impédance acoustique de l'air : $\rho c = \unit{340}{\kilo\gram\cdot s^{-1} \cdot \meter^{-2}}$.
+\end{remarque}
+
+\begin{transition}
+Remarquer qu'en cas d'impédance nulle ou infinie, l'onde est totalement réfléchie...
+\end{transition}
+
+\subsection{Ondes stationnaires}
+
+\subsubsection{Expression générale}
+
+Exprimer la superposition de deux OPPH contra-propageantes et faire apparaitre le découplage entre les variables d'espace et de temps : chemin inverse de \cite{Thibierge2014} p22 avec
+\begin{equation}
+\cos a + \cos b = 2\cos\frac{a+b}{2}\cos\frac{a-b}{2}.
+\end{equation}
+
+Donner la définition d'une onde plane stationnaire \cite{Thibierge2014} p22.
+Elle satisfait automatiquement l'équation de d'Alembert comme c'est une superposition d'OPPH, base complète aussi.
+Même relation de dispersion, double périodicité.
+
+\begin{experience}
+\textbf{Corde de Melde.}
+\end{experience}
+Se baser sur l'expérience pour mettre en évidence les nœuds et ventres de vibration, donner le lien avec la longueur d'onde.
+
+Donner l'exemple d'un réseau optique pour le piégeage d'atome : création d'une onde stationnaire avec deux lasers contra-propageants, ou exemple avec les télécommunications \cite{Sanz2016} p988.
+
+\begin{transition}
+Dans le cas de la corde de Melde, ce sont les conditions aux limites qui rendent le choix de la description sur une base d'ondes stationnaires naturelle : on a des points fixes !
+Par opposition, la propagation d'une perturbation le long d'une corde infinie se prête mieux à une décomposition sur une base d'OPPH.
+La présence de conditions aux limites est souvent associée à l'existence de modes propres.
+\end{transition}
+
+\subsubsection{Lien avec les modes propres}
+
+Suivre rapidement \cite{Thibierge2014} p24 pour la détermination des modes propres de la corde.
+Justifier la forme de la solution cherchée : sinusoïde spatiale car c'est ce qu'on voit et sinusoïde temporelle car c'est la forme de l'excitation.
+
+\begin{experience}
+\textbf{Corde de Melde.}
+On pourrait la rendre quantitative en mesurant évaluant le lien entre les paramètre de la corde, les fréquences propres et les longueurs d'onde des modes propres.
+\end{experience}
+
+\begin{remarque}
+Ici il ne faut pas mélanger régime libre et régime forcé : faire apparaitre clairement la différence entre le mode propre issu du régime libre et la résonance associée au régime forcé.
+On a résonance en excitant à la fréquence d'un mode propre.
+Le vibreur impose une condition à la limite particulière : en toute rigueur le nœud de vibration est décalé du vibreur mais ce n'est pas grave car on observe ce qu'il se passe à résonance donc le décalage est très faible.
+En réalité la forme de la déformation est différente \cite{Thibierge2014} p27.
+
+\noindent
+Pour une condition initiale quelconque, la propagation d'une perturbation sur une corde fixée aux deux extrémités est une superposition d'OPPH et d'ondes stationnaires.
+On peut définir le taux d'onde stationnaire : c'est le rapport entre l'amplitude max (au niveau des ventres) et l'amplitude min (au niveau des nœuds).
+Pour une onde progressive, il vaut 1, pour une onde parfaitement stationnaire, il tend vers l'infini.
+\end{remarque}
+
+\begin{transition}
+L'onde stationnaire porte bien son nom !
+\end{transition}
+
+\subsubsection{Retour sur l'énergie}
+
+\begin{slide}
+\textbf{Évolution de l'énergie lors de la vibration d'une corde.}
+\end{slide}
+
+Bien faire apparaitre le couplage cinétique potentiel illustré par les variations entre les grandeurs couplées.
+Détailler en particulier les situations extrémales : tout en énergie potentielle ou tout en énergie cinétique en commentant par rapport à la déformation de la corde.
+Encore une fois le fait que la tension soit assimilée à une force de rappel ne vient que de la linéarisation dans l'hypothèse des petits angles.
+
+\subsection*{Conclusion}
+
+On a vu que la propagation des ondes dépend fortement des propriétés du milieu : de sa raideur, de son inertie pour les ondes mécaniques, mais aussi des conditions aux limites.
+Leur étude permet donc d'analyser les propriétés du milieu : ondes sismiques pour étudier la géologie.
+
+\begin{funfact}
+Propagation d'une onde le long d'\href{https://www.pourlascience.fr/sd/physique/le-claquement-du-fouet-4402.php}{un fouet}.
+\end{funfact}
 
 \newpage

@@ -19,8 +19,10 @@
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
-    urlcolor=theme,
-    citecolor=theme
+    linkcolor=red_f,
+    citecolor=bleu_f,
+    filecolor=green_f,
+    urlcolor=bleu_f
 }
 \setcounter{tocdepth}{1} %Just show section title in toc
 \setcounter{secnumdepth}{3} %add subsubsection numbering in report mode
@@ -66,23 +68,6 @@
 \usepackage{xcolor}
 \usepackage[framemethod=tikz]{mdframed}
 \usepackage{chngcntr}
-
-%% Colors %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\definecolor{brun}{rgb}{0.87,0.72,0.53}
-\definecolor{brunfonce}{rgb}{0.8,0.4,0.2}
-\definecolor{chamois}{rgb}{1.0,0.90,0.70}
-\definecolor{bleu_f}{rgb}{0.1,0.1,0.53}
-\definecolor{bleu_c}{rgb}{0.8,0.8,0.95}
-\definecolor{red_f}{rgb}{0.53,0.1,0.1}
-\definecolor{red_c}{rgb}{0.95,0.8,0.8}
-\definecolor{green_f}{rgb}{0.1,0.53,0.1}
-\definecolor{green_c}{rgb}{0.8,0.95,0.8}
-\definecolor{gray_f}{rgb}{0.5,0.5,0.5}
-\definecolor{gray_c}{rgb}{0.95,0.95,0.95}
-\definecolor{theme}{RGB}{56,115,179}
-\definecolor{yellow_f}{rgb}{255,255,0}
-\definecolor{yellow_c}{rgb}{255,255,50}
 
 %% Colors new attempts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -266,6 +251,7 @@
 \newcommand{\et}{\overrightarrow{e_\theta}}
 \newcommand{\ep}{\overrightarrow{e_\phi}}
 \newcommand{\lap}{\Delta}
+\newcommand{\important}{{\textcolor{red_f}{\textsc{Important : }}}}
 
 %\renewcommand{\textbullet}{\textcolor{gray_f}{\textbullet}}
 

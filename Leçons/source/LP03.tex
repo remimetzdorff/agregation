@@ -24,6 +24,7 @@ Mettre en évidence son influence dans plusieurs écoulements.
 \item \cite{Rabaud2019}
 \item \cite{Guyon2001}
 \item \href{http://bupdoc.udppc.asso.fr/consultation/une_fiche.php?ID_fiche=7701}{BUP 814, 1999}
+\item \href{https://www.youtube.com/watch?v=_UoTTq651dE}{Vidéo de 3Blue1Brown} sur la turbulence
 \end{itemize}
 }
 
@@ -177,6 +178,9 @@ Juste une idée, elle est pénible à installer mais bon.
 \begin{remarque}
 L'exemple de l'écoulement de Poiseuille se prête mal à la discussion autour du nombre de Reynolds : dans la forme supposée de l'écoulement, le terme convectif est exactement nul.
 Le nombre de Reynolds est alors nul aussi et l'estimation par les grandeurs caractéristiques de l'écoulement est fausse.
+
+\noindent
+Sur l'analogie électrocinétique : la résistance hydraulique n'a pas la même dépendance en $R$ car le profil de vitesse est différent en raison des conditions aux limites.
 \end{remarque}
 
 \begin{transition}
@@ -215,7 +219,7 @@ En fait l'expression de la trainée est plus complexe et dépend du nombre de Re
 \subsubsection{Trainée}
 
 Objectif : déterminer la force subie par une sphère dans un écoulement de fluide.
-Suivre \cite{Sanz2016} p315 pour introduire la force de trainée en fonction du nombre de Reynolds.
+Suivre \cite{Sanz2016} p315 ou mieux \cite{Guyon2001} p452-453 pour introduire la force de trainée en fonction du nombre de Reynolds.
 \begin{slide}
 \textbf{Coefficient de trainée autour d'une sphère.}
 \end{slide}
@@ -233,13 +237,16 @@ Il faut marquer une différence entre un écoulement tourbillonnaire et un écou
 \item un écoulement tourbillonnaire se caractérise par une circulation de la vitesse non nulle : on peut associer à l'écoulement un vecteur tourbillon.
 En ce sens, il s'agit d'une propriété mathématique de l'écoulement.
 \item un écoulement turbulent est caractérisé par la création de structures à toutes les échelles de temps et d'espace.
-Il y a une cascade d'énergie à toutes les échelles, depuis les grands tourbillons qui possèdent une grande énergie cinétique vers les petits qui finissent par la dissiper en raison de la viscosité du fluide.
+Il y a une cascade d'énergie à toutes les échelles spatiales, depuis les grands tourbillons qui possèdent une grande énergie cinétique vers les petits qui finissent par la dissiper en raison de la viscosité du fluide en énergie thermique.
 Ce phénomène est décrit qualitativement en 1922 (cascade de Richardson) puis quantitativement (cascade de Kolmogorov) par la théorie K41.
+Cette théorie permet d'expliquer la répartition spectrale de l'énergie dans un écoulement turbulent.
 \end{itemize}
-Les phénomènes de viscosité sont nécessaires à la création de turbulence, de même qu'ils sont nécessaires à la création de tourbillons (théorème de Kelvin)
+Les phénomènes de viscosité sont nécessaires à la création de turbulence, de même qu'ils sont nécessaires à la création de tourbillons (théorème de Kelvin).
+Une \href{https://www.youtube.com/watch?v=_UoTTq651dE}{vidéo de 3Blue1Brown} pour visualiser des écoulements turbulents et où il parle de Kolmogorov !
 \end{remarque}
 
 \subsection*{Conclusion}
+
 On s'est restreint à l'étude d'écoulement laminaire puisque les écoulements turbulents sont extrêmement difficiles à décrire.
 Les effets de la viscosité se cantonnent parfois sur des faibles épaisseurs en dehors desquelles il est possible de décrire l'écoulement comme un écoulement parfait : couche limite.
 On a étudié seulement les fluides newtowniens mais il existe aussi des fluide rhéofluidifiants et rhéoépaississant.
