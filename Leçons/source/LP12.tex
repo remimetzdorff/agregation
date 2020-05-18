@@ -51,12 +51,15 @@ Le signal est une grandeur physique dons les variations temporelles encodent une
 
 \subsubsection{Signal périodique}
 
+Un petit mot sur l'analyse de Fourier peut servir à introduire cette partie.
+
 Suivre \cite{Salamito2017}.
 Tout signal périodique $s(t)$ de fréquence $f_s$ s'exprime comme la superposition de fonctions sinusoïdales de fréquence multiple de $f_s$ :
 \begin{equation}
 s(t) = A_0 + \sum_{n=1}^\infty A_n \cos(2\pi n f_s t + \varphi_n).
 \end{equation}
 Toutes les informations sur $s(t)$ sont contenues dans les $A_n$ et $\varphi_n$ : on peut les représenter en fonction de la fréquence sous forme de spectres en amplitude et en phase.
+Bien dire que les deux représentations sont équivalentes.
 Faire les schémas $s(t)$, $A_n(f)$ et $\varphi_n(f)$.
 
 \begin{slide}
@@ -109,6 +112,7 @@ En faisant de même pour la sortie, on définit la fonction de transfert d'un fi
 
 Calculs du filtre RC en utilisant les impédances complexes.
 On obtiendrait le même résultat en établissant l'équation temporelle du circuit.
+Il faut prendre le temps de discuter de l'effet du filtre sur le spectre du signal : utiliser le diagramme de Bode sur l'amplitude et la phase !
 
 \begin{slide}
 \textbf{Filtre passe-bas.}

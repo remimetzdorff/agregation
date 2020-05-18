@@ -1,0 +1,318 @@
+\babel@toc {french}{}
+\contentsline {chapter}{Introduction}{3}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Leçons de physique}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}LP01 Gravitation}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Interaction gravitationnelle}{5}{subsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1.1}Force et énergie}{5}{subsubsection.1.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1.2}Champ gravitationnel}{6}{subsubsection.1.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.1.3}Le poids}{6}{subsubsection.1.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.2}Mouvement dans un champ gravitationnel}{7}{subsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.2.1}Position du problème}{7}{subsubsection.1.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.1.2.2}Conservation du moment cinétique}{7}{subsubsection.1.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.1.2.3}Conservation de l'énergie}{8}{subsubsection.1.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.1.2.4}Période du mouvement}{8}{subsubsection.1.1.2.4}%
+\contentsline {subsection}{\numberline {1.1.3}Applications et limite}{8}{subsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.3.1}Vitesses cosmiques}{8}{subsubsection.1.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.1.3.2}Orbite géostationnaire}{8}{subsubsection.1.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.1.3.3}Vers des masses non-ponctuelles}{8}{subsubsection.1.1.3.3}%
+\contentsline {section}{\numberline {1.2}LP02 Lois de conservation en dynamique}{10}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Conservation de l'impulsion}{10}{subsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.1.1}Loi de conservation}{10}{subsubsection.1.2.1.1}%
+\contentsline {subsubsection}{\numberline {1.2.1.2}Lancer au curling}{11}{subsubsection.1.2.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1.3}Problème à deux corps -- Mobile fictif}{11}{subsubsection.1.2.1.3}%
+\contentsline {subsection}{\numberline {1.2.2}Conservation du moment cinétique}{11}{subsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.2.1}Loi de conservation}{11}{subsubsection.1.2.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2.2}Patinage artistique}{11}{subsubsection.1.2.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.2.3}Problème à deux corps -- Planéité du mouvement}{12}{subsubsection.1.2.2.3}%
+\contentsline {subsection}{\numberline {1.2.3}Conservation de l'énergie}{12}{subsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.3.1}Loi de conservation}{12}{subsubsection.1.2.3.1}%
+\contentsline {subsubsection}{\numberline {1.2.3.2}Choc entre deux pierres au curling}{12}{subsubsection.1.2.3.2}%
+\contentsline {subsubsection}{\numberline {1.2.3.3}Problème à deux corps -- Trajectoires}{12}{subsubsection.1.2.3.3}%
+\contentsline {section}{\numberline {1.3}LP03 Notion de viscosité d'un fluide. Écoulement visqueux}{14}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Description de la viscosité d'un fluide}{14}{subsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.1.1}Actions de contact dans un fluide}{14}{subsubsection.1.3.1.1}%
+\contentsline {subsubsection}{\numberline {1.3.1.2}Force volumique de viscosité}{15}{subsubsection.1.3.1.2}%
+\contentsline {subsubsection}{\numberline {1.3.1.3}Interprétation microscopique qualitative de la viscosité}{15}{subsubsection.1.3.1.3}%
+\contentsline {subsection}{\numberline {1.3.2}Écoulements visqueux}{15}{subsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.2.1}Équation de Navier-Stokes}{15}{subsubsection.1.3.2.1}%
+\contentsline {subsubsection}{\numberline {1.3.2.2}Conditions aux limites}{16}{subsubsection.1.3.2.2}%
+\contentsline {subsubsection}{\numberline {1.3.2.3}Écoulement de Poiseuille}{16}{subsubsection.1.3.2.3}%
+\contentsline {subsection}{\numberline {1.3.3}Écoulement autour d'une sphère}{17}{subsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.3.3.1}Viscosimètre à chute de bille}{17}{subsubsection.1.3.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.3.2}Trainée}{17}{subsubsection.1.3.3.2}%
+\contentsline {section}{\numberline {1.4}LP04 Modèle de l'écoulement parfait d'un fluide}{19}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Cadre et limites du modèle}{19}{subsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.1.1}Équation d'Euler}{19}{subsubsection.1.4.1.1}%
+\contentsline {subsubsection}{\numberline {1.4.1.2}Conditions aux limites}{19}{subsubsection.1.4.1.2}%
+\contentsline {subsubsection}{\numberline {1.4.1.3}Couche limite}{20}{subsubsection.1.4.1.3}%
+\contentsline {subsection}{\numberline {1.4.2}Théorème de Bernoulli}{20}{subsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.2.1}Équation de conservation de l'énergie}{20}{subsubsection.1.4.2.1}%
+\contentsline {subsubsection}{\numberline {1.4.2.2}Application au tube de Pitot}{20}{subsubsection.1.4.2.2}%
+\contentsline {subsubsection}{\numberline {1.4.2.3}Application : l'effet Venturi}{21}{subsubsection.1.4.2.3}%
+\contentsline {subsection}{\numberline {1.4.3}Écoulement autour d'une aile}{21}{subsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.3.1}Écoulement autour d'un obstacle}{21}{subsubsection.1.4.3.1}%
+\contentsline {subsubsection}{\numberline {1.4.3.2}Estimation de la portance}{21}{subsubsection.1.4.3.2}%
+\contentsline {subsubsection}{\numberline {1.4.3.3}Paradoxe de d'Alembert}{21}{subsubsection.1.4.3.3}%
+\contentsline {section}{\numberline {1.5}LP05 Phénomènes interfaciaux impliquant des liquides}{22}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}La tension de surface}{22}{subsection.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.5.1.1}Interprétation mécanique}{22}{subsubsection.1.5.1.1}%
+\contentsline {subsubsection}{\numberline {1.5.1.2}Interprétation thermodynamique}{23}{subsubsection.1.5.1.2}%
+\contentsline {subsubsection}{\numberline {1.5.1.3}Interprétation microscopique}{23}{subsubsection.1.5.1.3}%
+\contentsline {subsection}{\numberline {1.5.2}Interface statique}{23}{subsection.1.5.2}%
+\contentsline {subsubsection}{\numberline {1.5.2.1}Pression}{23}{subsubsection.1.5.2.1}%
+\contentsline {subsubsection}{\numberline {1.5.2.2}Capillarité}{24}{subsubsection.1.5.2.2}%
+\contentsline {subsubsection}{\numberline {1.5.2.3}Mouillage}{24}{subsubsection.1.5.2.3}%
+\contentsline {subsection}{\numberline {1.5.3}Interface dynamique}{24}{subsection.1.5.3}%
+\contentsline {subsubsection}{\numberline {1.5.3.1}Instabilité de Rayleigh-Taylor}{24}{subsubsection.1.5.3.1}%
+\contentsline {subsubsection}{\numberline {1.5.3.2}Ondes capillaires}{25}{subsubsection.1.5.3.2}%
+\contentsline {section}{\numberline {1.6}LP06 Premier principe de la thermodynamique}{26}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Le premier principe}{26}{subsection.1.6.1}%
+\contentsline {subsubsection}{\numberline {1.6.1.1}Énoncé}{26}{subsubsection.1.6.1.1}%
+\contentsline {subsubsection}{\numberline {1.6.1.2}Capacité calorifique}{27}{subsubsection.1.6.1.2}%
+\contentsline {subsection}{\numberline {1.6.2}Quelques transformations}{27}{subsection.1.6.2}%
+\contentsline {subsubsection}{\numberline {1.6.2.1}Détente de Joule Gay-Lussac}{27}{subsubsection.1.6.2.1}%
+\contentsline {subsubsection}{\numberline {1.6.2.2}Compression adiabatique}{27}{subsubsection.1.6.2.2}%
+\contentsline {subsection}{\numberline {1.6.3}Enthalpie}{28}{subsection.1.6.3}%
+\contentsline {subsubsection}{\numberline {1.6.3.1}Définition}{28}{subsubsection.1.6.3.1}%
+\contentsline {subsubsection}{\numberline {1.6.3.2}Calorimétrie}{28}{subsubsection.1.6.3.2}%
+\contentsline {subsubsection}{\numberline {1.6.3.3}Enthalpie de changement d'état}{28}{subsubsection.1.6.3.3}%
+\contentsline {section}{\numberline {1.7}LP07 Transitions de phase}{30}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}Template}{30}{subsection.1.7.1}%
+\contentsline {subsubsection}{\numberline {1.7.1.1}Template}{30}{subsubsection.1.7.1.1}%
+\contentsline {section}{\numberline {1.8}LP08 Phénomènes de transport}{31}{section.1.8}%
+\contentsline {subsection}{\numberline {1.8.1}Généralités}{32}{subsection.1.8.1}%
+\contentsline {subsubsection}{\numberline {1.8.1.1}Différents phénomènes}{32}{subsubsection.1.8.1.1}%
+\contentsline {subsubsection}{\numberline {1.8.1.2}Équilibre thermodynamique local}{32}{subsubsection.1.8.1.2}%
+\contentsline {subsubsection}{\numberline {1.8.1.3}Linéarité}{33}{subsubsection.1.8.1.3}%
+\contentsline {subsection}{\numberline {1.8.2}Équation de diffusion}{33}{subsection.1.8.2}%
+\contentsline {subsubsection}{\numberline {1.8.2.1}Analogies}{33}{subsubsection.1.8.2.1}%
+\contentsline {subsubsection}{\numberline {1.8.2.2}Caractère irréversible}{34}{subsubsection.1.8.2.2}%
+\contentsline {subsubsection}{\numberline {1.8.2.3}Mesure de la conductivité thermique du cuivre}{34}{subsubsection.1.8.2.3}%
+\contentsline {subsection}{\numberline {1.8.3}Comparaison entre les différents phénomènes}{35}{subsection.1.8.3}%
+\contentsline {subsubsection}{\numberline {1.8.3.1}Résistance thermique}{35}{subsubsection.1.8.3.1}%
+\contentsline {subsubsection}{\numberline {1.8.3.2}Phénomène prépondérant}{35}{subsubsection.1.8.3.2}%
+\contentsline {section}{\numberline {1.9}LP09 Conversion de puissance électromécanique}{36}{section.1.9}%
+\contentsline {subsection}{\numberline {1.9.1}Induction et force de Laplace}{36}{subsection.1.9.1}%
+\contentsline {subsection}{\numberline {1.9.2}Machine à courant continu}{37}{subsection.1.9.2}%
+\contentsline {subsubsection}{\numberline {1.9.2.1}Cas d'une spire -- Laplace}{37}{subsubsection.1.9.2.1}%
+\contentsline {subsubsection}{\numberline {1.9.2.2}Cas d'une spire -- Induction de Lorentz}{37}{subsubsection.1.9.2.2}%
+\contentsline {subsubsection}{\numberline {1.9.2.3}Généralisation aux machines réelles}{38}{subsubsection.1.9.2.3}%
+\contentsline {subsubsection}{\numberline {1.9.2.4}Machine synchrone}{38}{subsubsection.1.9.2.4}%
+\contentsline {subsubsection}{\numberline {1.9.2.5}Création d'un champ tournant}{38}{subsubsection.1.9.2.5}%
+\contentsline {subsubsection}{\numberline {1.9.2.6}Champ statorique}{38}{subsubsection.1.9.2.6}%
+\contentsline {subsection}{\numberline {1.9.3}Couple de la machine synchrone}{39}{subsection.1.9.3}%
+\contentsline {section}{\numberline {1.10}LP10 Induction électromagnétique}{40}{section.1.10}%
+\contentsline {subsection}{\numberline {1.10.1}Les lois de l'induction}{40}{subsection.1.10.1}%
+\contentsline {subsubsection}{\numberline {1.10.1.1}La loi de Faraday 2'30}{40}{subsubsection.1.10.1.1}%
+\contentsline {subsubsection}{\numberline {1.10.1.2}Loi de Lenz 10'}{41}{subsubsection.1.10.1.2}%
+\contentsline {subsection}{\numberline {1.10.2}Induction de Neumann (B variable) 12'}{42}{subsection.1.10.2}%
+\contentsline {subsubsection}{\numberline {1.10.2.1}Auto-induction}{42}{subsubsection.1.10.2.1}%
+\contentsline {subsubsection}{\numberline {1.10.2.2}Inductance mutuelle 25'}{43}{subsubsection.1.10.2.2}%
+\contentsline {subsection}{\numberline {1.10.3}Induction de Lorentz (circuit mobile) 28'30}{43}{subsection.1.10.3}%
+\contentsline {subsubsection}{\numberline {1.10.3.1}Rail de Laplace}{43}{subsubsection.1.10.3.1}%
+\contentsline {section}{\numberline {1.11}LP11 Rétroaction et oscillations}{47}{section.1.11}%
+\contentsline {subsection}{\numberline {1.11.1}Nécessité d'une rétroaction}{47}{subsection.1.11.1}%
+\contentsline {subsubsection}{\numberline {1.11.1.1}Thermostat}{47}{subsubsection.1.11.1.1}%
+\contentsline {subsubsection}{\numberline {1.11.1.2}Amplificateur non inverseur}{48}{subsubsection.1.11.1.2}%
+\contentsline {subsection}{\numberline {1.11.2}Stabilité}{48}{subsection.1.11.2}%
+\contentsline {subsubsection}{\numberline {1.11.2.1}Comparateur à hystérésis}{48}{subsubsection.1.11.2.1}%
+\contentsline {subsubsection}{\numberline {1.11.2.2}Critère de stabilité}{49}{subsubsection.1.11.2.2}%
+\contentsline {subsection}{\numberline {1.11.3}Oscillateur quasi sinusoïdal}{50}{subsection.1.11.3}%
+\contentsline {subsubsection}{\numberline {1.11.3.1}Système bouclé}{50}{subsubsection.1.11.3.1}%
+\contentsline {subsubsection}{\numberline {1.11.3.2}Analyse de la boucle ouverte}{50}{subsubsection.1.11.3.2}%
+\contentsline {subsubsection}{\numberline {1.11.3.3}Oscillateur à pont de Wien}{50}{subsubsection.1.11.3.3}%
+\contentsline {section}{\numberline {1.12}LP12 Traitement d'un signal, étude spectrale}{51}{section.1.12}%
+\contentsline {subsection}{\numberline {1.12.1}Spectre d'un signal et filtrage}{51}{subsection.1.12.1}%
+\contentsline {subsubsection}{\numberline {1.12.1.1}Signal périodique}{51}{subsubsection.1.12.1.1}%
+\contentsline {subsubsection}{\numberline {1.12.1.2}Filtrage linéaire}{52}{subsubsection.1.12.1.2}%
+\contentsline {subsection}{\numberline {1.12.2}Transmission analogique : la radio AM}{53}{subsection.1.12.2}%
+\contentsline {subsubsection}{\numberline {1.12.2.1}Modulation}{53}{subsubsection.1.12.2.1}%
+\contentsline {subsubsection}{\numberline {1.12.2.2}Démodulation synchrone}{54}{subsubsection.1.12.2.2}%
+\contentsline {subsection}{\numberline {1.12.3}Traitement numérique}{54}{subsection.1.12.3}%
+\contentsline {subsubsection}{\numberline {1.12.3.1}Numérisation}{54}{subsubsection.1.12.3.1}%
+\contentsline {subsubsection}{\numberline {1.12.3.2}Filtrage}{54}{subsubsection.1.12.3.2}%
+\contentsline {section}{\numberline {1.13}LP13 Ondes progressives, ondes stationnaires}{56}{section.1.13}%
+\contentsline {subsection}{\numberline {1.13.1}Équation d'onde}{56}{subsection.1.13.1}%
+\contentsline {subsubsection}{\numberline {1.13.1.1}Corde de Melde}{56}{subsubsection.1.13.1.1}%
+\contentsline {subsubsection}{\numberline {1.13.1.2}Équation de d'Alembert}{57}{subsubsection.1.13.1.2}%
+\contentsline {subsection}{\numberline {1.13.2}Ondes progressives}{57}{subsection.1.13.2}%
+\contentsline {subsubsection}{\numberline {1.13.2.1}Expression générale}{57}{subsubsection.1.13.2.1}%
+\contentsline {subsubsection}{\numberline {1.13.2.2}Ondes planes progressives harmoniques}{58}{subsubsection.1.13.2.2}%
+\contentsline {subsubsection}{\numberline {1.13.2.3}Aspects énergétiques}{58}{subsubsection.1.13.2.3}%
+\contentsline {subsection}{\numberline {1.13.3}Ondes stationnaires}{59}{subsection.1.13.3}%
+\contentsline {subsubsection}{\numberline {1.13.3.1}Expression générale}{59}{subsubsection.1.13.3.1}%
+\contentsline {subsubsection}{\numberline {1.13.3.2}Lien avec les modes propres}{59}{subsubsection.1.13.3.2}%
+\contentsline {subsubsection}{\numberline {1.13.3.3}Retour sur l'énergie}{60}{subsubsection.1.13.3.3}%
+\contentsline {section}{\numberline {1.14}LP14 Ondes acoustiques}{61}{section.1.14}%
+\contentsline {subsection}{\numberline {1.14.1}Description d'une onde acoustique}{61}{subsection.1.14.1}%
+\contentsline {subsubsection}{\numberline {1.14.1.1}Approximation acoustique}{61}{subsubsection.1.14.1.1}%
+\contentsline {subsubsection}{\numberline {1.14.1.2}Équation de propagation}{62}{subsubsection.1.14.1.2}%
+\contentsline {subsubsection}{\numberline {1.14.1.3}Retour sur les hypothèses}{63}{subsubsection.1.14.1.3}%
+\contentsline {subsection}{\numberline {1.14.2}Aspects énergétiques}{64}{subsection.1.14.2}%
+\contentsline {subsubsection}{\numberline {1.14.2.1}Conservation de l'énergie}{64}{subsubsection.1.14.2.1}%
+\contentsline {subsubsection}{\numberline {1.14.2.2}Intensité d'une onde acoustique}{65}{subsubsection.1.14.2.2}%
+\contentsline {subsubsection}{\numberline {1.14.2.3}Impédance acoustique}{65}{subsubsection.1.14.2.3}%
+\contentsline {subsection}{\numberline {1.14.3}Quelques exemples}{66}{subsection.1.14.3}%
+\contentsline {subsubsection}{\numberline {1.14.3.1}Tuyau sonore}{66}{subsubsection.1.14.3.1}%
+\contentsline {subsubsection}{\numberline {1.14.3.2}Plaque vibrante}{67}{subsubsection.1.14.3.2}%
+\contentsline {section}{\numberline {1.15}LP15 Propagation guidée des ondes}{68}{section.1.15}%
+\contentsline {subsection}{\numberline {1.15.1}Modèle du guide électromagnétique}{68}{subsection.1.15.1}%
+\contentsline {subsubsection}{\numberline {1.15.1.1}Position du problème}{68}{subsubsection.1.15.1.1}%
+\contentsline {subsubsection}{\numberline {1.15.1.2}Solutions TE}{68}{subsubsection.1.15.1.2}%
+\contentsline {subsubsection}{\numberline {1.15.1.3}Relation de dispersion}{69}{subsubsection.1.15.1.3}%
+\contentsline {subsection}{\numberline {1.15.2}Guide d'onde réels}{69}{subsection.1.15.2}%
+\contentsline {subsubsection}{\numberline {1.15.2.1}Guide microonde}{69}{subsubsection.1.15.2.1}%
+\contentsline {subsubsection}{\numberline {1.15.2.2}Tuyau sonore}{69}{subsubsection.1.15.2.2}%
+\contentsline {subsubsection}{\numberline {1.15.2.3}Fibre optique}{70}{subsubsection.1.15.2.3}%
+\contentsline {section}{\numberline {1.16}LP16 Microscopies optiques}{71}{section.1.16}%
+\contentsline {subsection}{\numberline {1.16.1}Microscope à deux lentilles}{71}{subsection.1.16.1}%
+\contentsline {subsubsection}{\numberline {1.16.1.1}L'oculaire}{72}{subsubsection.1.16.1.1}%
+\contentsline {subsubsection}{\numberline {1.16.1.2}L'objectif}{72}{subsubsection.1.16.1.2}%
+\contentsline {subsubsection}{\numberline {1.16.1.3}Caractéristiques du microscope}{72}{subsubsection.1.16.1.3}%
+\contentsline {subsection}{\numberline {1.16.2}Limitations}{73}{subsection.1.16.2}%
+\contentsline {subsubsection}{\numberline {1.16.2.1}Résolution latérale}{73}{subsubsection.1.16.2.1}%
+\contentsline {subsubsection}{\numberline {1.16.2.2}Aberrations}{74}{subsubsection.1.16.2.2}%
+\contentsline {subsubsection}{\numberline {1.16.2.3}Éclairage}{74}{subsubsection.1.16.2.3}%
+\contentsline {subsection}{\numberline {1.16.3}Microscopie à contraste de phase}{74}{subsection.1.16.3}%
+\contentsline {section}{\numberline {1.17}LP17 Interférences à deux ondes en optique}{77}{section.1.17}%
+\contentsline {subsection}{\numberline {1.17.1}Superposition de deux ondes}{77}{subsection.1.17.1}%
+\contentsline {subsubsection}{\numberline {1.17.1.1}Éclairement}{77}{subsubsection.1.17.1.1}%
+\contentsline {subsubsection}{\numberline {1.17.1.2}Conditions d'interférence}{78}{subsubsection.1.17.1.2}%
+\contentsline {subsection}{\numberline {1.17.2}Une dispositif à division du front d'onde : les fentes d'Young}{78}{subsection.1.17.2}%
+\contentsline {subsubsection}{\numberline {1.17.2.1}Dispositif expérimental}{78}{subsubsection.1.17.2.1}%
+\contentsline {subsubsection}{\numberline {1.17.2.2}Calcul de la différence de marche}{78}{subsubsection.1.17.2.2}%
+\contentsline {subsubsection}{\numberline {1.17.2.3}Figure d'interférence}{79}{subsubsection.1.17.2.3}%
+\contentsline {subsection}{\numberline {1.17.3}Cohérence de la source}{79}{subsection.1.17.3}%
+\contentsline {subsubsection}{\numberline {1.17.3.1}Évolution du contraste}{79}{subsubsection.1.17.3.1}%
+\contentsline {subsubsection}{\numberline {1.17.3.2}Source étendue}{80}{subsubsection.1.17.3.2}%
+\contentsline {subsubsection}{\numberline {1.17.3.3}Cohérence temporelle}{80}{subsubsection.1.17.3.3}%
+\contentsline {paragraph}{Interférence avec un laser :}{81}{section*.60}%
+\contentsline {paragraph}{Variation du contraste avec une source étendue :}{81}{section*.61}%
+\contentsline {section}{\numberline {1.18}LP18 Interférométrie à division d'amplitude}{82}{section.1.18}%
+\contentsline {subsection}{\numberline {1.18.1}Division d'amplitude}{82}{subsection.1.18.1}%
+\contentsline {subsubsection}{\numberline {1.18.1.1}Division d'amplitude ou division du front d'onde ?}{82}{subsubsection.1.18.1.1}%
+\contentsline {subsubsection}{\numberline {1.18.1.2}Lame à faces parallèles}{83}{subsubsection.1.18.1.2}%
+\contentsline {subsection}{\numberline {1.18.2}L'interféromètre de Michelson}{84}{subsection.1.18.2}%
+\contentsline {subsubsection}{\numberline {1.18.2.1}Configuration lame d'air}{84}{subsubsection.1.18.2.1}%
+\contentsline {subsubsection}{\numberline {1.18.2.2}Analyse du doublet jaune du sodium}{84}{subsubsection.1.18.2.2}%
+\contentsline {subsubsection}{\numberline {1.18.2.3}Les interféromètres gravitationnels}{85}{subsubsection.1.18.2.3}%
+\contentsline {subsubsection}{\numberline {1.18.2.4}Configuration coin d'air}{85}{subsubsection.1.18.2.4}%
+\contentsline {subsection}{\numberline {1.18.3}Interféromètre de Fabry-Perot}{85}{subsection.1.18.3}%
+\contentsline {section}{\numberline {1.19}LP19 Diffraction de Fraunhofer}{87}{section.1.19}%
+\contentsline {subsection}{\numberline {1.19.1}Description de la diffraction}{87}{subsection.1.19.1}%
+\contentsline {subsubsection}{\numberline {1.19.1.1}Principe de Huygens-Fresnel}{87}{subsubsection.1.19.1.1}%
+\contentsline {subsubsection}{\numberline {1.19.1.2}Diffraction par un objet quelconque}{88}{subsubsection.1.19.1.2}%
+\contentsline {subsubsection}{\numberline {1.19.1.3}Approximation de Fraunhofer}{88}{subsubsection.1.19.1.3}%
+\contentsline {subsection}{\numberline {1.19.2}Figures de diffractions}{89}{subsection.1.19.2}%
+\contentsline {subsubsection}{\numberline {1.19.2.1}Fente rectangulaire}{89}{subsubsection.1.19.2.1}%
+\contentsline {subsubsection}{\numberline {1.19.2.2}Ouverture circulaire}{89}{subsubsection.1.19.2.2}%
+\contentsline {subsubsection}{\numberline {1.19.2.3}Limites de résolutions}{89}{subsubsection.1.19.2.3}%
+\contentsline {subsection}{\numberline {1.19.3}Filtrage}{89}{subsection.1.19.3}%
+\contentsline {section}{\numberline {1.20}LP20 Diffraction par des structures périodiques}{91}{section.1.20}%
+\contentsline {subsection}{\numberline {1.20.1}Template}{91}{subsection.1.20.1}%
+\contentsline {subsubsection}{\numberline {1.20.1.1}Template}{91}{subsubsection.1.20.1.1}%
+\contentsline {section}{\numberline {1.21}LP21 Absorption et émission de la lumière}{92}{section.1.21}%
+\contentsline {subsection}{\numberline {1.21.1}Template}{92}{subsection.1.21.1}%
+\contentsline {subsubsection}{\numberline {1.21.1.1}Template}{92}{subsubsection.1.21.1.1}%
+\contentsline {section}{\numberline {1.22}LP22 Propriétés macroscopiques des corps ferromagnétiques}{93}{section.1.22}%
+\contentsline {subsection}{\numberline {1.22.1}Template}{93}{subsection.1.22.1}%
+\contentsline {subsubsection}{\numberline {1.22.1.1}Template}{93}{subsubsection.1.22.1.1}%
+\contentsline {section}{\numberline {1.23}LP23 Mécanismes de la conduction électrique dans les solides}{94}{section.1.23}%
+\contentsline {section}{\numberline {1.24}LP24 Phénomène de résonance dans différents domaines de la physique}{95}{section.1.24}%
+\contentsline {subsection}{\numberline {1.24.1}Système à un degré de liberté}{95}{subsection.1.24.1}%
+\contentsline {subsubsection}{\numberline {1.24.1.1}Oscillateur amorti en régime sinusoïdal forcé}{96}{subsubsection.1.24.1.1}%
+\contentsline {subsubsection}{\numberline {1.24.1.2}Résonance en amplitude}{96}{subsubsection.1.24.1.2}%
+\contentsline {subsubsection}{\numberline {1.24.1.3}Résonance en vitesse}{97}{subsubsection.1.24.1.3}%
+\contentsline {subsection}{\numberline {1.24.2}Aspects énergétiques}{97}{subsection.1.24.2}%
+\contentsline {subsubsection}{\numberline {1.24.2.1}Transferts d'énergie}{97}{subsubsection.1.24.2.1}%
+\contentsline {subsubsection}{\numberline {1.24.2.2}Lien avec le régime libre}{98}{subsubsection.1.24.2.2}%
+\contentsline {subsection}{\numberline {1.24.3}Système à N degrés de liberté}{98}{subsection.1.24.3}%
+\contentsline {subsubsection}{\numberline {1.24.3.1}Deux oscillateurs couplés}{98}{subsubsection.1.24.3.1}%
+\contentsline {subsubsection}{\numberline {1.24.3.2}Cavité optique}{99}{subsubsection.1.24.3.2}%
+\contentsline {section}{\numberline {1.25}LP25 Oscillateurs ; portraits de phase et non-linéarités}{101}{section.1.25}%
+\contentsline {subsection}{\numberline {1.25.1}Oscillateur et portrait de phase}{102}{subsection.1.25.1}%
+\contentsline {subsubsection}{\numberline {1.25.1.1}Portrait de phase}{102}{subsubsection.1.25.1.1}%
+\contentsline {subsubsection}{\numberline {1.25.1.2}Propriétés}{102}{subsubsection.1.25.1.2}%
+\contentsline {subsubsection}{\numberline {1.25.1.3}Dissipation}{103}{subsubsection.1.25.1.3}%
+\contentsline {subsection}{\numberline {1.25.2}Vers des oscillateurs plus réalistes}{103}{subsection.1.25.2}%
+\contentsline {subsubsection}{\numberline {1.25.2.1}Lien avec l'énergie potentielle}{103}{subsubsection.1.25.2.1}%
+\contentsline {subsubsection}{\numberline {1.25.2.2}Influence des non linéarités}{104}{subsubsection.1.25.2.2}%
+\contentsline {subsection}{\numberline {1.25.3}Oscillateurs auto-entretenu}{104}{subsection.1.25.3}%
+\contentsline {chapter}{\numberline {2}Leçons de chimie}{106}{chapter.2}%
+\contentsline {section}{\numberline {2.1}LC01 Séparations, purifications, contrôles de pureté}{107}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Template}{107}{subsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.1.1}Template}{107}{subsubsection.2.1.1.1}%
+\contentsline {section}{\numberline {2.2}LC02 Chimie durable}{108}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Template}{108}{subsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}Template}{108}{subsubsection.2.2.1.1}%
+\contentsline {section}{\numberline {2.3}LC03 Synthèse inorganique}{109}{section.2.3}%
+\contentsline {paragraph}{Expériences :}{109}{section*.87}%
+\contentsline {subsection}{\numberline {2.3.1}Synthèse du dichlore}{109}{subsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.1.1}Synthèse de l'eau de Javel en laboratoire}{109}{subsubsection.2.3.1.1}%
+\contentsline {subsubsection}{\numberline {2.3.1.2}Synthèse industrielle}{110}{subsubsection.2.3.1.2}%
+\contentsline {subsubsection}{\numberline {2.3.1.3}Vers des synthèses plus vertes}{111}{subsubsection.2.3.1.3}%
+\contentsline {subsection}{\numberline {2.3.2}Les complexes}{111}{subsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}Mise en évidence}{111}{subsubsection.2.3.2.1}%
+\contentsline {subsubsection}{\numberline {2.3.2.2}Synthèse d'un complexe}{112}{subsubsection.2.3.2.2}%
+\contentsline {subsection}{\numberline {2.3.3}Complexes bioinorganiques}{112}{subsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Transport de l'oxygène}{112}{subsubsection.2.3.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.3.2}Un complexe en chimiothérapie}{112}{subsubsection.2.3.3.2}%
+\contentsline {section}{\numberline {2.4}LC04 Stratégies et sélectivité en synthèse organique}{113}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Template}{113}{subsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.1.1}Template}{113}{subsubsection.2.4.1.1}%
+\contentsline {section}{\numberline {2.5}LC05 Dosages}{114}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Template}{114}{subsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.1.1}Template}{114}{subsubsection.2.5.1.1}%
+\contentsline {section}{\numberline {2.6}LC06 Cinétique et catalyse}{115}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Template}{115}{subsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.1.1}Template}{115}{subsubsection.2.6.1.1}%
+\contentsline {section}{\numberline {2.7}LC07 Capteurs électrochimiques}{116}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Template}{116}{subsection.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.7.1.1}Template}{116}{subsubsection.2.7.1.1}%
+\contentsline {section}{\numberline {2.8}LC08 Molécules de la santé}{117}{section.2.8}%
+\contentsline {paragraph}{Expériences :}{117}{section*.99}%
+\contentsline {subsection}{\numberline {2.8.1}La chimie au service de la santé}{118}{subsection.2.8.1}%
+\contentsline {subsubsection}{\numberline {2.8.1.1}Action thérapeutique : les médicaments}{118}{subsubsection.2.8.1.1}%
+\contentsline {subsubsection}{\numberline {2.8.1.2}Hygiène : antiseptiques et désinfectants}{118}{subsubsection.2.8.1.2}%
+\contentsline {subsection}{\numberline {2.8.2}Obtention du principe actif}{119}{subsection.2.8.2}%
+\contentsline {subsubsection}{\numberline {2.8.2.1}Extraction de principes actifs}{119}{subsubsection.2.8.2.1}%
+\contentsline {subsubsection}{\numberline {2.8.2.2}Synthèse du paracétamol}{120}{subsubsection.2.8.2.2}%
+\contentsline {subsection}{\numberline {2.8.3}Contrôle qualité}{121}{subsection.2.8.3}%
+\contentsline {subsubsection}{\numberline {2.8.3.1}Identification, vérification de la pureté}{121}{subsubsection.2.8.3.1}%
+\contentsline {subsubsection}{\numberline {2.8.3.2}Dosage}{121}{subsubsection.2.8.3.2}%
+\contentsline {section}{\numberline {2.9}LC09 Acides et bases}{122}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Template}{122}{subsection.2.9.1}%
+\contentsline {subsubsection}{\numberline {2.9.1.1}Template}{122}{subsubsection.2.9.1.1}%
+\contentsline {section}{\numberline {2.10}LC10 Solvants}{123}{section.2.10}%
+\contentsline {subsection}{\numberline {2.10.1}Template}{123}{subsection.2.10.1}%
+\contentsline {subsubsection}{\numberline {2.10.1.1}Template}{123}{subsubsection.2.10.1.1}%
+\contentsline {section}{\numberline {2.11}LC11 Corps purs et mélanges binaires}{124}{section.2.11}%
+\contentsline {subsection}{\numberline {2.11.1}Template}{124}{subsection.2.11.1}%
+\contentsline {subsubsection}{\numberline {2.11.1.1}Template}{124}{subsubsection.2.11.1.1}%
+\contentsline {section}{\numberline {2.12}LC12 Application du premier principe de la thermodynamique à la réaction chimique}{125}{section.2.12}%
+\contentsline {subsection}{\numberline {2.12.1}Template}{125}{subsection.2.12.1}%
+\contentsline {subsubsection}{\numberline {2.12.1.1}Template}{125}{subsubsection.2.12.1.1}%
+\contentsline {section}{\numberline {2.13}LC13 Déterminations de constantes d'équilibre}{126}{section.2.13}%
+\contentsline {subsection}{\numberline {2.13.1}Template}{126}{subsection.2.13.1}%
+\contentsline {subsubsection}{\numberline {2.13.1.1}Template}{126}{subsubsection.2.13.1.1}%
+\contentsline {section}{\numberline {2.14}LC14 Cinétique homogène}{127}{section.2.14}%
+\contentsline {subsection}{\numberline {2.14.1}Template}{127}{subsection.2.14.1}%
+\contentsline {subsubsection}{\numberline {2.14.1.1}Template}{127}{subsubsection.2.14.1.1}%
+\contentsline {section}{\numberline {2.15}LC15 Evolution et équilibre chimique}{128}{section.2.15}%
+\contentsline {subsection}{\numberline {2.15.1}Template}{128}{subsection.2.15.1}%
+\contentsline {subsubsection}{\numberline {2.15.1.1}Template}{128}{subsubsection.2.15.1.1}%
+\contentsline {section}{\numberline {2.16}LC16 Diagrammes potentiel-pH (construction exclue}{129}{section.2.16}%
+\contentsline {subsection}{\numberline {2.16.1}Template}{129}{subsection.2.16.1}%
+\contentsline {subsubsection}{\numberline {2.16.1.1}Template}{129}{subsubsection.2.16.1.1}%
+\contentsline {section}{\numberline {2.17}LC17 Corrosion humide des métaux}{130}{section.2.17}%
+\contentsline {subsection}{\numberline {2.17.1}Template}{130}{subsection.2.17.1}%
+\contentsline {subsubsection}{\numberline {2.17.1.1}Template}{130}{subsubsection.2.17.1.1}%
+\contentsline {section}{\numberline {2.18}LC18 Conversion réciproque d'énergie électrique en énergie chimique}{131}{section.2.18}%
+\contentsline {subsection}{\numberline {2.18.1}Template}{131}{subsection.2.18.1}%
+\contentsline {subsubsection}{\numberline {2.18.1.1}Template}{131}{subsubsection.2.18.1.1}%
+\contentsline {section}{\numberline {2.19}LC19 Solubilité}{132}{section.2.19}%
+\contentsline {subsection}{\numberline {2.19.1}Template}{132}{subsection.2.19.1}%
+\contentsline {subsubsection}{\numberline {2.19.1.1}Template}{132}{subsubsection.2.19.1.1}%
+\contentsline {chapter}{Opérateurs vectoriels}{133}{appendix*.124}%
+\contentsline {chapter}{Liens}{135}{appendix*.131}%
+\contentsline {chapter}{Bibliographie}{138}{appendix*.134}%
