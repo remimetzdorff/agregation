@@ -7,7 +7,8 @@ CPGE & \textbullet{} Oscillateur harmonique, amorti \\
      & \textbullet{} Impédance complexe \\
      & \textbullet{} Modèle du câble coaxial \\
      & \textbullet{} Équation de d'Alembert \\
-     & \textbullet{} Interférence à N ondes, transmission du FP
+     & \textbullet{} Interférence à N ondes, transmission du FP \\
+     & \textbullet{} Diagramme de Bode
 \end{tabular}
 
 \noindent
@@ -41,7 +42,7 @@ Relire l'article \href{https://fr.wikipedia.org/wiki/R\%C3\%A9sonance}{Wikipedia
 Ne pas dire de bêtise sur le pont de Tacoma.
 
 \noindent
-Selon les rapport de jury, il ne faut pas négliger :
+Selon les rapports de jury, il ne faut pas négliger :
 \begin{itemize}
 \item les aspects énergétiques ;
 \item le rapprochement des caractéristiques entre le régime libre et forcé ;
@@ -90,13 +91,13 @@ On peut aller plus loin dans l'analogie : en écrivant l'énergie stockée dans 
 On peut faire la même chose pour l'inductance.
 \end{remarque}
 
-
 \begin{experience}
 Montrer très qualitativement la dépendance de la réponse d'un système masse/ressort et d'un circuit RLC avec la fréquence. 
 \end{experience}
 
 \begin{transition}
-On veut quantifier ces observations
+On veut quantifier ces observations.
+Si on ne fait pas l'expérience, on peut parler de l'exemple intuitif de la balançoire.
 \end{transition}
 
 \subsubsection{Résonance en amplitude}
@@ -109,6 +110,7 @@ Pour faire le lien avec les observations expérimentales, on préfère regarder 
 \begin{experience}
 \textbf{Résonance en charge du RLC.}
 Montrer la réponse d'un circuit RLC en faisant varier la valeur de $R$. Montrer la présence ou non d'une résonance.
+Les calculs sont faits dans \cite{Michel2017} p226.
 \end{experience}
 
 \begin{slide}
@@ -226,6 +228,9 @@ Que se passe-t-il si on couple plusieurs oscillateurs ?
 Observer expérimentalement la présence des deux résonances.
 Ici les deux circuits sont couplés en tension.
 Un couplage en intensité passerait par une inductance mutuelle.
+
+\noindent
+La version simulée \href{http://tinyurl.com/ydfkzcyh}{Lushproject}.
 \end{experience}
 
 Pour le calcul, on néglige $R$ pour la simplicité du calcul mais en pratique il y a toujours des résistance résiduelles : fils et résistance de fuite.

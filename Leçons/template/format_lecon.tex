@@ -16,7 +16,8 @@
 %\usepackage{sectsty}% Pour changer la taille des chapitres
 \usepackage{enumitem}
 \usepackage{stmaryrd } % fancy arrow
-\usepackage{hyperref}
+\usepackage{url}
+\usepackage[breaklinks]{hyperref}
 \hypersetup{
     colorlinks=true,
     linkcolor=red_f,
@@ -24,7 +25,8 @@
     filecolor=green_f,
     urlcolor=bleu_f
 }
-\setcounter{tocdepth}{1} %Just show section title in toc
+\usepackage[hyphenbreaks]{breakurl}
+\setcounter{tocdepth}{1}    %Just show section title in toc
 \setcounter{secnumdepth}{3} %add subsubsection numbering in report mode
 
 \usepackage{eurosym}
@@ -92,6 +94,7 @@
 \newcommand{\niveau}{\textcolor{gray_f}{\textbf{Niveau :}}}
 \newcommand{\prerequis}{\textcolor{gray_f}{\textbf{Prérequis :}}}
 \newcommand{\objectif}{\textcolor{gray_f}{\textbf{Objectif de la leçon : }}}
+\newcommand{\programme}{\textcolor{gray_f}{\textbf{Programme : }}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Header

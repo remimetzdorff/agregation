@@ -3,43 +3,144 @@
 \begin{header}
 \begin{tabular}{p{0.4\textwidth} l}
 \niveau & \prerequis \\
-Template& \textbullet{} Template \\
-        & \textbullet{} Template \\
+Lycée   & \textbullet{} Réaction acide-base \\
+		& \textbullet{} pH-métrie \\
+		& \textbullet{} Loi de Beer-Lambert \\
+        & \textbullet{} Propagation d'incertitudes \\
 \end{tabular}
 
 \noindent
 \objectif
 Template
+
+\noindent
+\programme
+En terminale, le programme porte uniquement sur les dosages par titrage et par étalonnage.
+Le dosage dans les différentes classes :
+\begin{itemize}
+\item[•] Seconde : concentration \emph{massique} d'une solution aqueuse, dosages par étalonnage (échelle de teintes, masse volumique) ;
+\item[•] Première : concentration molaire, tableau d'avancement, titrage avec suivi colorimétrique, réaction d'oxydoréduction support du titrage, équivalence, spectroscopie IR ;
+\item[•] Terminale : lois des gaz parfaits, de Beer-Lambert, de Kohlrauch, dosage par étalonnage (absorption, conductivité), réactions acide-base, titrage pH-métrique, spectroscopie IR-UV-Vis.
+\end{itemize} 
 \end{header}
+
+\begin{remarque}
+Il faut mettre l'accent sur l'analyse quantitative des résultats : la notion d'incertitude est primordiale pour cette leçon.
+Les dosages sont essentiels dans le contrôle qualité : il faut axer la leçon dessus.
+\end{remarque}
 
 {
 \subsubsection*{Bibliographie}
 \footnotesize{}
-%\begin{itemize}
-%\item 
-%\end{itemize}
+\begin{itemize}
+\item \cite{Prevost2012}
+\item \cite{Dulaurans2012}
+\item \cite{Antczak2020}
+\item \cite{Bernard2012}
+\item \href{https://www.annabac.com/annales-bac/controles-de-qualite-d-un-lait}{Sujet de BAC} sur le contrôle de qualité d'un lait
+\end{itemize}
 }
 
 \subsection*{Introduction}
 
-\subsection{Template}
-
-\subsubsection{Template}
-
-\begin{experience}
-\textbf{Template}
-\end{experience}
+Dans de nombreuses situations, on souhaite connaitre précisément la quantité d'une espèce chimique présente dans une solution ou un matériaux.
 
 \begin{slide}
-\textbf{Template}
+\textbf{Nécessité des dosages.}
+\begin{itemize}
+\item santé et médicaments : \cite{Prevost2012} p448 et 458 ;
+\item \href{http://www.sfendocrino.org/article/810/poly201-item-78-ndash-ue-3-dopage}{dopage} ;
+\item présence de \href{https://www.analytice.com/dosage-laboratoire-dehp-cas-117-81-7-dans-les-materiaux/}{phtalate} dans les plastiques ;
+\item contrôle de qualité du lait \cite{Prevost2012} p446 et \href{https://www.annabac.com/annales-bac/controles-de-qualite-d-un-lait}{annabac} ;
+\item 
+\end{itemize}
 \end{slide}
 
-\begin{transition}
-\textbf{Template}
-\end{transition}
+Donner la définition d'un dosage : \cite{Prevost2012} p451.
+Il s'agit d'un procédé lié aux contrôles qualité : insister sur la nécessité de donner des incertitudes.
+Annoncer le déroulement en revenant sur la santé et le lait : deux exemples qui vont nous suivre au cours de la leçon.
 
 \begin{remarque}
-\textbf{Template}
+Beaucoup de dosages reposent sur la  \href{https://fr.wikipedia.org/wiki/Chromatographie_en_phase_gazeuse-spectrom\%C3\%A9trie_de_masse}{GC-MS}, ou Gas chromatography-mass spectrometry.
+Cette méthode combine la chromatographie en phase gazeuse pour la séparation des différentes espèces et leur quantification et la spectroscopie de masse pour leur identification.
+Elle est extrêmement sensible et peut détecter des composés sous forme de trace, ce qui en fait un outil de choix pour le dosage de médicaments et stupéfiants, l'analyse environnementale ou encore la médecine légale.
 \end{remarque}
+
+\subsection{Dosage par étalonnage}
+
+\subsubsection{Principe de la méthode}
+
+Donner la définition d'un dosage par étalonnage de \cite{Prevost2012} p451. Cela nécessite d'avoir l'espèce à doser pour réaliser les solutions étalons.
+
+\begin{experience}
+\textbf{Dosage par étalonnage colorimétrique discret du diiode de la bétadine.}
+Bien faire apparaitre l'incertitude majoritaire sur le pas de l'échelle de teinte.
+\end{experience}
+
+\begin{transition}
+L'œil est un  capteur formidable mais deux problèmes : possible d'augmenter la résolution de l'échelle mais au bout d'un moment ce n'est plus distinguable et ce n'est pas automatique.
+On va quantifier la grandeur associée à cette observation.
+\end{transition}
+
+\subsubsection{Dosage spectrophotométrique}
+
+Comme il s'agit d'une espèce colorée donc on peut utiliser la spectrophotométrie visible.
+Faire une roue chromatique, pour le diiode on se place autour de \unit{475}{\nano\meter}.
+
+Détailler la construction de la courbe d'étalonnage : on obtient une droite passant par l'origine d'après la loi de Beer-Lambert si les solutions sont assez diluées, on fait un ajustement et le coefficient directeur nous donne la conversion.
+Discuter des incertitudes : concentration des solutions étalons, incertitude sur la mesure de l'appareil. 
+On augmente le nombre de solutions étalons pour augmenter la précision sur le coefficient.
+
+\begin{experience}
+\textbf{Dosage par étalonnage spectrophotométrique du diiode de la bétadine.}
+Pour les données, voir ce \href{https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=2ahUKEwiX1umml8DpAhVrxYUKHccoBeoQFjACegQIAxAB&url=https\%3A\%2F\%2Fphysiquelevavasseur.jimdofree.com\%2Fapp\%2Fdownload\%2F6817364013\%2Fcorrection\%2BTP\%2Bn\%25C2\%25B02\%2BLe\%2Bdosage\%2Bpar\%2B\%25C3\%25A9talonnage\%2Bspectrophotom\%25C3\%25A9trique-Corrig\%25C3\%25A9.pdf\%3Ft\%3D1568184708&usg=AOvVaw0GoXYVACltYyetD0MZWvA1}{protocole}.
+\end{experience}
+
+\begin{transition}
+Que faire quand la solution n'est pas colorée ?
+\end{transition}
+
+\subsubsection{Dosage conductimétrique}
+
+Dans le cas d'une solution contenant des ions, on peut mesurer sa conductivité. 
+Les ions permettent le passage du courant dans la solution : la conductivité $\sigma$ exprimée en siemens par mètre dépend de leur nature et de leur concentration.
+
+Introduire la loi de Kohlrausch par analogie avec la loi de Beer-Lambert.
+
+\begin{experience}
+\textbf{Dosage par étalonnage conductimétrique des ions chlorure du sérum physiologique.}
+\end{experience}
+
+\subsection{Dosage par titrage}
+
+\subsubsection{Principe de la méthode}
+
+\begin{experience}
+\textbf{Titrage conductimétrique des ions chlorure du sérum physiologique.}
+\end{experience}
+
+\subsubsection{Titrage acido-basique}
+
+\begin{experience}
+\textbf{Titrage conductimétrique des ions chlorure du sérum physiologique.}
+\end{experience}
+
+\subsection{Conclusion}
+
+\begin{funfact}
+\begin{itemize}
+\item dosage par étalonnage spectrophotométrique du colorant E131 dans le sirop de menthe \cite{Dulaurans2012} p464 ou dans les bonbons Schtroumpf \cite{Prevost2012} p111 ;
+\item dosage par étalonnage spectrophotométrique du fer dans un médicament \cite{Prevost2012} p449 ;
+\item dosage par étalonnage conductimétrique du sérum physiologique : \cite{Antczak2020} p60, \cite{Dulaurans2012} p465 ;
+\item dosage par étalonnage conductimétrique du lait \cite{Prevost2012} p446 ;
+\item titrage pH-métrique de l'acide lactique par la soude \cite{Antczak2020} p89 ;
+\item titrage pH-métrique de l'aspirine \cite{Dulaurans2012} p467 ;
+\item titrage colorimétrique de la bétadine \cite{Dulaurans2012} p468 ;
+\item dosage par étalonnage spectrophotométrique de la bétadine \href{https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwiz1aDtwr_pAhWLohQKHVTACOwQFjAAegQIARAB&url=https\%3A\%2F\%2Fecebac.fr\%2Fcorriges\%2FECE_18_PC_44_f638b07a9c.pdf&usg=AOvVaw2PpxDP0mSmk76nrw4TAFnL}{protocole 1} ou \href{https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=2ahUKEwiX1umml8DpAhVrxYUKHccoBeoQFjACegQIAxAB&url=https\%3A\%2F\%2Fphysiquelevavasseur.jimdofree.com\%2Fapp\%2Fdownload\%2F6817364013\%2Fcorrection\%2BTP\%2Bn\%25C2\%25B02\%2BLe\%2Bdosage\%2Bpar\%2B\%25C3\%25A9talonnage\%2Bspectrophotom\%25C3\%25A9trique-Corrig\%25C3\%25A9.pdf\%3Ft\%3D1568184708&usg=AOvVaw0GoXYVACltYyetD0MZWvA1}{protocole 2 avec courbes} ;
+\item titrage pH-métrique d'un produit ménager \cite{Antczak2020} p92, \cite{Prevost2012} p449 ;
+\item titrage conductimétrique d'un produit ménager \cite{Dulaurans2012} p466 ;
+\item titrage des ions chlorure présents dans le lait \cite{Antczak2020} p93, \cite{Dulaurans2012} p482 ;
+\end{itemize}
+\end{funfact}
 
 \newpage

@@ -220,12 +220,18 @@ class Fit():
     def chi2r(self):
         return self.chi2()/(len(self.x)-len(self.fit_params))
 
+    def r2(self):
+        num   = np.sum((self.y - self.func(self.x, *self.fit_params))**2)
+        denom = np.sum((self.y - self.y.mean())**2)
+        return 1 - num / denom
+
     def report(self):
         print("##### Fit results #####")
         print("RAW")
         print("        optimised params :", self.fit_params)
         print("        uncertainties    :", self.fit_uparams)
         print("        chi2r            :", self.chi2r())
+        print("        r2               :", self.r2())
         print("READABLE")
         for param, uparam, key in zip(self.fit_params, self.fit_uparams, self.params_key):
             new_key = key

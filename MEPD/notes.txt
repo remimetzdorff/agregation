@@ -14,3 +14,9 @@ A ramener pour l'oral :
 
 Questions pour Arnaud et Agnès :
 	- Utile de ramener un pilier ?
+
+
+
+ACTIVITES CONFINEES :
+
+	- Par binôme l'un crée des données à partir de simulations qu'il donne à l'autre pour les analyser et en tirer un paramètre.

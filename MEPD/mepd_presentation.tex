@@ -1,0 +1,342 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[thinspace,thinqspace,amssymb]{SIunits}
+\usepackage{eurosym}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=theme
+}
+
+\title{Notes pour la présentation du dossier de mise en perspective didactique d'un dossier de recherche}
+\author{\textbf{Rémi Metzdorff}}
+\date{Concours externe spécial de l'agrégation de physique-chimie option physique Session 2020}
+%\date{2020}
+
+\renewcommand{\d}{\mathrm{d}}
+\newcommand{\uroc}{\micro RoC}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  For CV  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{array}
+%\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{xcolor}
+\definecolor{theme}{RGB}{56,115,179}
+\usepackage[font=small]{caption}
+
+\definecolor{gray_f}{RGB}{68,84,106}
+\definecolor{gray_c}{RGB}{214,220,229}
+\definecolor{bleu_f}{RGB}{91,155,213}
+\definecolor{bleu_c}{RGB}{222,235,247}
+\definecolor{red_f}{RGB}{204,0,0}
+\definecolor{red_c}{RGB}{245,204,204}
+\definecolor{orange_f}{RGB}{237,125,49}
+\definecolor{orange_c}{RGB}{251,229,214}
+\definecolor{green_f}{RGB}{112,173,71}
+\definecolor{green_c}{RGB}{226,240,217}
+\definecolor{yellow_f}{RGB}{255,192,0}
+\definecolor{yellow_c}{RGB}{255,242,204}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[framemethod=tikz]{mdframed}
+
+\mdfdefinestyle{s_mep}{
+	linecolor=theme!,
+	outerlinewidth=3pt,
+	frametitlerule=false,
+	topline=false,
+	bottomline=false,
+	rightline=false,
+	backgroundcolor=white,
+	innertopmargin=5pt,
+	roundcorner=0pt,
+	%skipabove=5pt,
+	skipbelow=5pt
+}
+\newmdenv[style=s_mep]{mep_env}
+
+\newenvironment{mep}{%\stepcounter{exa}%
+%\newenvironment{myenv}{\begin{adjustwidth}{2cm}{}}{\end{adjustwidth}}
+\addcontentsline{ldf}{figure}{0}%
+\begin{mep_env}
+\small}
+{\end{mep_env}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Transition
+
+\mdfdefinestyle{s_trans}{%
+	linecolor=yellow_f!,
+	outerlinewidth=3pt,%
+	frametitlerule=false,
+	topline=false,
+	bottomline=false,
+	rightline=false,
+	backgroundcolor=yellow_c,
+	innertopmargin=8pt,
+	roundcorner=0pt,
+	nobreak=true
+}
+\newmdenv[style=s_trans]{transition2_env}
+\newenvironment{transition}
+{%\stepcounter{exa}%
+	\addcontentsline{ldf}{figure}{0}%
+	\begin{transition2_env}}
+	{\end{transition2_env}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+
+\mdfdefinestyle{s_experience}{%
+	linecolor=bleu_f!,
+	outerlinewidth=3pt,%
+	frametitlerule=false,
+	topline=false,
+	bottomline=false,
+	rightline=false,
+	backgroundcolor=bleu_c,
+	innertopmargin=8pt,
+	roundcorner=0pt,
+	nobreak=true
+}
+\newmdenv[style=s_experience]{experience_env}
+\newenvironment{experience}
+{%\stepcounter{exa}%
+	\addcontentsline{ldf}{figure}{0}%
+	\begin{experience_env}}
+%	\begin{experience_env}[]{\noindent\colorbox[rgb]{0.1 0.1 0.53}{\textbf{\color{white} Expérience : }}\\}}
+	{\end{experience_env}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Slide
+
+\mdfdefinestyle{s_slide}{%
+	linecolor=green_f!,
+	outerlinewidth=3pt,%
+	frametitlerule=false,
+	topline=false,
+	bottomline=false,
+	rightline=false,
+	backgroundcolor=green_c,
+	innertopmargin=8pt,
+	roundcorner=0pt,
+	nobreak=true
+}
+\newmdenv[style=s_slide]{slide_env}
+
+\newenvironment{slide}
+	{%\stepcounter{exa}%
+%		\newenvironment{myenv}{\begin{adjustwidth}{2cm}{}}{\end{adjustwidth}}
+		\addcontentsline{ldf}{figure}{0}%
+		\begin{slide_env}}
+		{\end{slide_env}
+	}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\maketitle
+
+\section*{Code couleur}
+
+\begin{slide}
+Les concepts essentiels à faire passer avec la slide : ce qu'il faut retenir !
+\end{slide}
+
+\begin{experience}
+Les simulations pour agrémenter la présentation.
+\end{experience}
+
+\begin{transition}
+Les transitions pour le lien entre les slides.
+\end{transition}
+
+\section{Mise en perspective didactique d’un dossier de recherche}
+
+\begin{slide}
+Présentation de l'exposé en trois parties :
+\begin{itemize}
+\item le parcours universitaire ;
+\item les travaux de thèse ;
+\item la séquence pédagogique.
+\end{itemize}
+\end{slide}
+
+\begin{transition}
+\end{transition}
+
+\section{Parcours universitaire}
+
+\begin{slide}
+\end{slide}
+
+\begin{transition}
+\end{transition}
+
+\section{Tester la mécanique quantique}
+
+\begin{slide}
+\end{slide}
+
+\begin{transition}
+\end{transition}
+
+\section{Mouvement brownien -- État quantique fondamental d’un oscillateur mécanique}
+
+\begin{slide}
+\end{slide}
+
+\begin{transition}
+\end{transition}
+
+\section{Le micro-pilier en quartz en quelques chiffres}
+
+\begin{slide}
+\end{slide}
+
+\begin{transition}
+\end{transition}
+
+\section{Mouvement brownien et thermométrie}
+
+\begin{slide}
+\end{slide}
+
+\begin{transition}
+\end{transition}
+
+\section{Mesures interférométriques de petits déplacements}
+
+\begin{slide}
+\end{slide}
+
+\begin{transition}
+\end{transition}
+
+\section{La cavité optomécanique}
+
+\begin{slide}
+\end{slide}
+
+\begin{transition}
+\end{transition}
+
+\section{Couplage optomécanique et refroidissement}
+
+\begin{slide}
+\end{slide}
+
+\begin{transition}
+\end{transition}
+
+\section{Refroidissement par rétroaction}
+
+\begin{slide}
+\end{slide}
+
+\begin{transition}
+\end{transition}
+
+\section{Résultats}
+
+\begin{slide}
+\end{slide}
+
+\begin{transition}
+\end{transition}
+
+\section{Vers une amélioration de la sensibilité des mesures de déplacement}
+
+\begin{slide}
+\end{slide}
+
+\begin{transition}
+\end{transition}
+
+\section{Photo}
+
+\begin{slide}
+\end{slide}
+
+\begin{transition}
+\end{transition}
+
+\section{Valorisation -- Oscillateurs et micro-pilier }
+
+\begin{slide}
+\end{slide}
+
+\begin{transition}
+\end{transition}
+
+\section{Valorisation -- Cours et TD}
+
+\begin{slide}
+\end{slide}
+
+\begin{experience}
+\end{experience}
+
+\begin{transition}
+\end{transition}
+
+\section{Valorisation -- TP : caractérisation mécanique}
+
+\begin{slide}
+\end{slide}
+
+\begin{transition}
+\end{transition}
+
+\section{Valorisation -- TP : fonction de transfert}
+
+\begin{slide}
+\end{slide}
+
+\begin{transition}
+\end{transition}
+
+\section{Vidéo}
+
+\begin{slide}
+\end{slide}
+
+\begin{transition}
+\end{transition}
+
+\section{Valorisation -- TP : étude spectrale}
+
+\begin{slide}
+\end{slide}
+
+\begin{transition}
+\end{transition}
+
+\section{Valorisation -- Évaluation}
+
+\begin{slide}
+\end{slide}
+
+\begin{transition}
+\end{transition}
+
+\section{Merci pour votre attention !}
+
+\end{document}

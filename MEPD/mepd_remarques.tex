@@ -1,0 +1,167 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[thinspace,thinqspace,amssymb]{SIunits}
+\usepackage{eurosym}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=theme
+}
+
+\title{Remarques sur le dossier de mise en perspective didactique d'un dossier de recherche}
+\author{\textbf{Rémi Metzdorff}}
+\date{Concours externe spécial de l'agrégation de physique-chimie option physique Session 2020}
+%\date{2020}
+
+\renewcommand{\d}{\mathrm{d}}
+\newcommand{\uroc}{\micro RoC}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  For CV  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{array}
+%\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{xcolor}
+\definecolor{theme}{RGB}{56,115,179}
+\usepackage[font=small]{caption}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[framemethod=tikz]{mdframed}
+
+\mdfdefinestyle{s_mep}{
+	linecolor=theme!,
+	outerlinewidth=3pt,
+	frametitlerule=false,
+	topline=false,
+	bottomline=false,
+	rightline=false,
+	backgroundcolor=white,
+	innertopmargin=5pt,
+	roundcorner=0pt,
+	%skipabove=5pt,
+	skipbelow=5pt
+}
+\newmdenv[style=s_mep]{mep_env}
+
+\newenvironment{mep}{%\stepcounter{exa}%
+%\newenvironment{myenv}{\begin{adjustwidth}{2cm}{}}{\end{adjustwidth}}
+\addcontentsline{ldf}{figure}{0}%
+\begin{mep_env}
+\small}
+{\end{mep_env}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\maketitle
+
+\section{Parcours universitaire et scientifique}
+
+\section{Refroidissement vers l'état quantique fondamental}
+
+\subsection{Mesure de déplacements et optomécanique}
+\label{sec:intro}
+
+\subsubsection{Les mesures de déplacements et leurs applications}
+
+Revoir comment sont extraits les paramètres de la source d'OG d'après le signal : localisation, masses, énergie émise.
+
+\subsubsection{L'optomécanique : entre limite de sensibilité...}
+
+\subsubsection{... Et contrôle d'oscillateurs mécaniques}
+
+\subsection{Les oscillateurs mécaniques}
+\label{sec:mechanical_oscillators}
+
+\paragraph{Resonant approximation : lorentzian shape\\}
+La susceptibilité mécanique de l'oscillateur amorti s'écrit
+\begin{equation}
+\chi[\Omega] = \frac{1}{m_\mathrm{eff}\left[\Omega_m^2-\Omega^2 - i\Gamma_m\Omega\right]} = \frac{1}{m_\mathrm{eff}\left[(\Omega_m+\Omega)(\Omega_m-\Omega) - i\Gamma_m\Omega\right]}.
+\end{equation}
+Si $\Gamma_m \ll \Omega_m$, on peut s'intéresser à l'évolution de la susceptibilité proche de la résonance, soit pour $\Omega \approx \Omega_m$.
+On a alors aussi $\Omega_m+\Omega \approx 2\Omega_m$, si bien que
+\begin{equation}
+\chi[\Omega] \approx \frac{1}{m_\mathrm{eff}\left[2\Omega_m(\Omega_m-\Omega) - i\Gamma_m\Omega_m\right]} = \frac{1}{m_\mathrm{eff}\Gamma_m\Omega_m\left[\frac{\Omega_m-\Omega}{\frac{\Gamma_m}{2}} - i\right]}.
+\end{equation}
+Pour la spectre de déplacement, on trace la densité spectrale de puissance du bruit de position, proportionnelle au carré du module de la susceptibilité mécanique
+\begin{equation}
+\left|\chi[\Omega]\right|^2 = \frac{\frac{1}{(m_\mathrm{eff}\Gamma_m\Omega_m)^2}}{\left[\left(\frac{\Omega_m-\Omega}{\frac{\Gamma_m}{2}}\right)^2 + 1\right]},
+\end{equation}
+ce qui est bien une lorentzienne.
+
+\paragraph{Oscillateur harmonique quantique\\}
+Refaire le calcul (TD de MQ d'Arnaud) et marquer les différences avec le puits infini rectangulaire.
+Différentes manifestations de la quantification :
+\begin{itemize}
+\item niveaux d'énergie discrets ;
+\item énergie minimale non nulle,
+\end{itemize}
+qui se traduisent sur la mesure :
+\begin{itemize}
+\item fluctuations de point zéro ;
+\item asymétrie des bandes latérales mécaniques.
+\end{itemize}
+
+Les phonons sont des bosons.
+
+\subsection{Une cavité optique pour augmenter la sensibilité}
+\label{sec:cavity}
+
+\subsection{Couplage optomécanique et refroidissement}
+\label{sec:optomechanics}
+
+\paragraph{Approche thermodynamique du self-cooling\\}
+Voir Aspelmeyer 2014.
+
+\paragraph{Approche quantique : processus Stokes et anti-Stokes\\}
+Voir Aspelmeyer 2014.
+
+
+\subsection{Principaux résultats obtenus}
+\label{sec:results}
+
+\subsection{Vers des mesures sous la limite quantique standard}
+\label{sec:prospects}
+
+\section{Enseignement, diffusion et vulgarisation}
+
+\subsection{Valorisation des travaux de recherche}
+
+\paragraph{Transferts thermiques\\}
+
+\subsubsection{Filtrage, micro-contrôleurs et asservissements}
+\label{sec:controls}
+
+\paragraph{Super-atténuateurs de Virgo\\}
+
+Il s'agit d'un système complexe composé de sept oscillateurs couplés.
+Il faut relire l'article \emph{The seismic Superattenuators of the Virgo gravitational waves interferometer}, section 3.
+La cascade de pendules permet d'avoir une dépendance forte de la réponse en déplacement u miroir final avec la fréquence.
+Au delà de la plus haute des fréquences de résonance $f_n$ associées aux modes propres du système, la réponse d'un pendule composé de $N$ étages est donnée par
+\begin{equation}
+\frac{C}{f^{2N}},
+\end{equation}
+où $C = \prod_{n=1}^N f_n^2$.
+Le résultat est similaire dans le cas des lames utilisées pour l'isolation dans la direction verticale.
+
+Dans le cas des pendules, le couplage est inertiel.
+Dans le cas des lames, le couplage est élastique.
+
+
+\subsubsection{Un interféromètre de Michelson imprimé en 3D}
+
+\subsection{Enseignements}
+
+\subsection{Vulgarisation : résonance et ondes gravitationnelles}
+
+\end{document}
