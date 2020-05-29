@@ -17,7 +17,8 @@
 }
 
 \title{Mise en perspective didactique d'un dossier de recherche}
-\author{\textbf{Rémi Metzdorff}}
+%\author{\textsc{\textbf{Rémi Metzdorff}}}
+\author{\textbf{Rémi \textsc{Metzdorff}}}
 \date{Concours externe spécial de l'agrégation de physique-chimie option physique Session 2020}
 %\date{2020}
 
@@ -115,9 +116,9 @@ Stage au LKB avec Pierre Cladé (4 mois) sur le développement de collimateurs c
 2017 &
 \textbf{E=M6 :} casser un verre avec la voix, recherche et mise en place de l'expérience, présentation lors du tournage.\\
 2015--2018 &
-\textbf{Fête de la science :} conférence sur la détection d'ondes gravitationnelles, animations et présentation du LKB au grand public, notamment à travers des visites et quelques expériences : résonance optique du sodium, interférence en comptage de photons, etc\\
+\textbf{Fête de la science :} conférence sur la détection d'ondes gravitationnelles, animations et présentation du LKB au grand public, notamment à travers des visites et quelques expériences : résonance optique du sodium, interférence en comptage de photons, etc.\\
 2012--2018 &
-\textbf{Aïkido :} enseignant au cours enfant (8 à 15 ans). 
+\textbf{Aïkido :} co-enseignant au cours enfant (8 à 15 ans). 
 \end{tabular*}
 
 \section{Refroidissement vers l'état quantique fondamental}
@@ -129,11 +130,7 @@ Stage au LKB avec Pierre Cladé (4 mois) sur le développement de collimateurs c
 
 \begin{figure}[b]
 \center
-%\includegraphics[height=90pt]{figures/AFM_RM.jpg}
-%\includegraphics[height=90pt]{figures/AFM_quantilever.png}
-%\hfill
-%\includegraphics[height=90pt]{figures/virgo.jpg}
-\includegraphics[height=90pt]{figures/displacement.png}
+\includegraphics[height=90pt]{figures/displacement_small.png}
 \caption{Les mesures de déplacements sont utiles aussi bien pour sonder la matière que pour des observations astronomiques.
 (a) Résonance magnétique par mesure de force (D. Rugar, 2004), capable de détecter des spins uniques exerçant sur (b) le micro-levier une force de l'ordre de $\unit{10^{-18}}{\newton}$, associée à un déplacement de $\unit{10^{-10}}{\meter}$.
 (c) Interféromètre gravitationnel Virgo avec ses bras de \unit{3}{\kilo\meter}, qui atteint maintenant une sensibilité relative inférieure à $10^{-22}$.}
@@ -141,12 +138,12 @@ Stage au LKB avec Pierre Cladé (4 mois) sur le développement de collimateurs c
 \end{figure}
 
 Les mesures de déplacements sont parmi les mesures les plus sensibles réalisées à ce jour.
-À l'échelle astronomique, on souhaite par exemple connaître la distance (et la vitesse) séparant plusieurs objets afin de déterminer la vitesse d'expansion de l'univers.
+À l'échelle astronomique, on souhaite par exemple connaître la distance (et la vitesse) séparant plusieurs objets afin de déterminer la vitesse de l'expansion de l'univers.
 À l'échelle microscopique, ces mesures permettent d'élaborer des capteurs variés, très sensibles mais de dimensions très faibles : accéléromètres et gyroscopes en mesurant le déplacement d'une masse test, microscope à force atomique en observant la déviation d'un micro-levier à proximité de la surface d'un échantillon,~etc.
  
 De nombreux dispositifs de mesure de déplacements utilisent les propriétés remarquables de la lumière.
 La \textit{mesure absolue} de la distance Terre-Lune découle par exemple de la détermination du temps de vol d'impulsions lumineuses avec des incertitudes relatives de l'ordre de $10^{-9}$.
-Le développement de techniques interferométriques autorise par ailleurs les \textit{mesures relatives} les plus sensibles réalisées à ce jour (Fig.~\ref{fig:displacement_measurement}).
+Le développement de techniques interferométriques autorise par ailleurs les \textit{mesures relatives} les plus sensibles réalisées actuellement (Fig.~\ref{fig:displacement_measurement}).
 
 Un des succès majeurs de l'interférométrie optique est la détection des ondes gravitationnelles par les interféromètres des projets Virgo (Cascina, Italie) et LIGO (Hanford et Livingston, États-Unis).
 Les développements considérables des dernières décennies ont en effet permis, cent ans après leur prédiction par A. Einstein, l'observation directe d'ondes gravitationnelles issues de la coalescence de deux trous noirs
@@ -159,7 +156,7 @@ Le passage d'une onde gravitationnelle introduit un déphasage qui peut être me
 \subsubsection{L'optomécanique : entre limite de sensibilité...}
 
 Dans le cas des interféromètres gravitationnels, toute perturbation du détecteur produit un bruit qui dégrade la sensibilité de la mesure s'il n'est pas causé par le passage d'une onde gravitationnelle.
-La distribution spectrale de ces bruits dépend de leur nature et leur influence dépend de l'intervalle de fréquences sur lequel est réalisée la mesure.
+La distribution spectrale de ces bruits dépend de leur nature et leur influence varie suivant l'intervalle de fréquences sur lequel est réalisée la mesure.
 Par exemple, l'agitation thermique microscopique engendre un mouvement aléatoire macroscopique de la surface des optiques du détecteur.
 C'est le mouvement brownien qu'il est possible d'atténuer en utilisant des matériaux et des géométries adaptés.
 La réduction des bruits classiques est telle que les bruits quantiques de phase et d'intensité liés au laser lui-même deviennent limitants.
@@ -194,8 +191,7 @@ En effet, il est possible d'observer le bruit quantique de pression de radiation
 Le refroidissement se fait en utilisant les techniques de l'optomécanique en cavité, pour lesquelles il convient de disposer de \textit{bons} oscillateurs mécaniques : nous les décrirons dans un premier temps.
 Pour mesurer leurs déplacements avec précision, ces oscillateurs sont utilisés comme l'un des miroirs d'une cavité optique de grande finesse.
 Nous détaillerons ensuite l'utilisation du couplage optomécanique pour le refroidissement de l'oscillateur en cavité.
-Nous exposerons finalement les principaux résultats obtenus au cours de la thèse.
-Ils seront brièvement mis en perspective dans le cadre de l'amélioration de la sensibilité des détecteurs d'ondes gravitationnelles.
+Nous exposerons finalement les principaux résultats obtenus au cours de la thèse et ils seront brièvement mis en perspective dans le cadre de l'amélioration de la sensibilité des détecteurs d'ondes gravitationnelles.
 
 \subsection{Les oscillateurs mécaniques}
 \label{sec:mechanical_oscillators}
@@ -206,7 +202,7 @@ Ils seront brièvement mis en perspective dans le cadre de l'amélioration de la
 \caption{Spectres des fluctuations de position d'un oscillateur (micro-pilier) dues au mouvement brownien de l'oscillateur.
 Sa masse effective est déduite d'une mesure à température ambiante (à gauche) : l'oscillateur est à l'équilibre avec son environnement ($T=T_\mathrm{env}$) et la température $T_\mathrm{env}$ est obtenue grâce à une thermistance.
 Lors du refroidissement (à droite), cette même mesure donne la température $T$ de l'oscillateur puisque $m_\mathrm{eff}$ ne change pas. 
-Le déplacement est exprimé en $\meter\squared{.}\hertz^{-1}$ car on s'intéresse non à l'amplitude mais à la densité spectrale de puissance du bruit de position.}
+Le déplacement est exprimé en $\meter\squared\cdot\hertz^{-1}$ car on s'intéresse non à l'amplitude mais à la densité spectrale de puissance du bruit de position.}
 \label{fig:thermal_noise}
 \end{figure}
 
@@ -223,8 +219,6 @@ Le comportement fréquentiel se déduit dans l'espace de Fourier de la susceptib
 telle que $x[\Omega] = \chi[\Omega]F_\mathrm{ext}[\Omega]$.
 
 L'agitation thermique microscopique se traduit au niveau macroscopique comme une excitation aléatoire du mode propre de l'oscillateur à l'origine du mouvement brownien décrit par la théorie de Langevin.
-%où le terme de dissipation $\Gamma_m$ est responsable d'un couplage de l'oscillateur à son environnement assimilé à un bain thermique à la température $T_\mathrm{env}$.
-%Il en résulte une force fluctuante $F_\mathrm{T}[\Omega]$ dont le spectre est lié à la partie imaginaire de la susceptibilité mécanique par le théorème de fluctuation-dissipation.
 Dans le cas où la dissipation est faible ($\Gamma_m \ll \Omega_m$), on montre que le spectre de déplacement de l'oscillateur est bien approché par une lorentzienne de largeur $\Gamma_m$ centrée sur la pulsation propre.
 On utilise donc des oscillateurs avec des facteurs de qualité mécaniques $Q=\Omega_m/\Gamma_m$ très élevés ($Q>10^6$).
 Par ailleurs, l'intégrale du spectre est liée à la température $T$ de l'oscillateur : elle est fonction directe du rapport $T/m_\mathrm{eff}$.
@@ -260,9 +254,9 @@ Au cours de ma thèse, j'ai utilisé deux types d'échantillons (Fig.~\ref{fig:r
 \begin{itemize}
 \item un micro-pilier en quartz de \unit{1}{\milli\meter} de long, de section triangulaire de \unit{240}{\micro\meter} de côté, micro-fabriqué à l'ONERA (Paris) et en collaboration avec le LMA (Lyon).
 Il est suspendu en son milieu par une membrane d'environ \unit{10}{\micro\meter} d'épaisseur et on dépose un miroir de haute réflectivité sur l'une de ses extrémités.
-Avec $m_\mathrm{eff}=\unit{33{,}5}{\micro\gram}$ et $\Omega_m=2\pi\times\unit{3{,}6}{\mega\hertz}$, on a $T_{Q}^\mathrm{pilier} = \unit{200}{\micro\kelvin}$ avec des facteurs de qualité allant jusqu'à $10^7$ ;
+Avec $m_\mathrm{eff}=\unit{33{,}5}{\micro\gram}$ et $\Omega_m=2\pi\times\unit{3{,}6}{\mega\hertz}$, on a $T_{Q}^\mathrm{pilier} = \unit{200}{\micro\kelvin}$ pour des facteurs de qualité allant jusqu'à $10^7$ ;
 \item un micro-disque en silicium obtenu en collaboration avec l'UniFI (Italie) d'environ $\unit{200}{\micro\meter}$ de diamètre, sur lequel est déposé un miroir de très haute réflectivité.
-Avec $m_\mathrm{eff}=\unit{112}{\micro\gram}$ et $\Omega_m=2\pi\times\unit{280}{\kilo\hertz}$, on a $T_{Q,\mathrm{disque}} = \unit{10}{\micro\kelvin}$ avec $Q\approx10^6$.
+Avec $m_\mathrm{eff}=\unit{112}{\micro\gram}$ et $\Omega_m=2\pi\times\unit{280}{\kilo\hertz}$, on a $T_{Q,\mathrm{disque}} = \unit{10}{\micro\kelvin}$ pour $Q\approx10^6$.
 \end{itemize}
 Les propriétés mécaniques $\Omega_m$ et $\Gamma_m$ des échantillons sont obtenues en étudiant leur réponse à une excitation forcée par une cale piézoélectrique.
 
@@ -277,9 +271,9 @@ Si la cavité est résonante avec le laser, le déphasage devient
 \begin{equation}
 \delta \varphi = 8{\cal{F}}\frac{\delta x}{\lambda}.
 \end{equation}
-Le déphasage est ensuite converti en variation d'intensité détectable par une photodiode en faisant interférer ce faisceau signal avec un faisceau de référence (Fig.~\ref{fig:detection_scheme},~(c)).
+Ce déphasage est ensuite converti en variation d'intensité détectable par une photodiode en faisant interférer ce faisceau signal avec un faisceau de référence (Fig.~\ref{fig:detection_scheme},~(c)).
 
-Pour les caractérisations préliminaires des échantillons, un simple interféromètre de Michelson convient puisqu'on étudie un régime forcé pour lequel l'amplitude des déplacements est grande.
+Pour les caractérisations préliminaires des échantillons, un simple interféromètre de Michelson convient puisque l'on étudie un régime forcé pour lequel l'amplitude des déplacements est grande.
 En revanche, pour les mesures de mouvement brownien, la sensibilité de l'interféromètre seul est insuffisante et il est nécessaire d'exploiter la réponse en phase d'une cavité Fabry-Perot dont l'un des miroirs est celui de l'oscillateur mécanique.
 On obtient finalement une détection homodyne en remplaçant la photodiode de l'interféromètre par une détection équilibrée, non représentée sur les schémas.
 Elle permet d'atténuer fortement les bruits classiques et autorise des mesures limitées par les bruits quantiques. 
@@ -293,7 +287,7 @@ Elle permet d'atténuer fortement les bruits classiques et autorise des mesures 
 \includegraphics[scale=0.75]{figures/michelson_and_cavity_response.png}
 \caption{Schéma simplifié des dispositifs interférométriques utilisés pour la mesure de petits déplacements avec un laser de longueur d'onde $\lambda$.
 (a) Mesure de l'intensité transmise par un interféromètre de Michelson.
-(b) L'utilisation d'une cavité Fabry-Perot résonante (${\cal{F}}=20$) augmente l'effet d'un petit déplacement et améliore la sensibilité de l'interféromètre (c).
+(b) L'utilisation d'une cavité Fabry-Perot résonante (${\cal{F}}=20$ pour le schéma) augmente l'effet d'un petit déplacement et améliore la sensibilité de l'interféromètre (c).
 Les graphes indiquent la réponse de la détection (en bleu) en fonction de la position de l'oscillateur et l'allure du signal mesuré (en orange) lors d'un petit déplacement $\delta x$ (en vert) au voisinage du point de fonctionnement optimal (en noir) où la sensibilité est maximale.}
 \label{fig:detection_scheme}
 \end{figure}
@@ -301,7 +295,7 @@ Les graphes indiquent la réponse de la détection (en bleu) en fonction de la p
 Compte tenu de la faible dimension des miroirs plans déposés sur les oscillateurs mécaniques, il est nécessaire d'utiliser à l'entrée de la cavité un miroir d'un rayon de courbure de l'ordre du millimètre (\uroc).
 Avec un laser $\mathrm{CO_2}$, j'ai fabriqué par photoablation des structures concaves d'environ $\unit{200}{\micro\meter}$ de diamètre, possédant des rayons de courbure variés.
 Un dépôt diélectrique de couches de silice $\mathrm{SiO_2}$ et d'oxyde de tantale $\mathrm{Ta_2O_5}$ réalisé au Laboratoire des matériaux avancés (Lyon) permet ensuite d'obtenir des miroirs ayant une transmission bien contrôlée entre 0 et $\unit{120}{ppm}$ pour nos échantillons.
-J'ai ensuite réalisé un ensemble de pièces mécaniques en cuivre de haute pureté (Fig.~\ref{fig:cavity}) permettant un assemblage et un alignement rapide d'une cavité d'environ $\unit{100}{\micro\meter}$ de longueur, constituée d'un oscillateur et d'un \uroc.
+J'ai ensuite réalisé un ensemble de pièces mécaniques en cuivre de haute pureté (Fig.~\ref{fig:cavity}) permettant un assemblage et un alignement rapide d'une cavité de grande finesse (${\cal{F}}\approx 10^5$), d'environ $\unit{100}{\micro\meter}$ de longueur, constituée d'un oscillateur et d'un \uroc.
 Sa conception est soumise à de nombreuses contraintes liées à son utilisation dans le cryostat à dilution et à la nécessité de l'asservir en longueur pour la maintenir résonante avec le laser.
 
 \begin{figure}
@@ -309,7 +303,7 @@ Sa conception est soumise à de nombreuses contraintes liées à son utilisation
 %\includegraphics[height=130pt]{figures/cavity_microwheel.jpg}
 %\includegraphics[height=130pt]{figures/cavity_uroc.jpg}
 %\includegraphics[height=130pt]{figures/IMG_1766.JPG}
-\includegraphics[height=129pt]{figures/optomechanical_cavity.png}
+\includegraphics[height=129pt]{figures/optomechanical_cavity_small.png}
 \caption{Cavité optomécanique formée par (a) l'oscillateur mécanique, ici un micro-disque, et (b) le miroir de couplage (\uroc).
 Les câbles permettent de contrôler les cales piézoélectriques nécessaires à l'asservissement en longueur de la cavité.
 La cavité assemblée (c) est montée sur le dernier étage du cryostat à dilution.
@@ -326,7 +320,7 @@ Dans un premier temps, l'ensemble de la cavité est refroidi jusqu'à \unit{30}{
 Les techniques propres à l'optomécanique en cavité\footnote{Aspelmeyer \textit{et al.}, Cavity Optomechanics, \textit{Rev. Mod. Phys.}, (2014)} permettent ensuite de refroidir l'oscillateur mécanique jusqu'aux températures requises.
 
 Si le laser est légèrement désaccordé par rapport à la cavité, une perturbation de sa longueur provoquée par un déplacement du miroir mobile modifie la puissance intracavité, ce qui en retour change la force de pression de radiation exercée sur le miroir : c'est le \textit{couplage optomécanique}.
-La modulation de la force de pression de radiation $F_\mathrm{rad}$ est déphasée par rapport aux déplacements du miroir et se décompose en deux termes :
+La modulation de la force de pression de radiation $F_\mathrm{rad}$ est retardée par rapport aux déplacements du miroir et peut s'exprimer comme la somme de deux termes :
 \begin{itemize}
 \item l'un en phase avec le déplacement qui s'ajoute à la force de rappel mécanique et modifie simplement la pulsation propre $\Omega_m$ : c'est l'effet de \textit{ressort optique} ;
 \item l'autre, en quadrature, est proportionnel à la vitesse du miroir et permet d'obtenir une force analogue à un frottement visqueux associé à un taux de dissipation $\Gamma_\mathrm{opt}$.
@@ -344,7 +338,7 @@ Avec cette méthode, le refroidissement est limité par la puissance optique inj
 
 \begin{figure}
 \center
-\includegraphics[scale=0.6]{figures/feedback_cooling_v2.png}
+\includegraphics[scale=0.6]{figures/feedback_cooling_v2_small.png}
 \caption{Principe du refroidissement par rétroaction.
 La dissipation mécanique $\Gamma_m$ est responsable de la force de Langevin dont les fluctuations $\delta F_\mathrm{T}$ perturbent l'oscillateur.
 La détection par interférométrie optique du déphasage $\delta \varphi_x$ associé au déplacement $\delta x$ donne accès à la température de l'oscillateur $T_\mathrm{eff}$ d'après le spectre de ses fluctuations de position.
@@ -353,11 +347,11 @@ La détection est imparfaite : l'ajout de bruit $\delta \varphi_b$ dégrade la s
 \label{fig:feedback_scheme}
 \end{figure}
 
-En plus de la rétroaction passive inhérente au couplage optomécanique, on peut agir activement sur les déplacements du miroir mobile grâce au refroidissement par rétroaction (Fig.~\ref{fig:feedback_scheme}).
+En plus de la rétroaction passive inhérente au couplage optomécanique, on peut agir activement sur les déplacements du miroir mobile grâce au \emph{refroidissement par rétroaction} (Fig.~\ref{fig:feedback_scheme}).
 La mesure optique de la position de l'oscillateur sert à créer un signal d'erreur grâce auquel on applique une force de frottements visqueux sur le miroir mobile.
-Le contrôle du déphasage introduit par la boucle de contrôle permet d'obtenir uniquement le terme de friction froide nécessaire au refroidissement.
-La rétroaction peut être appliquée grâce à de nombreux actionneurs, mais dans notre expérience, on utilise un modulateur d'amplitude optique qui agit sur l'intensité du faisceau mesurant les déplacements de l'oscillateur.
-La modulation d'amplitude ne perturbe pas la mesure puisqu'il s'agit d'une mesure de phase. 
+L'ajustement du déphasage introduit par la boucle de contrôle permet d'obtenir uniquement le terme de friction froide nécessaire au refroidissement.
+La rétroaction peut être appliquée grâce à de nombreux actionneurs mais dans notre expérience, on exploite une fois encore la pression de radiation avec un modulateur d'amplitude optique qui agit sur l'intensité du faisceau mesurant les déplacements de l'oscillateur.
+La modulation d'amplitude ne perturbe pas la mesure puisqu'on réalise une mesure de phase. 
 À puissance optique égale, cette technique est plus efficace que l'auto-refroidissement puisque l'intensité de la rétroaction peut être facilement augmentée en accroissant le gain $g$ de la boucle de contrôle.
 
 Dans le cas d'une mesure parfaite des déplacements du miroir, un accroissement du gain $g$ entraine toujours un refroidissement de l'oscillateur car seul le signal correspondant à ses déplacements est mesuré puis réinjecté dans la boucle.
@@ -396,8 +390,8 @@ La courbe orange correspond au modèle qui tient compte des paramètres de l'exp
 \label{sec:prospects}
 
 Dans notre expérience, le signal que l'on mesure est associé au mouvement brownien de l'oscillateur, concentré autour de la pulsation mécanique $\Omega_m$.
-La limite de sensibilité de la plupart de nos mesures est imposée par le bruit quantique de phase, qui forme le plancher observé vers $\unit{2\times10^{-35}}{\meter\squared{.}\hertz^{-1}}$ sur la Fig.~\ref{fig:feedback_cooling_pillar}.
-Compte tenu des puissances optiques utilisées et du niveau d'occupation thermique atteint, le bruit quantique d'intensité ne représente qu'une fraction de l'ordre de \unit{1}{\%} des fluctuations de position mesurées.
+La limite de sensibilité de la plupart de nos mesures est imposée par le bruit quantique de phase, qui forme le plancher observé vers $\unit{2\times10^{-35}}{\meter\squared\cdot\hertz^{-1}}$ sur la Fig.~\ref{fig:feedback_cooling_pillar}.
+Compte tenu des puissances optiques utilisées et du niveau d'occupation thermique atteint, le bruit quantique d'intensité ne contribue qu'à une fraction de l'ordre de \unit{1}{\%} des fluctuations de position mesurées.
 Grâce aux développements réalisés sur la cavité optomécanique, une observation du bruit de pression de radiation devrait être possible, notamment en utilisant une puissance optique plus importante puisque l'amplitude de ce bruit est proportionnelle à l'amplitude du rayonnement lumineux.
 Même si l'origine du signal est complètement différente, il sera possible de réaliser des mesures de déplacements limitées par les mêmes bruits quantiques que les interféromètres gravitationnels.
 
@@ -416,7 +410,7 @@ Ma thèse possède une dimension expérimentale importante grâce à laquelle j'
 L'oscillateur harmonique est le premier chapitre de première année de CPGE, suivi par l'étude du filtrage linéaire et de l'oscillateur amorti.
 J'illustrerai mes cours de simulations permettant par exemple d'étudier le régime transitoire d'un oscillateur amorti, mais aussi de données expérimentales montrant différents régimes de vibration du micro-pilier.
 Les techniques de caractérisation de nos échantillons seront adaptées en TP pour l'étude d'oscillateurs accessibles aux étudiants comme les diapasons.
-Par exemple, ils pourront réaliser un capteur de pression à partir d'un diapason en quartz commercial dont le facteur de qualité mécanique peut être relié à la pression du gaz environnant.
+Par exemple, ils pourront réaliser un capteur de pression à partir d'un diapason en quartz commercial dont le facteur de qualité mécanique est lié à la pression du gaz environnant.
 Il suffit pour cela d'ôter délicatement le boitier qui maintient habituellement le quartz utilisé comme référence de fréquence sous vide.
 J'évaluerai finalement leur compréhension des différents paramètres de l'oscillateur (\'Eq.~\eqref{eq:eq_of_motion}) avec une étude documentaire sur les micro-capteurs : micro-balance, baromètre, micro-pilier, etc.
 
@@ -429,7 +423,7 @@ Il serait possible d'évaluer avec les étudiants l'importance de l'utilisation 
 
 \begin{figure}
 \center
-\includegraphics[scale=0.75]{figures/GW150914_data.png}
+\includegraphics[scale=0.75]{figures/GW150914_data_abc_small.png}
 \caption{Filtrage numérique des données brutes de l'interféromètre gravitationnel LIGO situé à Hanford pour extraire le signal associé à l'évènement GW150914.
 Il s'agit de la première observation directe d'ondes gravitationnelles issues de la coalescence de deux trous noirs.
 Les données brutes (a) sont largement dominées par des bruits basse fréquence.
@@ -440,24 +434,24 @@ La courbe noire correspond au modèle théorique dont sont extraits les paramèt
 \end{figure}
 
 L'expérience dépend de nombreux filtres et d'amplificateurs analogiques et numériques.
-J'ai notamment réalisé des filtres électroniques passifs et actifs, des photodiodes à haute efficacité quantique et faible bruit et un contrôleur fondé sur une carte Arduino interfacé avec Python permettant le positionnement reproductible d'une translation motorisée.
+J'ai notamment réalisé des filtres électroniques passifs et actifs, des photodiodes à haute efficacité quantique et faible bruit ainsi qu'un contrôleur fondé sur une carte Arduino interfacé avec Python permettant le positionnement reproductible d'une translation motorisée.
 Le bon déroulement de nos mesures repose également sur plusieurs boucles de rétroaction : stabilisations de températures, de puissances optiques et asservissement de longueur portant sur la position des miroirs des cavités et interféromètres.
 Les asservissements sont pour la plupart réalisés numériquement par des micro-contrôleurs RedPitaya et la bibliothèque \textit{open source} PyRPL\footnote{\url{https://pyrpl.readthedocs.io/en/latest/}} (Python RedPitaya Lockbox) développée au sein de l'équipe.
 Il est ainsi possible de piloter une grande partie de l'expérience à partir d'un PC, ce qui permet l'automatisation des séquences de mesures grâce à un répertoire de scripts Python que j'ai progressivement étoffé.
 
 Je mettrai à profit ces compétences par exemple avec des étudiants en PSI lors d'un TP pour la réalisation du filtrage d'un signal.
 Dans un premier temps, le signal généré par un micro-contrôleur et constitué d'une sinusoïde de faible amplitude masquée par un bruit blanc sera filtré analogiquement à l'aide d'un circuit RLC réalisé par les étudiants dont la bande-passante devra être caractérisée et optimisée.
-Ensuite, ils numériseront convenablement le signal grâce à un oscilloscope, son spectre sera analysé en utilisant la FFT, et la composante harmonique pourra être isolée grâce à des filtres numériques implémentés en Python par les étudiants.
+Ensuite, ils numériseront convenablement le signal grâce à un oscilloscope, son spectre sera analysé en utilisant la FFT et la composante harmonique pourra être isolée grâce à des filtres numériques implémentés en Python par les étudiants.
 Finalement, je montrerai la puissance du filtrage numérique en l'appliquant sur les données des interféromètres gravitationnels LIGO et Virgo (Fig.~\ref{fig:GW150914}).
 Elles sont disponibles publiquement\footnote{\url{https://www.gw-openscience.org/GW150914data/GW150914_tutorial.html}} et peuvent être exploitées en suivant les guides rédigés par la communauté.
 J'évaluerai aussi leur compréhension des similitudes entre filtrage électronique et mécanique en les questionnant sur le rôle des suspensions des miroirs de Virgo dans l'isolation des bruits sismiques.
 
 \subsubsection{Un interféromètre de Michelson imprimé en 3D}
 
-L'impression 3D devient de plus en plus incontournable.
-À plusieurs reprises au cours de ma thèse, j'ai eu recours à cet outil qui permet de créer rapidement des composants entièrement personnalisés et d'éprouver des assemblages complexes avant d'en réaliser des versions plus permanentes.
+L'impression 3D devient de plus en plus courante.
+À plusieurs reprises au cours de ma thèse, j'ai eu recours à cet outil qui permet de créer rapidement des composants entièrement personnalisés et d'éprouver des assemblages complexes avant d'en réaliser des versions permanentes.
 Cette technologie sera mise à profit dans le cadre du projet expérimental et numérique de l'enseignement scientifique de première ou auprès d'associations d'élèves reproduisant le fonctionnant des actuels fablab.
-Si l'établissement n'en dispose pas, je souhaite proposer leur acquisition auprès du conseil d'administration si les budgets le permettent.
+Si l'établissement n'en dispose pas, je souhaite proposer l'acquisition d'une imprimante 3D auprès du conseil d'administration si les budgets le permettent.
 
 Notre équipe a développé un interféromètre de Michelson dont les montures mécaniques sont imprimées en 3D.
 La longueur d'un bras est contrôlée grâce à une bobine et une monture déformable aimantée semblable à une membrane de haut-parleur.
@@ -465,30 +459,29 @@ Les miroirs sont des morceaux de mosaïque métalisée, la source lumineuse une 
 Seule la séparatrice est de qualité optique et l'ensemble coûte moins de 100\,\euro.
 L'interféromètre peut être construit par les élèves ou imprimé dans un fablab local.
 
-J'exploiterai l'interféromètre dans le cadre d'un classe de terminale S lors de l'étude des propriétés des ondes, sans bien sûr rentrer dans les subtilités de l'appareil.
+Sans pour autant rentrer dans les subtilités de l'appareil, j'exploiterai l'interféromètre dans le cadre d'une classe de terminale S lors de l'étude des propriétés des ondes.
 Les élèves réaliseront tout d'abord une simulation numérique pour comprendre l'effet d'un déphasage sur la superposition de deux ondes.
 Ils produiront ensuite un signal sinusoïdal à l'aide de l'Arduino et s'en serviront pour moduler la longueur d'un bras de l'interféromètre.
-Il pourront alors mesurer les variations de l'intensité à la sortie de l'interféromètre et rapprocher leurs observations des simulations. 
+Il pourront alors mesurer les variations de l'intensité à la sortie de l'instrument et rapprocher leurs observations des simulations. 
 
 \subsection{Enseignements}
 
-Au cours de ma thèse, j'ai effectué une mission d'enseignement qui m'a donné l'occasion de mettre en pratique plusieurs approches de l'enseignement.
+Au cours de ma thèse, j'ai effectué une mission d'enseignement qui m'a donné l'occasion de mettre en pratique plusieurs approches.
 L'unité d'enseignement de physique expérimentale est certainement celle qui m'a le plus apporté.
 Cette UE ne contient aucun cours magistral et se compose d'une série de TP abordant l'électronique numérique et analogique ainsi que la programmation (Labview).
 Chaque séance de TP est précédée d'un TD dont l'objectif est surtout de présenter aux étudiants le matériel qu'ils devront utiliser et d'aborder les concepts nouveaux en se basant sur des observations expérimentales.
 Les TP les confrontent ensuite à des objectifs concrets, comme la réalisation d'un bras capable de détecter et saisir un objet, où ils doivent exploiter et se familiariser avec ces nouveaux concepts.
 Ils disposent enfin d'une grande liberté pour l'objectif de fin de semestre, une compétition de robots : combats de \og sumos\fg{}, positionner un drapeau au plus près d'une cible, etc.
 
-Le parcours des étudiants que j'ai pu encadrer est souvent très disparate et il m'a parfois été difficile de m'adapter à chacun.
+Le parcours des étudiants que j'ai encadré est souvent très disparate et il m'a parfois été difficile de m'adapter à chacun.
 Leur investissement était toutefois réel et les séances très interactives.
-Cette approche par l'expérience me semble essentielle puisqu'elle amène les étudiants à se poser eux-même les questions grâce auxquelles ils apprennent des notions nouvelles.
+Cette approche par l'expérience me semble essentielle puisqu'elle amène les étudiants à se poser eux-même les questions grâce auxquelles ils s'approprient des notions nouvelles.
 La nature même de ma thèse, profondément expérimentale, renforce cette conviction puisqu'elle m'a permis d'acquérir de nombreuses compétences et de consolider mes connaissances théoriques dans plusieurs domaines.
-C'est une méthode d'enseignement très vivante que je mettrai en œuvre : l'exploitation d'expériences, y compris durant les cours, me semble essentielle pour ancrer le discours dans une réalité quotidienne ou une actualité scientifique.
+C'est une méthode d'enseignement très vivante que je mettrai en œuvre : l'exploitation d'expériences, y compris durant les cours, me semble essentielle pour ancrer le discours dans une actualité scientifique ou une réalité quotidienne.
 
 \subsection{Vulgarisation : résonance et ondes gravitationnelles}
 
-À l'occasion du sujet \textit{Peut on casser un verre avec la voix ?} de l'émission E=M6, j'ai aussi mis en place une expérience permettant de casser un verre en le faisant vibrer à l'aide d'un haut-parleur.
-%\footnote{\url{https://youtu.be/7cgZcbHmxm4}}
+À l'occasion du sujet \textit{Peut-on casser un verre avec la voix ?} de l'émission E=M6, j'ai aussi mis en place une expérience permettant de casser un verre en le faisant vibrer à l'aide d'un haut-parleur.
 Dans le cadre de l'objectif thématique sur le son de l'enseignement scientifique de première, les élèves pourront visualiser le spectre du son émis par un verre vibrant.
 Une analogie avec la corde vibrante permet de discuter qualitativement de la fréquence fondamentale et la présence des harmoniques expliquée par l'existence de différents modes propres (Fig.~\ref{fig:wine_glass}).
 Le transport d'énergie par les ondes acoustiques sera mis en évidence en le faisant vibrer grâce à un haut parleur.
@@ -505,15 +498,15 @@ Ce sujet, par la variété des domaines qu'il fait intervenir, peut servir de fi
 
 \begin{figure}[b]
 \center
-\includegraphics[height=100pt]{figures/wine_glass_f0.png}
+\includegraphics[height=100pt]{figures/wine_glass_f0_small.png}
 \hfill
-\includegraphics[height=100pt]{figures/wine_glass_f1.png}
+\includegraphics[height=100pt]{figures/wine_glass_f1_small.png}
 \hfill
-\includegraphics[height=100pt]{figures/wine_glass_f2.png}
+\includegraphics[height=100pt]{figures/wine_glass_f2_small.png}
 \hfill
-\includegraphics[height=100pt]{figures/wine_glass_f3.png}
+\includegraphics[height=100pt]{figures/wine_glass_f3_small.png}
 \hfill
-\includegraphics[height=100pt]{figures/wine_glass_f4.png}
+\includegraphics[height=100pt]{figures/wine_glass_f4_small.png}
 \caption{Simulations par élément fini des premiers modes propres mécaniques d'un verre.}
 \label{fig:wine_glass}
 \end{figure}

@@ -17,9 +17,9 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="feedback_cooling.svg"
-   inkscape:export-filename="C:\Users\remi\Documents\GitHub\agregation\MEPD\figures\feedback_cooling_v2.png"
-   inkscape:export-xdpi="422.53525"
-   inkscape:export-ydpi="422.53525">
+   inkscape:export-filename="C:\Users\remi\Documents\GitHub\agregation\MEPD\figures\feedback_cooling_v2_small.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200">
   <defs
      id="defs4">
     <linearGradient
@@ -300,9 +300,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.88754206"
-     inkscape:cx="210.16696"
-     inkscape:cy="130.39555"
+     inkscape:zoom="3.0238352"
+     inkscape:cx="145.67932"
+     inkscape:cy="129.26884"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"

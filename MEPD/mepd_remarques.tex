@@ -23,6 +23,7 @@
 
 \renewcommand{\d}{\mathrm{d}}
 \newcommand{\uroc}{\micro RoC}
+\newcommand{\tf}{\mathrm{TF}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  For CV  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{array}
@@ -74,7 +75,28 @@
 
 \subsubsection{Les mesures de déplacements et leurs applications}
 
-Revoir comment sont extraits les paramètres de la source d'OG d'après le signal : localisation, masses, énergie émise.
+\paragraph{Exploitation du signal GW150914\\}
+Tout est très bien expliqué à un niveau raisonnable dans la dernière référence citée dans le dossier.
+La relativité générale est par essence non linéaire, mais de nombreuses estimations peuvent être réalisées dans le cadre de la physique newtonienne.
+Trois hypothèses sont réalisées pour cette étude : masses symétriques, sans spin et orbite circulaire.
+
+Il faut tout d'abord s'assurer que l'évènement correspond à une coalescence de deux objets massifs.
+L'évolution du signal en témoigne : augmentation de la fréquence et de l'amplitude jusqu'à un maximum suivi d'un ringdown.
+Cette forme exclue une source constituée du ringdown d'une seule masse : les oscillations d'une goutte sont isochrones et s'amortissent.
+
+La fréquence du signal est le double de la fréquence orbitale car l'émission d'onde gravitationnelle est liée au moment quadrupolaire du système qui est invariant par rotation de $\pi$.
+L'évolution temporelle de la fréquence du signal avant la fusion donne une \emph{chirp mass} d'environ $\unit{30}{M_\odot}$.
+Si le binaire est constitué de deux objets de masses comparables, chacun fait environ $\unit{35}{M_\odot}$.
+
+La fréquence maximale du signal permet d'estimer la distance entre les deux objets en utilisant la troisième loi de Kepler.
+On trouve $\sim \unit{320}{\kilo\meter}$, soit une source très compacte.
+Les seuls objets connus qui remplissent de telles conditions sur leur masse et compacité sont les trous noirs.
+Les étoiles à neutrons sont exclues car même si elles sont très compactes, elles n'atteignent jamais des masses supérieures à $\unit{3}{M_\odot}$ sans s'effondrer en trou noir.
+
+La distance de la source est donnée par la luminosité maximale de l'évènement en la comparant à l'amplitude du signal mesuré.
+On trouve $d \sim\unit{300}{Mpc}$.
+Sa localisation dans le ciel est donnée d'après l'écart temporel entre la réception du signal sur les deux interféromètres LIGO.
+Le raisonnement est similaire à celui du calcul des anneaux d'égale inclinaison dans le Michelson.
 
 \subsubsection{L'optomécanique : entre limite de sensibilité...}
 
@@ -114,14 +136,91 @@ qui se traduisent sur la mesure :
 
 Les phonons sont des bosons.
 
+\paragraph{Fluctuation-dissipation\\}
+
+\paragraph{Fourier\\}
+Relire la partie consacrée à l'étude spectrale du \href{https://gitlab.in2p3.fr/Jeremy/Electronique/-/blob/master/Cours/electronique.pdf}{cours de Jérémy Neveu.}
+Il faut faire la différence entre série de Fourier et série de Fourier.
+La décomposition en série de Fourier s'applique aux fonctions périodiques et constitue les prémisses de l'analyse harmonique.
+La transformée de Fourier notée $\tf$ est une généralisation aux fonctions non périodiques.
+On choisi pour convention 
+\begin{equation}
+\tf (f(t)) = \hat{f}[\omega] = \int_{-\infty}^{+\infty} f(t) e^{-i\omega t} \d t,
+\end{equation}
+et pour la transformée inverse
+\begin{equation}
+\tf^{-1} (\hat{f}[\omega]) = f(t) = \frac{1}{2\pi}\int_{-\infty}^{+\infty} \hat{f}[\omega] e^{i\omega t} \d \omega.
+\end{equation}
+La fonction $f$ peut être réelle ou complexe et sa TF est à priori complexe.
+
+En électronique numérique, on comprend facilement le critère de Shanon pour éviter les repliements de spectre en considérant le signal échantillonné comme le produit d'un signal analogique et d'un peigne de Dirac.
+Le spectre est alors le produit de convolution des TF du signal et du peigne.
+La transformée de Fourier discrète est comme son nom l'indique l'équivalent discret de la transformée de Fourier et s'applique au traitement numérique du signal.
+La FFT est un algorithme particulier de TFD basé sur l'utilisation d'ensembles nombre d'échantillons puissance de 2 qui permet de réduire significativement le temps de calcul.
+L'algorithme naif se complexifie comme $N^2$ où $N$ est le nombre d'échantillons alors que la FFT se complexifie en $N\log N$.
+
+Les problèmes de fenêtrage se comprennent comme un phénomène de diffraction : une fenêtre porte fera apparaitre des sinus cardinaux dans le spectre.
+La mitigation de ces soucis avec l'utilisation de fenêtres particulières (Hanning, etc.) se rapproche de l'apodisation utilisée en optique pour augmenter la résolution des instruments.
+
+La densité spectrale de puissance est le carré du module de la transformée de Fourier divisé par la largeur de la bande spectrale.
+Elle est utile pour caractériser la puissance du signal contenue dans une bande de fréquence et permet de caractériser les signaux aléatoires tels que les bruits.
+Le théorème de Wiener-Kintchine donne que c'est aussi la TF de la fonction d'autocorrélation $\gamma(\tau)$ qui caractérise la manière dont les structures que l'on peut voir dans un signal se répètent sur des échelles de temps $\tau$.
+La densité spectrale d'amplitude correspond à la racine carrée de la DSP.
+
+Au niveau des unités si l'on s'intéresse à un signal temporel d'unité X :
+\begin{itemize}
+\item le spectre donné par le module de la TF signal est en $\unit{}{X\cdot Hz^{-1}}$ ;
+\item la densité spectrale de puissance s'exprime en $\unit{}{X^2\cdot Hz^{-1}}$ ;
+\item la densité spectrale d'amplitude s'exprime en $\unit{}{X\cdot Hz^{-1/2}}$.
+\end{itemize}
+
+
 \subsection{Une cavité optique pour augmenter la sensibilité}
 \label{sec:cavity}
 
 \subsection{Couplage optomécanique et refroidissement}
 \label{sec:optomechanics}
 
+\paragraph{Friction \og chaude\fg{}\\}
+Pour un système thermodynamique à l'équilibre constitué d'un grand nombre de particules $N$, les fluctuations $\Delta X$ d'une variable $X$ de moyenne $\tilde{X}$ sont données par
+\begin{equation}
+\frac{\Delta X}{\tilde{X}} = \frac{1}{\sqrt{N}}.
+\end{equation}
+Si l'on s'intéresse à la force de pression $F_p$ exercée sur une surface $S$ par un gaz parfait de densité particulaire $n$, on a
+\begin{equation}
+F_p = S \times n k_B T.
+\end{equation}
+On exprime les variations de cette force par la variance $\Delta F_p^2$ qui vérifie compte tenu des deux résultats précédents :
+\begin{equation}
+\Delta F_p^2 \propto n.
+\end{equation}
+
+Pour la dissipation associée au contact de l'oscillateur avec l'air environnant, il faut considérer la puissance acoustique ${\cal{P}}_a$ rayonnée par la surface de l'oscillateur.
+Les calculs sont fait dans les thèses de T. Briant p145 et de L. Neuhaus p94 ainsi que dans le Landau \& Lifchitz de mécanique des fluides dans le paragraphe sur l'émission du son.
+On montre ${\cal{P}}_a = c \rho v^2$ où $c$ est la vitesse du son dans l'air, $\rho$ sans masse volumique et $v$ la vitesse de la surface émétrice. Dans le cas du micro-pilier de hauteur $h$, ceci revient à associer à l'oscillateur un coefficient d'amortissement dû au couplage avec l'air
+\begin{equation}
+\Gamma = \frac{4c}{h} \frac{\rho}{\rho_\mathrm{quartz}}.
+\end{equation}
+On trouve donc également que la dissipation est proportionnelle à $n$.
+\footnote{Le raisonnement ne tient pas si l'on suppose une force de frottement liée à la viscosité de l'air.
+Dans ce cas, en utilisant la formule de Stokes et le modèle de la viscosité des gaz dilués basé sur la diffusion de quantité de mouvement \cite{Guyon2001} p95 ou \cite{Olivier2000} p424, on trouve que la viscosité dynamique $\eta$ et donc la force de frottement est indépendante de la pression.
+Les approximations du modèle ne sont pas valables à faible et à basse pression \cite{Guyon2001} p49.
+En comparant les ordres de grandeurs, on trouve que l'amortissement acoustique est 500 fois plus important que l'amortissement visqueux à pression ambiante.}
+
+Ceci montre qu'il est impossible de refroidir un oscillateur avec un amortissement mécanique bruité comme celui causé par l'air : augmenter la pression du gaz augmente l'amortissement mais aussi les fluctuations de la force de pression.
+Au final, les fluctuations de position de l'oscillateur sont inchangées.
+Il faut donc utiliser un processus qui n'ajoute pas de bruit pour obtenir la friction froide et le refroidissement.
+
 \paragraph{Approche thermodynamique du self-cooling\\}
-Voir Aspelmeyer 2014.
+Voir Aspelmeyer 2014, Fig. 14.
+Attention : le cycle de gauche, côté red-detuned, est parcouru dans le sens trigonométrique contrairement à ce qui est indiqué sur le schéma de l'article.
+On s'en convainc en raisonnant comme suit pour le côté red-detuned :
+\begin{itemize}
+\item la force de pression de radiation est retardée par rapport aux déplacements ;
+\item en allant dans le sens des $x$ croissants, on reste donc en dessous de la lorentzienne ;
+\item en allant dans le sens des $x$ décroissants, on reste au dessus de la lorentzienne.
+\end{itemize}
+Le travail de la force de pression de radiation est donc bien négatif du côté red-detuned et positif du côté blue-detuned.
 
 \paragraph{Approche quantique : processus Stokes et anti-Stokes\\}
 Voir Aspelmeyer 2014.
@@ -163,5 +262,11 @@ Dans le cas des lames, le couplage est élastique.
 \subsection{Enseignements}
 
 \subsection{Vulgarisation : résonance et ondes gravitationnelles}
+
+\section*{Bibliographie}
+
+\begin{itemize}
+\item \href{https://www.pourlascience.fr/sd/physique/lumineuses-poussees-1143.php}{Lumineuses pousées}, Pour la science, 1999.
+\end{itemize}
 
 \end{document}
