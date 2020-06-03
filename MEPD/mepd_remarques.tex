@@ -178,6 +178,24 @@ Au niveau des unités si l'on s'intéresse à un signal temporel d'unité X :
 \subsection{Une cavité optique pour augmenter la sensibilité}
 \label{sec:cavity}
 
+\paragraph{Déphasage associé à une cavité\\}
+Les calculs pour une cavité symétrique sans perte sont fait dans le Hecht p435.
+On obtient, avec $r=-r'$ et $tt'=1-r^2$
+\begin{equation}
+E_r = rE_i \frac{1-e^{-i2kL}}{1-r^2e^{-i2kL}} \quad \mathrm{et} \quad
+E_t = E_i \frac{1-r^2}{1-r^2e^{-i2kL}}.
+\end{equation}
+Dans ce cas, si la finesse est suffisamment grande et à résonance, la transmission et la réflexion en intensité valent respectivement 1 et 0.
+Le passage de la résonance s'accompagne d'un déphasage de $\pi$ pour le faisceau réfléchi comme pour le faisceau transmis.
+
+Dans le dossier MEPD, on suppose le miroir de fond de la cavité parfaitement réfléchissant.
+Dans ce cas, le champ réfléchi est donné par 
+\begin{equation}
+E_r = E_i \frac{r-e^{-i2kL}}{1-re^{-i2kL}},
+\end{equation}
+et il n'y a pas de champ transmis.
+Lors du passage de la résonance, la réflexion s'accompagne seulement d'un déphasage égal à $2\pi$ cette fois.
+
 \subsection{Couplage optomécanique et refroidissement}
 \label{sec:optomechanics}
 
