@@ -150,12 +150,29 @@ qui se traduisent sur la mesure :
 
 Les phonons sont des bosons.
 
+\paragraph{Mouvement brownien\\}
+Voir les \href{https://www.feynmanlectures.caltech.edu/I_41.html}{cours de Feynman} sur le mouvement brownien.
+
+Pour justifier que la variance du mouvement brownien est l'intégrale de la densité spectrale de puissance des déplacements, il faut se rappeler du théorème de Wiener-Kintchine qui relie la DSP à la TF de la fonction d'autocorrélation.
+La démonstration est faite dans \href{https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiH3r61hPXpAhUMkRQKHW_3DH0QFjACegQIAxAB&url=http\%3A\%2F\%2Fwww.dalembert.upmc.fr\%2Fhome\%2Follivier\%2Fimages\%2FDocumentsPeda\%2F4AA06_SigAleat_SystLin_1314.pdf&usg=AOvVaw0JdnroUtcqr9KC1VxnqGSz}{ce polycopié} p13 mais on retiendra :
+\begin{itemize}
+\item la fonction d'autocorrélation prise en 0 donne la valeur RMS du signal.
+Or pour un signal de moyenne nulle, la valeur RMS est égale à la variance.
+\item d'autre part, la fonction d'autocorrélation prise en 0 est l'intégrale sur toutes les fréquences de la DSP.
+\end{itemize}
+La variance du mouvement brownien est donc bien l'intégrale de la DSP.
+
 \paragraph{Fluctuation-dissipation\\}
 Voir Saulson.
+On retiendra que le théorème de fluctuation-dissipation donne la valeur de la densité spectrale de puissance à chaque fréquence.
+\emph{Loin de la résonance,} réduire la dissipation réduit les fluctuations de position, mais ce n'est pas vrai à résonance.
+Il n'y a donc aucun paradoxe avec le théorème d'équipartition de l'énergie qui donne la variance du mouvement brownien (l'intégrale de la DSP).
+Pour réduire les fluctuations d'un système \emph{à toutes les fréquences} il est donc nécessaire de refroidir.
+Pour réduire le bruit thermique loin de la résonance, on peut se contenter d'utiliser des systèmes avec une dissipation faible ce qui est la stratégie des interféromètres gravitationnels.
 
 \paragraph{Fourier\\}
 Relire la partie consacrée à l'étude spectrale du \href{https://gitlab.in2p3.fr/Jeremy/Electronique/-/blob/master/Cours/electronique.pdf}{cours de Jérémy Neveu.}
-Il faut faire la différence entre série de Fourier et série de Fourier.
+Il faut faire la différence entre série de Fourier et transformée de Fourier.
 La décomposition en série de Fourier s'applique aux fonctions périodiques et constitue les prémisses de l'analyse harmonique.
 La transformée de Fourier notée $\tf$ est une généralisation aux fonctions non périodiques.
 On choisi pour convention 
