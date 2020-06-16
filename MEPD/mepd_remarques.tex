@@ -104,7 +104,6 @@ Le raisonnement est similaire à celui du calcul des anneaux d'égale inclinaiso
 \item $10^{27}$ fois la consommation énergétique mondiale ;
 \item $10^5$ fois l'énergie rayonnée par le soleil depuis sa création ;
 \item énergie rayonnée par toute la galaxie en 500 ans ;
-;
 \item puissance crête : $\unit{4\times10^{49}}{\watt}$.
 \end{itemize}
 
@@ -113,8 +112,19 @@ Le raisonnement est similaire à celui du calcul des anneaux d'égale inclinaiso
 \subsubsection{... Et contrôle d'oscillateurs mécaniques}
 
 \paragraph{Décohérence\\}
-\href{https://www.youtube.com/watch?v=rCCr77aX4ek}{Conférence de Michel Brune.}
+Le principe d'effondrement de la fonction d'onde, la décohérence, est un des postulat de la mécanique quantique.
+On le constate expérimentalement lors des mesures qui projettent l'état du système mais le mécanisme de ce phénomène reste mystérieux.
+Voir la \href{https://www.youtube.com/watch?v=rCCr77aX4ek}{conférence de Michel Brune.}
 Penser aux mesures non-lues : les interactions avec l'environnement sont autant de mesures qui projettent l'état du système.
+
+Il faut voir que la décohérence peut avoir de multiples origines et les modèles sont nombreux.
+Si la gravité est impliquée dans ces processus, alors ses effets deviennent important pour des objets suffisamment massifs.
+On peut se rappeler d'une interprétation de la masse de Planck $m_P$ : on compare l'énergie d'interaction gravitationnelle entre deux masses $m_P$ séparées par une distance $r$ et l'énergie d'un photon de longueur d'onde $2\pi r$ : 
+\begin{equation}
+\frac{Gm_P^2}{r} = \frac{\hbar c}{r}.
+\end{equation}
+Étudier la décohérence d'objets massifs préparés dans un état quantique permet de tester les modèles de décohérence et notamment de voir si la gravité intervient ou non.
+Voilà voilà...
 
 \subsection{Les oscillateurs mécaniques}
 \label{sec:mechanical_oscillators}
@@ -282,6 +292,33 @@ Voir Aspelmeyer 2014.
 \subsection{Vers des mesures sous la limite quantique standard}
 \label{sec:prospects}
 
+\paragraph{Représentation des états comprimés\\}
+On peut expliquer les diagrammes en allumette en les rapprochant des diagrammes de Fresnel.
+La représentation de Fresnel permet de représenter des sinusoïdes par des vecteurs dont la norme donne l'amplitude et l'angle par rapport à une direction arbitraire donne la phase.
+C'est un outils utilisé en PC pour expliquer les interférence à N ondes : voir \cite{Sanz2016} p748.
+Il devient clair avec les inégalités d'Heisenberg que le vecteur est associé à une distribution de probabilité en phase et amplitude qui transforme la tête du vecteur en une patatoïde.
+
+\paragraph{Squeezing, portrait de phase et bandes latérales\\}
+Voir la \href{https://gwic.ligo.org/assets/docs/theses/chua_thesis.pdf}{thèse de Sheon} p26-27 pour le phasor diagram et voir le notebook MEPD\_simulations.
+On s'intéresse aux bruits quantiques à une fréquence donnée $\omega_n$ :
+\begin{itemize}
+\item le laser est d'abord décrit comme un champ oscillant à la pulsation $\omega_p$ ;
+\item le bruit d'amplitude est une modulation d'amplitude à la pulsation $\omega_n$ ;
+\item le bruit de phase est une modulation de phase à la pulsation $\omega_n$.
+\end{itemize}
+On se place dans le référentiel tournant à $\omega_p$ : au premier ordre, les modulations créent des bandes latérales de part et d'autre de la porteuse.
+Ces bandes latérales tournent dans des sens opposés par rapport à la porteuse fixe (ie. dans le référentiel tournant).
+Pour la modulation d'amplitude, les deux bandes latérales sont alignées ou anti alignées dans la même direction que la porteuse tous les demi-tours.
+Pour la modulation de phase,  les deux bandes latérales sont alignées ou anti alignées dans la direction orthogonale à la porteuse tous les demi-tours.
+En sommant vectoriellement la porteuse et les bandes latérales dans le portrait de phase représentant les deux quadratures du champ (partie réelle et imaginaire, diagramme de Fresnel), on retrouve bien l'effet de chaque modulation.
+
+\paragraph{Frequency dependant squeezing\\}
+Voir la figure 5 du \href{http://www.phys.ufl.edu/ireu/IREU2018/pdf_reports/LKB_Paris_final_report_Ana_Lam.pdf}{rapport} p4 pour la représentation graphique du rôle de la cavité de filtrage.
+Cette rotating cavity permet de déphaser les bandes latérales supérieure et inférieure et de faire tourner l'ellipse de squeezing.
+Voir aussi cet \href{https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.124.171102}{article} p2.
+
+
+
 \section{Enseignement, diffusion et vulgarisation}
 
 \subsection{Valorisation des travaux de recherche}
@@ -295,7 +332,7 @@ Voir Aspelmeyer 2014.
 
 Il s'agit d'un système complexe composé de sept oscillateurs couplés.
 Il faut relire l'article \emph{The seismic Superattenuators of the Virgo gravitational waves interferometer}, section 3.
-La cascade de pendules permet d'avoir une dépendance forte de la réponse en déplacement u miroir final avec la fréquence.
+La cascade de pendules permet d'avoir une dépendance forte de la réponse en déplacement du miroir final avec la fréquence.
 Au delà de la plus haute des fréquences de résonance $f_n$ associées aux modes propres du système, la réponse d'un pendule composé de $N$ étages est donnée par
 \begin{equation}
 \frac{C}{f^{2N}},
