@@ -17,9 +17,9 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="feedback_cooling.svg"
-   inkscape:export-filename="C:\Users\remi\Documents\GitHub\agregation\MEPD\figures\feedback_cooling_v3_small.png"
-   inkscape:export-xdpi="200"
-   inkscape:export-ydpi="200">
+   inkscape:export-filename="C:\Users\remi\Documents\GitHub\agregation\MEPD\figures\feedback_cooling_v3.png"
+   inkscape:export-xdpi="332.53525"
+   inkscape:export-ydpi="332.53525">
   <defs
      id="defs4">
     <linearGradient
@@ -300,9 +300,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0968481"
-     inkscape:cx="209.78858"
-     inkscape:cy="249.51379"
+     inkscape:zoom="0.93423399"
+     inkscape:cx="116.2681"
+     inkscape:cy="289.09948"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="true"
@@ -334,7 +334,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
