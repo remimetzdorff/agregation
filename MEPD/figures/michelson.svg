@@ -211,7 +211,7 @@
        inkscape:stockid="TriangleInM">
       <path
          transform="scale(-0.4,-0.4)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
          d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
          id="path4669"
          inkscape:connector-curvature="0" />
@@ -403,7 +403,7 @@
       <path
          inkscape:connector-curvature="0"
          transform="scale(0.4,0.4)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
          d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
          id="path6328-0" />
     </marker>
@@ -915,11 +915,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.82173699"
-     inkscape:cx="-181.68892"
-     inkscape:cy="464.50566"
+     inkscape:zoom="2.7996388"
+     inkscape:cx="322.29133"
+     inkscape:cy="138.9353"
      inkscape:document-units="px"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer2"
      showgrid="true"
      showguides="false"
      inkscape:snap-smooth-nodes="true"
@@ -1650,7 +1650,7 @@
        transform="translate(-57.95289,88.137802)" />
     <path
        transform="translate(-57.95289,88.137802)"
-       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4667);marker-end:url(#marker6326-2)"
+       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4667);marker-end:url(#marker6326-2)"
        d="m 369.99999,52.36222 40,0"
        id="path4392-8"
        inkscape:connector-curvature="0"
